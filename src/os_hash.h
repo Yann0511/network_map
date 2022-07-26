@@ -84,3540 +84,3540 @@ hash (register const char *str, register size_t len)
 }
 
 struct os_info *
-sexp_lookup (register const char *str, register size_t len)
+os_lookup (register const char *str, register size_t len)
 {
   static struct os_info wordlist[] =
     {
 #line 766 "os.gperf"
-      {"4000:0200:40:00:0:1:0:1:S:LT", OpenBSD},
+      {"4000:0200:40:00:0:1:0:1:S:LT", "OpenBSD"},
 #line 761 "os.gperf"
-      {"4000:0000:40:WS:0:0:0:0:S:LT", ULTRIX V4.5 (Rev. 47)},
+      {"4000:0000:40:WS:0:0:0:0:S:LT", "ULTRIX V4.5 (Rev. 47)"},
 #line 767 "os.gperf"
-      {"4000:0200:40:00:1:1:0:1:S:LT", FreeBSD},
+      {"4000:0200:40:00:1:1:0:1:S:LT", "FreeBSD"},
 #line 769 "os.gperf"
-      {"4000:0200:40:WS:0:0:0:0:S:LT", BorderWare 5.2},
+      {"4000:0200:40:WS:0:0:0:0:S:LT", "BorderWare 5.2"},
 #line 1470 "os.gperf"
-      {"F000:0200:40:WS:0:0:0:0:S:LT", IRIX 5.3 / 4.0.5F},
+      {"F000:0200:40:WS:0:0:0:0:S:LT", "IRIX 5.3 / 4.0.5F"},
 #line 877 "os.gperf"
-      {"4000:_MSS:80:00:0:1:0:1:A:LT", Check Point FireWall-1 4.0 SP-5 (IPSO build)},
+      {"4000:_MSS:80:00:0:1:0:1:A:LT", "Check Point FireWall-1 4.0 SP-5 (IPSO build)"},
 #line 876 "os.gperf"
-      {"4000:_MSS:80:00:0:1:0:0:A:LT", Check Point FireWall-1 4.0 SP-5 (IPSO build)},
+      {"4000:_MSS:80:00:0:1:0:0:A:LT", "Check Point FireWall-1 4.0 SP-5 (IPSO build)"},
 #line 875 "os.gperf"
-      {"4000:_MSS:80:00:0:0:1:0:A:LT", OpenVMS 7.1 using Process Software's TCPWare 5.3},
+      {"4000:_MSS:80:00:0:0:1:0:A:LT", "OpenVMS 7.1 using Process Software's TCPWare 5.3"},
 #line 874 "os.gperf"
-      {"4000:_MSS:80:00:0:0:0:0:A:LT", IBM MVS (unknown version)},
+      {"4000:_MSS:80:00:0:0:0:0:A:LT", "IBM MVS (unknown version)"},
 #line 1447 "os.gperf"
-      {"E920:_MSS:80:00:0:1:1:1:A:LT", Windows ME},
+      {"E920:_MSS:80:00:0:1:1:1:A:LT", "Windows ME"},
 #line 198 "os.gperf"
-      {"1000:0109:40:10:0:1:0:1:S:LT", FreeBSD 4.5},
+      {"1000:0109:40:10:0:1:0:1:S:LT", "FreeBSD 4.5"},
 #line 880 "os.gperf"
-      {"4000:_MSS:80:WS:0:0:1:0:A:LT", AmigaOS Miami 3.0},
+      {"4000:_MSS:80:WS:0:0:1:0:A:LT", "AmigaOS Miami 3.0"},
 #line 878 "os.gperf"
-      {"4000:_MSS:80:WS:0:0:0:0:A:LT", Auspex Fileserver (AuspexOS 1.9.1/SunOS 4.1.4)},
+      {"4000:_MSS:80:WS:0:0:0:0:A:LT", "Auspex Fileserver (AuspexOS 1.9.1/SunOS 4.1.4)"},
 #line 1396 "os.gperf"
-      {"C000:_MSS:80:WS:0:0:0:0:A:LT", OS-9/68K V2.4 (Quanterra Q4124 - 68030)},
+      {"C000:_MSS:80:WS:0:0:0:0:A:LT", "OS-9/68K V2.4 (Quanterra Q4124 - 68030)"},
 #line 765 "os.gperf"
-      {"4000:0200:40:00:0:1:0:1:A:3C", IPSO 3.3 / Net BSD 1.5.2},
+      {"4000:0200:40:00:0:1:0:1:A:3C", "IPSO 3.3 / Net BSD 1.5.2"},
 #line 201 "os.gperf"
-      {"1000:0200:40:WS:0:0:0:0:S:LT", CISCO IOS},
+      {"1000:0200:40:WS:0:0:0:0:S:LT", "CISCO IOS"},
 #line 221 "os.gperf"
-      {"1000:_MSS:40:WS:0:0:0:0:A:LT", SCO UnixWare 2.1.2},
+      {"1000:_MSS:40:WS:0:0:0:0:A:LT", "SCO UnixWare 2.1.2"},
 #line 768 "os.gperf"
-      {"4000:0200:40:WS:0:0:0:0:A:2C", AIX 4.3},
+      {"4000:0200:40:WS:0:0:0:0:A:2C", "AIX 4.3"},
 #line 1020 "os.gperf"
-      {"6000:_MSS:80:00:0:1:1:0:A:LT", Sequent DYNIX/ptx(R) V4.4.6},
+      {"6000:_MSS:80:00:0:1:1:0:A:LT", "Sequent DYNIX/ptx(R) V4.4.6"},
 #line 1019 "os.gperf"
-      {"6000:_MSS:80:00:0:0:1:0:A:LT", OpenVMS v7.1 VAX},
+      {"6000:_MSS:80:00:0:0:1:0:A:LT", "OpenVMS v7.1 VAX"},
 #line 1018 "os.gperf"
-      {"6000:_MSS:80:00:0:0:0:0:A:LT", SCO OpenServer(TM) Release 5},
+      {"6000:_MSS:80:00:0:0:0:0:A:LT", "SCO OpenServer(TM) Release 5"},
 #line 226 "os.gperf"
-      {"1000:_MSS:80:00:0:1:0:1:A:LT", Alcatel 1000 ADSL (modem)},
+      {"1000:_MSS:80:00:0:1:0:1:A:LT", "Alcatel 1000 ADSL (modem)"},
 #line 225 "os.gperf"
-      {"1000:_MSS:80:00:0:1:0:0:A:LT", Alcatel 1000 ADSL (modem)},
+      {"1000:_MSS:80:00:0:1:0:0:A:LT", "Alcatel 1000 ADSL (modem)"},
 #line 224 "os.gperf"
-      {"1000:_MSS:80:00:0:0:1:0:A:LT", OpenVMS/Alpha 7.1 using Process Software's TCPWare V5.3-4},
+      {"1000:_MSS:80:00:0:0:1:0:A:LT", "OpenVMS/Alpha 7.1 using Process Software's TCPWare V5.3-4"},
 #line 899 "os.gperf"
-      {"4074:_MSS:40:WS:0:0:0:0:A:LT", OpenBSD 2.x},
+      {"4074:_MSS:40:WS:0:0:0:0:A:LT", "OpenBSD 2.x"},
 #line 228 "os.gperf"
-      {"1000:_MSS:80:WS:0:0:1:0:A:LT", VirtualAccess LinxpeedPro 120 running Software 7.4.33CM},
+      {"1000:_MSS:80:WS:0:0:1:0:A:LT", "VirtualAccess LinxpeedPro 120 running Software 7.4.33CM"},
 #line 238 "os.gperf"
-      {"1020:_MSS:80:WS:0:0:0:0:A:LT", AS5200},
+      {"1020:_MSS:80:WS:0:0:0:0:A:LT", "AS5200"},
 #line 763 "os.gperf"
-      {"4000:0200:40:00:0:0:0:0:S:2C", AIX 3.2, 4.2 - 4.3},
+      {"4000:0200:40:00:0:0:0:0:S:2C", "AIX 3.2 4.2 - 4.3"},
 #line 764 "os.gperf"
-      {"4000:0200:40:00:0:1:0:0:S:3C", OpenBSD 2.6-2.8},
+      {"4000:0200:40:00:0:1:0:0:S:3C", "OpenBSD 2.6-2.8"},
 #line 223 "os.gperf"
-      {"1000:_MSS:40:WS:0:0:0:0:S:LT", Linux},
+      {"1000:_MSS:40:WS:0:0:0:0:S:LT", "Linux"},
 #line 199 "os.gperf"
-      {"1000:0200:40:00:0:1:0:1:A:3C", Alcatel Router ADSL Speed Touch Pro},
+      {"1000:0200:40:00:0:1:0:1:A:3C", "Alcatel Router ADSL Speed Touch Pro"},
 #line 200 "os.gperf"
-      {"1000:0200:40:WS:0:0:0:0:A:2C", Alcatel Speedtouch Pro ADSL modem},
+      {"1000:0200:40:WS:0:0:0:0:A:2C", "Alcatel Speedtouch Pro ADSL modem"},
 #line 196 "os.gperf"
-      {"1000:0002:40:WS:0:0:0:0:A:2C", Alcatel Modem},
+      {"1000:0002:40:WS:0:0:0:0:A:2C", "Alcatel Modem"},
 #line 912 "os.gperf"
-      {"4150:_MSS:40:WS:0:0:1:0:A:LT", Cisco Localdirector 430, running OS 2.1},
+      {"4150:_MSS:40:WS:0:0:1:0:A:LT", "Cisco Localdirector 430 running OS 2.1"},
 #line 897 "os.gperf"
-      {"403D:_MSS:80:00:0:1:1:1:A:LT", Acorn RiscOS 3.7 using AcornNet TCP/IP stack},
+      {"403D:_MSS:80:00:0:1:1:1:A:LT", "Acorn RiscOS 3.7 using AcornNet TCP/IP stack"},
 #line 895 "os.gperf"
-      {"403D:_MSS:80:00:0:1:0:1:A:LT", FreeBSD 2.1.0 - 2.1.5},
+      {"403D:_MSS:80:00:0:1:0:1:A:LT", "FreeBSD 2.1.0 - 2.1.5"},
 #line 811 "os.gperf"
-      {"4000:05A0:80:WS:1:1:1:0:S:30", Windows XP Pro},
+      {"4000:05A0:80:WS:1:1:1:0:S:30", "Windows XP Pro"},
 #line 896 "os.gperf"
-      {"403D:_MSS:80:00:0:1:1:0:A:LT", Acorn RiscOS 3.7 using AcornNet TCP/IP stack},
+      {"403D:_MSS:80:00:0:1:1:0:A:LT", "Acorn RiscOS 3.7 using AcornNet TCP/IP stack"},
 #line 894 "os.gperf"
-      {"403D:_MSS:80:00:0:1:0:0:A:LT", FreeBSD 2.1.0 - 2.1.5},
+      {"403D:_MSS:80:00:0:1:0:0:A:LT", "FreeBSD 2.1.0 - 2.1.5"},
 #line 780 "os.gperf"
-      {"4000:0530:80:WS:1:1:1:0:S:30", Windows 2000},
+      {"4000:0530:80:WS:1:1:1:0:S:30", "Windows 2000"},
 #line 957 "os.gperf"
-      {"4431:_MSS:80:00:0:1:1:1:A:LT", Solaris 2.6 - 2.7},
+      {"4431:_MSS:80:00:0:1:1:1:A:LT", "Solaris 2.6 - 2.7"},
 #line 1424 "os.gperf"
-      {"E000:05A0:40:00:0:1:1:1:A:3C", FreeBSD 4.7-RELEASE / 4.9},
+      {"E000:05A0:40:00:0:1:1:1:A:3C", "FreeBSD 4.7-RELEASE / 4.9"},
 #line 956 "os.gperf"
-      {"4431:_MSS:80:00:0:1:1:0:A:LT", Solaris 2.6 - 2.7},
+      {"4431:_MSS:80:00:0:1:1:0:A:LT", "Solaris 2.6 - 2.7"},
 #line 1389 "os.gperf"
-      {"C000:05A0:80:00:1:1:1:1:S:40", Windows XP},
+      {"C000:05A0:80:00:1:1:1:1:S:40", "Windows XP"},
 #line 998 "os.gperf"
-      {"4470:_MSS:40:WS:0:0:1:0:A:LT", FreeBSD 2.2.1 - 4.0},
+      {"4470:_MSS:40:WS:0:0:1:0:A:LT", "FreeBSD 2.2.1 - 4.0"},
 #line 997 "os.gperf"
-      {"4470:_MSS:40:WS:0:0:0:0:A:LT", FreeBSD 2.2.1 - 4.0},
+      {"4470:_MSS:40:WS:0:0:0:0:A:LT", "FreeBSD 2.2.1 - 4.0"},
 #line 249 "os.gperf"
-      {"10C0:_MSS:80:WS:0:0:0:0:A:LT", Cisco 1600/3640/7513 Router (IOS 11.2(14)P)},
+      {"10C0:_MSS:80:WS:0:0:0:0:A:LT", "Cisco 1600/3640/7513 Router (IOS 11.2(14)P)"},
 #line 782 "os.gperf"
-      {"4000:0542:80:WS:1:1:1:0:S:30", Windows ME},
+      {"4000:0542:80:WS:1:1:1:0:S:30", "Windows ME"},
 #line 999 "os.gperf"
-      {"4470:_MSS:80:WS:0:0:0:0:A:LT", Snap Network Box},
+      {"4470:_MSS:80:WS:0:0:0:0:A:LT", "Snap Network Box"},
 #line 470 "os.gperf"
-      {"2000:0109:40:WS:0:0:0:0:A:LT", Cisco CacheOS 1.1.0},
+      {"2000:0109:40:WS:0:0:0:0:A:LT", "Cisco CacheOS 1.1.0"},
 #line 798 "os.gperf"
-      {"4000:0582:80:WS:1:1:1:0:S:30", Microsoft Windows 2000 Professional SP4 },
+      {"4000:0582:80:WS:1:1:1:0:S:30", "Microsoft Windows 2000 Professional SP4 "},
 #line 772 "os.gperf"
-      {"4000:023C:40:00:1:1:1:0:S:40", OpenBSD 3.0},
+      {"4000:023C:40:00:1:1:1:0:S:40", "OpenBSD 3.0"},
 #line 890 "os.gperf"
-      {"402E:_MSS:80:00:0:1:1:1:A:LT", D-Link DI-701, Version 2.22},
+      {"402E:_MSS:80:00:0:1:1:1:A:LT", "D-Link DI-701 Version 2.22"},
 #line 888 "os.gperf"
-      {"402E:_MSS:80:00:0:1:0:1:A:LT", FreeBSD 2.1.0 - 2.1.5},
+      {"402E:_MSS:80:00:0:1:0:1:A:LT", "FreeBSD 2.1.0 - 2.1.5"},
 #line 889 "os.gperf"
-      {"402E:_MSS:80:00:0:1:1:0:A:LT", D-Link DI-701, Version 2.22},
+      {"402E:_MSS:80:00:0:1:1:0:A:LT", "D-Link DI-701 Version 2.22"},
 #line 472 "os.gperf"
-      {"2000:0200:40:WS:0:0:0:0:A:LT", QNX / Amiga OS},
+      {"2000:0200:40:WS:0:0:0:0:A:LT", "QNX / Amiga OS"},
 #line 887 "os.gperf"
-      {"402E:_MSS:80:00:0:1:0:0:A:LT", FreeBSD 2.1.0 - 2.1.5},
+      {"402E:_MSS:80:00:0:1:0:0:A:LT", "FreeBSD 2.1.0 - 2.1.5"},
 #line 469 "os.gperf"
-      {"2000:0002:40:00:0:1:0:0:A:LT", Mac OS 9/Apple ShareIP},
+      {"2000:0002:40:00:0:1:0:0:A:LT", "Mac OS 9/Apple ShareIP"},
 #line 893 "os.gperf"
-      {"402E:_MSS:80:WS:0:1:1:0:A:LT", Windows XP Professional Release},
+      {"402E:_MSS:80:WS:0:1:1:0:A:LT", "Windows XP Professional Release"},
 #line 892 "os.gperf"
-      {"402E:_MSS:80:WS:0:0:1:0:A:LT", AmigaOS Miami 2.1-3.0},
+      {"402E:_MSS:80:WS:0:0:1:0:A:LT", "AmigaOS Miami 2.1-3.0"},
 #line 891 "os.gperf"
-      {"402E:_MSS:80:WS:0:0:0:0:A:LT", OpenBSD 2.1/X86},
+      {"402E:_MSS:80:WS:0:0:0:0:A:LT", "OpenBSD 2.1/X86"},
 #line 773 "os.gperf"
-      {"4000:023C:80:WS:1:1:1:0:S:30", Windows NT SP4+},
+      {"4000:023C:80:WS:1:1:1:0:S:30", "Windows NT SP4+"},
 #line 802 "os.gperf"
-      {"4000:0586:80:WS:1:1:1:0:S:30", Windows 2000},
+      {"4000:0586:80:WS:1:1:1:0:S:30", "Windows 2000"},
 #line 962 "os.gperf"
-      {"4452:_MSS:80:00:0:0:1:0:A:LT", Solaris 2.5, 2.5.1},
+      {"4452:_MSS:80:00:0:0:1:0:A:LT", "Solaris 2.5 2.5.1"},
 #line 1033 "os.gperf"
-      {"60DA:_MSS:80:00:0:1:1:1:A:LT", Sun Solaris 8 early acces beta through actual release},
+      {"60DA:_MSS:80:00:0:1:1:1:A:LT", "Sun Solaris 8 early acces beta through actual release"},
 #line 812 "os.gperf"
-      {"4000:05A4:80:WS:1:1:1:0:S:30", Windows},
+      {"4000:05A4:80:WS:1:1:1:0:S:30", "Windows"},
 #line 1032 "os.gperf"
-      {"60DA:_MSS:80:00:0:1:1:0:A:LT", Sun Solaris 8 early acces beta through actual release},
+      {"60DA:_MSS:80:00:0:1:1:0:A:LT", "Sun Solaris 8 early acces beta through actual release"},
 #line 799 "os.gperf"
-      {"4000:0584:20:WS:1:1:0:0:S:30", Windows ME},
+      {"4000:0584:20:WS:1:1:0:0:S:30", "Windows ME"},
 #line 1423 "os.gperf"
-      {"E000:0586:40:WS:0:0:0:0:A:2C", FreeBSD4.6.2},
+      {"E000:0586:40:WS:0:0:0:0:A:2C", "FreeBSD4.6.2"},
 #line 781 "os.gperf"
-      {"4000:0534:80:WS:1:1:1:0:S:30", Windows 2000},
+      {"4000:0534:80:WS:1:1:1:0:S:30", "Windows 2000"},
 #line 1055 "os.gperf"
-      {"61A8:0200:40:00:1:1:1:1:A:LT", Windows NT},
+      {"61A8:0200:40:00:1:1:1:1:A:LT", "Windows NT"},
 #line 549 "os.gperf"
-      {"2000:_MSS:40:WS:0:0:1:0:A:LT", BSDI BSD/OS},
+      {"2000:_MSS:40:WS:0:0:1:0:A:LT", "BSDI BSD/OS"},
 #line 800 "os.gperf"
-      {"4000:0584:80:00:1:1:0:1:A:40", Windows },
+      {"4000:0584:80:00:1:1:0:1:A:40", "Windows "},
 #line 1067 "os.gperf"
-      {"6420:_MSS:40:WS:0:1:1:0:A:3C", SunOS 5.8 },
+      {"6420:_MSS:40:WS:0:1:1:0:A:3C", "SunOS 5.8 "},
 #line 555 "os.gperf"
-      {"2000:_MSS:80:00:0:1:1:1:A:LT", AS/400e 720 running OS/400 R4.4},
+      {"2000:_MSS:80:00:0:1:1:1:A:LT", "AS/400e 720 running OS/400 R4.4"},
 #line 789 "os.gperf"
-      {"4000:0562:80:WS:1:1:1:0:S:30", Windows 2000 },
+      {"4000:0562:80:WS:1:1:1:0:S:30", "Windows 2000 "},
 #line 553 "os.gperf"
-      {"2000:_MSS:80:00:0:1:0:1:A:LT", Tandem NSK D40},
+      {"2000:_MSS:80:00:0:1:0:1:A:LT", "Tandem NSK D40"},
 #line 554 "os.gperf"
-      {"2000:_MSS:80:00:0:1:1:0:A:LT", AS/400e 720 running OS/400 R4.4},
+      {"2000:_MSS:80:00:0:1:1:0:A:LT", "AS/400e 720 running OS/400 R4.4"},
 #line 552 "os.gperf"
-      {"2000:_MSS:80:00:0:1:0:0:A:LT", Accelerated Networks - High Speed Integrated Access VoDSL},
+      {"2000:_MSS:80:00:0:1:0:0:A:LT", "Accelerated Networks - High Speed Integrated Access VoDSL"},
 #line 551 "os.gperf"
-      {"2000:_MSS:80:00:0:0:1:0:A:LT", Novell NetWare 3.12 - 5.00},
+      {"2000:_MSS:80:00:0:0:1:0:A:LT", "Novell NetWare 3.12 - 5.00"},
 #line 550 "os.gperf"
-      {"2000:_MSS:80:00:0:0:0:0:A:LT", IBM VM/ESA 2.2.0 CMS Mainframe System},
+      {"2000:_MSS:80:00:0:0:0:0:A:LT", "IBM VM/ESA 2.2.0 CMS Mainframe System"},
 #line 1009 "os.gperf"
-      {"462B:_MSS:80:00:0:1:1:1:A:LT", Solaris 2.6 - 7 X86},
+      {"462B:_MSS:80:00:0:1:1:1:A:LT", "Solaris 2.6 - 7 X86"},
 #line 1400 "os.gperf"
-      {"C08A:_MSS:80:00:0:1:1:1:A:LT", FreeBSD 2.2.1 - 4.1},
+      {"C08A:_MSS:80:00:0:1:1:1:A:LT", "FreeBSD 2.2.1 - 4.1"},
 #line 219 "os.gperf"
-      {"1000:_MSS:20:WS:0:0:0:0:A:28", Motorola SurfBoard SB4100 CableModem},
+      {"1000:_MSS:20:WS:0:0:0:0:A:28", "Motorola SurfBoard SB4100 CableModem"},
 #line 1008 "os.gperf"
-      {"462B:_MSS:80:00:0:1:1:0:A:LT", Solaris 2.6 - 7 X86},
+      {"462B:_MSS:80:00:0:1:1:0:A:LT", "Solaris 2.6 - 7 X86"},
 #line 1399 "os.gperf"
-      {"C08A:_MSS:80:00:0:1:1:0:A:LT", FreeBSD 2.2.1 - 4.1},
+      {"C08A:_MSS:80:00:0:1:1:0:A:LT", "FreeBSD 2.2.1 - 4.1"},
 #line 557 "os.gperf"
-      {"2010:_MSS:80:WS:0:0:1:0:A:LT", Windows NT / Win9x},
+      {"2010:_MSS:80:WS:0:0:1:0:A:LT", "Windows NT / Win9x"},
 #line 275 "os.gperf"
-      {"1608:0582:40:WS:1:1:1:0:A:30", Linux},
+      {"1608:0582:40:WS:1:1:1:0:A:30", "Linux"},
 #line 556 "os.gperf"
-      {"2000:_MSS:80:WS:0:0:0:0:A:LT", AGE Logic, Inc. IBM XStation},
+      {"2000:_MSS:80:WS:0:0:0:0:A:LT", "AGE Logic Inc. IBM XStation"},
 #line 814 "os.gperf"
-      {"4000:05AC:80:WS:1:1:0:0:A:30", Windows 2000},
+      {"4000:05AC:80:WS:1:1:0:0:A:30", "Windows 2000"},
 #line 600 "os.gperf"
-      {"2220:_MSS:40:WS:0:0:1:0:A:LT", BSDI BSD/OS},
+      {"2220:_MSS:40:WS:0:0:1:0:A:LT", "BSDI BSD/OS"},
 #line 473 "os.gperf"
-      {"2000:0200:80:WS:1:1:1:0:S:30", Windows XP - Windows 98},
+      {"2000:0200:80:WS:1:1:1:0:S:30", "Windows XP - Windows 98"},
 #line 594 "os.gperf"
-      {"2200:_MSS:80:00:0:1:1:1:A:LT", OpenVMS 6.2/Alpha},
+      {"2200:_MSS:80:00:0:1:1:1:A:LT", "OpenVMS 6.2/Alpha"},
 #line 592 "os.gperf"
-      {"2200:_MSS:80:00:0:1:0:1:A:LT", Stock OpenVMS 7.1},
+      {"2200:_MSS:80:00:0:1:0:1:A:LT", "Stock OpenVMS 7.1"},
 #line 593 "os.gperf"
-      {"2200:_MSS:80:00:0:1:1:0:A:LT", OpenVMS 6.2/Alpha},
+      {"2200:_MSS:80:00:0:1:1:0:A:LT", "OpenVMS 6.2/Alpha"},
 #line 591 "os.gperf"
-      {"2200:_MSS:80:00:0:1:0:0:A:LT", Stock OpenVMS 7.1},
+      {"2200:_MSS:80:00:0:1:0:0:A:LT", "Stock OpenVMS 7.1"},
 #line 801 "os.gperf"
-      {"4000:0584:80:WS:1:1:1:0:S:30", Windows 2000 },
+      {"4000:0584:80:WS:1:1:1:0:S:30", "Windows 2000 "},
 #line 575 "os.gperf"
-      {"2120:_MSS:80:WS:0:0:1:0:A:LT", Gauntlet 4.0a firewall on Solaris 2.5.1},
+      {"2120:_MSS:80:WS:0:0:1:0:A:LT", "Gauntlet 4.0a firewall on Solaris 2.5.1"},
 #line 920 "os.gperf"
-      {"4230:0584:80:WS:1:1:1:0:A:30", Windows 2000 Server},
+      {"4230:0584:80:WS:1:1:1:0:A:30", "Windows 2000 Server"},
 #line 919 "os.gperf"
-      {"4230:0584:80:WS:1:1:0:0:A:30", Windows 2000 Server},
+      {"4230:0584:80:WS:1:1:0:0:A:30", "Windows 2000 Server"},
 #line 548 "os.gperf"
-      {"2000:_MSS:40:WS:0:0:0:0:S:LT", Mac OS 8.6},
+      {"2000:_MSS:40:WS:0:0:0:0:S:LT", "Mac OS 8.6"},
 #line 918 "os.gperf"
-      {"4230:0584:80:00:1:1:1:1:A:40", Windows 2000 Server},
+      {"4230:0584:80:00:1:1:1:1:A:40", "Windows 2000 Server"},
 #line 917 "os.gperf"
-      {"4230:0584:80:00:1:1:0:1:A:40", Linux},
+      {"4230:0584:80:00:1:1:0:1:A:40", "Linux"},
 #line 813 "os.gperf"
-      {"4000:05AC:40:00:1:1:1:1:S:40", OpenBSD 3.1},
+      {"4000:05AC:40:00:1:1:1:1:S:40", "OpenBSD 3.1"},
 #line 425 "os.gperf"
-      {"16D0:_MSS:80:00:0:1:1:1:A:LT", Windows NT4 / Win95 / Win98},
+      {"16D0:_MSS:80:00:0:1:1:1:A:LT", "Windows NT4 / Win95 / Win98"},
 #line 595 "os.gperf"
-      {"2200:_MSS:80:WS:0:0:0:0:A:LT", Linux 2.0.34-38},
+      {"2200:_MSS:80:WS:0:0:0:0:A:LT", "Linux 2.0.34-38"},
 #line 471 "os.gperf"
-      {"2000:0200:40:WS:0:0:0:0:A:2C", ForeThought ASX200BX},
+      {"2000:0200:40:WS:0:0:0:0:A:2C", "ForeThought ASX200BX"},
 #line 424 "os.gperf"
-      {"16D0:_MSS:80:00:0:1:1:0:A:LT", Windows NT4 / Win95 / Win98},
+      {"16D0:_MSS:80:00:0:1:1:0:A:LT", "Windows NT4 / Win95 / Win98"},
 #line 1422 "os.gperf"
-      {"E000:0584:40:00:0:1:1:1:A:3C", Linux/FreeBSD },
+      {"E000:0584:40:00:0:1:1:1:A:3C", "Linux/FreeBSD "},
 #line 423 "os.gperf"
-      {"16D0:_MSS:80:00:0:0:0:0:A:LT", HP Color LaserJet 4500N, Jet Direct J3113A/2100},
+      {"16D0:_MSS:80:00:0:0:0:0:A:LT", "HP Color LaserJet 4500N Jet Direct J3113A/2100"},
 #line 601 "os.gperf"
-      {"2220:_MSS:80:WS:0:0:1:0:A:LT", Windows NT / Win9x},
+      {"2220:_MSS:80:WS:0:0:1:0:A:LT", "Windows NT / Win9x"},
 #line 427 "os.gperf"
-      {"16D0:_MSS:80:WS:0:0:1:0:A:LT", Linux 2.4.7 (X86)},
+      {"16D0:_MSS:80:WS:0:0:1:0:A:LT", "Linux 2.4.7 (X86)"},
 #line 1057 "os.gperf"
-      {"61A8:_MSS:80:00:0:1:1:1:A:LT", Windows NT4 / Win95 / Win98},
+      {"61A8:_MSS:80:00:0:1:1:1:A:LT", "Windows NT4 / Win95 / Win98"},
 #line 426 "os.gperf"
-      {"16D0:_MSS:80:WS:0:0:0:0:A:LT", HP Color LaserJet 4500N, Jet Direct J3113A/2100},
+      {"16D0:_MSS:80:WS:0:0:0:0:A:LT", "HP Color LaserJet 4500N Jet Direct J3113A/2100"},
 #line 220 "os.gperf"
-      {"1000:_MSS:20:WS:0:0:0:0:S:28", Linux RedHat 9 (kernel 2.4.20)},
+      {"1000:_MSS:20:WS:0:0:0:0:S:28", "Linux RedHat 9 (kernel 2.4.20)"},
 #line 879 "os.gperf"
-      {"4000:_MSS:80:WS:0:0:0:0:S:28", Windows XP },
+      {"4000:_MSS:80:WS:0:0:0:0:S:28", "Windows XP "},
 #line 1056 "os.gperf"
-      {"61A8:_MSS:80:00:0:1:1:0:A:LT", Windows NT4 / Win95 / Win98},
+      {"61A8:_MSS:80:00:0:1:1:0:A:LT", "Windows NT4 / Win95 / Win98"},
 #line 1407 "os.gperf"
-      {"C210:0564:40:WS:1:1:1:0:A:30", Linux },
+      {"C210:0564:40:WS:1:1:1:0:A:30", "Linux "},
 #line 770 "os.gperf"
-      {"4000:0200:FF:WS:0:0:0:0:A:2C", Windows 2000},
+      {"4000:0200:FF:WS:0:0:0:0:A:2C", "Windows 2000"},
 #line 815 "os.gperf"
-      {"4000:05AC:80:WS:1:1:1:0:S:30", Windows 2000 / XP},
+      {"4000:05AC:80:WS:1:1:1:0:S:30", "Windows 2000 / XP"},
 #line 227 "os.gperf"
-      {"1000:_MSS:80:WS:0:0:0:0:A:28", Aironet AP4800E v8.07 11 Mbps wireless access poinit},
+      {"1000:_MSS:80:WS:0:0:0:0:A:28", "Aironet AP4800E v8.07 11 Mbps wireless access poinit"},
 #line 1048 "os.gperf"
-      {"60F4:_MSS:40:WS:0:0:1:0:A:LT", SCO OpenServer 5.0.5},
+      {"60F4:_MSS:40:WS:0:0:1:0:A:LT", "SCO OpenServer 5.0.5"},
 #line 239 "os.gperf"
-      {"1020:_MSS:FF:WS:0:0:1:0:A:LT", Cisco IOS},
+      {"1020:_MSS:FF:WS:0:0:1:0:A:LT", "Cisco IOS"},
 #line 1426 "os.gperf"
-      {"E000:05AC:40:00:0:1:1:1:A:3C", free BSD},
+      {"E000:05AC:40:00:0:1:1:1:A:3C", "free BSD"},
 #line 1052 "os.gperf"
-      {"60F4:_MSS:80:00:0:1:1:1:A:LT", NCR MP-RAS 3.01},
+      {"60F4:_MSS:80:00:0:1:1:1:A:LT", "NCR MP-RAS 3.01"},
 #line 1050 "os.gperf"
-      {"60F4:_MSS:80:00:0:1:0:1:A:LT", NCR MP-RAS SVR4 UNIX System Version 3},
+      {"60F4:_MSS:80:00:0:1:0:1:A:LT", "NCR MP-RAS SVR4 UNIX System Version 3"},
 #line 222 "os.gperf"
-      {"1000:_MSS:40:WS:0:0:0:0:S:28", SunOS 4.1.4},
+      {"1000:_MSS:40:WS:0:0:0:0:S:28", "SunOS 4.1.4"},
 #line 816 "os.gperf"
-      {"4000:05B0:80:WS:1:1:1:0:S:30", Window 2000 pro. SP2},
+      {"4000:05B0:80:WS:1:1:1:0:S:30", "Window 2000 pro. SP2"},
 #line 1051 "os.gperf"
-      {"60F4:_MSS:80:00:0:1:1:0:A:LT", NCR MP-RAS 3.01},
+      {"60F4:_MSS:80:00:0:1:1:0:A:LT", "NCR MP-RAS 3.01"},
 #line 1049 "os.gperf"
-      {"60F4:_MSS:80:00:0:1:0:0:A:LT", NCR MP-RAS SVR4 UNIX System Version 3},
+      {"60F4:_MSS:80:00:0:1:0:0:A:LT", "NCR MP-RAS SVR4 UNIX System Version 3"},
 #line 1427 "os.gperf"
-      {"E000:05AC:40:WS:0:0:1:0:A:2C", FreeBSD 4.7},
+      {"E000:05AC:40:WS:0:0:1:0:A:2C", "FreeBSD 4.7"},
 #line 1062 "os.gperf"
-      {"6270:0584:40:00:1:1:1:1:A:40", SunOS 5.8},
+      {"6270:0584:40:00:1:1:1:1:A:40", "SunOS 5.8"},
 #line 654 "os.gperf"
-      {"2238:_MSS:40:WS:0:0:1:0:A:LT", BSDI BSD/OS},
+      {"2238:_MSS:40:WS:0:0:1:0:A:LT", "BSDI BSD/OS"},
 #line 1053 "os.gperf"
-      {"60F4:_MSS:80:WS:0:0:0:0:A:LT", SCO UnixWare 7.0.0 or OpenServer 5.0.4-5},
+      {"60F4:_MSS:80:WS:0:0:0:0:A:LT", "SCO UnixWare 7.0.0 or OpenServer 5.0.4-5"},
 #line 1024 "os.gperf"
-      {"6030:0564:40:00:1:1:1:1:A:40", Solaris 8 },
+      {"6030:0564:40:00:1:1:1:1:A:40", "Solaris 8 "},
 #line 791 "os.gperf"
-      {"4000:0564:80:WS:1:1:1:0:S:30", Windows 2000 / Windows XP Sp2},
+      {"4000:0564:80:WS:1:1:1:0:S:30", "Windows 2000 / Windows XP Sp2"},
 #line 790 "os.gperf"
-      {"4000:0564:80:WS:1:1:0:0:S:30", Windows 2000},
+      {"4000:0564:80:WS:1:1:0:0:S:30", "Windows 2000"},
 #line 449 "os.gperf"
-      {"192F:_MSS:80:00:0:0:0:0:A:LT", Mac OS 7.0-7.1 With MacTCP 1.1.1 - 2.0.6},
+      {"192F:_MSS:80:00:0:0:0:0:A:LT", "Mac OS 7.0-7.1 With MacTCP 1.1.1 - 2.0.6"},
 #line 283 "os.gperf"
-      {"1680:_MSS:80:00:0:1:1:1:A:LT", Linux 2.4.7 (X86)},
+      {"1680:_MSS:80:00:0:1:1:1:A:LT", "Linux 2.4.7 (X86)"},
 #line 950 "os.gperf"
-      {"4410:05AC:40:WS:1:1:1:0:A:30", OpenBSD 3.0 },
+      {"4410:05AC:40:WS:1:1:1:0:A:30", "OpenBSD 3.0 "},
 #line 1429 "os.gperf"
-      {"E000:05B4:40:00:0:1:1:0:A:30", Free BSD 4.8-STABLE},
+      {"E000:05B4:40:00:0:1:1:0:A:30", "Free BSD 4.8-STABLE"},
 #line 1418 "os.gperf"
-      {"E000:0564:40:00:0:1:1:1:A:3C", BSD},
+      {"E000:0564:40:00:0:1:1:1:A:3C", "BSD"},
 #line 1471 "os.gperf"
-      {"F000:05B4:40:00:0:1:0:0:A:30", OSF1 5.1 732 alpha},
+      {"F000:05B4:40:00:0:1:0:0:A:30", "OSF1 5.1 732 alpha"},
 #line 1417 "os.gperf"
-      {"E000:0564:40:00:0:1:0:1:A:3C", FreeBSD 4.8},
+      {"E000:0564:40:00:0:1:0:1:A:3C", "FreeBSD 4.8"},
 #line 202 "os.gperf"
-      {"1000:0200:FF:WS:0:0:0:0:A:2C", Alcatel Speed Touch Home/Pro},
+      {"1000:0200:FF:WS:0:0:0:0:A:2C", "Alcatel Speed Touch Home/Pro"},
 #line 655 "os.gperf"
-      {"2238:_MSS:80:WS:0:0:0:0:A:LT", HP printer w/JetDirect card},
+      {"2238:_MSS:80:WS:0:0:0:0:A:LT", "HP printer w/JetDirect card"},
 #line 450 "os.gperf"
-      {"192F:_MSS:80:WS:0:0:0:0:A:LT", Mac OS 7.0-7.1 With MacTCP 1.1.1 - 2.0.6},
+      {"192F:_MSS:80:WS:0:0:0:0:A:LT", "Mac OS 7.0-7.1 With MacTCP 1.1.1 - 2.0.6"},
 #line 805 "os.gperf"
-      {"4000:058C:80:WS:1:1:1:0:S:30", Free BSD },
+      {"4000:058C:80:WS:1:1:1:0:S:30", "Free BSD "},
 #line 210 "os.gperf"
-      {"1000:05B0:80:00:0:1:0:0:S:30", VMS},
+      {"1000:05B0:80:00:0:1:0:0:S:30", "VMS"},
 #line 1419 "os.gperf"
-      {"E000:0564:40:WS:0:0:1:0:A:2C", Free BSD 4.7},
+      {"E000:0564:40:WS:0:0:1:0:A:2C", "Free BSD 4.7"},
 #line 881 "os.gperf"
-      {"4020:0564:40:00:0:1:0:1:A:3C", OpenBSD},
+      {"4020:0564:40:00:0:1:0:1:A:3C", "OpenBSD"},
 #line 840 "os.gperf"
-      {"4000:05B4:40:WS:1:1:0:0:A:30", Windows},
+      {"4000:05B4:40:WS:1:1:0:0:A:30", "Windows"},
 #line 762 "os.gperf"
-      {"4000:01F4:80:WS:1:1:0:0:A:30", Windows },
+      {"4000:01F4:80:WS:1:1:0:0:A:30", "Windows "},
 #line 1054 "os.gperf"
-      {"6108:0564:40:WS:1:1:0:0:A:30", Windows 95 / 98 },
+      {"6108:0564:40:WS:1:1:0:0:A:30", "Windows 95 / 98 "},
 #line 830 "os.gperf"
-      {"4000:05B4:40:00:1:1:1:1:A:40", OpenBSD 3.5 },
+      {"4000:05B4:40:00:1:1:1:1:A:40", "OpenBSD 3.5 "},
 #line 474 "os.gperf"
-      {"2000:020C:40:00:0:1:0:1:A:LT", OS/400},
+      {"2000:020C:40:00:0:1:0:1:A:LT", "OS/400"},
 #line 842 "os.gperf"
-      {"4000:05B4:80:00:0:1:1:1:A:LT", Linux Kernel 2.4.xx (X86)},
+      {"4000:05B4:80:00:0:1:1:1:A:LT", "Linux Kernel 2.4.xx (X86)"},
 #line 18 "os.gperf"
-      {"0200:0200:40:00:0:1:0:0:A:30", Linux },
+      {"0200:0200:40:00:0:1:0:0:A:30", "Linux "},
 #line 1478 "os.gperf"
-      {"F000:05B4:80:00:0:1:0:1:A:LT", IRIX 5.3},
+      {"F000:05B4:80:00:0:1:0:1:A:LT", "IRIX 5.3"},
 #line 1579 "os.gperf"
-      {"FD20:05A0:80:WS:1:1:1:0:A:30", Windows XP home },
+      {"FD20:05A0:80:WS:1:1:1:0:A:30", "Windows XP home "},
 #line 952 "os.gperf"
-      {"4410:05AC:80:WS:1:1:1:0:A:30", Windows 2000 Workstation / Windows 98 SE},
+      {"4410:05AC:80:WS:1:1:1:0:A:30", "Windows 2000 Workstation / Windows 98 SE"},
 #line 1393 "os.gperf"
-      {"C000:05B4:40:WS:1:1:1:0:A:30", Linux},
+      {"C000:05B4:40:WS:1:1:1:0:A:30", "Linux"},
 #line 1476 "os.gperf"
-      {"F000:05B4:80:00:0:1:0:0:A:LT", IRIX 5.3},
+      {"F000:05B4:80:00:0:1:0:0:A:LT", "IRIX 5.3"},
 #line 1578 "os.gperf"
-      {"FD20:05A0:80:00:1:1:1:1:A:40", Windows XP Home v2002 },
+      {"FD20:05A0:80:00:1:1:1:1:A:40", "Windows XP Home v2002 "},
 #line 951 "os.gperf"
-      {"4410:05AC:80:00:1:1:1:1:A:40", Windows 2003 },
+      {"4410:05AC:80:00:1:1:1:1:A:40", "Windows 2003 "},
 #line 1391 "os.gperf"
-      {"C000:05B4:40:00:1:1:1:1:A:40", IRIX64 6.5 IP27},
+      {"C000:05B4:40:00:1:1:1:1:A:40", "IRIX64 6.5 IP27"},
 #line 1561 "os.gperf"
-      {"FC00:0546:80:WS:1:1:1:0:S:30", Windows XP Pro },
+      {"FC00:0546:80:WS:1:1:1:0:S:30", "Windows XP Pro "},
 #line 1387 "os.gperf"
-      {"BB80:_MSS:80:WS:0:0:1:0:A:LT", Windows 98},
+      {"BB80:_MSS:80:WS:0:0:1:0:A:LT", "Windows 98"},
 #line 1063 "os.gperf"
-      {"6270:05AC:80:00:1:1:1:1:A:40", Solaris},
+      {"6270:05AC:80:00:1:1:1:1:A:40", "Solaris"},
 #line 1412 "os.gperf"
-      {"D600:05AC:80:02:1:1:1:1:S:40", Windows XP Professional},
+      {"D600:05AC:80:02:1:1:1:1:S:40", "Windows XP Professional"},
 #line 1395 "os.gperf"
-      {"C000:05B4:80:00:0:1:0:1:A:LT", IRIX 6.2 - 6.5},
+      {"C000:05B4:80:00:0:1:0:1:A:LT", "IRIX 6.2 - 6.5"},
 #line 1061 "os.gperf"
-      {"6270:0564:40:WS:1:1:1:0:A:30", Windows},
+      {"6270:0564:40:WS:1:1:1:0:A:30", "Windows"},
 #line 818 "os.gperf"
-      {"4000:05B4:20:WS:1:1:1:0:S:30", Windows},
+      {"4000:05B4:20:WS:1:1:1:0:S:30", "Windows"},
 #line 1394 "os.gperf"
-      {"C000:05B4:80:00:0:1:0:0:A:LT", IRIX 6.2 - 6.5},
+      {"C000:05B4:80:00:0:1:0:0:A:LT", "IRIX 6.2 - 6.5"},
 #line 1432 "os.gperf"
-      {"E000:05B4:40:00:0:1:1:1:S:LT", Free BSD 4.7-Stable},
+      {"E000:05B4:40:00:0:1:1:1:S:LT", "Free BSD 4.7-Stable"},
 #line 817 "os.gperf"
-      {"4000:05B4:01:WS:1:1:1:0:S:30", Windows 2003 },
+      {"4000:05B4:01:WS:1:1:1:0:S:30", "Windows 2003 "},
 #line 826 "os.gperf"
-      {"4000:05B4:40:00:0:1:1:0:S:LT", FreeBSD 2.2.8-RELEASE},
+      {"4000:05B4:40:00:0:1:1:0:S:LT", "FreeBSD 2.2.8-RELEASE"},
 #line 855 "os.gperf"
-      {"4000:05B4:80:WS:1:1:1:0:A:30", Windows XP},
+      {"4000:05B4:80:WS:1:1:1:0:A:30", "Windows XP"},
 #line 852 "os.gperf"
-      {"4000:05B4:80:WS:1:1:0:0:A:30", Windows Server 2003},
+      {"4000:05B4:80:WS:1:1:0:0:A:30", "Windows Server 2003"},
 #line 1472 "os.gperf"
-      {"F000:05B4:40:00:0:1:0:0:S:30", OSF1 5.1},
+      {"F000:05B4:40:00:0:1:0:0:S:30", "OSF1 5.1"},
 #line 845 "os.gperf"
-      {"4000:05B4:80:00:1:1:1:1:A:40", Windows 2000},
+      {"4000:05B4:80:00:1:1:1:1:A:40", "Windows 2000"},
 #line 843 "os.gperf"
-      {"4000:05B4:80:00:1:1:0:1:A:40", Windows Server 2003},
+      {"4000:05B4:80:00:1:1:0:1:A:40", "Windows Server 2003"},
 #line 1474 "os.gperf"
-      {"F000:05B4:40:WS:0:0:0:0:S:LT", IRIX 6.3},
+      {"F000:05B4:40:WS:0:0:0:0:S:LT", "IRIX 6.3"},
 #line 339 "os.gperf"
-      {"16D0:0546:40:WS:1:1:1:0:A:30", Linux 2.4.19},
+      {"16D0:0546:40:WS:1:1:1:0:A:30", "Linux 2.4.19"},
 #line 841 "os.gperf"
-      {"4000:05B4:40:WS:1:1:1:0:S:30", Windows 2000 sp3},
+      {"4000:05B4:40:WS:1:1:1:0:S:30", "Windows 2000 sp3"},
 #line 1475 "os.gperf"
-      {"F000:05B4:40:WS:1:1:0:0:S:LT", IRIX 6.5.10},
+      {"F000:05B4:40:WS:1:1:0:0:S:LT", "IRIX 6.5.10"},
 #line 831 "os.gperf"
-      {"4000:05B4:40:00:1:1:1:1:S:40", OpenBSD 3.0},
+      {"4000:05B4:40:00:1:1:1:1:S:40", "OpenBSD 3.0"},
 #line 829 "os.gperf"
-      {"4000:05B4:40:00:1:1:0:1:S:40", OpenBSD 3.2 },
+      {"4000:05B4:40:00:1:1:0:1:S:40", "OpenBSD 3.2 "},
 #line 1392 "os.gperf"
-      {"C000:05B4:40:WS:0:0:0:0:S:LT", Irix 6.5},
+      {"C000:05B4:40:WS:0:0:0:0:S:LT", "Irix 6.5"},
 #line 1580 "os.gperf"
-      {"FD20:05A0:80:WS:1:1:1:0:S:30", Windows XP Home v2002},
+      {"FD20:05A0:80:WS:1:1:1:0:S:30", "Windows XP Home v2002"},
 #line 17 "os.gperf"
-      {"0200:0000:40:WS:0:0:0:0:S:LT", Linux 2.0.35 - 2.0.37},
+      {"0200:0000:40:WS:0:0:0:0:S:LT", "Linux 2.0.35 - 2.0.37"},
 #line 806 "os.gperf"
-      {"4000:0596:80:WS:1:1:1:0:S:30", Linux Red Hat},
+      {"4000:0596:80:WS:1:1:1:0:S:30", "Linux Red Hat"},
 #line 1477 "os.gperf"
-      {"F000:05B4:80:00:0:1:0:0:S:30", DEC Cluster },
+      {"F000:05B4:80:00:0:1:0:0:S:30", "DEC Cluster "},
 #line 914 "os.gperf"
-      {"41A0:0584:40:00:1:1:1:1:A:40", Windos XP},
+      {"41A0:0584:40:00:1:1:1:1:A:40", "Windos XP"},
 #line 867 "os.gperf"
-      {"4000:62BB:80:WS:1:1:1:0:S:LT", Windows 2000},
+      {"4000:62BB:80:WS:1:1:1:0:S:LT", "Windows 2000"},
 #line 844 "os.gperf"
-      {"4000:05B4:80:00:1:1:1:0:S:30", Windows 2000},
+      {"4000:05B4:80:00:1:1:1:0:S:30", "Windows 2000"},
 #line 851 "os.gperf"
-      {"4000:05B4:80:WS:0:1:1:0:S:30", Windows XP },
+      {"4000:05B4:80:WS:0:1:1:0:S:30", "Windows XP "},
 #line 5 "os.gperf"
-      {"0000:_MSS:80:WS:0:0:0:0:A:LT", 3Com Access Builder 4000 7.2},
+      {"0000:_MSS:80:WS:0:0:0:0:A:LT", "3Com Access Builder 4000 7.2"},
 #line 858 "os.gperf"
-      {"4000:05B4:80:WS:1:1:1:0:S:LT", Windows XP / 2000 / ME},
+      {"4000:05B4:80:WS:1:1:1:0:S:LT", "Windows XP / 2000 / ME"},
 #line 854 "os.gperf"
-      {"4000:05B4:80:WS:1:1:0:0:S:LT", BeOS},
+      {"4000:05B4:80:WS:1:1:0:0:S:LT", "BeOS"},
 #line 34 "os.gperf"
-      {"0212:_MSS:80:00:0:1:1:1:A:LT", Solaris 2.6 - 2.7},
+      {"0212:_MSS:80:00:0:1:1:1:A:LT", "Solaris 2.6 - 2.7"},
 #line 856 "os.gperf"
-      {"4000:05B4:80:WS:1:1:1:0:S:30", Windows ME / 2000 / XP},
+      {"4000:05B4:80:WS:1:1:1:0:S:30", "Windows ME / 2000 / XP"},
 #line 949 "os.gperf"
-      {"4410:05AC:40:WS:0:0:1:0:A:2C", OpenBSD 3.0 },
+      {"4410:05AC:40:WS:0:0:1:0:A:2C", "OpenBSD 3.0 "},
 #line 853 "os.gperf"
-      {"4000:05B4:80:WS:1:1:0:0:S:30", Windows 2000},
+      {"4000:05B4:80:WS:1:1:0:0:S:30", "Windows 2000"},
 #line 276 "os.gperf"
-      {"1610:0584:40:00:1:1:1:1:S:3C", Linux 2.4.20},
+      {"1610:0584:40:00:1:1:1:1:S:3C", "Linux 2.4.20"},
 #line 921 "os.gperf"
-      {"4230:05B4:80:WS:1:1:1:0:A:30", Windows XP},
+      {"4230:05B4:80:WS:1:1:1:0:A:30", "Windows XP"},
 #line 33 "os.gperf"
-      {"0212:_MSS:80:00:0:1:1:0:A:LT", Solaris 2.6 - 2.7},
+      {"0212:_MSS:80:00:0:1:1:0:A:LT", "Solaris 2.6 - 2.7"},
 #line 15 "os.gperf"
-      {"0100:_MSS:80:WS:0:0:1:0:A:LT", Xyplex Network9000},
+      {"0100:_MSS:80:WS:0:0:1:0:A:LT", "Xyplex Network9000"},
 #line 846 "os.gperf"
-      {"4000:05B4:80:00:1:1:1:1:S:40", Windows 2000 Pro},
+      {"4000:05B4:80:00:1:1:1:1:S:40", "Windows 2000 Pro"},
 #line 14 "os.gperf"
-      {"0100:_MSS:80:WS:0:0:0:0:A:LT", Allied Telesyn AT-S10 version 3.0 on an AT-TS24TR hub},
+      {"0100:_MSS:80:WS:0:0:0:0:A:LT", "Allied Telesyn AT-S10 version 3.0 on an AT-TS24TR hub"},
 #line 30 "os.gperf"
-      {"0200:_MSS:80:00:0:1:0:1:A:LT", Bay Networks BLN-2 Network Router or ASN Processor rev 9},
+      {"0200:_MSS:80:00:0:1:0:1:A:LT", "Bay Networks BLN-2 Network Router or ASN Processor rev 9"},
 #line 32 "os.gperf"
-      {"0212:_MSS:80:00:0:0:0:0:A:LT", Linux 2.0.32-34},
+      {"0212:_MSS:80:00:0:0:0:0:A:LT", "Linux 2.0.32-34"},
 #line 29 "os.gperf"
-      {"0200:_MSS:80:00:0:1:0:0:A:LT", Bay Networks BLN-2 Network Router or ASN Processor rev 9},
+      {"0200:_MSS:80:00:0:1:0:0:A:LT", "Bay Networks BLN-2 Network Router or ASN Processor rev 9"},
 #line 40 "os.gperf"
-      {"0212:_MSS:80:WS:0:1:1:1:A:LT", NetBSD 1.4 / Generic mac68k (Quadra 610)},
+      {"0212:_MSS:80:WS:0:1:1:1:A:LT", "NetBSD 1.4 / Generic mac68k (Quadra 610)"},
 #line 38 "os.gperf"
-      {"0212:_MSS:80:WS:0:1:0:1:A:LT", NetBSD 1.4 running on a SPARC IPX},
+      {"0212:_MSS:80:WS:0:1:0:1:A:LT", "NetBSD 1.4 running on a SPARC IPX"},
 #line 28 "os.gperf"
-      {"0200:_MSS:80:00:0:0:0:0:A:LT", Linux 2.0.32-34},
+      {"0200:_MSS:80:00:0:0:0:0:A:LT", "Linux 2.0.32-34"},
 #line 39 "os.gperf"
-      {"0212:_MSS:80:WS:0:1:1:0:A:LT", NetBSD 1.4 / Generic mac68k (Quadra 610)},
+      {"0212:_MSS:80:WS:0:1:1:0:A:LT", "NetBSD 1.4 / Generic mac68k (Quadra 610)"},
 #line 827 "os.gperf"
-      {"4000:05B4:40:00:0:1:1:1:A:3C", NetBSD 1.6U},
+      {"4000:05B4:40:00:0:1:1:1:A:3C", "NetBSD 1.6U"},
 #line 1430 "os.gperf"
-      {"E000:05B4:40:00:0:1:1:1:A:3C", FreeBSD 4.7-PRERELEASE},
+      {"E000:05B4:40:00:0:1:1:1:A:3C", "FreeBSD 4.7-PRERELEASE"},
 #line 37 "os.gperf"
-      {"0212:_MSS:80:WS:0:1:0:0:A:LT", NetBSD 1.4 running on a SPARC IPX},
+      {"0212:_MSS:80:WS:0:1:0:0:A:LT", "NetBSD 1.4 running on a SPARC IPX"},
 #line 821 "os.gperf"
-      {"4000:05B4:40:00:0:1:0:1:A:3C", NetBSD 1.5.2 (GENERIC)},
+      {"4000:05B4:40:00:0:1:0:1:A:3C", "NetBSD 1.5.2 (GENERIC)"},
 #line 1428 "os.gperf"
-      {"E000:05B4:40:00:0:1:0:1:A:3C", FreeBSD 4.6-RELEASE-p1},
+      {"E000:05B4:40:00:0:1:0:1:A:3C", "FreeBSD 4.6-RELEASE-p1"},
 #line 36 "os.gperf"
-      {"0212:_MSS:80:WS:0:0:1:0:A:LT", Linux 2.2.5 - 2.2.13 SMP},
+      {"0212:_MSS:80:WS:0:0:1:0:A:LT", "Linux 2.2.5 - 2.2.13 SMP"},
 #line 35 "os.gperf"
-      {"0212:_MSS:80:WS:0:0:0:0:A:LT", CacheOS (CacheFlow 2000 proxy cache)},
+      {"0212:_MSS:80:WS:0:0:0:0:A:LT", "CacheOS (CacheFlow 2000 proxy cache)"},
 #line 838 "os.gperf"
-      {"4000:05B4:40:WS:0:0:1:0:A:2C", NetBSD},
+      {"4000:05B4:40:WS:0:0:1:0:A:2C", "NetBSD"},
 #line 1434 "os.gperf"
-      {"E000:05B4:40:WS:0:0:1:0:A:2C", FreeBSD 4.7},
+      {"E000:05B4:40:WS:0:0:1:0:A:2C", "FreeBSD 4.7"},
 #line 836 "os.gperf"
-      {"4000:05B4:40:WS:0:0:0:0:A:2C", NetBSD 1.3 - 1.33 / AIX 4.3.X},
+      {"4000:05B4:40:WS:0:0:0:0:A:2C", "NetBSD 1.3 - 1.33 / AIX 4.3.X"},
 #line 1433 "os.gperf"
-      {"E000:05B4:40:WS:0:0:0:0:A:2C", FreeBSD 4.6-RELEASE-p1},
+      {"E000:05B4:40:WS:0:0:0:0:A:2C", "FreeBSD 4.6-RELEASE-p1"},
 #line 31 "os.gperf"
-      {"0200:_MSS:80:WS:0:0:0:0:A:LT", 3COM / USR TotalSwitch Firmware: 02.02.00R},
+      {"0200:_MSS:80:WS:0:0:0:0:A:LT", "3COM / USR TotalSwitch Firmware: 02.02.00R"},
 #line 1473 "os.gperf"
-      {"F000:05B4:40:WS:0:0:0:0:A:2C", OSF1},
+      {"F000:05B4:40:WS:0:0:0:0:A:2C", "OSF1"},
 #line 197 "os.gperf"
-      {"1000:0004:FF:WS:0:0:0:0:A:2C", Cisco PIX},
+      {"1000:0004:FF:WS:0:0:0:0:A:2C", "Cisco PIX"},
 #line 1022 "os.gperf"
-      {"6028:05B4:40:00:1:1:1:1:A:40", Solaris 7 / 8},
+      {"6028:05B4:40:00:1:1:1:1:A:40", "Solaris 7 / 8"},
 #line 448 "os.gperf"
-      {"1920:05B4:40:WS:1:1:0:0:S:30", Windows 98},
+      {"1920:05B4:40:WS:1:1:0:0:S:30", "Windows 98"},
 #line 487 "os.gperf"
-      {"2000:0586:80:WS:1:1:1:0:S:30", Windows 9x or NT4},
+      {"2000:0586:80:WS:1:1:1:0:S:30", "Windows 9x or NT4"},
 #line 863 "os.gperf"
-      {"4000:0FB0:80:WS:1:1:1:0:S:LT", Windows 2000 Professional },
+      {"4000:0FB0:80:WS:1:1:1:0:S:LT", "Windows 2000 Professional "},
 #line 584 "os.gperf"
-      {"2180:_MSS:20:WS:0:0:1:0:A:LT", Windows NT / Win9x},
+      {"2180:_MSS:20:WS:0:0:1:0:A:LT", "Windows NT / Win9x"},
 #line 492 "os.gperf"
-      {"2000:05AC:40:00:0:1:0:0:A:30", OS 400},
+      {"2000:05AC:40:00:0:1:0:0:A:30", "OS 400"},
 #line 19 "os.gperf"
-      {"0200:0200:40:WS:0:0:0:0:A:2C", Ascend MAX 1800},
+      {"0200:0200:40:WS:0:0:0:0:A:2C", "Ascend MAX 1800"},
 #line 850 "os.gperf"
-      {"4000:05B4:80:WS:0:0:1:0:A:2C", Windows 2000},
+      {"4000:05B4:80:WS:0:0:1:0:A:2C", "Windows 2000"},
 #line 212 "os.gperf"
-      {"1000:05B4:20:WS:0:0:0:0:A:2C", StorageWorks SAN switch (FabricOS v2.1.7)},
+      {"1000:05B4:20:WS:0:0:0:0:A:2C", "StorageWorks SAN switch (FabricOS v2.1.7)"},
 #line 848 "os.gperf"
-      {"4000:05B4:80:WS:0:0:0:0:A:2C", Windows 2000 },
+      {"4000:05B4:80:WS:0:0:0:0:A:2C", "Windows 2000 "},
 #line 211 "os.gperf"
-      {"1000:05B4:10:WS:0:0:0:0:A:2C", Extreme Gigabit switch},
+      {"1000:05B4:10:WS:0:0:0:0:A:2C", "Extreme Gigabit switch"},
 #line 121 "os.gperf"
-      {"0600:_MSS:80:WS:0:0:0:0:A:LT", Chase IOLAN Terminal Server v3.5.02 CDi},
+      {"0600:_MSS:80:WS:0:0:0:0:A:LT", "Chase IOLAN Terminal Server v3.5.02 CDi"},
 #line 823 "os.gperf"
-      {"4000:05B4:40:00:0:1:1:0:S:2C", FreeBSD 2.2.8-RELEASE},
+      {"4000:05B4:40:00:0:1:1:0:S:2C", "FreeBSD 2.2.8-RELEASE"},
 #line 1403 "os.gperf"
-      {"C0D8:05AC:40:WS:1:1:1:0:A:30", Solaris 9},
+      {"C0D8:05AC:40:WS:1:1:1:0:A:30", "Solaris 9"},
 #line 819 "os.gperf"
-      {"4000:05B4:40:00:0:0:1:0:S:2C", FreeBSD 4.0-STABLE, 3.2-RELEASE},
+      {"4000:05B4:40:00:0:0:1:0:S:2C", "FreeBSD 4.0-STABLE 3.2-RELEASE"},
 #line 231 "os.gperf"
-      {"1020:022C:FF:00:0:0:0:0:S:LT", Cisco 1750 IOS 12.0(5), Cisco 2500 IOS 11.3(1)},
+      {"1020:022C:FF:00:0:0:0:0:S:LT", "Cisco 1750 IOS 12.0(5)/Cisco 2500 IOS 11.3(1)"},
 #line 1454 "os.gperf"
-      {"EBC0:05AC:40:02:0:1:0:0:S:30", Windows 2000},
+      {"EBC0:05AC:40:02:0:1:0:0:S:30", "Windows 2000"},
 #line 898 "os.gperf"
-      {"4074:01F4:40:00:0:1:0:1:A:3C", OpenBSD 3.2},
+      {"4074:01F4:40:00:0:1:0:1:A:3C", "OpenBSD 3.2"},
 #line 828 "os.gperf"
-      {"4000:05B4:40:00:0:1:1:1:S:3C", FreeBSD 4.4},
+      {"4000:05B4:40:00:0:1:1:1:S:3C", "FreeBSD 4.4"},
 #line 1431 "os.gperf"
-      {"E000:05B4:40:00:0:1:1:1:S:3C", FreeBSD 4.6-RELEASE},
+      {"E000:05B4:40:00:0:1:1:1:S:3C", "FreeBSD 4.6-RELEASE"},
 #line 480 "os.gperf"
-      {"2000:0534:80:WS:1:1:1:0:S:30", Windows 98},
+      {"2000:0534:80:WS:1:1:1:0:S:30", "Windows 98"},
 #line 822 "os.gperf"
-      {"4000:05B4:40:00:0:1:0:1:S:3C", NetBSD 1.5 (x86)},
+      {"4000:05B4:40:00:0:1:0:1:S:3C", "NetBSD 1.5 (x86)"},
 #line 1562 "os.gperf"
-      {"FC00:0564:80:WS:1:1:1:0:A:30", Cisco PIX FireWall},
+      {"FC00:0564:80:WS:1:1:1:0:A:30", "Cisco PIX FireWall"},
 #line 1398 "os.gperf"
-      {"C050:05B4:40:00:1:1:1:1:A:40", SunOS 5.9 (sun4u)},
+      {"C050:05B4:40:00:1:1:1:1:A:40", "SunOS 5.9 (sun4u)"},
 #line 824 "os.gperf"
-      {"4000:05B4:40:00:0:1:1:0:S:3C", Linux 2.4.2 - 2.4.14},
+      {"4000:05B4:40:00:0:1:1:0:S:3C", "Linux 2.4.2 - 2.4.14"},
 #line 820 "os.gperf"
-      {"4000:05B4:40:00:0:1:0:0:S:3C", NetBSD 1.3/i386},
+      {"4000:05B4:40:00:0:1:0:0:S:3C", "NetBSD 1.3/i386"},
 #line 839 "os.gperf"
-      {"4000:05B4:40:WS:0:0:1:0:S:2C", FreeBSD 4.2 - 4.3},
+      {"4000:05B4:40:WS:0:0:1:0:S:2C", "FreeBSD 4.2 - 4.3"},
 #line 1435 "os.gperf"
-      {"E000:05B4:40:WS:0:0:1:0:S:2C", FreeBSD},
+      {"E000:05B4:40:WS:0:0:1:0:S:2C", "FreeBSD"},
 #line 837 "os.gperf"
-      {"4000:05B4:40:WS:0:0:0:0:S:2C", AIX 4.3 - 4.3.3},
+      {"4000:05B4:40:WS:0:0:0:0:S:2C", "AIX 4.3 - 4.3.3"},
 #line 352 "os.gperf"
-      {"16D0:0584:40:WS:1:1:1:0:A:30", Linux 2.4.17},
+      {"16D0:0584:40:WS:1:1:1:0:A:30", "Linux 2.4.17"},
 #line 585 "os.gperf"
-      {"2180:_MSS:40:WS:0:0:1:0:A:LT", BSDI BSD/OS},
+      {"2180:_MSS:40:WS:0:0:1:0:A:LT", "BSDI BSD/OS"},
 #line 1390 "os.gperf"
-      {"C000:05B4:40:00:0:0:0:0:S:2C", IRIX 6.5 / 6.4},
+      {"C000:05B4:40:00:0:0:0:0:S:2C", "IRIX 6.5 / 6.4"},
 #line 214 "os.gperf"
-      {"1000:05B4:40:WS:0:0:0:0:A:2C", iPath Cable Media Access Hub},
+      {"1000:05B4:40:WS:0:0:0:0:A:2C", "iPath Cable Media Access Hub"},
 #line 955 "os.gperf"
-      {"4410:05B4:80:WS:1:1:1:0:A:30", Windows 2000},
+      {"4410:05B4:80:WS:1:1:1:0:A:30", "Windows 2000"},
 #line 954 "os.gperf"
-      {"4410:05B4:80:00:1:1:1:1:A:40", Windows 2000},
+      {"4410:05B4:80:00:1:1:1:1:A:40", "Windows 2000"},
 #line 1436 "os.gperf"
-      {"E000:05B4:80:00:0:1:1:1:S:3C", FreeBSD 4.6-RC2},
+      {"E000:05B4:80:00:0:1:1:1:S:3C", "FreeBSD 4.6-RC2"},
 #line 965 "os.gperf"
-      {"4470:05B4:40:00:1:1:0:0:A:LT", Windows 2000},
+      {"4470:05B4:40:00:1:1:0:0:A:LT", "Windows 2000"},
 #line 1031 "os.gperf"
-      {"60DA:0584:40:00:0:1:1:1:A:3C", Solaris 8},
+      {"60DA:0584:40:00:0:1:1:1:A:3C", "Solaris 8"},
 #line 970 "os.gperf"
-      {"4470:05B4:40:WS:0:0:0:0:A:LT", FreeBSD NFR Network Flight Recorder},
+      {"4470:05B4:40:WS:0:0:0:0:A:LT", "FreeBSD NFR Network Flight Recorder"},
 #line 1592 "os.gperf"
-      {"FEFA:_MSS:80:00:0:1:0:1:A:LT", AIX v4.2},
+      {"FEFA:_MSS:80:00:0:1:0:1:A:LT", "AIX v4.2"},
 #line 1366 "os.gperf"
-      {"B270:05B4:80:WS:1:1:1:0:S:LT", Windows ME},
+      {"B270:05B4:80:WS:1:1:1:0:S:LT", "Windows ME"},
 #line 849 "os.gperf"
-      {"4000:05B4:80:WS:0:0:0:0:S:2C", Windows Longhorn},
+      {"4000:05B4:80:WS:0:0:0:0:S:2C", "Windows Longhorn"},
 #line 454 "os.gperf"
-      {"1C84:_MSS:80:WS:0:0:0:0:A:LT", Instant Internet box},
+      {"1C84:_MSS:80:WS:0:0:0:0:A:LT", "Instant Internet box"},
 #line 644 "os.gperf"
-      {"2238:1144:80:WS:0:0:1:0:A:2C", Windows NT 4.0},
+      {"2238:1144:80:WS:0:0:1:0:A:2C", "Windows NT 4.0"},
 #line 1591 "os.gperf"
-      {"FEFA:_MSS:80:00:0:1:0:0:A:LT", AIX v4.2},
+      {"FEFA:_MSS:80:00:0:1:0:0:A:LT", "AIX v4.2"},
 #line 973 "os.gperf"
-      {"4470:05B4:40:WS:1:1:1:0:A:30", OpenBSD 3.0 - 3.1},
+      {"4470:05B4:40:WS:1:1:1:0:A:30", "OpenBSD 3.0 - 3.1"},
 #line 363 "os.gperf"
-      {"16D0:05AC:40:WS:1:1:1:0:A:30", Linux 2.4.18-3 (IServ/RedHat)},
+      {"16D0:05AC:40:WS:1:1:1:0:A:30", "Linux 2.4.18-3 (IServ/RedHat)"},
 #line 972 "os.gperf"
-      {"4470:05B4:40:WS:1:1:0:0:A:30", OpenBSD 2.8},
+      {"4470:05B4:40:WS:1:1:0:0:A:30", "OpenBSD 2.8"},
 #line 362 "os.gperf"
-      {"16D0:05AC:40:WS:1:1:0:0:A:30", Windows .NET },
+      {"16D0:05AC:40:WS:1:1:0:0:A:30", "Windows .NET "},
 #line 70 "os.gperf"
-      {"0400:_MSS:80:00:0:1:0:1:A:LT", Bay Networks BLN-2 Network Router or ASN Processor rev 9},
+      {"0400:_MSS:80:00:0:1:0:1:A:LT", "Bay Networks BLN-2 Network Router or ASN Processor rev 9"},
 #line 969 "os.gperf"
-      {"4470:05B4:40:00:1:1:1:1:A:40", Windows NT},
+      {"4470:05B4:40:00:1:1:1:1:A:40", "Windows NT"},
 #line 966 "os.gperf"
-      {"4470:05B4:40:00:1:1:0:1:A:40", Windows NT},
+      {"4470:05B4:40:00:1:1:0:1:A:40", "Windows NT"},
 #line 69 "os.gperf"
-      {"0400:_MSS:80:00:0:1:0:0:A:LT", Bay Networks BLN-2 Network Router or ASN Processor rev 9},
+      {"0400:_MSS:80:00:0:1:0:0:A:LT", "Bay Networks BLN-2 Network Router or ASN Processor rev 9"},
 #line 974 "os.gperf"
-      {"4470:05B4:80:00:0:1:1:0:A:LT", Windows 2000},
+      {"4470:05B4:80:00:0:1:1:0:A:LT", "Windows 2000"},
 #line 857 "os.gperf"
-      {"4000:05B4:80:WS:1:1:1:0:S:3C", Linux RedHat 7.2 (kernel 2.4.9)},
+      {"4000:05B4:80:WS:1:1:1:0:S:3C", "Linux RedHat 7.2 (kernel 2.4.9)"},
 #line 602 "os.gperf"
-      {"2229:_MSS:80:00:0:0:1:0:A:LT", Solaris 2.5, 2.5.1},
+      {"2229:_MSS:80:00:0:0:1:0:A:LT", "Solaris 2.5 2.5.1"},
 #line 120 "os.gperf"
-      {"0600:0300:20:WS:0:0:0:0:S:2C", Chase IOLAN Terminal Server v3.3.09 - TCP },
+      {"0600:0300:20:WS:0:0:0:0:S:2C", "Chase IOLAN Terminal Server v3.3.09 - TCP "},
 #line 294 "os.gperf"
-      {"16A0:0586:40:00:1:1:1:1:A:3C", Linux},
+      {"16A0:0586:40:00:1:1:1:1:A:3C", "Linux"},
 #line 977 "os.gperf"
-      {"4470:05B4:80:00:1:1:0:1:A:LT", Windows 2000 Professional},
+      {"4470:05B4:80:00:1:1:0:1:A:LT", "Windows 2000 Professional"},
 #line 1021 "os.gperf"
-      {"6028:05B4:40:00:0:1:1:1:A:3C", Solaris 8},
+      {"6028:05B4:40:00:0:1:1:1:A:3C", "Solaris 8"},
 #line 72 "os.gperf"
-      {"0400:_MSS:80:WS:0:0:1:0:A:LT", Aironet 630-2400 V3.3P Wireless LAN bridge},
+      {"0400:_MSS:80:WS:0:0:1:0:A:LT", "Aironet 630-2400 V3.3P Wireless LAN bridge"},
 #line 343 "os.gperf"
-      {"16D0:0564:40:00:0:1:1:0:A:30", Phlak 0.2 },
+      {"16D0:0564:40:00:0:1:1:0:A:30", "Phlak 0.2 "},
 #line 71 "os.gperf"
-      {"0400:_MSS:80:WS:0:0:0:0:A:LT", 3com Office Connect Router 810},
+      {"0400:_MSS:80:WS:0:0:0:0:A:LT", "3com Office Connect Router 810"},
 #line 604 "os.gperf"
-      {"2229:_MSS:80:WS:0:0:1:0:A:LT", Solaris 2.3 - 2.4},
+      {"2229:_MSS:80:WS:0:0:1:0:A:LT", "Solaris 2.3 - 2.4"},
 #line 603 "os.gperf"
-      {"2229:_MSS:80:WS:0:0:0:0:A:LT", DG/UX Release R4.11MU02},
+      {"2229:_MSS:80:WS:0:0:0:0:A:LT", "DG/UX Release R4.11MU02"},
 #line 215 "os.gperf"
-      {"1000:05B4:40:WS:0:0:0:0:S:2C", Solaris},
+      {"1000:05B4:40:WS:0:0:0:0:S:2C", "Solaris"},
 #line 847 "os.gperf"
-      {"4000:05B4:80:4B:1:1:1:0:S:30", Windows ME},
+      {"4000:05B4:80:4B:1:1:1:0:S:30", "Windows ME"},
 #line 232 "os.gperf"
-      {"1020:022C:FF:WS:0:0:0:0:A:2C", Cisco IOS 12.0(5)},
+      {"1020:022C:FF:WS:0:0:0:0:A:2C", "Cisco IOS 12.0(5)"},
 #line 1065 "os.gperf"
-      {"6270:05B4:80:WS:1:1:1:0:S:30", Windows XP},
+      {"6270:05B4:80:WS:1:1:1:0:S:30", "Windows XP"},
 #line 486 "os.gperf"
-      {"2000:0584:40:WS:0:0:0:0:A:2C", Linux (debian 2.0)},
+      {"2000:0584:40:WS:0:0:0:0:A:2C", "Linux (debian 2.0)"},
 #line 983 "os.gperf"
-      {"4470:05B4:80:WS:1:1:1:0:A:30", Windows 2000 Server / XP Pro / NT 4.0 server},
+      {"4470:05B4:80:WS:1:1:1:0:A:30", "Windows 2000 Server / XP Pro / NT 4.0 server"},
 #line 982 "os.gperf"
-      {"4470:05B4:80:WS:1:1:0:0:A:30", Windows 2000 pro},
+      {"4470:05B4:80:WS:1:1:0:0:A:30", "Windows 2000 pro"},
 #line 979 "os.gperf"
-      {"4470:05B4:80:00:1:1:1:1:A:40", Windows 2000 Pro / XP Pro / 2003 Server},
+      {"4470:05B4:80:00:1:1:1:1:A:40", "Windows 2000 Pro / XP Pro / 2003 Server"},
 #line 976 "os.gperf"
-      {"4470:05B4:80:00:1:1:0:1:A:40", Linux 2.2.14 - 2.2.20},
+      {"4470:05B4:80:00:1:1:0:1:A:40", "Linux 2.2.14 - 2.2.20"},
 #line 347 "os.gperf"
-      {"16D0:0564:40:WS:1:1:1:0:A:30", Linux 2.4.19},
+      {"16D0:0564:40:WS:1:1:1:0:A:30", "Linux 2.4.19"},
 #line 596 "os.gperf"
-      {"2208:05AC:40:WS:1:1:1:0:A:30", Linux },
+      {"2208:05AC:40:WS:1:1:1:0:A:30", "Linux "},
 #line 245 "os.gperf"
-      {"10C0:05B4:40:00:1:1:1:1:S:40", Windows XP},
+      {"10C0:05B4:40:00:1:1:1:1:S:40", "Windows XP"},
 #line 496 "os.gperf"
-      {"2000:05AC:80:WS:1:1:1:0:S:30", Windows 98 SE},
+      {"2000:05AC:80:WS:1:1:1:0:S:30", "Windows 98 SE"},
 #line 499 "os.gperf"
-      {"2000:05B0:80:00:1:1:1:1:S:LT", Windows 95},
+      {"2000:05B0:80:00:1:1:1:1:S:LT", "Windows 95"},
 #line 599 "os.gperf"
-      {"2220:05B0:80:WS:1:1:1:0:A:30", Windows NT},
+      {"2220:05B0:80:WS:1:1:1:0:A:30", "Windows NT"},
 #line 75 "os.gperf"
-      {"0430:_MSS:80:WS:0:0:0:0:A:LT", PacketShaper 4000 v4.1.3b2 2000-04-05},
+      {"0430:_MSS:80:WS:0:0:0:0:A:LT", "PacketShaper 4000 v4.1.3b2 2000-04-05"},
 #line 1397 "os.gperf"
-      {"C050:05B4:40:00:0:1:1:1:A:3C", Solaris 9 SPARC ULTRA 10},
+      {"C050:05B4:40:00:0:1:1:1:A:3C", "Solaris 9 SPARC ULTRA 10"},
 #line 703 "os.gperf"
-      {"2D24:_MSS:80:00:0:1:1:1:A:LT", Linux Kernel 2.4.xx (X86)},
+      {"2D24:_MSS:80:00:0:1:1:1:A:LT", "Linux Kernel 2.4.xx (X86)"},
 #line 74 "os.gperf"
-      {"0424:_MSS:80:WS:0:0:0:0:A:LT", Intel InBusiness Print Station},
+      {"0424:_MSS:80:WS:0:0:0:0:A:LT", "Intel InBusiness Print Station"},
 #line 1070 "os.gperf"
-      {"6978:05B4:80:WS:1:1:1:0:S:30", Windows XP},
+      {"6978:05B4:80:WS:1:1:1:0:S:30", "Windows XP"},
 #line 611 "os.gperf"
-      {"2238:0584:80:WS:0:0:1:0:A:30", Linux Red Hat},
+      {"2238:0584:80:WS:0:0:1:0:A:30", "Linux Red Hat"},
 #line 1468 "os.gperf"
-      {"EF2A:_MSS:80:00:0:1:0:1:A:LT", IRIX 5.2},
+      {"EF2A:_MSS:80:00:0:1:0:1:A:LT", "IRIX 5.2"},
 #line 501 "os.gperf"
-      {"2000:05B0:80:WS:1:1:1:0:S:30", Windows NT SP3},
+      {"2000:05B0:80:WS:1:1:1:0:S:30", "Windows NT SP3"},
 #line 126 "os.gperf"
-      {"06C2:_MSS:80:WS:0:0:0:0:A:LT", Cyclades PathRAS Remote Access Server v1.1.8 - 1.3.12},
+      {"06C2:_MSS:80:WS:0:0:0:0:A:LT", "Cyclades PathRAS Remote Access Server v1.1.8 - 1.3.12"},
 #line 494 "os.gperf"
-      {"2000:05AC:40:WS:0:0:1:0:A:2C", AS400 },
+      {"2000:05AC:40:WS:0:0:1:0:A:2C", "AS400 "},
 #line 1467 "os.gperf"
-      {"EF2A:_MSS:80:00:0:1:0:0:A:LT", IRIX 5.2},
+      {"EF2A:_MSS:80:00:0:1:0:0:A:LT", "IRIX 5.2"},
 #line 493 "os.gperf"
-      {"2000:05AC:40:WS:0:0:0:0:A:2C", Windows},
+      {"2000:05AC:40:WS:0:0:0:0:A:2C", "Windows"},
 #line 498 "os.gperf"
-      {"2000:05B0:80:00:1:1:1:0:S:40", Linux 2.2.13},
+      {"2000:05B0:80:00:1:1:1:0:S:40", "Linux 2.2.13"},
 #line 351 "os.gperf"
-      {"16D0:0584:40:WS:0:0:1:0:A:2C", Linux 2.4.18 },
+      {"16D0:0584:40:WS:0:0:1:0:A:2C", "Linux 2.4.18 "},
 #line 246 "os.gperf"
-      {"10C0:05B4:80:WS:1:1:1:0:S:30", Windows NT SP3},
+      {"10C0:05B4:80:WS:1:1:1:0:S:30", "Windows NT SP3"},
 #line 204 "os.gperf"
-      {"1000:0400:1E:WS:0:0:0:0:S:LT", Chorus MiX V.3.2 r4.1.5 COMP-386},
+      {"1000:0400:1E:WS:0:0:0:0:S:LT", "Chorus MiX V.3.2 r4.1.5 COMP-386"},
 #line 1570 "os.gperf"
-      {"FC00:05B4:80:WS:1:1:1:0:A:30", Windows X},
+      {"FC00:05B4:80:WS:1:1:1:0:A:30", "Windows X"},
 #line 1568 "os.gperf"
-      {"FC00:05B4:80:00:1:1:1:1:A:40", Windows 2000 - XP},
+      {"FC00:05B4:80:00:1:1:1:1:A:40", "Windows 2000 - XP"},
 #line 1566 "os.gperf"
-      {"FC00:05B4:80:00:1:1:0:1:A:40", Windows 2000 Running IIS Version 5},
+      {"FC00:05B4:80:00:1:1:0:1:A:40", "Windows 2000 Running IIS Version 5"},
 #line 51 "os.gperf"
-      {"0400:0109:40:10:0:1:0:1:S:3C", Linux},
+      {"0400:0109:40:10:0:1:0:1:S:3C", "Linux"},
 #line 218 "os.gperf"
-      {"1000:AC05:40:WS:0:0:0:0:A:2C", HP Procurve Switch},
+      {"1000:AC05:40:WS:0:0:0:0:A:2C", "HP Procurve Switch"},
 #line 484 "os.gperf"
-      {"2000:0564:80:WS:1:1:1:0:S:30", Windows 98},
+      {"2000:0564:80:WS:1:1:1:0:S:30", "Windows 98"},
 #line 985 "os.gperf"
-      {"4470:05B4:80:WS:1:1:1:0:S:30", Windows Server 2003 Enterprise Edition},
+      {"4470:05B4:80:WS:1:1:1:0:S:30", "Windows Server 2003 Enterprise Edition"},
 #line 980 "os.gperf"
-      {"4470:05B4:80:00:1:1:1:1:S:40", HP Printer},
+      {"4470:05B4:80:00:1:1:1:1:S:40", "HP Printer"},
 #line 293 "os.gperf"
-      {"16A0:0584:40:00:1:1:1:1:A:3C", Linux },
+      {"16A0:0584:40:00:1:1:1:1:A:3C", "Linux "},
 #line 774 "os.gperf"
-      {"4000:0400:40:00:0:1:0:1:A:3C", IPSO 3.7},
+      {"4000:0400:40:00:0:1:0:1:A:3C", "IPSO 3.7"},
 #line 1556 "os.gperf"
-      {"FB04:0594:80:WS:1:1:1:0:S:30", Windows XP},
+      {"FB04:0594:80:WS:1:1:1:0:S:30", "Windows XP"},
 #line 507 "os.gperf"
-      {"2000:05B4:40:00:0:1:0:0:A:30", SMC Barricade Wireless router},
+      {"2000:05B4:40:00:0:1:0:0:A:30", "SMC Barricade Wireless router"},
 #line 926 "os.gperf"
-      {"4240:_MSS:80:00:0:0:1:0:A:LT", MacOS 8.1},
+      {"4240:_MSS:80:00:0:0:1:0:A:LT", "MacOS 8.1"},
 #line 1028 "os.gperf"
-      {"6050:05B4:40:WS:0:0:1:0:A:2C", Solaris 9},
+      {"6050:05B4:40:WS:0:0:1:0:A:2C", "Solaris 9"},
 #line 964 "os.gperf"
-      {"4470:05B4:40:00:0:1:1:1:A:3C", WINDOWS 2000},
+      {"4470:05B4:40:00:0:1:1:1:A:3C", "WINDOWS 2000"},
 #line 963 "os.gperf"
-      {"4470:05B4:40:00:0:1:0:1:A:3C", Windows 2000},
+      {"4470:05B4:40:00:0:1:0:1:A:3C", "Windows 2000"},
 #line 775 "os.gperf"
-      {"4000:0400:40:WS:0:0:0:0:A:2C", Xerox 440 Document center},
+      {"4000:0400:40:WS:0:0:0:0:A:2C", "Xerox 440 Document center"},
 #line 296 "os.gperf"
-      {"16A0:05AC:20:00:1:1:1:1:A:3C", Linux},
+      {"16A0:05AC:20:00:1:1:1:1:A:3C", "Linux"},
 #line 1459 "os.gperf"
-      {"EBC0:05B4:40:WS:1:1:1:0:S:30", Windown XP},
+      {"EBC0:05B4:40:WS:1:1:1:0:S:30", "Windown XP"},
 #line 353 "os.gperf"
-      {"16D0:0584:80:WS:0:0:1:0:A:2C", RedHat Linux},
+      {"16D0:0584:80:WS:0:0:1:0:A:2C", "RedHat Linux"},
 #line 483 "os.gperf"
-      {"2000:0564:40:WS:0:0:0:0:A:2C", Linux},
+      {"2000:0564:40:WS:0:0:0:0:A:2C", "Linux"},
 #line 971 "os.gperf"
-      {"4470:05B4:40:WS:0:0:1:0:A:2C", FreeBSD 4.2 / FreeBSD 3.4-STABLE},
+      {"4470:05B4:40:WS:0:0:1:0:A:2C", "FreeBSD 4.2 / FreeBSD 3.4-STABLE"},
 #line 361 "os.gperf"
-      {"16D0:05AC:40:WS:0:0:1:0:A:2C", Linux 2.4.xx },
+      {"16D0:05AC:40:WS:0:0:1:0:A:2C", "Linux 2.4.xx "},
 #line 497 "os.gperf"
-      {"2000:05B0:20:WS:0:0:1:0:S:2C", Windows 95},
+      {"2000:05B0:20:WS:0:0:1:0:S:2C", "Windows 95"},
 #line 968 "os.gperf"
-      {"4470:05B4:40:00:1:1:1:1:A:3C", Linux},
+      {"4470:05B4:40:00:1:1:1:1:A:3C", "Linux"},
 #line 834 "os.gperf"
-      {"4000:05B4:40:62:0:0:1:0:S:2C", FreeBSD 4.0-STABLE, 3.2-RELEASE},
+      {"4000:05B4:40:62:0:0:1:0:S:2C", "FreeBSD 4.0-STABLE 3.2-RELEASE"},
 #line 673 "os.gperf"
-      {"2400:_MSS:FF:WS:0:0:1:0:A:LT", Solaris 2.6 - 2.7},
+      {"2400:_MSS:FF:WS:0:0:1:0:A:LT", "Solaris 2.6 - 2.7"},
 #line 1456 "os.gperf"
-      {"EBC0:05B4:40:02:1:1:0:0:S:LT", Windows ME},
+      {"EBC0:05B4:40:02:1:1:0:0:S:LT", "Windows ME"},
 #line 500 "os.gperf"
-      {"2000:05B0:80:WS:0:0:0:0:A:2C", D-Link DI 614v2.2},
+      {"2000:05B0:80:WS:0:0:0:0:A:2C", "D-Link DI 614v2.2"},
 #line 183 "os.gperf"
-      {"0C00:_MSS:80:WS:0:0:0:0:A:LT", Canon photocopier/fax/scanner/printer GP30F},
+      {"0C00:_MSS:80:WS:0:0:0:0:A:LT", "Canon photocopier/fax/scanner/printer GP30F"},
 #line 297 "os.gperf"
-      {"16A0:05AC:40:00:0:1:1:1:A:3C", Linux 2.4.20 RedHat 9 },
+      {"16A0:05AC:40:00:0:1:1:1:A:3C", "Linux 2.4.20 RedHat 9 "},
 #line 349 "os.gperf"
-      {"16D0:0584:40:00:1:1:1:1:S:3C", Linux 2.4.8},
+      {"16D0:0584:40:00:1:1:1:1:S:3C", "Linux 2.4.8"},
 #line 1571 "os.gperf"
-      {"FC00:05B4:80:WS:1:1:1:0:S:30", Windows 2000 Pro},
+      {"FC00:05B4:80:WS:1:1:1:0:S:30", "Windows 2000 Pro"},
 #line 574 "os.gperf"
-      {"2118:0584:80:WS:0:0:0:0:A:2C", Checkpoint FW-1 4.1 on Solaris 2.6 },
+      {"2118:0584:80:WS:0:0:0:0:A:2C", "Checkpoint FW-1 4.1 on Solaris 2.6 "},
 #line 860 "os.gperf"
-      {"4000:05B4:FF:WS:0:0:0:0:A:LT", Cisco Systems IOS 11.3},
+      {"4000:05B4:FF:WS:0:0:0:0:A:LT", "Cisco Systems IOS 11.3"},
 #line 299 "os.gperf"
-      {"16A0:05AC:40:00:1:1:1:1:A:3C", Linux 2.4.18-686 (Debia GNU/Linux)},
+      {"16A0:05AC:40:00:1:1:1:1:A:3C", "Linux 2.4.18-686 (Debia GNU/Linux)"},
 #line 298 "os.gperf"
-      {"16A0:05AC:40:00:1:1:0:1:A:3C", Linux},
+      {"16A0:05AC:40:00:1:1:0:1:A:3C", "Linux"},
 #line 975 "os.gperf"
-      {"4470:05B4:80:00:0:1:1:1:A:3C", Windows NT4 / Win95 / Win98},
+      {"4470:05B4:80:00:0:1:1:1:A:3C", "Windows NT4 / Win95 / Win98"},
 #line 206 "os.gperf"
-      {"1000:0400:20:WS:0:0:0:0:A:2C", Alcatel LSS 210-Stack Version 3.4.8},
+      {"1000:0400:20:WS:0:0:0:0:A:2C", "Alcatel LSS 210-Stack Version 3.4.8"},
 #line 1458 "os.gperf"
-      {"EBC0:05B4:40:02:1:1:1:1:S:40", Windows XP},
+      {"EBC0:05B4:40:02:1:1:1:1:S:40", "Windows XP"},
 #line 364 "os.gperf"
-      {"16D0:05B4:01:WS:1:1:1:0:A:30", Linux},
+      {"16D0:05B4:01:WS:1:1:1:0:A:30", "Linux"},
 #line 1462 "os.gperf"
-      {"EBC0:05B4:80:WS:1:1:1:0:S:30", Windows ME},
+      {"EBC0:05B4:80:WS:1:1:1:0:S:30", "Windows ME"},
 #line 608 "os.gperf"
-      {"2238:0564:80:WS:0:0:1:0:A:30", Solaris 2.7},
+      {"2238:0564:80:WS:0:0:1:0:A:30", "Solaris 2.7"},
 #line 369 "os.gperf"
-      {"16D0:05B4:40:00:0:1:1:0:A:30", Linux Slackware 8 - kernel 2.4.17},
+      {"16D0:05B4:40:00:0:1:1:0:A:30", "Linux Slackware 8 - kernel 2.4.17"},
 #line 182 "os.gperf"
-      {"0C00:_MSS:40:WS:0:0:0:0:S:LT", Linux Slakware 8.0},
+      {"0C00:_MSS:40:WS:0:0:0:0:S:LT", "Linux Slakware 8.0"},
 #line 505 "os.gperf"
-      {"2000:05B4:20:WS:1:1:0:0:S:LT", Slackware Linux 7.1 Kernel 2.2.16},
+      {"2000:05B4:20:WS:1:1:0:0:S:LT", "Slackware Linux 7.1 Kernel 2.2.16"},
 #line 367 "os.gperf"
-      {"16D0:05B4:40:00:0:1:0:0:A:30", Slackware 2.4.17},
+      {"16D0:05B4:40:00:0:1:0:0:A:30", "Slackware 2.4.17"},
 #line 506 "os.gperf"
-      {"2000:05B4:20:WS:1:1:1:0:S:30", Windows 98},
+      {"2000:05B4:20:WS:1:1:1:0:S:30", "Windows 98"},
 #line 981 "os.gperf"
-      {"4470:05B4:80:WS:0:0:1:0:A:2C", Windows 2000},
+      {"4470:05B4:80:WS:0:0:1:0:A:2C", "Windows 2000"},
 #line 509 "os.gperf"
-      {"2000:05B4:40:00:0:1:1:0:S:LT", BSDI BSD/OS 3.1},
+      {"2000:05B4:40:00:0:1:1:0:S:LT", "BSDI BSD/OS 3.1"},
 #line 502 "os.gperf"
-      {"2000:05B4:08:WS:1:1:0:0:S:30", Windows 2000 },
+      {"2000:05B4:08:WS:1:1:0:0:S:30", "Windows 2000 "},
 #line 209 "os.gperf"
-      {"1000:05AC:FF:WS:0:0:0:0:A:2C", QMS4060},
+      {"1000:05AC:FF:WS:0:0:0:0:A:2C", "QMS4060"},
 #line 346 "os.gperf"
-      {"16D0:0564:40:WS:0:0:1:0:A:2C", Linux 2.4},
+      {"16D0:0564:40:WS:0:0:1:0:A:2C", "Linux 2.4"},
 #line 532 "os.gperf"
-      {"2000:05B4:80:WS:1:1:1:0:A:30", Windows 2000},
+      {"2000:05B4:80:WS:1:1:1:0:A:30", "Windows 2000"},
 #line 1348 "os.gperf"
-      {"94C0:05B4:80:WS:1:1:1:0:S:30", Windows 2000 },
+      {"94C0:05B4:80:WS:1:1:1:0:S:30", "Windows 2000 "},
 #line 391 "os.gperf"
-      {"16D0:05B4:40:WS:0:0:1:0:A:LT", Linux},
+      {"16D0:05B4:40:WS:0:0:1:0:A:LT", "Linux"},
 #line 392 "os.gperf"
-      {"16D0:05B4:40:WS:0:0:1:0:A:LT", Linux },
+      {"16D0:05B4:40:WS:0:0:1:0:A:LT", "Linux "},
 #line 495 "os.gperf"
-      {"2000:05AC:80:WS:0:0:1:0:S:2C", Windows NT 4.0 },
+      {"2000:05AC:80:WS:0:0:1:0:S:2C", "Windows NT 4.0 "},
 #line 281 "os.gperf"
-      {"1680:0584:40:00:1:1:1:1:A:3C", Linux 2.4.18 2.4.19},
+      {"1680:0584:40:00:1:1:1:1:A:3C", "Linux 2.4.18 2.4.19"},
 #line 388 "os.gperf"
-      {"16D0:05B4:40:WS:0:0:0:0:A:LT", Intel PRO/Wireless LAN Acess Point Version 02.00-04},
+      {"16D0:05B4:40:WS:0:0:0:0:A:LT", "Intel PRO/Wireless LAN Acess Point Version 02.00-04"},
 #line 350 "os.gperf"
-      {"16D0:0584:40:02:1:1:1:1:S:3C", MANDRAKE 10.1},
+      {"16D0:0584:40:02:1:1:1:1:S:3C", "MANDRAKE 10.1"},
 #line 984 "os.gperf"
-      {"4470:05B4:80:WS:1:1:1:0:A:3C", FreeBSD 4.x},
+      {"4470:05B4:80:WS:1:1:1:0:A:3C", "FreeBSD 4.x"},
 #line 397 "os.gperf"
-      {"16D0:05B4:40:WS:1:1:1:0:A:30", Linux 2.4.xx},
+      {"16D0:05B4:40:WS:1:1:1:0:A:30", "Linux 2.4.xx"},
 #line 400 "os.gperf"
-      {"16D0:05B4:40:WS:1:1:1:0:A:30", Mandrake 9.2 (Linux 2.4.xx) },
+      {"16D0:05B4:40:WS:1:1:1:0:A:30", "Mandrake 9.2 (Linux 2.4.xx) "},
 #line 399 "os.gperf"
-      {"16D0:05B4:40:WS:1:1:1:0:A:30", Linux Fedora Core 1 },
+      {"16D0:05B4:40:WS:1:1:1:0:A:30", "Linux Fedora Core 1 "},
 #line 398 "os.gperf"
-      {"16D0:05B4:40:WS:1:1:1:0:A:30", Linux 2.6.9 - 2.6.10},
+      {"16D0:05B4:40:WS:1:1:1:0:A:30", "Linux 2.6.9 - 2.6.10"},
 #line 395 "os.gperf"
-      {"16D0:05B4:40:WS:1:1:0:0:A:30", Linux},
+      {"16D0:05B4:40:WS:1:1:0:0:A:30", "Linux"},
 #line 285 "os.gperf"
-      {"16A0:0564:40:00:0:1:1:1:A:3C", Linux 2.6.x},
+      {"16A0:0564:40:00:0:1:1:1:A:3C", "Linux 2.6.x"},
 #line 260 "os.gperf"
-      {"1234:_MSS:FF:WS:0:0:0:0:S:28", Knoppix based L.A.S },
+      {"1234:_MSS:FF:WS:0:0:0:0:S:28", "Knoppix based L.A.S "},
 #line 213 "os.gperf"
-      {"1000:05B4:40:WS:0:0:0:0:A:18", DWL1000 802.11b Access Pointrt.com},
+      {"1000:05B4:40:WS:0:0:0:0:A:18", "DWL1000 802.11b Access Pointrt.com"},
 #line 207 "os.gperf"
-      {"1000:0400:40:WS:0:0:0:0:A:2C", HP J2603A Ethernet SNMP Module},
+      {"1000:0400:40:WS:0:0:0:0:A:2C", "HP J2603A Ethernet SNMP Module"},
 #line 360 "os.gperf"
-      {"16D0:05AC:40:00:1:1:1:1:S:3C", Debian - Linux 2.4.18 },
+      {"16D0:05AC:40:00:1:1:1:1:S:3C", "Debian - Linux 2.4.18 "},
 #line 900 "os.gperf"
-      {"4088:05B4:40:WS:0:0:1:0:A:LT", FreeBSD},
+      {"4088:05B4:40:WS:0:0:1:0:A:LT", "FreeBSD"},
 #line 300 "os.gperf"
-      {"16A0:05AC:80:00:1:1:1:1:A:3C", Linux 2.4.12 },
+      {"16A0:05AC:80:00:1:1:1:1:A:3C", "Linux 2.4.12 "},
 #line 905 "os.gperf"
-      {"40E8:0584:80:WS:0:0:1:0:A:2C", Windows 2000},
+      {"40E8:0584:80:WS:0:0:1:0:A:2C", "Windows 2000"},
 #line 859 "os.gperf"
-      {"4000:05B4:FF:00:0:1:1:0:S:LT", FreeBSD 2.2.6-RELEASE},
+      {"4000:05B4:FF:00:0:1:1:0:S:LT", "FreeBSD 2.2.6-RELEASE"},
 #line 304 "os.gperf"
-      {"16A0:05B4:40:00:1:1:1:0:A:LT", Linux 2.4.2},
+      {"16A0:05B4:40:00:1:1:1:0:A:LT", "Linux 2.4.2"},
 #line 366 "os.gperf"
-      {"16D0:05B4:20:00:1:1:1:1:S:LT", Linux 2.4.10-GR Security Patch 1.8.1},
+      {"16D0:05B4:20:00:1:1:1:1:S:LT", "Linux 2.4.10-GR Security Patch 1.8.1"},
 #line 1461 "os.gperf"
-      {"EBC0:05B4:80:02:1:1:1:1:S:40", Windows XP},
+      {"EBC0:05B4:80:02:1:1:1:1:S:40", "Windows XP"},
 #line 518 "os.gperf"
-      {"2000:05B4:40:WS:1:1:1:0:S:30", Windows XP},
+      {"2000:05B4:40:WS:1:1:1:0:S:30", "Windows XP"},
 #line 287 "os.gperf"
-      {"16A0:0564:40:00:1:1:1:1:A:3C", Linux 2.4.xx},
+      {"16A0:0564:40:00:1:1:1:1:A:3C", "Linux 2.4.xx"},
 #line 286 "os.gperf"
-      {"16A0:0564:40:00:1:1:0:1:A:3C", Linux Redhat 7.2 (Enigma) - Linux},
+      {"16A0:0564:40:00:1:1:0:1:A:3C", "Linux Redhat 7.2 (Enigma) - Linux"},
 #line 832 "os.gperf"
-      {"4000:05B4:40:00:1:1:1:1:S:48", Amiga OS / Miami Deluxe 1.0c},
+      {"4000:05B4:40:00:1:1:1:1:S:48", "Amiga OS / Miami Deluxe 1.0c"},
 #line 306 "os.gperf"
-      {"16A0:05B4:40:01:1:1:1:1:A:LT", Linux Kernel 2.4.17 (with MOSIX patch)},
+      {"16A0:05B4:40:01:1:1:1:1:A:LT", "Linux Kernel 2.4.17 (with MOSIX patch)"},
 #line 513 "os.gperf"
-      {"2000:05B4:40:00:1:1:1:1:S:40", WindowsXP},
+      {"2000:05B4:40:00:1:1:1:1:S:40", "WindowsXP"},
 #line 1565 "os.gperf"
-      {"FC00:05B4:80:00:0:1:1:1:A:3C", Windows 2000},
+      {"FC00:05B4:80:00:0:1:1:1:A:3C", "Windows 2000"},
 #line 564 "os.gperf"
-      {"2017:_MSS:80:00:0:1:1:1:A:LT", BSDI 4.0-4.0.1},
+      {"2017:_MSS:80:00:0:1:1:1:A:LT", "BSDI 4.0-4.0.1"},
 #line 884 "os.gperf"
-      {"402E:05B4:80:00:0:1:1:1:A:3C", Windows 2000 Professional / Windows XP},
+      {"402E:05B4:80:00:0:1:1:1:A:3C", "Windows 2000 Professional / Windows XP"},
 #line 512 "os.gperf"
-      {"2000:05B4:40:00:1:1:1:0:S:40", WebTV netcache engine (BSDI)},
+      {"2000:05B4:40:00:1:1:1:0:S:40", "WebTV netcache engine (BSDI)"},
 #line 883 "os.gperf"
-      {"402E:05B4:80:00:0:1:0:1:A:3C", Linux},
+      {"402E:05B4:80:00:0:1:0:1:A:3C", "Linux"},
 #line 563 "os.gperf"
-      {"2017:_MSS:80:00:0:1:1:0:A:LT", BSDI 4.0-4.0.1},
+      {"2017:_MSS:80:00:0:1:1:0:A:LT", "BSDI 4.0-4.0.1"},
 #line 612 "os.gperf"
-      {"2238:05AC:40:WS:0:0:0:0:A:2C", Windows 98},
+      {"2238:05AC:40:WS:0:0:0:0:A:2C", "Windows 98"},
 #line 562 "os.gperf"
-      {"2017:_MSS:80:00:0:1:0:0:A:LT", Ascend GRF Router running Ascend Embedded/OS 2.1},
+      {"2017:_MSS:80:00:0:1:0:0:A:LT", "Ascend GRF Router running Ascend Embedded/OS 2.1"},
 #line 176 "os.gperf"
-      {"0C00:0109:40:10:0:1:0:1:S:3C", Linux Mandrake 9.1},
+      {"0C00:0109:40:10:0:1:0:1:S:3C", "Linux Mandrake 9.1"},
 #line 1569 "os.gperf"
-      {"FC00:05B4:80:WS:0:0:1:0:A:2C", Windows XP},
+      {"FC00:05B4:80:WS:0:0:1:0:A:2C", "Windows XP"},
 #line 520 "os.gperf"
-      {"2000:05B4:80:00:0:0:1:0:S:LT", Windows NT 4.0},
+      {"2000:05B4:80:00:0:0:1:0:S:LT", "Windows NT 4.0"},
 #line 27 "os.gperf"
-      {"0200:_MSS:40:WS:0:0:1:0:A:28", ESESA TCP/IP Stack},
+      {"0200:_MSS:40:WS:0:0:1:0:A:28", "ESESA TCP/IP Stack"},
 #line 1035 "os.gperf"
-      {"60F4:05B4:40:00:0:1:1:0:A:30", SunOS 5.8 },
+      {"60F4:05B4:40:00:0:1:1:0:A:30", "SunOS 5.8 "},
 #line 73 "os.gperf"
-      {"0420:0114:40:00:1:1:1:1:A:3C", Linux 2.4.18-rc4},
+      {"0420:0114:40:00:1:1:1:1:A:3C", "Linux 2.4.18-rc4"},
 #line 127 "os.gperf"
-      {"0700:_MSS:80:00:0:0:0:0:A:LT", Lantronix ETS16P Version V3.5/2(970721)},
+      {"0700:_MSS:80:00:0:0:0:0:A:LT", "Lantronix ETS16P Version V3.5/2(970721)"},
 #line 282 "os.gperf"
-      {"1680:05AC:40:00:1:1:1:1:A:3C", Linux 2.4.20 (X86)},
+      {"1680:05AC:40:00:1:1:1:1:A:3C", "Linux 2.4.20 (X86)"},
 #line 861 "os.gperf"
-      {"4000:05B4:FF:WS:1:1:1:0:S:30", Windows 2000},
+      {"4000:05B4:FF:WS:1:1:1:0:S:30", "Windows 2000"},
 #line 522 "os.gperf"
-      {"2000:05B4:80:00:1:1:1:0:S:30", Windows 9x},
+      {"2000:05B4:80:00:1:1:1:0:S:30", "Windows 9x"},
 #line 566 "os.gperf"
-      {"2017:_MSS:80:WS:0:0:1:0:A:LT", 3Com NetBuilder & NetBuilder II OS v 9.3},
+      {"2017:_MSS:80:WS:0:0:1:0:A:LT", "3Com NetBuilder & NetBuilder II OS v 9.3"},
 #line 370 "os.gperf"
-      {"16D0:05B4:40:00:0:1:1:0:S:30", Mandrake 8.2},
+      {"16D0:05B4:40:00:0:1:1:0:S:30", "Mandrake 8.2"},
 #line 613 "os.gperf"
-      {"2238:05B4:20:WS:0:0:0:0:A:LT", Snap Server (Quantum)},
+      {"2238:05B4:20:WS:0:0:0:0:A:LT", "Snap Server (Quantum)"},
 #line 565 "os.gperf"
-      {"2017:_MSS:80:WS:0:0:0:0:A:LT", CacheOS (CacheFlow 500-5000 webcache) CFOS 2.1.08 - 2.2.1},
+      {"2017:_MSS:80:WS:0:0:0:0:A:LT", "CacheOS (CacheFlow 500-5000 webcache) CFOS 2.1.08 - 2.2.1"},
 #line 406 "os.gperf"
-      {"16D0:05B4:80:WS:1:1:1:0:A:30", Windows 95},
+      {"16D0:05B4:80:WS:1:1:1:0:A:30", "Windows 95"},
 #line 405 "os.gperf"
-      {"16D0:05B4:80:WS:1:1:0:0:A:30", Linux},
+      {"16D0:05B4:80:WS:1:1:0:0:A:30", "Linux"},
 #line 609 "os.gperf"
-      {"2238:0564:80:WS:1:1:1:0:S:30", Solaris },
+      {"2238:0564:80:WS:1:1:1:0:S:30", "Solaris "},
 #line 233 "os.gperf"
-      {"1020:0564:FF:WS:0:0:0:0:A:2C", IOS (tm) C2600 Software (C2600-IS-M), Version 12.2(8)T4,R },
+      {"1020:0564:FF:WS:0:0:0:0:A:2C", "IOS (tm) C2600 Software(C2600-IS-M)-Version 12.2(8)T4,R "},
 #line 485 "os.gperf"
-      {"2000:056C:40:00:0:1:0:1:A:3C", IBM AS400},
+      {"2000:056C:40:00:0:1:0:1:A:3C", "IBM AS400"},
 #line 128 "os.gperf"
-      {"0700:_MSS:80:WS:0:0:0:0:A:LT", Lantronix ETS16P Version V3.5/2(970721)},
+      {"0700:_MSS:80:WS:0:0:0:0:A:LT", "Lantronix ETS16P Version V3.5/2(970721)"},
 #line 535 "os.gperf"
-      {"2000:05B4:80:WS:1:1:1:0:S:LT", Windows 98},
+      {"2000:05B4:80:WS:1:1:1:0:S:LT", "Windows 98"},
 #line 376 "os.gperf"
-      {"16D0:05B4:40:00:1:1:1:0:S:30", Linux 2.4.1-14},
+      {"16D0:05B4:40:00:1:1:1:0:S:30", "Linux 2.4.1-14"},
 #line 620 "os.gperf"
-      {"2238:05B4:40:00:0:1:1:1:A:LT", BSDI BSD/OS 3.0},
+      {"2238:05B4:40:00:0:1:1:1:A:LT", "BSDI BSD/OS 3.0"},
 #line 533 "os.gperf"
-      {"2000:05B4:80:WS:1:1:1:0:S:30", Windows 98 / 2000},
+      {"2000:05B4:80:WS:1:1:1:0:S:30", "Windows 98 / 2000"},
 #line 530 "os.gperf"
-      {"2000:05B4:80:WS:1:0:1:0:S:LT", Windows NT},
+      {"2000:05B4:80:WS:1:0:1:0:S:LT", "Windows NT"},
 #line 531 "os.gperf"
-      {"2000:05B4:80:WS:1:1:0:0:S:30", Windows 95},
+      {"2000:05B4:80:WS:1:1:0:0:S:30", "Windows 95"},
 #line 345 "os.gperf"
-      {"16D0:0564:40:00:1:1:1:1:S:3C", Linux RedHat },
+      {"16D0:0564:40:00:1:1:1:1:S:3C", "Linux RedHat "},
 #line 1044 "os.gperf"
-      {"60F4:05B4:40:WS:1:1:1:0:A:30", SunOS 5.8},
+      {"60F4:05B4:40:WS:1:1:1:0:A:30", "SunOS 5.8"},
 #line 382 "os.gperf"
-      {"16D0:05B4:40:01:1:1:1:1:S:LT", Linux Red Hat 9 },
+      {"16D0:05B4:40:01:1:1:1:1:S:LT", "Linux Red Hat 9 "},
 #line 524 "os.gperf"
-      {"2000:05B4:80:00:1:1:1:1:S:40", Windows 95},
+      {"2000:05B4:80:00:1:1:1:1:S:40", "Windows 95"},
 #line 986 "os.gperf"
-      {"4470:05B4:80:WS:1:1:1:1:S:3C", Windows 2000 Advance Server},
+      {"4470:05B4:80:WS:1:1:1:1:S:3C", "Windows 2000 Advance Server"},
 #line 8 "os.gperf"
-      {"0010:_MSS:40:WS:0:0:0:0:S:28", Gentoo Linux (Kernel 2.6.6-rc1)},
+      {"0010:_MSS:40:WS:0:0:0:0:S:28", "Gentoo Linux (Kernel 2.6.6-rc1)"},
 #line 617 "os.gperf"
-      {"2238:05B4:40:00:0:1:0:0:A:30", Hp jetDirect},
+      {"2238:05B4:40:00:0:1:0:0:A:30", "Hp jetDirect"},
 #line 1017 "os.gperf"
-      {"5B40:_MSS:80:WS:0:0:0:0:A:LT", Polycom ViewStation 512K videoconferencing system},
+      {"5B40:_MSS:80:WS:0:0:0:0:A:LT", "Polycom ViewStation 512K videoconferencing system"},
 #line 523 "os.gperf"
-      {"2000:05B4:80:00:1:1:1:0:S:40", Windows 9x},
+      {"2000:05B4:80:00:1:1:1:0:S:40", "Windows 9x"},
 #line 189 "os.gperf"
-      {"0E00:_MSS:80:WS:0:0:0:0:A:LT", Lantronix EPS1 Version V3.5/1(970325)},
+      {"0E00:_MSS:80:WS:0:0:0:0:A:LT", "Lantronix EPS1 Version V3.5/1(970325)"},
 #line 58 "os.gperf"
-      {"0400:0500:80:WS:0:0:0:0:A:2C", ITC Version i7.13 of 02-07-99 (embedded device)},
+      {"0400:0500:80:WS:0:0:0:0:A:2C", "ITC Version i7.13 of 02-07-99 (embedded device)"},
 #line 787 "os.gperf"
-      {"4000:0550:80:WS:1:1:1:0:S:30", Windows 2000},
+      {"4000:0550:80:WS:1:1:1:0:S:30", "Windows 2000"},
 #line 348 "os.gperf"
-      {"16D0:0564:40:WS:1:1:1:1:S:3C", Slackware Linux 8.1},
+      {"16D0:0564:40:WS:1:1:1:1:S:3C", "Slackware Linux 8.1"},
 #line 16 "os.gperf"
-      {"0109:0109:40:00:0:1:0:1:A:3C", Debian Potato (2.2), Linux 2.2.17},
+      {"0109:0109:40:00:0:1:0:1:A:3C", "Debian Potato (2.2) Linux 2.2.17"},
 #line 208 "os.gperf"
-      {"1000:0400:40:WS:0:0:0:0:S:2C", Trumpet TCP 2.01 / DOS},
+      {"1000:0400:40:WS:0:0:0:0:S:2C", "Trumpet TCP 2.01 / DOS"},
 #line 510 "os.gperf"
-      {"2000:05B4:40:00:0:1:1:1:A:3C", FreebSD 5.0 RELEASE (x86)},
+      {"2000:05B4:40:00:0:1:1:1:A:3C", "FreebSD 5.0 RELEASE (x86)"},
 #line 624 "os.gperf"
-      {"2238:05B4:40:WS:0:0:1:0:A:LT", BSDI BSD/OS 3.0-3.1 (or possibly MacOS, NetBSD)},
+      {"2238:05B4:40:WS:0:0:1:0:A:LT", "BSDI BSD/OS 3.0-3.1 (or possibly MacOS NetBSD)"},
 #line 516 "os.gperf"
-      {"2000:05B4:40:WS:0:0:1:0:A:2C", Apple Airport Express v6.1 },
+      {"2000:05B4:40:WS:0:0:1:0:A:2C", "Apple Airport Express v6.1 "},
 #line 514 "os.gperf"
-      {"2000:05B4:40:WS:0:0:0:0:A:2C", Linux},
+      {"2000:05B4:40:WS:0:0:0:0:A:2C", "Linux"},
 #line 906 "os.gperf"
-      {"40E8:05B4:40:00:1:1:0:1:A:40", Windows },
+      {"40E8:05B4:40:00:1:1:0:1:A:40", "Windows "},
 #line 625 "os.gperf"
-      {"2238:05B4:40:WS:1:1:1:0:A:30", Windows NT4},
+      {"2238:05B4:40:WS:1:1:1:0:A:30", "Windows NT4"},
 #line 621 "os.gperf"
-      {"2238:05B4:40:00:1:1:1:1:A:40", Cisco IOS },
+      {"2238:05B4:40:00:1:1:1:1:A:40", "Cisco IOS "},
 #line 1036 "os.gperf"
-      {"60F4:05B4:40:00:0:1:1:0:S:LT", SCO UnixWare 7.1.0 x86},
+      {"60F4:05B4:40:00:0:1:1:0:S:LT", "SCO UnixWare 7.1.0 x86"},
 #line 598 "os.gperf"
-      {"2208:05B4:80:WS:1:1:1:0:A:30", Windows 98 SE},
+      {"2208:05B4:80:WS:1:1:1:0:A:30", "Windows 98 SE"},
 #line 784 "os.gperf"
-      {"4000:0550:40:WS:0:0:1:0:A:2C", NetBSD},
+      {"4000:0550:40:WS:0:0:1:0:A:2C", "NetBSD"},
 #line 783 "os.gperf"
-      {"4000:0550:40:WS:0:0:0:0:A:2C", Windows 2000},
+      {"4000:0550:40:WS:0:0:0:0:A:2C", "Windows 2000"},
 #line 26 "os.gperf"
-      {"0200:_MSS:40:WS:0:0:0:0:S:28", Windows XP},
+      {"0200:_MSS:40:WS:0:0:0:0:S:28", "Windows XP"},
 #line 1034 "os.gperf"
-      {"60F4:05B4:40:00:0:0:1:0:S:LT", SCO UnixWare 7.0.1},
+      {"60F4:05B4:40:00:0:0:1:0:S:LT", "SCO UnixWare 7.0.1"},
 #line 503 "os.gperf"
-      {"2000:05B4:20:00:0:0:1:0:S:2C", Windows NT 4.0},
+      {"2000:05B4:20:00:0:0:1:0:S:2C", "Windows NT 4.0"},
 #line 408 "os.gperf"
-      {"16D0:05B4:80:WS:1:1:1:0:S:LT", Windows 98 / 2000},
+      {"16D0:05B4:80:WS:1:1:1:0:S:LT", "Windows 98 / 2000"},
 #line 1405 "os.gperf"
-      {"C1E8:05B4:40:WS:1:1:1:0:A:30", Windows NT},
+      {"C1E8:05B4:40:WS:1:1:1:0:A:30", "Windows NT"},
 #line 407 "os.gperf"
-      {"16D0:05B4:80:WS:1:1:1:0:S:30", Windows 95},
+      {"16D0:05B4:80:WS:1:1:1:0:S:30", "Windows 95"},
 #line 504 "os.gperf"
-      {"2000:05B4:20:WS:0:0:1:0:S:2C", Windows 95},
+      {"2000:05B4:20:WS:0:0:1:0:S:2C", "Windows 95"},
 #line 661 "os.gperf"
-      {"2274:0564:80:WS:0:0:1:0:A:2C", PIX FireWall},
+      {"2274:0564:80:WS:0:0:1:0:A:2C", "PIX FireWall"},
 #line 235 "os.gperf"
-      {"1020:05B4:FF:WS:0:0:0:0:S:LT", Cisco 2611 IOS 11.3(2)XA4},
+      {"1020:05B4:FF:WS:0:0:0:0:S:LT", "Cisco 2611 IOS 11.3(2)XA4"},
 #line 615 "os.gperf"
-      {"2238:05B4:20:WS:1:1:1:0:S:30", Windows 98},
+      {"2238:05B4:20:WS:1:1:1:0:S:30", "Windows 98"},
 #line 908 "os.gperf"
-      {"40E8:05B4:80:WS:1:1:1:0:A:30", Windows XP },
+      {"40E8:05B4:80:WS:1:1:1:0:A:30", "Windows XP "},
 #line 1046 "os.gperf"
-      {"60F4:05B4:40:WS:1:1:1:0:S:LT", Solaris 8},
+      {"60F4:05B4:40:WS:1:1:1:0:S:LT", "Solaris 8"},
 #line 630 "os.gperf"
-      {"2238:05B4:80:WS:0:0:1:0:A:30", Windows},
+      {"2238:05B4:80:WS:0:0:1:0:A:30", "Windows"},
 #line 1582 "os.gperf"
-      {"FDD4:05A4:80:WS:1:1:1:0:S:30", Windows XP SP1},
+      {"FDD4:05A4:80:WS:1:1:1:0:S:30", "Windows XP SP1"},
 #line 284 "os.gperf"
-      {"16A0:01F4:40:00:1:1:1:1:A:3C", Linux },
+      {"16A0:01F4:40:00:1:1:1:1:A:3C", "Linux "},
 #line 1045 "os.gperf"
-      {"60F4:05B4:40:WS:1:1:1:0:S:30", Solaris 8},
+      {"60F4:05B4:40:WS:1:1:1:0:S:30", "Solaris 8"},
 #line 527 "os.gperf"
-      {"2000:05B4:80:WS:0:0:1:0:A:2C", Windows 2000},
+      {"2000:05B4:80:WS:0:0:1:0:A:2C", "Windows 2000"},
 #line 1043 "os.gperf"
-      {"60F4:05B4:40:WS:1:1:0:0:S:30", SunOS 5.8},
+      {"60F4:05B4:40:WS:1:1:0:0:S:30", "SunOS 5.8"},
 #line 525 "os.gperf"
-      {"2000:05B4:80:WS:0:0:0:0:A:2C", D-Link DWL-900AP},
+      {"2000:05B4:80:WS:0:0:0:0:A:2C", "D-Link DWL-900AP"},
 #line 368 "os.gperf"
-      {"16D0:05B4:40:00:0:1:0:1:A:3C", HP psc 2500 network Printer },
+      {"16D0:05B4:40:00:0:1:0:1:A:3C", "HP psc 2500 network Printer "},
 #line 616 "os.gperf"
-      {"2238:05B4:40:00:0:0:1:0:S:LT", Solaris 2.6},
+      {"2238:05B4:40:00:0:0:1:0:S:LT", "Solaris 2.6"},
 #line 632 "os.gperf"
-      {"2238:05B4:80:WS:1:1:1:0:A:30", Windows 98 / 2000 / XP},
+      {"2238:05B4:80:WS:1:1:1:0:A:30", "Windows 98 / 2000 / XP"},
 #line 1007 "os.gperf"
-      {"455B:_MSS:80:00:0:0:1:0:A:LT", Mac OS 8.6},
+      {"455B:_MSS:80:00:0:0:1:0:A:LT", "Mac OS 8.6"},
 #line 631 "os.gperf"
-      {"2238:05B4:80:WS:1:1:0:0:A:30", Windows 98},
+      {"2238:05B4:80:WS:1:1:0:0:A:30", "Windows 98"},
 #line 1006 "os.gperf"
-      {"455B:_MSS:80:00:0:0:0:0:A:LT", MacOS 8.1 running on a PowerPC G3 (iMac)},
+      {"455B:_MSS:80:00:0:0:0:0:A:LT", "MacOS 8.1 running on a PowerPC G3 (iMac)"},
 #line 690 "os.gperf"
-      {"2756:_MSS:80:WS:0:0:0:0:A:LT", AmigaOS AmiTCP/IP Genesis 4.6},
+      {"2756:_MSS:80:WS:0:0:0:0:A:LT", "AmigaOS AmiTCP/IP Genesis 4.6"},
 #line 627 "os.gperf"
-      {"2238:05B4:80:00:1:1:1:1:A:40", Windows 98},
+      {"2238:05B4:80:00:1:1:1:1:A:40", "Windows 98"},
 #line 7 "os.gperf"
-      {"0008:_MSS:40:WS:0:0:0:0:S:28", Red Hat Linux 7.2 Kernel 2.4.7-10},
+      {"0008:_MSS:40:WS:0:0:0:0:S:28", "Red Hat Linux 7.2 Kernel 2.4.7-10"},
 #line 390 "os.gperf"
-      {"16D0:05B4:40:WS:0:0:1:0:A:2C", Linux 2.4.xx},
+      {"16D0:05B4:40:WS:0:0:1:0:A:2C", "Linux 2.4.xx"},
 #line 387 "os.gperf"
-      {"16D0:05B4:40:WS:0:0:0:0:A:2C", HP LaserJet 2100 Series},
+      {"16D0:05B4:40:WS:0:0:0:0:A:2C", "HP LaserJet 2100 Series"},
 #line 786 "os.gperf"
-      {"4000:0550:80:WS:0:0:1:0:A:2C", Windows 2000},
+      {"4000:0550:80:WS:0:0:1:0:A:2C", "Windows 2000"},
 #line 785 "os.gperf"
-      {"4000:0550:80:WS:0:0:0:0:A:2C", Mac OS },
+      {"4000:0550:80:WS:0:0:0:0:A:2C", "Mac OS "},
 #line 1589 "os.gperf"
-      {"FEF4:0534:80:00:1:1:1:1:A:40", Windows 2000},
+      {"FEF4:0534:80:00:1:1:1:1:A:40", "Windows 2000"},
 #line 508 "os.gperf"
-      {"2000:05B4:40:00:0:1:1:0:S:3C", BSDI BSD/OS 3.1},
+      {"2000:05B4:40:00:0:1:1:0:S:3C", "BSDI BSD/OS 3.1"},
 #line 178 "os.gperf"
-      {"0C00:05A0:40:WS:0:0:0:0:A:2C", Trendnet TEW 431 BRP},
+      {"0C00:05A0:40:WS:0:0:0:0:A:2C", "Trendnet TEW 431 BRP"},
 #line 396 "os.gperf"
-      {"16D0:05B4:40:WS:1:1:1:0:A:1C", Linux 2.4.22-gentoo-r5 },
+      {"16D0:05B4:40:WS:1:1:1:0:A:1C", "Linux 2.4.22-gentoo-r5 "},
 #line 788 "os.gperf"
-      {"4000:0556:80:WS:1:1:1:0:S:30", Windows XP},
+      {"4000:0556:80:WS:1:1:1:0:S:30", "Windows XP"},
 #line 517 "os.gperf"
-      {"2000:05B4:40:WS:0:0:1:0:S:2C", AXCENT Raptor Firewall Windows NT 4.0/SP3},
+      {"2000:05B4:40:WS:0:0:1:0:S:2C", "AXCENT Raptor Firewall Windows NT 4.0/SP3"},
 #line 515 "os.gperf"
-      {"2000:05B4:40:WS:0:0:0:0:S:2C", CacheFlow 500x CacheOS 2.1.08 - 2.2.1},
+      {"2000:05B4:40:WS:0:0:0:0:S:2C", "CacheFlow 500x CacheOS 2.1.08 - 2.2.1"},
 #line 302 "os.gperf"
-      {"16A0:05B4:40:00:0:1:1:1:A:3C", Linux 2.4.4-4GB},
+      {"16A0:05B4:40:00:0:1:1:1:A:3C", "Linux 2.4.4-4GB"},
 #line 626 "os.gperf"
-      {"2238:05B4:40:WS:1:1:1:0:S:30", Windows XP SP1 + Sygate Personal Firewall },
+      {"2238:05B4:40:WS:1:1:1:0:S:30", "Windows XP SP1 + Sygate Personal Firewall "},
 #line 511 "os.gperf"
-      {"2000:05B4:40:00:1:1:1:0:S:3C", BSDI BSD/OS 3.0-3.1 (or MacOS, NetBSD)},
+      {"2000:05B4:40:00:1:1:1:0:S:3C", "BSDI BSD/OS 3.0-3.1 (or MacOS NetBSD)"},
 #line 305 "os.gperf"
-      {"16A0:05B4:40:00:1:1:1:1:A:3C", Linux 2.4.xx},
+      {"16A0:05B4:40:00:1:1:1:1:A:3C", "Linux 2.4.xx"},
 #line 303 "os.gperf"
-      {"16A0:05B4:40:00:1:1:0:1:A:3C", Windows XP},
+      {"16A0:05B4:40:00:1:1:0:1:A:3C", "Windows XP"},
 #line 365 "os.gperf"
-      {"16D0:05B4:20:00:1:1:1:1:S:3C", Linux 2.4.20},
+      {"16D0:05B4:20:00:1:1:1:1:S:3C", "Linux 2.4.20"},
 #line 706 "os.gperf"
-      {"2DA0:_MSS:80:WS:0:0:0:0:A:LT", Windows 98SE + IE5.5sp1},
+      {"2DA0:_MSS:80:WS:0:0:0:0:A:LT", "Windows 98SE + IE5.5sp1"},
 #line 1406 "os.gperf"
-      {"C1E8:05B4:40:WS:1:1:1:0:S:30", Solaris 9},
+      {"C1E8:05B4:40:WS:1:1:1:0:S:30", "Solaris 9"},
 #line 519 "os.gperf"
-      {"2000:05B4:80:00:0:0:1:0:S:2C", Windows NT 4.0},
+      {"2000:05B4:80:00:0:0:1:0:S:2C", "Windows NT 4.0"},
 #line 567 "os.gperf"
-      {"2058:0564:40:WS:0:0:1:0:A:2C", BSDi BSD/OS 4.0.1},
+      {"2058:0564:40:WS:0:0:1:0:A:2C", "BSDi BSD/OS 4.0.1"},
 #line 403 "os.gperf"
-      {"16D0:05B4:80:WS:0:0:1:0:A:2C", Windows XP / 2000},
+      {"16D0:05B4:80:WS:0:0:1:0:A:2C", "Windows XP / 2000"},
 #line 402 "os.gperf"
-      {"16D0:05B4:80:WS:0:0:0:0:A:2C", Linux},
+      {"16D0:05B4:80:WS:0:0:0:0:A:2C", "Linux"},
 #line 1037 "os.gperf"
-      {"60F4:05B4:40:00:0:1:1:1:A:3C", SCO UnixWare 7.1.1},
+      {"60F4:05B4:40:00:0:1:1:1:A:3C", "SCO UnixWare 7.1.1"},
 #line 521 "os.gperf"
-      {"2000:05B4:80:00:1:1:1:0:S:2C", Windows 9x},
+      {"2000:05B4:80:00:1:1:1:0:S:2C", "Windows 9x"},
 #line 216 "os.gperf"
-      {"1000:05B4:FF:WS:0:0:0:0:A:2C", Cisco Pix 515},
+      {"1000:05B4:FF:WS:0:0:0:0:A:2C", "Cisco Pix 515"},
 #line 614 "os.gperf"
-      {"2238:05B4:20:WS:0:0:1:0:A:2C", Microsoft Windows 95},
+      {"2238:05B4:20:WS:0:0:1:0:A:2C", "Microsoft Windows 95"},
 #line 528 "os.gperf"
-      {"2000:05B4:80:WS:0:0:1:0:S:2C", Windows NT 4.0 SP6a / Windows 2000},
+      {"2000:05B4:80:WS:0:0:1:0:S:2C", "Windows NT 4.0 SP6a / Windows 2000"},
 #line 526 "os.gperf"
-      {"2000:05B4:80:WS:0:0:0:0:S:2C", Windows NT 4.0},
+      {"2000:05B4:80:WS:0:0:0:0:S:2C", "Windows NT 4.0"},
 #line 1041 "os.gperf"
-      {"60F4:05B4:40:WS:0:0:1:0:A:2C", Windows 2000},
+      {"60F4:05B4:40:WS:0:0:1:0:A:2C", "Windows 2000"},
 #line 372 "os.gperf"
-      {"16D0:05B4:40:00:0:1:1:1:S:3C", Linux 2.4.19-pre10-ac2},
+      {"16D0:05B4:40:00:0:1:1:1:S:3C", "Linux 2.4.19-pre10-ac2"},
 #line 1039 "os.gperf"
-      {"60F4:05B4:40:WS:0:0:0:0:A:2C", SCO openserver 5.0.5},
+      {"60F4:05B4:40:WS:0:0:0:0:A:2C", "SCO openserver 5.0.5"},
 #line 313 "os.gperf"
-      {"16A0:05B4:80:00:0:1:1:1:A:3C", Linux Kernel 2.4.xx},
+      {"16A0:05B4:80:00:0:1:1:1:A:3C", "Linux Kernel 2.4.xx"},
 #line 633 "os.gperf"
-      {"2238:05B4:80:WS:1:1:1:0:S:30", Windows 2000 - XP SP1},
+      {"2238:05B4:80:WS:1:1:1:0:S:30", "Windows 2000 - XP SP1"},
 #line 234 "os.gperf"
-      {"1020:05B4:FF:WS:0:0:0:0:A:2C", Cisco IOS 12.1.5-12.2.13a},
+      {"1020:05B4:FF:WS:0:0:0:0:A:2C", "Cisco IOS 12.1.5-12.2.13a"},
 #line 371 "os.gperf"
-      {"16D0:05B4:40:00:0:1:1:0:S:3C", Linux 2.4.13-ac7},
+      {"16D0:05B4:40:00:0:1:1:0:S:3C", "Linux 2.4.13-ac7"},
 #line 359 "os.gperf"
-      {"16D0:059C:40:WS:1:1:1:0:A:30", Red Hat Linux},
+      {"16D0:059C:40:WS:1:1:1:0:A:30", "Red Hat Linux"},
 #line 312 "os.gperf"
-      {"16A0:05B4:80:00:0:1:1:0:A:3C", Linux Kernel 2.4.xx},
+      {"16A0:05B4:80:00:0:1:1:0:A:3C", "Linux Kernel 2.4.xx"},
 #line 307 "os.gperf"
-      {"16A0:05B4:40:02:1:1:1:1:A:3C", Linux 2.6.9 - 2.6.11},
+      {"16A0:05B4:40:02:1:1:1:1:A:3C", "Linux 2.6.9 - 2.6.11"},
 #line 1590 "os.gperf"
-      {"FEF4:0534:80:WS:1:1:1:0:S:30", Windows XP},
+      {"FEF4:0534:80:WS:1:1:1:0:S:30", "Windows XP"},
 #line 529 "os.gperf"
-      {"2000:05B4:80:WS:1:0:1:0:S:2C", Windows NT},
+      {"2000:05B4:80:WS:1:0:1:0:S:2C", "Windows NT"},
 #line 393 "os.gperf"
-      {"16D0:05B4:40:WS:0:0:1:0:S:2C", Linux 2.4.18},
+      {"16D0:05B4:40:WS:0:0:1:0:S:2C", "Linux 2.4.18"},
 #line 389 "os.gperf"
-      {"16D0:05B4:40:WS:0:0:0:0:S:2C", Linux},
+      {"16D0:05B4:40:WS:0:0:0:0:S:2C", "Linux"},
 #line 1383 "os.gperf"
-      {"B5C9:_MSS:80:00:0:1:1:1:A:LT", Windows Millenium Edition v4.90.3000},
+      {"B5C9:_MSS:80:00:0:1:1:1:A:LT", "Windows Millenium Edition v4.90.3000"},
 #line 380 "os.gperf"
-      {"16D0:05B4:40:00:1:1:1:1:S:3C", Linux 2.4.xx},
+      {"16D0:05B4:40:00:1:1:1:1:S:3C", "Linux 2.4.xx"},
 #line 314 "os.gperf"
-      {"16A0:05B4:80:00:1:1:1:1:A:3C", Linux Kernel 2.4.12},
+      {"16A0:05B4:80:00:1:1:1:1:A:3C", "Linux Kernel 2.4.12"},
 #line 374 "os.gperf"
-      {"16D0:05B4:40:00:1:1:0:1:S:3C", Linux 2.6.0},
+      {"16D0:05B4:40:00:1:1:0:1:S:3C", "Linux 2.6.0"},
 #line 1382 "os.gperf"
-      {"B5C9:_MSS:80:00:0:1:1:0:A:LT", Windows Millenium Edition v4.90.3000},
+      {"B5C9:_MSS:80:00:0:1:1:0:A:LT", "Windows Millenium Edition v4.90.3000"},
 #line 379 "os.gperf"
-      {"16D0:05B4:40:00:1:1:1:0:S:3C", Linux 2.4.xx},
+      {"16D0:05B4:40:00:1:1:1:0:S:3C", "Linux 2.4.xx"},
 #line 534 "os.gperf"
-      {"2000:05B4:80:WS:1:1:1:0:S:3C", Linux 2.2.19},
+      {"2000:05B4:80:WS:1:1:1:0:S:3C", "Linux 2.2.19"},
 #line 354 "os.gperf"
-      {"16D0:0594:40:WS:0:0:0:0:A:2C", Linux },
+      {"16D0:0594:40:WS:0:0:0:0:A:2C", "Linux "},
 #line 619 "os.gperf"
-      {"2238:05B4:40:00:0:1:1:1:A:3C", IRIX},
+      {"2238:05B4:40:00:0:1:1:1:A:3C", "IRIX"},
 #line 618 "os.gperf"
-      {"2238:05B4:40:00:0:1:0:1:A:3C", SMC Barricade SMC7004VWBR},
+      {"2238:05B4:40:00:0:1:0:1:A:3C", "SMC Barricade SMC7004VWBR"},
 #line 381 "os.gperf"
-      {"16D0:05B4:40:01:1:1:1:1:S:3C", Linux 2.4.10 - 2.4.16},
+      {"16D0:05B4:40:01:1:1:1:1:S:3C", "Linux 2.4.10 - 2.4.16"},
 #line 569 "os.gperf"
-      {"2058:0564:80:WS:0:0:1:0:A:2C", Windows 2000 / NT / Win9x},
+      {"2058:0564:80:WS:0:0:1:0:A:2C", "Windows 2000 / NT / Win9x"},
 #line 568 "os.gperf"
-      {"2058:0564:80:WS:0:0:0:0:A:2C", Windows NT},
+      {"2058:0564:80:WS:0:0:0:0:A:2C", "Windows NT"},
 #line 988 "os.gperf"
-      {"4470:05B4:FF:WS:1:1:1:0:A:30", Windows XP},
+      {"4470:05B4:FF:WS:1:1:1:0:A:30", "Windows XP"},
 #line 623 "os.gperf"
-      {"2238:05B4:40:WS:0:0:1:0:A:2C", Cisco IOS},
+      {"2238:05B4:40:WS:0:0:1:0:A:2C", "Cisco IOS"},
 #line 622 "os.gperf"
-      {"2238:05B4:40:WS:0:0:0:0:A:2C", Linksys WAP11 },
+      {"2238:05B4:40:WS:0:0:0:0:A:2C", "Linksys WAP11 "},
 #line 797 "os.gperf"
-      {"4000:057E:80:WS:1:1:1:0:S:30", Windows XP (Home) },
+      {"4000:057E:80:WS:1:1:1:0:S:30", "Windows XP (Home) "},
 #line 570 "os.gperf"
-      {"2058:05B4:80:WS:1:1:1:0:A:LT", Windows 98 SE},
+      {"2058:05B4:80:WS:1:1:1:0:A:LT", "Windows 98 SE"},
 #line 597 "os.gperf"
-      {"2208:05B4:80:WS:0:0:1:0:A:2C", Windows NT},
+      {"2208:05B4:80:WS:0:0:1:0:A:2C", "Windows NT"},
 #line 693 "os.gperf"
-      {"2788:_MSS:80:00:0:1:1:1:A:LT", Solaris 2.6 - 2.7},
+      {"2788:_MSS:80:00:0:1:1:1:A:LT", "Solaris 2.6 - 2.7"},
 #line 692 "os.gperf"
-      {"2788:_MSS:80:00:0:1:1:0:A:LT", Solaris 2.6 - 2.7},
+      {"2788:_MSS:80:00:0:1:1:0:A:LT", "Solaris 2.6 - 2.7"},
 #line 68 "os.gperf"
-      {"0400:_MSS:40:WS:0:0:0:0:S:28", Linux 2.4.18},
+      {"0400:_MSS:40:WS:0:0:0:0:S:28", "Linux 2.4.18"},
 #line 1386 "os.gperf"
-      {"BB80:05B4:80:WS:1:1:1:0:S:30", Windows 2000},
+      {"BB80:05B4:80:WS:1:1:1:0:S:30", "Windows 2000"},
 #line 383 "os.gperf"
-      {"16D0:05B4:40:02:1:1:1:1:S:3C", Linux 2.6.9 - 2.6.10},
+      {"16D0:05B4:40:02:1:1:1:1:S:3C", "Linux 2.6.9 - 2.6.10"},
 #line 1404 "os.gperf"
-      {"C1E8:05B4:40:WS:0:0:1:0:A:2C", Solaris 9},
+      {"C1E8:05B4:40:WS:0:0:1:0:A:2C", "Solaris 9"},
 #line 404 "os.gperf"
-      {"16D0:05B4:80:WS:0:0:1:0:S:2C", FreeBSD},
+      {"16D0:05B4:80:WS:0:0:1:0:S:2C", "FreeBSD"},
 #line 401 "os.gperf"
-      {"16D0:05B4:80:00:1:1:1:1:S:3C", Linux 2.4.14 - 2.4.22},
+      {"16D0:05B4:80:00:1:1:1:1:S:3C", "Linux 2.4.14 - 2.4.22"},
 #line 491 "os.gperf"
-      {"2000:059C:80:WS:1:1:1:0:S:30", Windows 98},
+      {"2000:059C:80:WS:1:1:1:0:S:30", "Windows 98"},
 #line 907 "os.gperf"
-      {"40E8:05B4:80:WS:0:0:1:0:A:2C", Windows 2000 Server},
+      {"40E8:05B4:80:WS:0:0:1:0:A:2C", "Windows 2000 Server"},
 #line 1588 "os.gperf"
-      {"FE88:_MSS:FF:WS:0:0:1:0:A:LT", Solaris 2.6 - 2.7},
+      {"FE88:_MSS:FF:WS:0:0:1:0:A:LT", "Solaris 2.6 - 2.7"},
 #line 288 "os.gperf"
-      {"16A0:0564:40:WS:0:1:1:1:A:38", Linux},
+      {"16A0:0564:40:WS:0:1:1:1:A:38", "Linux"},
 #line 1042 "os.gperf"
-      {"60F4:05B4:40:WS:0:0:1:0:S:2C", SCO Openserver 5},
+      {"60F4:05B4:40:WS:0:0:1:0:S:2C", "SCO Openserver 5"},
 #line 1040 "os.gperf"
-      {"60F4:05B4:40:WS:0:0:0:0:S:2C", SCO openserver 5.0.6},
+      {"60F4:05B4:40:WS:0:0:0:0:S:2C", "SCO openserver 5.0.6"},
 #line 248 "os.gperf"
-      {"10C0:05B4:FF:WS:0:0:0:0:S:LT", Cisco 3620 IOS 11.2(17)P},
+      {"10C0:05B4:FF:WS:0:0:0:0:S:LT", "Cisco 3620 IOS 11.2(17)P"},
 #line 928 "os.gperf"
-      {"4248:0586:80:WS:1:1:1:0:A:30", Windows 2000 server},
+      {"4248:0586:80:WS:1:1:1:0:A:30", "Windows 2000 server"},
 #line 456 "os.gperf"
-      {"1F0E:_MSS:80:WS:0:0:0:0:A:LT", AmigaOS AmiTCP/IP 4.3},
+      {"1F0E:_MSS:80:WS:0:0:0:0:A:LT", "AmigaOS AmiTCP/IP 4.3"},
 #line 629 "os.gperf"
-      {"2238:05B4:80:WS:0:0:1:0:A:2C", Windows NT 4.x / Win9x},
+      {"2238:05B4:80:WS:0:0:1:0:A:2C", "Windows NT 4.x / Win9x"},
 #line 628 "os.gperf"
-      {"2238:05B4:80:WS:0:0:0:0:A:2C", Windows NT 4.x},
+      {"2238:05B4:80:WS:0:0:0:0:A:2C", "Windows NT 4.x"},
 #line 927 "os.gperf"
-      {"4248:0586:80:00:1:1:1:1:A:40", GNU / Olli OS},
+      {"4248:0586:80:00:1:1:1:1:A:40", "GNU / Olli OS"},
 #line 490 "os.gperf"
-      {"2000:059C:40:00:0:1:0:1:A:3C", Windows NT},
+      {"2000:059C:40:00:0:1:0:1:A:3C", "Windows NT"},
 #line 289 "os.gperf"
-      {"16A0:0564:40:WS:1:0:1:1:A:38", Linux 2.4.21 },
+      {"16A0:0564:40:WS:1:0:1:1:A:38", "Linux 2.4.21 "},
 #line 588 "os.gperf"
-      {"21D2:05B4:80:WS:0:0:1:0:A:LT", Windows NT / Win9x},
+      {"21D2:05B4:80:WS:0:0:1:0:A:LT", "Windows NT / Win9x"},
 #line 240 "os.gperf"
-      {"10A4:058C:FF:00:1:1:1:1:A:40", Windows Server 2003},
+      {"10A4:058C:FF:00:1:1:1:1:A:40", "Windows Server 2003"},
 #line 52 "os.gperf"
-      {"0400:0200:FF:WS:0:0:0:0:A:2C", Zyxel Prestige 10},
+      {"0400:0200:FF:WS:0:0:0:0:A:2C", "Zyxel Prestige 10"},
 #line 21 "os.gperf"
-      {"0200:05B4:40:00:0:0:0:0:S:LT", Linux 2.0.38},
+      {"0200:05B4:40:00:0:0:0:0:S:LT", "Linux 2.0.38"},
 #line 1014 "os.gperf"
-      {"4EC0:05B4:80:00:0:1:1:1:A:3C", Windows XP Pro SP1},
+      {"4EC0:05B4:80:00:0:1:1:1:A:3C", "Windows XP Pro SP1"},
 #line 24 "os.gperf"
-      {"0200:05B4:40:WS:0:0:0:0:S:LT", Linux 2.0.36},
+      {"0200:05B4:40:WS:0:0:0:0:S:LT", "Linux 2.0.36"},
 #line 864 "os.gperf"
-      {"4000:3605:80:WS:1:1:1:0:S:30", Windows XP},
+      {"4000:3605:80:WS:1:1:1:0:S:30", "Windows XP"},
 #line 662 "os.gperf"
-      {"2284:114E:40:00:1:1:1:1:A:3C", Solaris },
+      {"2284:114E:40:00:1:1:1:1:A:3C", "Solaris "},
 #line 667 "os.gperf"
-      {"2332:_MSS:80:00:0:0:1:0:A:LT", Solaris 2.3 - 2.4},
+      {"2332:_MSS:80:00:0:0:1:0:A:LT", "Solaris 2.3 - 2.4"},
 #line 1411 "os.gperf"
-      {"CDFF:_MSS:80:00:0:0:1:0:A:LT", SONY NEWS-OS 6.1.2},
+      {"CDFF:_MSS:80:00:0:0:1:0:A:LT", "SONY NEWS-OS 6.1.2"},
 #line 266 "os.gperf"
-      {"14F0:05B4:80:WS:1:1:1:0:S:LT", Windows ME },
+      {"14F0:05B4:80:WS:1:1:1:0:S:LT", "Windows ME "},
 #line 947 "os.gperf"
-      {"43E0:_MSS:40:WS:0:0:1:0:A:LT", FreeBSD 2.2.1 - 4.0},
+      {"43E0:_MSS:40:WS:0:0:1:0:A:LT", "FreeBSD 2.2.1 - 4.0"},
 #line 1469 "os.gperf"
-      {"EF88:_MSS:40:WS:0:0:1:0:A:LT", IRIX 6.2 - 6.5},
+      {"EF88:_MSS:40:WS:0:0:1:0:A:LT", "IRIX 6.2 - 6.5"},
 #line 946 "os.gperf"
-      {"43E0:_MSS:40:WS:0:0:0:0:A:LT", OpenBSD 2.x},
+      {"43E0:_MSS:40:WS:0:0:0:0:A:LT", "OpenBSD 2.x"},
 #line 669 "os.gperf"
-      {"2332:_MSS:80:WS:0:0:1:0:A:LT", Solaris 2.3 - 2.4},
+      {"2332:_MSS:80:WS:0:0:1:0:A:LT", "Solaris 2.3 - 2.4"},
 #line 668 "os.gperf"
-      {"2332:_MSS:80:WS:0:0:0:0:A:LT", Solaris 2.4 w/most Sun patches},
+      {"2332:_MSS:80:WS:0:0:0:0:A:LT", "Solaris 2.4 w/most Sun patches"},
 #line 131 "os.gperf"
-      {"07D0:_MSS:80:00:0:0:1:0:A:LT", Novell NetWare 3.12 - 5.00},
+      {"07D0:_MSS:80:00:0:0:1:0:A:LT", "Novell NetWare 3.12 - 5.00"},
 #line 1355 "os.gperf"
-      {"ABCD:_MSS:80:00:0:1:1:1:A:LT", Solaris 2.6 - 2.7},
+      {"ABCD:_MSS:80:00:0:1:1:1:A:LT", "Solaris 2.6 - 2.7"},
 #line 1354 "os.gperf"
-      {"ABCD:_MSS:80:00:0:1:1:0:A:LT", Solaris 2.6 - 2.7},
+      {"ABCD:_MSS:80:00:0:1:1:0:A:LT", "Solaris 2.6 - 2.7"},
 #line 247 "os.gperf"
-      {"10C0:05B4:FF:WS:0:0:0:0:A:2C", Cisco IOS 11.2},
+      {"10C0:05B4:FF:WS:0:0:0:0:A:2C", "Cisco IOS 11.2"},
 #line 1466 "os.gperf"
-      {"EE48:_MSS:40:WS:0:0:1:0:A:LT", IRIX 5.1 - 5.3},
+      {"EE48:_MSS:40:WS:0:0:1:0:A:LT", "IRIX 5.1 - 5.3"},
 #line 132 "os.gperf"
-      {"07D0:_MSS:80:WS:0:0:1:0:A:LT", Novell NetWare 3.12 - 5.00},
+      {"07D0:_MSS:80:WS:0:0:1:0:A:LT", "Novell NetWare 3.12 - 5.00"},
 #line 1029 "os.gperf"
-      {"6050:05B4:FF:WS:0:0:0:0:A:2C", Solaris 8},
+      {"6050:05B4:FF:WS:0:0:0:0:A:2C", "Solaris 8"},
 #line 580 "os.gperf"
-      {"2180:05B0:80:WS:0:0:1:0:A:2C", Windows NT - Windows 9x},
+      {"2180:05B0:80:WS:0:0:1:0:A:2C", "Windows NT - Windows 9x"},
 #line 987 "os.gperf"
-      {"4470:05B4:FF:WS:0:0:1:0:A:2C", Windows 2000},
+      {"4470:05B4:FF:WS:0:0:1:0:A:2C", "Windows 2000"},
 #line 295 "os.gperf"
-      {"16A0:059C:40:00:1:1:1:1:A:3C", Linux fw 2.4.7-10},
+      {"16A0:059C:40:00:1:1:1:1:A:3C", "Linux fw 2.4.7-10"},
 #line 181 "os.gperf"
-      {"0C00:_MSS:40:WS:0:0:0:0:S:28", Slackware 8.0},
+      {"0C00:_MSS:40:WS:0:0:0:0:S:28", "Slackware 8.0"},
 #line 323 "os.gperf"
-      {"16A0:8C05:40:00:0:1:1:1:A:3C", Linux RedHat 9 },
+      {"16A0:8C05:40:00:0:1:1:1:A:3C", "Linux RedHat 9 "},
 #line 301 "os.gperf"
-      {"16A0:05AC:FF:00:1:1:1:1:A:3C", Linux 2.4.12 },
+      {"16A0:05AC:FF:00:1:1:1:1:A:3C", "Linux 2.4.12 "},
 #line 561 "os.gperf"
-      {"2017:1802:80:WS:0:0:1:0:A:LT", Windows NT 4.0},
+      {"2017:1802:80:WS:0:0:1:0:A:LT", "Windows NT 4.0"},
 #line 835 "os.gperf"
-      {"4000:05B4:40:70:0:0:1:0:S:2C", FreeBSD 4.0-STABLE, 3.2-RELEASE},
+      {"4000:05B4:40:70:0:0:1:0:S:2C", "FreeBSD 4.0-STABLE 3.2-RELEASE"},
 #line 934 "os.gperf"
-      {"4380:05A0:80:WS:1:1:1:0:A:30", Openbsd},
+      {"4380:05A0:80:WS:1:1:1:0:A:30", "Openbsd"},
 #line 590 "os.gperf"
-      {"21F0:05B4:80:WS:0:0:1:0:A:LT", Windows NT 4.0},
+      {"21F0:05B4:80:WS:0:0:1:0:A:LT", "Windows NT 4.0"},
 #line 358 "os.gperf"
-      {"16D0:059C:40:00:1:1:1:1:S:3C", fedora core },
+      {"16D0:059C:40:00:1:1:1:1:S:3C", "fedora core "},
 #line 310 "os.gperf"
-      {"16A0:05B4:40:WS:0:1:1:1:A:38", Windows},
+      {"16A0:05B4:40:WS:0:1:1:1:A:38", "Windows"},
 #line 262 "os.gperf"
-      {"12D8:1802:FF:WS:0:0:0:0:S:2C", Palm OS },
+      {"12D8:1802:FF:WS:0:0:0:0:S:2C", "Palm OS "},
 #line 589 "os.gperf"
-      {"21F0:05B4:80:00:1:1:1:1:A:40", vXWorks},
+      {"21F0:05B4:80:00:1:1:1:1:A:40", "vXWorks"},
 #line 6 "os.gperf"
-      {"0000:_MSS:FF:WS:0:0:0:0:A:28", Windows XP},
+      {"0000:_MSS:FF:WS:0:0:0:0:A:28", "Windows XP"},
 #line 413 "os.gperf"
-      {"16D0:05B4:FF:WS:1:1:1:0:A:LT", Linux 2.4.10},
+      {"16D0:05B4:FF:WS:1:1:1:0:A:LT", "Linux 2.4.10"},
 #line 311 "os.gperf"
-      {"16A0:05B4:40:WS:1:0:1:1:A:38", Linux },
+      {"16A0:05B4:40:WS:1:0:1:1:A:38", "Linux "},
 #line 20 "os.gperf"
-      {"0200:05B4:40:00:0:0:0:0:S:2C", Linux 2.0.35 - 2.0.38},
+      {"0200:05B4:40:00:0:0:0:0:S:2C", "Linux 2.0.35 - 2.0.38"},
 #line 537 "os.gperf"
-      {"2000:05B4:FF:WS:1:1:1:0:S:30", Windows 98SE },
+      {"2000:05B4:FF:WS:1:1:1:0:S:30", "Windows 98SE "},
 #line 536 "os.gperf"
-      {"2000:05B4:FF:WS:1:1:0:0:S:30", Windows XP SP1},
+      {"2000:05B4:FF:WS:1:1:0:0:S:30", "Windows XP SP1"},
 #line 23 "os.gperf"
-      {"0200:05B4:40:WS:0:0:0:0:S:2C", Linux 2.0.34-38},
+      {"0200:05B4:40:WS:0:0:0:0:S:2C", "Linux 2.0.34-38"},
 #line 394 "os.gperf"
-      {"16D0:05B4:40:WS:0:1:1:1:S:38", SuSE Linux 8.0 Kernel 2.4.18-4GB (i686)},
+      {"16D0:05B4:40:WS:0:1:1:1:S:38", "SuSE Linux 8.0 Kernel 2.4.18-4GB (i686)"},
 #line 165 "os.gperf"
-      {"0B63:_MSS:80:00:0:1:1:1:A:LT", Linux 2.1.19 - 2.2.17},
+      {"0B63:_MSS:80:00:0:1:1:1:A:LT", "Linux 2.1.19 - 2.2.17"},
 #line 4 "os.gperf"
-      {"0000:05B4:80:WS:0:0:1:0:S:2C", Novell netware 5.00},
+      {"0000:05B4:80:WS:0:0:1:0:S:2C", "Novell netware 5.00"},
 #line 164 "os.gperf"
-      {"0B63:_MSS:80:00:0:1:1:0:A:LT", Linux 2.1.19 - 2.2.17},
+      {"0B63:_MSS:80:00:0:1:1:0:A:LT", "Linux 2.1.19 - 2.2.17"},
 #line 581 "os.gperf"
-      {"2180:05B4:20:WS:0:0:1:0:A:2C", Windows XP},
+      {"2180:05B4:20:WS:0:0:1:0:A:2C", "Windows XP"},
 #line 89 "os.gperf"
-      {"0578:_MSS:80:WS:0:0:0:0:A:LT", Minix 32-bit/Intel 2.0.0},
+      {"0578:_MSS:80:WS:0:0:0:0:A:LT", "Minix 32-bit/Intel 2.0.0"},
 #line 558 "os.gperf"
-      {"2017:0534:80:WS:0:0:1:0:A:2C", Windows 98 SE},
+      {"2017:0534:80:WS:0:0:1:0:A:2C", "Windows 98 SE"},
 #line 481 "os.gperf"
-      {"2000:0550:80:WS:1:1:1:0:S:30", Windows 9x},
+      {"2000:0550:80:WS:1:1:1:0:S:30", "Windows 9x"},
 #line 22 "os.gperf"
-      {"0200:05B4:40:34:0:0:0:0:S:LT", Linux 2.0.33},
+      {"0200:05B4:40:34:0:0:0:0:S:LT", "Linux 2.0.33"},
 #line 582 "os.gperf"
-      {"2180:05B4:80:00:1:1:1:1:S:40", Windows 9x },
+      {"2180:05B4:80:00:1:1:1:1:S:40", "Windows 9x "},
 #line 1374 "os.gperf"
-      {"B580:05AC:40:02:1:1:1:1:A:40", Windows XP},
+      {"B580:05AC:40:02:1:1:1:1:A:40", "Windows XP"},
 #line 317 "os.gperf"
-      {"16A0:2A05:40:00:1:1:0:1:A:3C", Linux 2.4.22},
+      {"16A0:2A05:40:00:1:1:0:1:A:3C", "Linux 2.4.22"},
 #line 636 "os.gperf"
-      {"2238:05B4:FF:00:0:1:1:0:A:30", SunOS 5.7 },
+      {"2238:05B4:FF:00:0:1:1:0:A:30", "SunOS 5.7 "},
 #line 635 "os.gperf"
-      {"2238:05B4:FF:00:0:1:0:0:A:30", SunOS 5.7 },
+      {"2238:05B4:FF:00:0:1:0:0:A:30", "SunOS 5.7 "},
 #line 453 "os.gperf"
-      {"1C84:05B4:40:WS:0:0:1:0:A:2C", Linux},
+      {"1C84:05B4:40:WS:0:0:1:0:A:2C", "Linux"},
 #line 414 "os.gperf"
-      {"16D0:05B4:FF:WS:1:1:1:0:S:30", Windows 98},
+      {"16D0:05B4:FF:WS:1:1:1:0:S:30", "Windows 98"},
 #line 412 "os.gperf"
-      {"16D0:05B4:FF:WS:1:1:0:0:S:30", Windows 98},
+      {"16D0:05B4:FF:WS:1:1:0:0:S:30", "Windows 98"},
 #line 776 "os.gperf"
-      {"4000:04EC:80:WS:1:1:1:0:S:30", Windows 2000},
+      {"4000:04EC:80:WS:1:1:1:0:S:30", "Windows 2000"},
 #line 170 "os.gperf"
-      {"0B68:_MSS:40:WS:0:0:1:0:A:LT", Linux 2.0.32 - 2.0.34},
+      {"0B68:_MSS:40:WS:0:0:1:0:A:LT", "Linux 2.0.32 - 2.0.34"},
 #line 638 "os.gperf"
-      {"2238:05B4:FF:WS:0:0:1:0:A:LT", OpenBSD},
+      {"2238:05B4:FF:WS:0:0:1:0:A:LT", "OpenBSD"},
 #line 1367 "os.gperf"
-      {"B400:05AC:20:03:1:1:1:1:S:40", windows 200},
+      {"B400:05AC:20:03:1:1:1:1:S:40", "windows 200"},
 #line 959 "os.gperf"
-      {"4440:05B0:80:WS:1:1:1:0:A:30", Solaris 7},
+      {"4440:05B0:80:WS:1:1:1:0:A:30", "Solaris 7"},
 #line 958 "os.gperf"
-      {"4440:05B0:80:00:1:1:1:1:A:40", Windows 2000 (Advanced Server)},
+      {"4440:05B0:80:00:1:1:1:1:A:40", "Windows 2000 (Advanced Server)"},
 #line 932 "os.gperf"
-      {"4322:05B4:80:WS:1:1:1:0:A:30", Linksys Router },
+      {"4322:05B4:80:WS:1:1:1:0:A:30", "Linksys Router "},
 #line 642 "os.gperf"
-      {"2238:05B4:FF:WS:1:1:1:0:A:30", SunOS 5.7},
+      {"2238:05B4:FF:WS:1:1:1:0:A:30", "SunOS 5.7"},
 #line 172 "os.gperf"
-      {"0B68:_MSS:80:00:0:1:1:1:A:LT", Sun Solaris 8 early acces beta through actual release},
+      {"0B68:_MSS:80:00:0:1:1:1:A:LT", "Sun Solaris 8 early acces beta through actual release"},
 #line 163 "os.gperf"
-      {"0B18:058C:40:WS:0:0:0:0:S:2C", HNC 91849},
+      {"0B18:058C:40:WS:0:0:0:0:S:2C", "HNC 91849"},
 #line 64 "os.gperf"
-      {"0400:05B4:40:WS:0:0:0:0:A:2C", FORE ES-2810 Switch},
+      {"0400:05B4:40:WS:0:0:0:0:A:2C", "FORE ES-2810 Switch"},
 #line 171 "os.gperf"
-      {"0B68:_MSS:80:00:0:1:1:0:A:LT", Sun Solaris 8 early acces beta through actual release},
+      {"0B68:_MSS:80:00:0:1:1:0:A:LT", "Sun Solaris 8 early acces beta through actual release"},
 #line 340 "os.gperf"
-      {"16D0:0550:80:WS:1:1:1:0:S:30", Windows XP},
+      {"16D0:0550:80:WS:1:1:1:0:S:30", "Windows XP"},
 #line 129 "os.gperf"
-      {"073F:_MSS:80:00:0:0:0:0:A:LT", Novell NetWare 3.12 or 386 TCP/IP},
+      {"073F:_MSS:80:00:0:0:0:0:A:LT", "Novell NetWare 3.12 or 386 TCP/IP"},
 #line 825 "os.gperf"
-      {"4000:05B4:40:00:0:1:1:0:S:44", FreeBSD 4.3 - 4.4PRERELEASE},
+      {"4000:05B4:40:00:0:1:1:0:S:44", "FreeBSD 4.3 - 4.4PRERELEASE"},
 #line 1564 "os.gperf"
-      {"FC00:057E:80:WS:1:1:1:0:S:30", Windows XP},
+      {"FC00:057E:80:WS:1:1:1:0:S:30", "Windows XP"},
 #line 583 "os.gperf"
-      {"2180:05B4:80:WS:0:0:1:0:A:2C", Windows NT / Win9x},
+      {"2180:05B4:80:WS:0:0:1:0:A:2C", "Windows NT / Win9x"},
 #line 130 "os.gperf"
-      {"073F:_MSS:80:WS:0:0:0:0:A:LT", CLIX R3.1 Vr.7.6.20 6480},
+      {"073F:_MSS:80:WS:0:0:0:0:A:LT", "CLIX R3.1 Vr.7.6.20 6480"},
 #line 539 "os.gperf"
-      {"2000:6D70:40:WS:0:0:0:0:A:2C", Linux},
+      {"2000:6D70:40:WS:0:0:0:0:A:2C", "Linux"},
 #line 173 "os.gperf"
-      {"0B68:_MSS:80:WS:0:0:0:0:A:LT", D-Link Print Server},
+      {"0B68:_MSS:80:WS:0:0:0:0:A:LT", "D-Link Print Server"},
 #line 415 "os.gperf"
-      {"16D0:9C05:40:WS:1:1:1:0:A:30", Linux 2.4.18},
+      {"16D0:9C05:40:WS:1:1:1:0:A:30", "Linux 2.4.18"},
 #line 259 "os.gperf"
-      {"1164:05B4:40:01:1:1:1:1:S:3C", Fedora Red Hat},
+      {"1164:05B4:40:01:1:1:1:1:S:3C", "Fedora Red Hat"},
 #line 482 "os.gperf"
-      {"2000:0556:80:WS:1:1:1:0:S:30", Windows 98 SE},
+      {"2000:0556:80:WS:1:1:1:0:S:30", "Windows 98 SE"},
 #line 909 "os.gperf"
-      {"40E8:05B4:FF:00:0:0:1:0:S:30", Mac OS 7.x-9.x},
+      {"40E8:05B4:FF:00:0:0:1:0:S:30", "Mac OS 7.x-9.x"},
 #line 610 "os.gperf"
-      {"2238:0564:FF:00:0:0:1:0:S:2C", Solaris 2.7},
+      {"2238:0564:FF:00:0:0:1:0:S:2C", "Solaris 2.7"},
 #line 1010 "os.gperf"
-      {"4764:23B2:40:00:1:1:1:1:S:3C", Linux 2.4.xx},
+      {"4764:23B2:40:00:1:1:1:1:S:3C", "Linux 2.4.xx"},
 #line 410 "os.gperf"
-      {"16D0:05B4:FF:WS:0:0:0:0:A:2C", Linksys BEFSR11 1 Port Router/HUB},
+      {"16D0:05B4:FF:WS:0:0:0:0:A:2C", "Linksys BEFSR11 1 Port Router/HUB"},
 #line 1026 "os.gperf"
-      {"6044:05B4:40:00:1:1:1:1:A:40", unknown},
+      {"6044:05B4:40:00:1:1:1:1:A:40", "unknown"},
 #line 10 "os.gperf"
-      {"0040:_MSS:80:WS:0:0:0:0:A:LT", Gold Card Ethernet Interface Firm. Ver. 3.19 (95.01.16)},
+      {"0040:_MSS:80:WS:0:0:0:0:A:LT", "Gold Card Ethernet Interface Firm. Ver. 3.19 (95.01.16)"},
 #line 309 "os.gperf"
-      {"16A0:05B4:40:07:1:1:1:1:A:3C", Linux.2.4.20-web100},
+      {"16A0:05B4:40:07:1:1:1:1:A:3C", "Linux.2.4.20-web100"},
 #line 559 "os.gperf"
-      {"2017:05B4:40:00:0:1:1:1:A:LT", BSDI BSD/OS 3.0-3.1 (or possibly MacOS, NetBSD)},
+      {"2017:05B4:40:00:0:1:1:1:A:LT", "BSDI BSD/OS 3.0-3.1 (or possibly MacOS NetBSD)"},
 #line 862 "os.gperf"
-      {"4000:0650:40:00:0:1:1:1:A:3C", NetBSD 1.6},
+      {"4000:0650:40:00:0:1:1:1:A:3C", "NetBSD 1.6"},
 #line 63 "os.gperf"
-      {"0400:05B4:40:00:0:1:0:1:S:3C", Windows 44},
+      {"0400:05B4:40:00:0:1:0:1:S:3C", "Windows 44"},
 #line 865 "os.gperf"
-      {"4000:5005:40:WS:0:0:0:0:A:2C", Mac OS X},
+      {"4000:5005:40:WS:0:0:0:0:A:2C", "Mac OS X"},
 #line 316 "os.gperf"
-      {"16A0:05B4:FF:00:1:1:1:1:A:3C", Linux 2.4.12},
+      {"16A0:05B4:FF:00:1:1:1:1:A:3C", "Linux 2.4.12"},
 #line 315 "os.gperf"
-      {"16A0:05B4:FF:00:1:1:0:1:A:3C", Linux Kernel 2.4.18},
+      {"16A0:05B4:FF:00:1:1:0:1:A:3C", "Linux Kernel 2.4.18"},
 #line 385 "os.gperf"
-      {"16D0:05B4:40:07:1:1:1:1:S:3C", Debian Linux },
+      {"16D0:05B4:40:07:1:1:1:1:S:3C", "Debian Linux "},
 #line 386 "os.gperf"
-      {"16D0:05B4:40:07:1:1:1:1:S:3C", Linux Fedora Core 2 2.6.8-1.521 },
+      {"16D0:05B4:40:07:1:1:1:1:S:3C", "Linux Fedora Core 2 2.6.8-1.521 "},
 #line 577 "os.gperf"
-      {"2142:058B:40:00:1:1:1:1:A:40", Windows NT},
+      {"2142:058B:40:00:1:1:1:1:A:40", "Windows NT"},
 #line 1059 "os.gperf"
-      {"6270:04EC:80:WS:1:1:1:0:A:30", Linux Red Hat },
+      {"6270:04EC:80:WS:1:1:1:0:A:30", "Linux Red Hat "},
 #line 607 "os.gperf"
-      {"2238:0550:80:WS:1:1:1:0:S:LT", Linux},
+      {"2238:0550:80:WS:1:1:1:0:S:LT", "Linux"},
 #line 1384 "os.gperf"
-      {"B680:05B4:FF:WS:0:0:0:0:A:2C", ZyXEL ZyNOS 3.50},
+      {"B680:05B4:FF:WS:0:0:0:0:A:2C", "ZyXEL ZyNOS 3.50"},
 #line 62 "os.gperf"
-      {"0400:05A4:FF:WS:0:0:0:0:A:2C", 3Com SuperStack II 3000 },
+      {"0400:05A4:FF:WS:0:0:0:0:A:2C", "3Com SuperStack II 3000 "},
 #line 274 "os.gperf"
-      {"15E0:0584:40:00:0:1:1:1:A:3C", Linux 2.4.20},
+      {"15E0:0584:40:00:0:1:1:1:A:3C", "Linux 2.4.20"},
 #line 1444 "os.gperf"
-      {"E640:05B4:40:02:1:1:0:0:S:LT", Windows 2000 SP2},
+      {"E640:05B4:40:02:1:1:0:0:S:LT", "Windows 2000 SP2"},
 #line 866 "os.gperf"
-      {"4000:5005:80:WS:0:0:0:0:A:2C", Windows 2000},
+      {"4000:5005:80:WS:0:0:0:0:A:2C", "Windows 2000"},
 #line 411 "os.gperf"
-      {"16D0:05B4:FF:WS:0:0:1:0:S:2C", Linux 2.4 },
+      {"16D0:05B4:FF:WS:0:0:1:0:S:2C", "Linux 2.4 "},
 #line 43 "os.gperf"
-      {"0244:_MSS:80:WS:0:0:0:0:A:LT", Cyclades PathRouter/PC},
+      {"0244:_MSS:80:WS:0:0:0:0:A:LT", "Cyclades PathRouter/PC"},
 #line 409 "os.gperf"
-      {"16D0:05B4:FF:00:1:1:1:1:S:3C", Slackware Linux},
+      {"16D0:05B4:FF:00:1:1:1:1:S:3C", "Slackware Linux"},
 #line 1005 "os.gperf"
-      {"4510:05B4:FF:WS:1:1:1:0:A:30", Windows XP Pro },
+      {"4510:05B4:FF:WS:1:1:1:0:A:30", "Windows XP Pro "},
 #line 1379 "os.gperf"
-      {"B5A4:05B4:80:00:1:1:1:1:A:40", Windows XP Corp. SP1 (Ger)},
+      {"B5A4:05B4:80:00:1:1:1:1:A:40", "Windows XP Corp. SP1 (Ger)"},
 #line 1377 "os.gperf"
-      {"B5A4:05B4:80:00:1:1:0:1:A:40", Linux 2.4.18},
+      {"B5A4:05B4:80:00:1:1:0:1:A:40", "Linux 2.4.18"},
 #line 123 "os.gperf"
-      {"0640:_MSS:80:WS:0:0:0:0:A:LT", APC MasterSwitch Network Power Controller},
+      {"0640:_MSS:80:WS:0:0:0:0:A:LT", "APC MasterSwitch Network Power Controller"},
 #line 637 "os.gperf"
-      {"2238:05B4:FF:WS:0:0:1:0:A:2C", SunOS 5.7},
+      {"2238:05B4:FF:WS:0:0:1:0:A:2C", "SunOS 5.7"},
 #line 1618 "os.gperf"
-      {"FFFF:0200:40:01:0:1:0:0:A:30", FreeBSD 4.8},
+      {"FFFF:0200:40:01:0:1:0:0:A:30", "FreeBSD 4.8"},
 #line 1003 "os.gperf"
-      {"4510:0550:80:WS:0:0:1:0:A:LT", Windows 2000 Professional 5.0.2195 Service Pack 2},
+      {"4510:0550:80:WS:0:0:1:0:A:LT", "Windows 2000 Professional 5.0.2195 Service Pack 2"},
 #line 1605 "os.gperf"
-      {"FFAF:_MSS:80:00:0:1:0:1:A:LT", Hitachi HI-UX/MPP (don't know version)},
+      {"FFAF:_MSS:80:00:0:1:0:1:A:LT", "Hitachi HI-UX/MPP (don't know version)"},
 #line 1604 "os.gperf"
-      {"FFAF:_MSS:80:00:0:1:0:0:A:LT", Hitachi HI-UX/MPP (don't know version)},
+      {"FFAF:_MSS:80:00:0:1:0:0:A:LT", "Hitachi HI-UX/MPP (don't know version)"},
 #line 1357 "os.gperf"
-      {"AC00:05AC:80:WS:1:1:1:0:S:30", Windows 2000 SP2},
+      {"AC00:05AC:80:WS:1:1:1:0:S:30", "Windows 2000 SP2"},
 #line 1603 "os.gperf"
-      {"FFAF:_MSS:80:00:0:0:1:0:A:LT", Solaris 2.3 - 2.4},
+      {"FFAF:_MSS:80:00:0:0:1:0:A:LT", "Solaris 2.3 - 2.4"},
 #line 1004 "os.gperf"
-      {"4510:0550:80:WS:1:1:1:0:A:30", Windows 2000 Professional 5.0.2195 Service Pack 2},
+      {"4510:0550:80:WS:1:1:1:0:A:30", "Windows 2000 Professional 5.0.2195 Service Pack 2"},
 #line 1455 "os.gperf"
-      {"EBC0:05AC:40:02:1:1:1:0:S:34", Windows XP},
+      {"EBC0:05AC:40:02:1:1:1:0:S:34", "Windows XP"},
 #line 953 "os.gperf"
-      {"4410:05B4:80:00:1:1:1:0:A:34", Windows 2000},
+      {"4410:05B4:80:00:1:1:1:0:A:34", "Windows 2000"},
 #line 1002 "os.gperf"
-      {"4510:0550:80:00:1:1:1:1:A:40", Windows 2000},
+      {"4510:0550:80:00:1:1:1:1:A:40", "Windows 2000"},
 #line 538 "os.gperf"
-      {"2000:6363:80:WS:1:1:1:0:S:LT", Microsoft NT 4.0 Server SP5},
+      {"2000:6363:80:WS:1:1:1:0:S:LT", "Microsoft NT 4.0 Server SP5"},
 #line 678 "os.gperf"
-      {"2530:05B4:80:WS:0:0:1:0:A:LT", Windows 2000},
+      {"2530:05B4:80:WS:0:0:1:0:A:LT", "Windows 2000"},
 #line 1060 "os.gperf"
-      {"6270:04EC:80:WS:1:1:1:0:S:30", Windows XP},
+      {"6270:04EC:80:WS:1:1:1:0:S:30", "Windows XP"},
 #line 1606 "os.gperf"
-      {"FFAF:_MSS:80:WS:0:0:0:0:A:LT", AIX 3.2.5 (Bull HardWare)},
+      {"FFAF:_MSS:80:WS:0:0:0:0:A:LT", "AIX 3.2.5 (Bull HardWare)"},
 #line 961 "os.gperf"
-      {"4440:05B4:80:WS:1:1:1:0:A:LT", Solaris 7},
+      {"4440:05B4:80:WS:1:1:1:0:A:LT", "Solaris 7"},
 #line 1368 "os.gperf"
-      {"B400:05B4:20:03:1:1:0:1:S:LT", Windows 2000 SP2},
+      {"B400:05B4:20:03:1:1:0:1:S:LT", "Windows 2000 SP2"},
 #line 960 "os.gperf"
-      {"4440:05B4:80:WS:1:1:1:0:A:30", Windows 2000 Terminal Server},
+      {"4440:05B4:80:WS:1:1:1:0:A:30", "Windows 2000 Terminal Server"},
 #line 1027 "os.gperf"
-      {"6050:05B4:40:00:1:1:1:0:A:34", Windows},
+      {"6050:05B4:40:00:1:1:1:0:A:34", "Windows"},
 #line 1064 "os.gperf"
-      {"6270:05B4:40:00:1:1:1:0:S:34", Windows 2000},
+      {"6270:05B4:40:00:1:1:1:0:S:34", "Windows 2000"},
 #line 967 "os.gperf"
-      {"4470:05B4:40:00:1:1:1:0:A:34", OpenBSD 3.0},
+      {"4470:05B4:40:00:1:1:1:0:A:34", "OpenBSD 3.0"},
 #line 1381 "os.gperf"
-      {"B5A4:05B4:80:WS:1:1:1:0:S:30", Windows XP SP2 german },
+      {"B5A4:05B4:80:WS:1:1:1:0:S:30", "Windows XP SP2 german "},
 #line 634 "os.gperf"
-      {"2238:05B4:FF:00:0:0:1:0:S:2C", Solaris 2.6 or 2.7},
+      {"2238:05B4:FF:00:0:0:1:0:S:2C", "Solaris 2.6 or 2.7"},
 #line 1369 "os.gperf"
-      {"B400:05B4:20:03:1:1:1:1:S:40", Windows 2000},
+      {"B400:05B4:20:03:1:1:1:1:S:40", "Windows 2000"},
 #line 640 "os.gperf"
-      {"2238:05B4:FF:WS:0:1:1:0:S:2C", Solaris 2.6 or 2.7},
+      {"2238:05B4:FF:WS:0:1:1:0:S:2C", "Solaris 2.6 or 2.7"},
 #line 916 "os.gperf"
-      {"41E8:057E:80:00:1:1:1:1:A:40", Windows 2000},
+      {"41E8:057E:80:00:1:1:1:1:A:40", "Windows 2000"},
 #line 125 "os.gperf"
-      {"0648:_MSS:80:WS:0:0:0:0:A:LT", FastComm FRAD F9200-DS-DNI -- Ver. 4.2.3A},
+      {"0648:_MSS:80:WS:0:0:0:0:A:LT", "FastComm FRAD F9200-DS-DNI -- Ver. 4.2.3A"},
 #line 639 "os.gperf"
-      {"2238:05B4:FF:WS:0:0:1:0:S:2C", SunOS 5.7 Generic sun4u sparc},
+      {"2238:05B4:FF:WS:0:0:1:0:S:2C", "SunOS 5.7 Generic sun4u sparc"},
 #line 44 "os.gperf"
-      {"03CA:_MSS:80:WS:0:0:0:0:A:LT", MPE/iX 5.5},
+      {"03CA:_MSS:80:WS:0:0:0:0:A:LT", "MPE/iX 5.5"},
 #line 244 "os.gperf"
-      {"10C0:055E:80:WS:1:1:1:0:S:30", Windows 98},
+      {"10C0:055E:80:WS:1:1:1:0:S:30", "Windows 98"},
 #line 278 "os.gperf"
-      {"1640:0590:40:00:1:1:1:1:S:3C", Linux 2.4.23},
+      {"1640:0590:40:00:1:1:1:1:S:3C", "Linux 2.4.23"},
 #line 641 "os.gperf"
-      {"2238:05B4:FF:WS:1:0:1:0:S:2C", Solaris 2.6 - 2.7},
+      {"2238:05B4:FF:WS:1:0:1:0:S:2C", "Solaris 2.6 - 2.7"},
 #line 54 "os.gperf"
-      {"0400:0400:20:WS:0:0:0:0:A:2C", Windows 2000},
+      {"0400:0400:20:WS:0:0:0:0:A:2C", "Windows 2000"},
 #line 1612 "os.gperf"
-      {"FFF0:05B0:80:WS:1:1:1:0:A:30", Windows XP},
+      {"FFF0:05B0:80:WS:1:1:1:0:A:30", "Windows XP"},
 #line 11 "os.gperf"
-      {"0046:_MSS:80:WS:0:0:0:0:A:LT", Cyclades PathRouter},
+      {"0046:_MSS:80:WS:0:0:0:0:A:LT", "Cyclades PathRouter"},
 #line 1371 "os.gperf"
-      {"B400:05B4:40:03:1:1:1:1:S:40", Windows XP Pro SP1},
+      {"B400:05B4:40:03:1:1:1:1:S:40", "Windows XP Pro SP1"},
 #line 1765 "os.gperf"
-      {"FFFF:_MSS:80:00:0:1:1:1:A:LT", Cray Unicos 9.0 - 10.0 or Unicos/mk 1.5.1},
+      {"FFFF:_MSS:80:00:0:1:1:1:A:LT", "Cray Unicos 9.0 - 10.0 or Unicos/mk 1.5.1"},
 #line 978 "os.gperf"
-      {"4470:05B4:80:00:1:1:1:0:A:34", Windows 2000 Server},
+      {"4470:05B4:80:00:1:1:1:0:A:34", "Windows 2000 Server"},
 #line 1764 "os.gperf"
-      {"FFFF:_MSS:80:00:0:1:1:0:A:LT", Cray Unicos 9.0 - 10.0 or Unicos/mk 1.5.1},
+      {"FFFF:_MSS:80:00:0:1:1:0:A:LT", "Cray Unicos 9.0 - 10.0 or Unicos/mk 1.5.1"},
 #line 1480 "os.gperf"
-      {"F400:05B4:80:01:1:1:1:0:S:34", Windows XP},
+      {"F400:05B4:80:01:1:1:1:0:S:34", "Windows XP"},
 #line 1763 "os.gperf"
-      {"FFFF:_MSS:80:00:0:0:0:0:A:LT", IBM MVS TCP/IP stack V. 3.2 or AIX 4.3.2},
+      {"FFFF:_MSS:80:00:0:0:0:0:A:LT", "IBM MVS TCP/IP stack V. 3.2 or AIX 4.3.2"},
 #line 1437 "os.gperf"
-      {"E000:6405:40:00:0:1:0:1:A:3C", FreeBSD 4.6},
+      {"E000:6405:40:00:0:1:0:1:A:3C", "FreeBSD 4.6"},
 #line 344 "os.gperf"
-      {"16D0:0564:40:00:1:1:1:0:A:34", Linux 2.4.2},
+      {"16D0:0564:40:00:1:1:1:0:A:34", "Linux 2.4.2"},
 #line 1767 "os.gperf"
-      {"FFFF:_MSS:80:WS:0:0:1:0:A:LT", Novell NetWare 3.12 - 5.00},
+      {"FFFF:_MSS:80:WS:0:0:1:0:A:LT", "Novell NetWare 3.12 - 5.00"},
 #line 1766 "os.gperf"
-      {"FFFF:_MSS:80:WS:0:0:0:0:A:LT", IBM MVS TCP/IP stack V. 3.2 or AIX 4.3.2},
+      {"FFFF:_MSS:80:WS:0:0:0:0:A:LT", "IBM MVS TCP/IP stack V. 3.2 or AIX 4.3.2"},
 #line 666 "os.gperf"
-      {"2328:_MSS:FF:WS:0:0:1:0:A:LT", Solaris 2.6 - 2.7},
+      {"2328:_MSS:FF:WS:0:0:1:0:A:LT", "Solaris 2.6 - 2.7"},
 #line 55 "os.gperf"
-      {"0400:0400:40:00:1:1:0:1:A:3C", ElsaLanCom (SoHo ISDN Router)},
+      {"0400:0400:40:00:1:1:0:1:A:3C", "ElsaLanCom (SoHo ISDN Router)"},
 #line 704 "os.gperf"
-      {"2D25:_MSS:80:WS:0:0:0:0:A:LT", Mac OS 7.0-7.1 With MacTCP 1.1.1 - 2.0.6},
+      {"2D25:_MSS:80:WS:0:0:0:0:A:LT", "Mac OS 7.0-7.1 With MacTCP 1.1.1 - 2.0.6"},
 #line 1620 "os.gperf"
-      {"FFFF:0200:80:WS:1:1:1:0:S:30", Windows},
+      {"FFFF:0200:80:WS:1:1:1:0:S:30", "Windows"},
 #line 1380 "os.gperf"
-      {"B5A4:05B4:80:WS:0:0:0:0:A:2C", Windows XP Corp. SP1 (Ger)},
+      {"B5A4:05B4:80:WS:0:0:0:0:A:2C", "Windows XP Corp. SP1 (Ger)"},
 #line 560 "os.gperf"
-      {"2017:05B4:80:WS:0:0:1:0:A:2C", Windows 98 SE / Windows NT 4.0},
+      {"2017:05B4:80:WS:0:0:1:0:A:2C", "Windows 98 SE / Windows NT 4.0"},
 #line 1372 "os.gperf"
-      {"B400:05B4:80:03:1:1:1:1:S:40", Windows XP },
+      {"B400:05B4:80:03:1:1:1:1:S:40", "Windows XP "},
 #line 1559 "os.gperf"
-      {"FC00:04EC:80:WS:1:1:1:0:S:30", Windows XP},
+      {"FC00:04EC:80:WS:1:1:1:0:S:30", "Windows XP"},
 #line 77 "os.gperf"
-      {"0534:0534:80:WS:0:0:1:0:A:2C", Netware},
+      {"0534:0534:80:WS:0:0:1:0:A:2C", "Netware"},
 #line 1619 "os.gperf"
-      {"FFFF:0200:40:WS:0:0:0:0:A:2C", AIX},
+      {"FFFF:0200:40:WS:0:0:0:0:A:2C", "AIX"},
 #line 1613 "os.gperf"
-      {"FFF0:05B0:80:WS:1:1:1:0:S:30", Windows XP},
+      {"FFF0:05B0:80:WS:1:1:1:0:S:30", "Windows XP"},
 #line 25 "os.gperf"
-      {"0200:05B4:FF:WS:0:0:0:0:A:2C", Router 3Com 812 ADSL},
+      {"0200:05B4:FF:WS:0:0:0:0:A:2C", "Router 3Com 812 ADSL"},
 #line 869 "os.gperf"
-      {"4000:B405:40:00:0:1:1:1:S:LT", FreeBSD},
+      {"4000:B405:40:00:0:1:1:1:S:LT", "FreeBSD"},
 #line 1441 "os.gperf"
-      {"E000:B405:40:00:0:1:1:1:S:LT", Free BSD },
+      {"E000:B405:40:00:0:1:1:1:S:LT", "Free BSD "},
 #line 88 "os.gperf"
-      {"0578:_MSS:40:WS:0:0:0:0:A:28", Elsa Router },
+      {"0578:_MSS:40:WS:0:0:0:0:A:28", "Elsa Router "},
 #line 56 "os.gperf"
-      {"0400:0400:80:WS:0:0:0:0:A:2C", Prime SharePH-1UNW (hardware printserver)},
+      {"0400:0400:80:WS:0:0:0:0:A:2C", "Prime SharePH-1UNW (hardware printserver)"},
 #line 467 "os.gperf"
-      {"1FFF:_MSS:80:00:0:0:1:0:A:LT", Novell NetWare 3.12 - 5.00},
+      {"1FFF:_MSS:80:00:0:0:1:0:A:LT", "Novell NetWare 3.12 - 5.00"},
 #line 656 "os.gperf"
-      {"223F:05AC:FF:WS:0:0:0:0:A:2C", Windows 98},
+      {"223F:05AC:FF:WS:0:0:0:0:A:2C", "Windows 98"},
 #line 468 "os.gperf"
-      {"1FFF:_MSS:80:WS:0:0:1:0:A:LT", NetWare 4.11 SP7- 5 SP3A BorderManager 3.5},
+      {"1FFF:_MSS:80:WS:0:0:1:0:A:LT", "NetWare 4.11 SP7- 5 SP3A BorderManager 3.5"},
 #line 1479 "os.gperf"
-      {"F000:B405:40:WS:1:1:0:0:S:30", SGI Irix 6.5.17m},
+      {"F000:B405:40:WS:1:1:0:0:S:30", "SGI Irix 6.5.17m"},
 #line 683 "os.gperf"
-      {"2580:05AC:80:WS:1:1:1:0:A:30", Windows 2000 Sp3 (Build2195)},
+      {"2580:05AC:80:WS:1:1:1:0:A:30", "Windows 2000 Sp3 (Build2195)"},
 #line 1025 "os.gperf"
-      {"6030:6405:40:00:0:1:1:1:A:3C", Solaris 8},
+      {"6030:6405:40:00:0:1:1:1:A:3C", "Solaris 8"},
 #line 342 "os.gperf"
-      {"16D0:055C:40:WS:0:0:1:0:A:2C", Debian Sar},
+      {"16D0:055C:40:WS:0:0:1:0:A:2C", "Debian Sar"},
 #line 1602 "os.gperf"
-      {"FFA3:05B4:40:WS:1:1:1:0:S:30", Windown 2000 },
+      {"FFA3:05B4:40:WS:1:1:1:0:S:30", "Windown 2000 "},
 #line 1567 "os.gperf"
-      {"FC00:05B4:80:00:1:1:1:0:S:34", Windows XP SP1 },
+      {"FC00:05B4:80:00:1:1:1:0:S:34", "Windows XP SP1 "},
 #line 1666 "os.gperf"
-      {"FFFF:05A0:80:WS:1:1:1:0:A:30", Windows XP},
+      {"FFFF:05A0:80:WS:1:1:1:0:A:30", "Windows XP"},
 #line 1586 "os.gperf"
-      {"FE88:05B4:FF:00:1:1:1:1:A:40", Mac OS X Server},
+      {"FE88:05B4:FF:00:1:1:1:1:A:40", "Mac OS X Server"},
 #line 1457 "os.gperf"
-      {"EBC0:05B4:40:02:1:1:1:0:S:34", Windows 2000 Pro SP2 / XP Pro},
+      {"EBC0:05B4:40:02:1:1:1:0:S:34", "Windows 2000 Pro SP2 / XP Pro"},
 #line 1351 "os.gperf"
-      {"9C40:05B4:80:WS:1:1:1:0:S:30", Windows Xp},
+      {"9C40:05B4:80:WS:1:1:1:0:S:30", "Windows Xp"},
 #line 57 "os.gperf"
-      {"0400:0400:80:WS:0:0:0:0:S:2C", NCSA 2.3.07},
+      {"0400:0400:80:WS:0:0:0:0:S:2C", "NCSA 2.3.07"},
 #line 872 "os.gperf"
-      {"4000:B405:80:WS:1:1:1:0:S:LT", Windows XP - 2000},
+      {"4000:B405:80:WS:1:1:1:0:S:LT", "Windows XP - 2000"},
 #line 194 "os.gperf"
-      {"0FA0:_MSS:80:WS:0:0:0:0:A:LT", MultiTech CommPlete (modem server) RAScard},
+      {"0FA0:_MSS:80:WS:0:0:0:0:A:LT", "MultiTech CommPlete (modem server) RAScard"},
 #line 871 "os.gperf"
-      {"4000:B405:80:WS:1:1:1:0:S:30", Windows XP / 2000 / ME},
+      {"4000:B405:80:WS:1:1:1:0:S:30", "Windows XP / 2000 / ME"},
 #line 1481 "os.gperf"
-      {"F424:05B4:80:04:1:1:1:0:A:34", Windows XP SP1 - english },
+      {"F424:05B4:80:04:1:1:1:0:A:34", "Windows XP SP1 - english "},
 #line 1577 "os.gperf"
-      {"FCA4:057E:80:WS:1:1:1:0:S:30", Windows XP},
+      {"FCA4:057E:80:WS:1:1:1:0:S:30", "Windows XP"},
 #line 936 "os.gperf"
-      {"4380:A005:80:WS:1:1:1:0:A:30", Open BSD},
+      {"4380:A005:80:WS:1:1:1:0:A:30", "Open BSD"},
 #line 938 "os.gperf"
-      {"43E0:05B4:40:00:0:1:0:1:A:LT", OpenBSD 2.8 GENERIC},
+      {"43E0:05B4:40:00:0:1:0:1:A:LT", "OpenBSD 2.8 GENERIC"},
 #line 689 "os.gperf"
-      {"26E2:058E:FF:WS:1:1:1:0:A:30", SunOS 5.7},
+      {"26E2:058E:FF:WS:1:1:1:0:A:30", "SunOS 5.7"},
 #line 939 "os.gperf"
-      {"43E0:05B4:40:00:0:1:1:0:A:LT", FreeBSD 4.x},
+      {"43E0:05B4:40:00:0:1:1:0:A:LT", "FreeBSD 4.x"},
 #line 1439 "os.gperf"
-      {"E000:B405:40:00:0:1:1:1:A:3C", Free BSD 4.8 },
+      {"E000:B405:40:00:0:1:1:1:A:3C", "Free BSD 4.8 "},
 #line 868 "os.gperf"
-      {"4000:B405:40:00:0:1:0:1:A:3C", NetBSD 1.5 },
+      {"4000:B405:40:00:0:1:0:1:A:3C", "NetBSD 1.5 "},
 #line 1438 "os.gperf"
-      {"E000:B405:40:00:0:1:0:1:A:3C", FreeBSD 4.6},
+      {"E000:B405:40:00:0:1:0:1:A:3C", "FreeBSD 4.6"},
 #line 375 "os.gperf"
-      {"16D0:05B4:40:00:1:1:1:0:A:34", Linux 2.4.xx},
+      {"16D0:05B4:40:00:1:1:1:0:A:34", "Linux 2.4.xx"},
 #line 935 "os.gperf"
-      {"4380:05B4:80:WS:1:1:1:0:A:30", Windows 2003 Server},
+      {"4380:05B4:80:WS:1:1:1:0:A:30", "Windows 2003 Server"},
 #line 1460 "os.gperf"
-      {"EBC0:05B4:80:02:1:1:1:0:S:34", Windows XP},
+      {"EBC0:05B4:80:02:1:1:1:0:S:34", "Windows XP"},
 #line 179 "os.gperf"
-      {"0C00:05B4:FF:00:0:1:0:0:A:30", OKI},
+      {"0C00:05B4:FF:00:0:1:0:0:A:30", "OKI"},
 #line 1593 "os.gperf"
-      {"FF00:0550:80:00:1:1:1:1:A:40", Windows XP},
+      {"FF00:0550:80:00:1:1:1:1:A:40", "Windows XP"},
 #line 341 "os.gperf"
-      {"16D0:055C:40:00:1:1:1:1:S:3C", Linux 2.6.7-gentoo-r7},
+      {"16D0:055C:40:00:1:1:1:1:S:3C", "Linux 2.6.7-gentoo-r7"},
 #line 885 "os.gperf"
-      {"402E:5005:80:00:0:1:1:1:A:3C", Windows XP / 2000 / ME},
+      {"402E:5005:80:00:0:1:1:1:A:3C", "Windows XP / 2000 / ME"},
 #line 942 "os.gperf"
-      {"43E0:05B4:40:00:1:1:1:1:A:40", OpenBSD 2.9 3.0},
+      {"43E0:05B4:40:00:1:1:1:1:A:40", "OpenBSD 2.9 3.0"},
 #line 941 "os.gperf"
-      {"43E0:05B4:40:00:1:1:0:1:A:40", OpenBSD 3.4},
+      {"43E0:05B4:40:00:1:1:0:1:A:40", "OpenBSD 3.4"},
 #line 1667 "os.gperf"
-      {"FFFF:05A0:80:WS:1:1:1:0:S:30", Windows XP Pro},
+      {"FFFF:05A0:80:WS:1:1:1:0:S:30", "Windows XP Pro"},
 #line 1615 "os.gperf"
-      {"FFF0:EC04:80:WS:1:1:1:0:S:30", Windows XP},
+      {"FFF0:EC04:80:WS:1:1:1:0:S:30", "Windows XP"},
 #line 1617 "os.gperf"
-      {"FFF7:_MSS:80:00:0:1:1:1:A:LT", Solaris 2.6 - 2.7},
+      {"FFF7:_MSS:80:00:0:1:1:1:A:LT", "Solaris 2.6 - 2.7"},
 #line 870 "os.gperf"
-      {"4000:B405:80:00:0:1:0:1:A:3C", Windows Server 2003},
+      {"4000:B405:80:00:0:1:0:1:A:3C", "Windows Server 2003"},
 #line 65 "os.gperf"
-      {"0400:05B4:FF:WS:0:0:0:0:A:2C", 3Com 812 ADSL ROUTER},
+      {"0400:05B4:FF:WS:0:0:0:0:A:2C", "3Com 812 ADSL ROUTER"},
 #line 1616 "os.gperf"
-      {"FFF7:_MSS:80:00:0:1:1:0:A:LT", Solaris 2.6 - 2.7},
+      {"FFF7:_MSS:80:00:0:1:1:0:A:LT", "Solaris 2.6 - 2.7"},
 #line 1038 "os.gperf"
-      {"60F4:05B4:40:00:1:1:1:0:A:34", SunOS 5.8},
+      {"60F4:05B4:40:00:1:1:1:0:A:34", "SunOS 5.8"},
 #line 47 "os.gperf"
-      {"03F2:_MSS:80:00:0:0:0:0:A:LT", Lexmark Optra S Printer},
+      {"03F2:_MSS:80:00:0:0:0:0:A:LT", "Lexmark Optra S Printer"},
 #line 1440 "os.gperf"
-      {"E000:B405:40:00:0:1:1:1:S:3C", Free BSD},
+      {"E000:B405:40:00:0:1:1:1:S:3C", "Free BSD"},
 #line 377 "os.gperf"
-      {"16D0:05B4:40:00:1:1:1:0:S:34", Linux 2.4.23-grsec },
+      {"16D0:05B4:40:00:1:1:1:0:S:34", "Linux 2.4.23-grsec "},
 #line 378 "os.gperf"
-      {"16D0:05B4:40:00:1:1:1:0:S:34", Linux Debian Woody},
+      {"16D0:05B4:40:00:1:1:1:0:S:34", "Linux Debian Woody"},
 #line 659 "os.gperf"
-      {"2274:04EC:80:WS:1:1:1:0:A:30", Windows 98},
+      {"2274:04EC:80:WS:1:1:1:0:A:30", "Windows 98"},
 #line 373 "os.gperf"
-      {"16D0:05B4:40:00:1:1:0:0:S:34", Linux 2.4.xx},
+      {"16D0:05B4:40:00:1:1:0:0:S:34", "Linux 2.4.xx"},
 #line 48 "os.gperf"
-      {"03F2:_MSS:80:WS:0:0:0:0:A:LT", Lexmark Optra S Printer},
+      {"03F2:_MSS:80:WS:0:0:0:0:A:LT", "Lexmark Optra S Printer"},
 #line 1594 "os.gperf"
-      {"FF00:0550:80:WS:1:1:1:0:S:30", Windows XP},
+      {"FF00:0550:80:WS:1:1:1:0:S:30", "Windows XP"},
 #line 679 "os.gperf"
-      {"2544:_MSS:80:00:0:0:1:0:A:LT", Solaris 2.3 - 2.4},
+      {"2544:_MSS:80:00:0:0:1:0:A:LT", "Solaris 2.3 - 2.4"},
 #line 1585 "os.gperf"
-      {"FE88:05B4:FF:00:0:1:1:1:A:3C", Solaris},
+      {"FE88:05B4:FF:00:0:1:1:1:A:3C", "Solaris"},
 #line 9 "os.gperf"
-      {"0017:05B4:40:00:0:1:0:1:A:3C", Gestetner printer },
+      {"0017:05B4:40:00:0:1:0:1:A:3C", "Gestetner printer "},
 #line 205 "os.gperf"
-      {"1000:0400:20:F5:0:0:0:0:S:LT", Alcatel (Xylan) OmniStack 5024},
+      {"1000:0400:20:F5:0:0:0:0:S:LT", "Alcatel (Xylan) OmniStack 5024"},
 #line 203 "os.gperf"
-      {"1000:0400:1E:F5:0:0:0:0:S:LT", Alcatel (Xylan) OmniStack 5024 v3.4.5},
+      {"1000:0400:1E:F5:0:0:0:0:S:LT", "Alcatel (Xylan) OmniStack 5024 v3.4.5"},
 #line 1669 "os.gperf"
-      {"FFFF:05A4:40:WS:1:1:1:0:A:30", Windows 3.11},
+      {"FFFF:05A4:40:WS:1:1:1:0:A:30", "Windows 3.11"},
 #line 1629 "os.gperf"
-      {"FFFF:0534:40:WS:1:1:1:0:A:30", Windows XP Pro SP1},
+      {"FFFF:0534:40:WS:1:1:1:0:A:30", "Windows XP Pro SP1"},
 #line 59 "os.gperf"
-      {"0400:0594:FF:WS:0:0:0:0:A:2C", 3Com SuperStack 3 Switch 4400},
+      {"0400:0594:FF:WS:0:0:0:0:A:2C", "3Com SuperStack 3 Switch 4400"},
 #line 657 "os.gperf"
-      {"223F:05B4:FF:WS:0:0:0:0:A:2C", Solaris 2.6},
+      {"223F:05B4:FF:WS:0:0:0:0:A:2C", "Solaris 2.6"},
 #line 992 "os.gperf"
-      {"4470:B405:80:00:0:1:1:1:A:LT", Windows Server 2003 },
+      {"4470:B405:80:00:0:1:1:1:A:LT", "Windows Server 2003 "},
 #line 645 "os.gperf"
-      {"2238:9805:80:00:0:1:0:1:A:3C", Windows XP Professional},
+      {"2238:9805:80:00:0:1:0:1:A:3C", "Windows XP Professional"},
 #line 771 "os.gperf"
-      {"4000:0218:80:00:1:1:1:1:S:LT", Windows XP Home},
+      {"4000:0218:80:00:1:1:1:1:S:LT", "Windows XP Home"},
 #line 1656 "os.gperf"
-      {"FFFF:0586:40:WS:1:1:1:0:S:30", Windows 98 SE },
+      {"FFFF:0586:40:WS:1:1:1:0:S:30", "Windows 98 SE "},
 #line 940 "os.gperf"
-      {"43E0:05B4:40:00:0:1:1:1:A:3C", FreeBSD 4.4-Release},
+      {"43E0:05B4:40:00:0:1:1:1:A:3C", "FreeBSD 4.4-Release"},
 #line 1023 "os.gperf"
-      {"6028:B405:40:00:0:1:1:1:A:3C", Solaris 8},
+      {"6028:B405:40:00:0:1:1:1:A:3C", "Solaris 8"},
 #line 833 "os.gperf"
-      {"4000:05B4:40:5E:0:1:1:0:S:2C", FreeBSD 4.0-STABLE, 3.2-RELEASE},
+      {"4000:05B4:40:5E:0:1:1:0:S:2C", "FreeBSD 4.0-STABLE 3.2-RELEASE"},
 #line 710 "os.gperf"
-      {"3000:_MSS:80:WS:0:0:0:0:A:LT", Acorn Risc OS 3.6 (Acorn TCP/IP Stack 4.07)},
+      {"3000:_MSS:80:WS:0:0:0:0:A:LT", "Acorn Risc OS 3.6 (Acorn TCP/IP Stack 4.07)"},
 #line 1572 "os.gperf"
-      {"FC00:7E05:80:WS:1:1:1:0:S:30", Windows XP Pro},
+      {"FC00:7E05:80:WS:1:1:1:0:S:30", "Windows XP Pro"},
 #line 217 "os.gperf"
-      {"1000:0901:40:10:0:1:0:1:S:LT", Mac os X 10.1},
+      {"1000:0901:40:10:0:1:0:1:S:LT", "Mac os X 10.1"},
 #line 995 "os.gperf"
-      {"4470:B405:80:WS:1:1:1:0:A:30", Windows XP},
+      {"4470:B405:80:WS:1:1:1:0:A:30", "Windows XP"},
 #line 886 "os.gperf"
-      {"402E:B405:40:WS:0:0:1:0:A:LT", Free BSD 4.1.1 - 4.3 X86},
+      {"402E:B405:40:WS:0:0:1:0:A:LT", "Free BSD 4.1.1 - 4.3 X86"},
 #line 994 "os.gperf"
-      {"4470:B405:80:WS:1:1:0:0:A:30", Mac OS 8.6},
+      {"4470:B405:80:WS:1:1:0:0:A:30", "Mac OS 8.6"},
 #line 1068 "os.gperf"
-      {"64F0:055C:40:WS:1:1:1:1:A:3C", SunOS},
+      {"64F0:055C:40:WS:1:1:1:1:A:3C", "SunOS"},
 #line 180 "os.gperf"
-      {"0C00:05B4:FF:WS:0:0:0:0:A:2C", OKI},
+      {"0C00:05B4:FF:WS:0:0:0:0:A:2C", "OKI"},
 #line 1649 "os.gperf"
-      {"FFFF:0584:40:00:1:1:1:1:A:40", Windows XP},
+      {"FFFF:0584:40:00:1:1:1:1:A:40", "Windows XP"},
 #line 308 "os.gperf"
-      {"16A0:05B4:40:03:1:1:0:1:A:3C", Linux Kernel 2.4.xx},
+      {"16A0:05B4:40:03:1:1:0:1:A:3C", "Linux Kernel 2.4.xx"},
 #line 1670 "os.gperf"
-      {"FFFF:05AB:80:WS:1:1:0:0:S:30", Windows},
+      {"FFFF:05AB:80:WS:1:1:0:0:S:30", "Windows"},
 #line 1015 "os.gperf"
-      {"4F68:05AC:80:WS:1:1:1:0:S:30", Windows 2000 Professional },
+      {"4F68:05AC:80:WS:1:1:1:0:S:30", "Windows 2000 Professional "},
 #line 440 "os.gperf"
-      {"1800:_MSS:40:WS:0:0:1:0:A:LT", VMS MultiNet V4.2(16) / OpenVMS V7.1-2},
+      {"1800:_MSS:40:WS:0:0:1:0:A:LT", "VMS MultiNet V4.2(16) / OpenVMS V7.1-2"},
 #line 904 "os.gperf"
-      {"40E8:04EC:80:WS:0:0:1:0:A:2C", Windows 2000 Pro},
+      {"40E8:04EC:80:WS:0:0:1:0:A:2C", "Windows 2000 Pro"},
 #line 677 "os.gperf"
-      {"2530:0550:80:WS:1:1:1:0:A:30", windows 98},
+      {"2530:0550:80:WS:1:1:1:0:A:30", "windows 98"},
 #line 168 "os.gperf"
-      {"0B68:05B4:40:WS:1:1:1:0:A:30", Linux 2.2.19},
+      {"0B68:05B4:40:WS:1:1:1:0:A:30", "Linux 2.2.19"},
 #line 1622 "os.gperf"
-      {"FFFF:024C:80:WS:1:1:1:0:S:30", Windows XP sp2 },
+      {"FFFF:024C:80:WS:1:1:1:0:S:30", "Windows XP sp2 "},
 #line 1654 "os.gperf"
-      {"FFFF:0586:40:00:0:1:1:1:A:3C", Unix},
+      {"FFFF:0586:40:00:0:1:1:1:A:3C", "Unix"},
 #line 444 "os.gperf"
-      {"1800:_MSS:80:00:0:1:1:1:A:LT", VMS MultiNet V4.2(16)/ OpenVMS V7.1-2},
+      {"1800:_MSS:80:00:0:1:1:1:A:LT", "VMS MultiNet V4.2(16)/ OpenVMS V7.1-2"},
 #line 442 "os.gperf"
-      {"1800:_MSS:80:00:0:1:0:1:A:LT", OpenVMS 6.2 - 7.2-1 on VAX or AXP},
+      {"1800:_MSS:80:00:0:1:0:1:A:LT", "OpenVMS 6.2 - 7.2-1 on VAX or AXP"},
 #line 1652 "os.gperf"
-      {"FFFF:0584:80:WS:1:1:1:0:A:30", Cisco-louche1 },
+      {"FFFF:0584:80:WS:1:1:1:0:A:30", "Cisco-louche1 "},
 #line 443 "os.gperf"
-      {"1800:_MSS:80:00:0:1:1:0:A:LT", VMS MultiNet V4.2(16)/ OpenVMS V7.1-2},
+      {"1800:_MSS:80:00:0:1:1:0:A:LT", "VMS MultiNet V4.2(16)/ OpenVMS V7.1-2"},
 #line 441 "os.gperf"
-      {"1800:_MSS:80:00:0:1:0:0:A:LT", OpenVMS 6.2 - 7.2-1 on VAX or AXP},
+      {"1800:_MSS:80:00:0:1:0:0:A:LT", "OpenVMS 6.2 - 7.2-1 on VAX or AXP"},
 #line 321 "os.gperf"
-      {"16A0:7A05:40:00:0:1:1:1:A:3C", Redhat Linux},
+      {"16A0:7A05:40:00:0:1:1:1:A:3C", "Redhat Linux"},
 #line 540 "os.gperf"
-      {"2000:B405:20:WS:0:0:0:0:A:LT", HP Ux 9.x},
+      {"2000:B405:20:WS:0:0:0:0:A:LT", "HP Ux 9.x"},
 #line 1358 "os.gperf"
-      {"AC00:FA3B:80:WS:1:1:1:0:S:LT", Windows 2000 SP2},
+      {"AC00:FA3B:80:WS:1:1:1:0:S:LT", "Windows 2000 SP2"},
 #line 1001 "os.gperf"
-      {"44E8:04EC:80:WS:1:1:1:0:A:30", Windows 2000 Pro},
+      {"44E8:04EC:80:WS:1:1:1:0:A:30", "Windows 2000 Pro"},
 #line 446 "os.gperf"
-      {"1800:_MSS:80:WS:0:0:1:0:A:LT", Novell Netware 5.0 SP5},
+      {"1800:_MSS:80:WS:0:0:1:0:A:LT", "Novell Netware 5.0 SP5"},
 #line 445 "os.gperf"
-      {"1800:_MSS:80:WS:0:0:0:0:A:LT", IPAD Model 5000 or V.1.52},
+      {"1800:_MSS:80:WS:0:0:0:0:A:LT", "IPAD Model 5000 or V.1.52"},
 #line 1000 "os.gperf"
-      {"44E8:04EC:80:00:1:1:1:1:A:40", Windows 2000 pro},
+      {"44E8:04EC:80:00:1:1:1:1:A:40", "Windows 2000 pro"},
 #line 61 "os.gperf"
-      {"0400:059C:FF:WS:0:0:0:0:A:2C", 3Com SuperStack II 3300},
+      {"0400:059C:FF:WS:0:0:0:0:A:2C", "3Com SuperStack II 3300"},
 #line 1768 "os.gperf"
-      {"FFFF:_MSS:FF:WS:0:0:1:0:A:LT", Solaris 2.6 - 2.7},
+      {"FFFF:_MSS:FF:WS:0:0:1:0:A:LT", "Solaris 2.6 - 2.7"},
 #line 50 "os.gperf"
-      {"03F6:_MSS:80:WS:0:0:0:0:A:LT", Lexmark Optra S Printer},
+      {"03F6:_MSS:80:WS:0:0:0:0:A:LT", "Lexmark Optra S Printer"},
 #line 989 "os.gperf"
-      {"4470:B405:40:00:0:1:1:1:A:3C", Windows NT 2000/5.0},
+      {"4470:B405:40:00:0:1:1:1:A:3C", "Windows NT 2000/5.0"},
 #line 1408 "os.gperf"
-      {"C377:05AC:80:02:1:1:1:1:S:40", Windows 2000 advanced server SP2},
+      {"C377:05AC:80:02:1:1:1:1:S:40", "Windows 2000 advanced server SP2"},
 #line 1636 "os.gperf"
-      {"FFFF:0564:40:WS:0:0:0:0:A:LT", AIX},
+      {"FFFF:0564:40:WS:0:0:0:0:A:LT", "AIX"},
 #line 1681 "os.gperf"
-      {"FFFF:05AC:80:WS:1:1:1:0:A:30", BSD},
+      {"FFFF:05AC:80:WS:1:1:1:0:A:30", "BSD"},
 #line 1679 "os.gperf"
-      {"FFFF:05AC:80:00:1:1:1:1:A:40", Windows 2000 Server},
+      {"FFFF:05AC:80:00:1:1:1:1:A:40", "Windows 2000 Server"},
 #line 1089 "os.gperf"
-      {"7900:_MSS:80:00:0:1:1:1:A:LT", Atari Mega STE running JIS-68k 3.0},
+      {"7900:_MSS:80:00:0:1:1:1:A:LT", "Atari Mega STE running JIS-68k 3.0"},
 #line 1088 "os.gperf"
-      {"7900:_MSS:80:00:0:1:1:0:A:LT", Atari Mega STE running JIS-68k 3.0},
+      {"7900:_MSS:80:00:0:1:1:0:A:LT", "Atari Mega STE running JIS-68k 3.0"},
 #line 1655 "os.gperf"
-      {"FFFF:0586:40:01:0:1:1:1:S:3C", Mac OS X 10.2},
+      {"FFFF:0586:40:01:0:1:1:1:S:3C", "Mac OS X 10.2"},
 #line 1653 "os.gperf"
-      {"FFFF:0584:80:WS:1:1:1:0:S:30", Linux Debian},
+      {"FFFF:0584:80:WS:1:1:1:0:S:30", "Linux Debian"},
 #line 1677 "os.gperf"
-      {"FFFF:05AC:40:WS:1:1:1:0:S:LT", Windows 98},
+      {"FFFF:05AC:40:WS:1:1:1:0:S:LT", "Windows 98"},
 #line 1575 "os.gperf"
-      {"FC00:B405:80:WS:1:1:1:0:S:30", Windows XP },
+      {"FC00:B405:80:WS:1:1:1:0:S:30", "Windows XP "},
 #line 1676 "os.gperf"
-      {"FFFF:05AC:40:WS:1:1:1:0:S:30", Windows 98 Second Edition},
+      {"FFFF:05AC:40:WS:1:1:1:0:S:30", "Windows 98 Second Edition"},
 #line 541 "os.gperf"
-      {"2000:B405:20:WS:0:0:1:0:S:LT", Windows 2000},
+      {"2000:B405:20:WS:0:0:1:0:S:LT", "Windows 2000"},
 #line 687 "os.gperf"
-      {"2648:0584:FF:00:1:1:1:1:A:40", Windows 2000 NT },
+      {"2648:0584:FF:00:1:1:1:1:A:40", "Windows 2000 NT "},
 #line 1672 "os.gperf"
-      {"FFFF:05AC:40:00:1:1:1:1:S:40", Windows XP},
+      {"FFFF:05AC:40:00:1:1:1:1:S:40", "Windows XP"},
 #line 991 "os.gperf"
-      {"4470:B405:80:00:0:1:1:1:A:3C", Windows 2000 Workstation / XP Home},
+      {"4470:B405:80:00:0:1:1:1:A:3C", "Windows 2000 Workstation / XP Home"},
 #line 990 "os.gperf"
-      {"4470:B405:80:00:0:1:0:1:A:3C", Windows ME},
+      {"4470:B405:80:00:0:1:0:1:A:3C", "Windows ME"},
 #line 1069 "os.gperf"
-      {"6540:05B4:40:00:1:1:1:1:A:40", Windows XP },
+      {"6540:05B4:40:00:1:1:1:1:A:40", "Windows XP "},
 #line 1075 "os.gperf"
-      {"7000:_MSS:80:WS:0:0:0:0:A:LT", IBM OS/2 V.3},
+      {"7000:_MSS:80:WS:0:0:0:0:A:LT", "IBM OS/2 V.3"},
 #line 1659 "os.gperf"
-      {"FFFF:058C:40:WS:1:1:1:0:A:30", Windows 2000 Pro SP2},
+      {"FFFF:058C:40:WS:1:1:1:0:A:30", "Windows 2000 Pro SP2"},
 #line 1657 "os.gperf"
-      {"FFFF:058C:40:00:1:1:1:1:A:40", Windows XP Pro},
+      {"FFFF:058C:40:00:1:1:1:1:A:40", "Windows XP Pro"},
 #line 1651 "os.gperf"
-      {"FFFF:0584:40:WS:0:0:1:0:A:2C", Linux },
+      {"FFFF:0584:40:WS:0:0:1:0:A:2C", "Linux "},
 #line 318 "os.gperf"
-      {"16A0:5C05:40:00:0:1:1:1:A:3C", Linux 2.4.19 Knoppix},
+      {"16A0:5C05:40:00:0:1:1:1:A:3C", "Linux 2.4.19 Knoppix"},
 #line 1650 "os.gperf"
-      {"FFFF:0584:40:WS:0:0:0:0:A:2C", Solaris},
+      {"FFFF:0584:40:WS:0:0:0:0:A:2C", "Solaris"},
 #line 1641 "os.gperf"
-      {"FFFF:0564:80:WS:1:1:1:0:A:30", Windows 2000 / NT },
+      {"FFFF:0564:80:WS:1:1:1:0:A:30", "Windows 2000 / NT "},
 #line 420 "os.gperf"
-      {"16D0:B405:40:WS:0:0:0:0:A:LT", SMC Broadband / MacSense Router},
+      {"16D0:B405:40:WS:0:0:0:0:A:LT", "SMC Broadband / MacSense Router"},
 #line 1680 "os.gperf"
-      {"FFFF:05AC:80:WS:0:0:1:0:S:LT", Windows 98},
+      {"FFFF:05AC:80:WS:0:0:1:0:S:LT", "Windows 98"},
 #line 325 "os.gperf"
-      {"16A0:B405:40:00:0:1:1:1:A:LT", Linux Kernel 2.4.24 (ppc)},
+      {"16A0:B405:40:00:0:1:1:1:A:LT", "Linux Kernel 2.4.24 (ppc)"},
 #line 1639 "os.gperf"
-      {"FFFF:0564:80:00:1:1:1:1:A:40", Windows 2000 server},
+      {"FFFF:0564:80:00:1:1:1:1:A:40", "Windows 2000 server"},
 #line 933 "os.gperf"
-      {"4350:9C05:80:WS:1:1:1:0:A:30", Windows Server 2003},
+      {"4350:9C05:80:WS:1:1:1:0:A:30", "Windows Server 2003"},
 #line 778 "os.gperf"
-      {"4000:0528:80:WS:1:1:1:0:S:30", Windows XP pro},
+      {"4000:0528:80:WS:1:1:1:0:S:30", "Windows XP pro"},
 #line 1682 "os.gperf"
-      {"FFFF:05AC:80:WS:1:1:1:0:S:30", Windows 95},
+      {"FFFF:05AC:80:WS:1:1:1:0:S:30", "Windows 95"},
 #line 90 "os.gperf"
-      {"0584:0584:80:00:1:1:1:1:A:3C", Red Hat Linux 8.0 (Psyche)},
+      {"0584:0584:80:00:1:1:1:1:A:3C", "Red Hat Linux 8.0 (Psyche)"},
 #line 691 "os.gperf"
-      {"2760:05AC:FF:00:1:1:1:1:A:40", Solaris 7 },
+      {"2760:05AC:FF:00:1:1:1:1:A:40", "Solaris 7 "},
 #line 167 "os.gperf"
-      {"0B68:05B4:40:WS:0:0:0:0:A:2C", DLink DP-300 Printserver},
+      {"0B68:05B4:40:WS:0:0:0:0:A:2C", "DLink DP-300 Printserver"},
 #line 1638 "os.gperf"
-      {"FFFF:0564:40:WS:1:1:1:0:S:30", Windows 98 Second Edition},
+      {"FFFF:0564:40:WS:1:1:1:0:S:30", "Windows 98 Second Edition"},
 #line 1662 "os.gperf"
-      {"FFFF:058C:80:WS:1:1:1:0:A:30", NetBSD},
+      {"FFFF:058C:80:WS:1:1:1:0:A:30", "NetBSD"},
 #line 1573 "os.gperf"
-      {"FC00:B405:80:00:0:1:1:1:A:3C", Windows 2000 server},
+      {"FC00:B405:80:00:0:1:1:1:A:3C", "Windows 2000 server"},
 #line 1661 "os.gperf"
-      {"FFFF:058C:80:00:1:1:1:1:A:40", FreeBSD},
+      {"FFFF:058C:80:00:1:1:1:1:A:40", "FreeBSD"},
 #line 1683 "os.gperf"
-      {"FFFF:05B0:80:WS:1:1:1:0:S:30", Windows 2000 Professional },
+      {"FFFF:05B0:80:WS:1:1:1:0:S:30", "Windows 2000 Professional "},
 #line 1675 "os.gperf"
-      {"FFFF:05AC:40:WS:0:0:1:0:A:2C", FreeBSD 4.3 - 4.4 },
+      {"FFFF:05AC:40:WS:0:0:1:0:A:2C", "FreeBSD 4.3 - 4.4 "},
 #line 322 "os.gperf"
-      {"16A0:7E05:40:00:0:1:1:1:A:3C", linux debian},
+      {"16A0:7E05:40:00:0:1:1:1:A:3C", "linux debian"},
 #line 1673 "os.gperf"
-      {"FFFF:05AC:40:01:0:1:0:1:A:3C", FreeBSD 4.5-STABLE},
+      {"FFFF:05AC:40:01:0:1:0:1:A:3C", "FreeBSD 4.5-STABLE"},
 #line 319 "os.gperf"
-      {"16A0:6405:40:02:0:1:1:1:A:3C", RedHat Enterprise 3.0 ES},
+      {"16A0:6405:40:02:0:1:1:1:A:3C", "RedHat Enterprise 3.0 ES"},
 #line 1660 "os.gperf"
-      {"FFFF:058C:40:WS:1:1:1:0:S:30", Windows 98},
+      {"FFFF:058C:40:WS:1:1:1:0:S:30", "Windows 98"},
 #line 1066 "os.gperf"
-      {"6348:0584:40:WS:1:1:1:0:A:30", Solaris/Ultra sparc },
+      {"6348:0584:40:WS:1:1:1:0:A:30", "Solaris/Ultra sparc "},
 #line 545 "os.gperf"
-      {"2000:B405:80:WS:0:0:1:0:S:LT", Windows 98 / NT},
+      {"2000:B405:80:WS:0:0:1:0:S:LT", "Windows 98 / NT"},
 #line 417 "os.gperf"
-      {"16D0:B405:40:00:1:1:1:1:S:LT", Redhat Linux 7.1 (Kernel 2.4.2)},
+      {"16D0:B405:40:00:1:1:1:1:S:LT", "Redhat Linux 7.1 (Kernel 2.4.2)"},
 #line 236 "os.gperf"
-      {"1020:6405:FF:WS:0:0:0:0:A:2C", Cisco IOS },
+      {"1020:6405:FF:WS:0:0:0:0:A:2C", "Cisco IOS "},
 #line 943 "os.gperf"
-      {"43E0:A805:40:00:0:1:0:1:A:LT", OpenBSD 2.6},
+      {"43E0:A805:40:00:0:1:0:1:A:LT", "OpenBSD 2.6"},
 #line 320 "os.gperf"
-      {"16A0:6405:40:02:1:1:1:1:A:3C", Linux 2.6.9-1},
+      {"16A0:6405:40:02:1:1:1:1:A:3C", "Linux 2.6.9-1"},
 #line 546 "os.gperf"
-      {"2000:B405:80:WS:1:1:1:0:S:30", Windows 98 / XP},
+      {"2000:B405:80:WS:1:1:1:0:S:30", "Windows 98 / XP"},
 #line 1642 "os.gperf"
-      {"FFFF:0564:80:WS:1:1:1:0:S:30", Windows},
+      {"FFFF:0564:80:WS:1:1:1:0:S:30", "Windows"},
 #line 418 "os.gperf"
-      {"16D0:B405:40:01:1:1:1:1:S:LT", SuSe 8.0 Linux 2.4.18},
+      {"16D0:B405:40:01:1:1:1:1:S:LT", "SuSe 8.0 Linux 2.4.18"},
 #line 1363 "os.gperf"
-      {"AE60:0586:80:WS:1:1:1:0:S:30", Windows ME},
+      {"AE60:0586:80:WS:1:1:1:0:S:30", "Windows ME"},
 #line 241 "os.gperf"
-      {"10C0:0218:80:WS:1:1:1:0:S:30", Windows 2000 Advanced Server SP2},
+      {"10C0:0218:80:WS:1:1:1:0:S:30", "Windows 2000 Advanced Server SP2"},
 #line 543 "os.gperf"
-      {"2000:B405:40:00:0:1:1:1:A:3C", windows 98},
+      {"2000:B405:40:00:0:1:1:1:A:3C", "windows 98"},
 #line 1634 "os.gperf"
-      {"FFFF:0564:40:00:0:1:1:1:A:3C", FreeBSD },
+      {"FFFF:0564:40:00:0:1:1:1:A:3C", "FreeBSD "},
 #line 571 "os.gperf"
-      {"2058:6405:80:WS:0:0:1:0:A:LT", Windows},
+      {"2058:6405:80:WS:0:0:1:0:A:LT", "Windows"},
 #line 542 "os.gperf"
-      {"2000:B405:40:00:0:1:0:1:A:3C", Apple AirPort Base Station},
+      {"2000:B405:40:00:0:1:0:1:A:3C", "Apple AirPort Base Station"},
 #line 1693 "os.gperf"
-      {"FFFF:05B4:40:01:0:1:1:1:A:LT", Linux },
+      {"FFFF:05B4:40:01:0:1:1:1:A:LT", "Linux "},
 #line 1691 "os.gperf"
-      {"FFFF:05B4:40:01:0:1:0:1:A:LT", AIX},
+      {"FFFF:05B4:40:01:0:1:0:1:A:LT", "AIX"},
 #line 803 "os.gperf"
-      {"4000:0588:80:WS:1:1:1:0:S:30", Windows ME},
+      {"4000:0588:80:WS:1:1:1:0:S:30", "Windows ME"},
 #line 166 "os.gperf"
-      {"0B68:05B4:40:00:1:1:1:1:S:3C", Linux 2.4.21 },
+      {"0B68:05B4:40:00:1:1:1:1:S:3C", "Linux 2.4.21 "},
 #line 1637 "os.gperf"
-      {"FFFF:0564:40:WS:0:0:1:0:A:2C", Linux},
+      {"FFFF:0564:40:WS:0:0:1:0:A:2C", "Linux"},
 #line 1688 "os.gperf"
-      {"FFFF:05B4:40:01:0:1:0:0:A:30", FreeBSD 4.5},
+      {"FFFF:05B4:40:01:0:1:0:0:A:30", "FreeBSD 4.5"},
 #line 1668 "os.gperf"
-      {"FFFF:05A0:FF:WS:1:1:1:0:S:30", Windows 98 },
+      {"FFFF:05A0:FF:WS:1:1:1:0:S:30", "Windows 98 "},
 #line 1703 "os.gperf"
-      {"FFFF:05B4:40:WS:0:0:0:0:A:LT", Win NT 4.0 SP4},
+      {"FFFF:05B4:40:WS:0:0:0:0:A:LT", "Win NT 4.0 SP4"},
 #line 1707 "os.gperf"
-      {"FFFF:05B4:40:WS:1:1:1:0:A:30", Windows 2000 Pro SP2},
+      {"FFFF:05B4:40:WS:1:1:1:0:A:30", "Windows 2000 Pro SP2"},
 #line 1674 "os.gperf"
-      {"FFFF:05AC:40:01:0:1:1:1:S:3C", Mac OS X 10.2.x },
+      {"FFFF:05AC:40:01:0:1:1:1:S:3C", "Mac OS X 10.2.x "},
 #line 721 "os.gperf"
-      {"3C0A:_MSS:80:00:0:1:1:1:A:LT", Linux 2.1.19 - 2.2.17},
+      {"3C0A:_MSS:80:00:0:1:1:1:A:LT", "Linux 2.1.19 - 2.2.17"},
 #line 1711 "os.gperf"
-      {"FFFF:05B4:80:00:0:1:0:1:A:LT", AIX 3.2 running on RS/6000},
+      {"FFFF:05B4:80:00:0:1:0:1:A:LT", "AIX 3.2 running on RS/6000"},
 #line 720 "os.gperf"
-      {"3C0A:_MSS:80:00:0:1:1:0:A:LT", Linux 2.1.19 - 2.2.17},
+      {"3C0A:_MSS:80:00:0:1:1:0:A:LT", "Linux 2.1.19 - 2.2.17"},
 #line 1658 "os.gperf"
-      {"FFFF:058C:40:WS:0:0:0:0:A:2C", FreeBSD 4.5},
+      {"FFFF:058C:40:WS:0:0:0:0:A:2C", "FreeBSD 4.5"},
 #line 1710 "os.gperf"
-      {"FFFF:05B4:80:00:0:1:0:0:A:LT", AIX 3.2 running on RS/6000},
+      {"FFFF:05B4:80:00:0:1:0:0:A:LT", "AIX 3.2 running on RS/6000"},
 #line 122 "os.gperf"
-      {"0640:05B4:40:WS:0:0:0:0:A:2C", APC MasterSwitch Network Power Controller},
+      {"0640:05B4:40:WS:0:0:0:0:A:2C", "APC MasterSwitch Network Power Controller"},
 #line 1709 "os.gperf"
-      {"FFFF:05B4:80:00:0:0:1:0:A:LT", MacOS 8.1},
+      {"FFFF:05B4:80:00:0:0:1:0:A:LT", "MacOS 8.1"},
 #line 1696 "os.gperf"
-      {"FFFF:05B4:40:01:1:1:1:1:A:40", FreeBSD 5.3 },
+      {"FFFF:05B4:40:01:1:1:1:1:A:40", "FreeBSD 5.3 "},
 #line 1443 "os.gperf"
-      {"E640:05AC:40:02:1:1:1:0:S:34", Windows 2000 Server - Windows XP SP1},
+      {"E640:05AC:40:02:1:1:1:0:S:34", "Windows 2000 Server - Windows XP SP1"},
 #line 544 "os.gperf"
-      {"2000:B405:80:00:0:1:0:1:A:3C", Cisco VPN3002 HW Client},
+      {"2000:B405:80:00:0:1:0:1:A:3C", "Cisco VPN3002 HW Client"},
 #line 476 "os.gperf"
-      {"2000:0218:40:WS:0:0:0:0:A:LT", OS/400},
+      {"2000:0218:40:WS:0:0:0:0:A:LT", "OS/400"},
 #line 1047 "os.gperf"
-      {"60F4:B405:40:WS:1:1:1:0:S:LT", Sun},
+      {"60F4:B405:40:WS:1:1:1:0:S:LT", "Sun"},
 #line 1614 "os.gperf"
-      {"FFF0:B005:80:00:0:1:1:1:A:3C", Windows XP},
+      {"FFF0:B005:80:00:0:1:1:1:A:3C", "Windows XP"},
 #line 1640 "os.gperf"
-      {"FFFF:0564:80:WS:0:0:1:0:A:2C", BSD},
+      {"FFFF:0564:80:WS:0:0:1:0:A:2C", "BSD"},
 #line 660 "os.gperf"
-      {"2274:04EC:FF:WS:1:1:1:0:A:30", Symantec Raptor Firewall},
+      {"2274:04EC:FF:WS:1:1:1:0:A:30", "Symantec Raptor Firewall"},
 #line 1735 "os.gperf"
-      {"FFFF:A005:40:01:0:1:1:1:S:LT", Linux (Embedded) Router},
+      {"FFFF:A005:40:01:0:1:1:1:S:LT", "Linux (Embedded) Router"},
 #line 1678 "os.gperf"
-      {"FFFF:05AC:80:00:0:1:0:1:S:3C", Windows XP},
+      {"FFFF:05AC:80:00:0:1:0:1:S:3C", "Windows XP"},
 #line 719 "os.gperf"
-      {"3C00:_MSS:80:WS:0:0:0:0:A:LT", Linux 2.0.27 - 2.0.30},
+      {"3C00:_MSS:80:WS:0:0:0:0:A:LT", "Linux 2.0.27 - 2.0.30"},
 #line 421 "os.gperf"
-      {"16D0:B405:40:WS:0:0:1:0:A:2C", RedHat Linux 7.3 (2.4.18)},
+      {"16D0:B405:40:WS:0:0:1:0:A:2C", "RedHat Linux 7.3 (2.4.18)"},
 #line 1725 "os.gperf"
-      {"FFFF:05B4:80:WS:1:1:1:0:A:30", NetBSD},
+      {"FFFF:05B4:80:WS:1:1:1:0:A:30", "NetBSD"},
 #line 419 "os.gperf"
-      {"16D0:B405:40:WS:0:0:0:0:A:2C", HP LaserJet 4050N},
+      {"16D0:B405:40:WS:0:0:0:0:A:2C", "HP LaserJet 4050N"},
 #line 1723 "os.gperf"
-      {"FFFF:05B4:80:WS:1:1:0:0:A:30", Windows 2000 Server SP4 },
+      {"FFFF:05B4:80:WS:1:1:0:0:A:30", "Windows 2000 Server SP4 "},
 #line 1643 "os.gperf"
-      {"FFFF:0564:80:WS:1:1:1:1:A:3C", Windows 2000},
+      {"FFFF:0564:80:WS:1:1:1:1:A:3C", "Windows 2000"},
 #line 1715 "os.gperf"
-      {"FFFF:05B4:80:00:1:1:1:1:A:40", Windows 2000 Advanced Server},
+      {"FFFF:05B4:80:00:1:1:1:1:A:40", "Windows 2000 Advanced Server"},
 #line 1713 "os.gperf"
-      {"FFFF:05B4:80:00:1:1:0:1:A:40", Windows 2000 Server },
+      {"FFFF:05B4:80:00:1:1:0:1:A:40", "Windows 2000 Server "},
 #line 1689 "os.gperf"
-      {"FFFF:05B4:40:01:0:1:0:0:S:30", AOL proxy},
+      {"FFFF:05B4:40:01:0:1:0:0:S:30", "AOL proxy"},
 #line 1635 "os.gperf"
-      {"FFFF:0564:40:01:0:1:1:1:S:3C", FreeBSD 5.1-RELEASE },
+      {"FFFF:0564:40:01:0:1:1:1:S:3C", "FreeBSD 5.1-RELEASE "},
 #line 324 "os.gperf"
-      {"16A0:B405:40:00:0:1:1:1:A:3C", Linux version 2.4.2-2 (Red Hat Linux 7.1)},
+      {"16A0:B405:40:00:0:1:1:1:A:3C", "Linux version 2.4.2-2 (Red Hat Linux 7.1)"},
 #line 475 "os.gperf"
-      {"2000:0218:20:WS:1:1:0:0:S:30", Windows XP},
+      {"2000:0218:20:WS:1:1:0:0:S:30", "Windows XP"},
 #line 60 "os.gperf"
-      {"0400:059C:FF:WS:0:0:0:0:A:18", 3Com SuperStack 3300xm version 2.71 prom 1.00 },
+      {"0400:059C:FF:WS:0:0:0:0:A:18", "3Com SuperStack 3300xm version 2.71 prom 1.00 "},
 #line 1708 "os.gperf"
-      {"FFFF:05B4:40:WS:1:1:1:0:S:30", Windows 98 Second Edition},
+      {"FFFF:05B4:40:WS:1:1:1:0:S:30", "Windows 98 Second Edition"},
 #line 1706 "os.gperf"
-      {"FFFF:05B4:40:WS:1:1:0:0:S:30", Windows 98},
+      {"FFFF:05B4:40:WS:1:1:0:0:S:30", "Windows 98"},
 #line 326 "os.gperf"
-      {"16A0:B405:40:00:1:1:1:1:A:3C", Linux Debian Unstable 2.4.26},
+      {"16A0:B405:40:00:1:1:1:1:A:3C", "Linux Debian Unstable 2.4.26"},
 #line 1687 "os.gperf"
-      {"FFFF:05B4:40:00:1:1:1:1:S:40", Openbsd 2.9},
+      {"FFFF:05B4:40:00:1:1:1:1:S:40", "Openbsd 2.9"},
 #line 948 "os.gperf"
-      {"43F8:AA05:40:WS:0:0:1:0:A:2C", Free BSD},
+      {"43F8:AA05:40:WS:0:0:1:0:A:2C", "Free BSD"},
 #line 1375 "os.gperf"
-      {"B580:05AC:80:03:1:1:1:1:A:40", Windows XP},
+      {"B580:05AC:80:03:1:1:1:1:A:40", "Windows XP"},
 #line 1697 "os.gperf"
-      {"FFFF:05B4:40:01:1:1:1:1:S:40", FreeBSD 5.3RELEEASE},
+      {"FFFF:05B4:40:01:1:1:1:1:S:40", "FreeBSD 5.3RELEEASE"},
 #line 461 "os.gperf"
-      {"1FFE:0546:FF:WS:0:0:0:0:A:2C", Linux Debian 2.4},
+      {"1FFE:0546:FF:WS:0:0:0:0:A:2C", "Linux Debian 2.4"},
 #line 1356 "os.gperf"
-      {"AC00:0550:80:WS:0:0:1:0:S:2C", Windows NT 4.0 SP6a},
+      {"AC00:0550:80:WS:0:0:1:0:S:2C", "Windows NT 4.0 SP6a"},
 #line 646 "os.gperf"
-      {"2238:B405:20:WS:0:0:1:0:A:2C", Windows 95 },
+      {"2238:B405:20:WS:0:0:1:0:A:2C", "Windows 95 "},
 #line 1453 "os.gperf"
-      {"EBC0:0218:80:02:1:1:0:1:S:40", Windows XP},
+      {"EBC0:0218:80:02:1:1:0:1:S:40", "Windows XP"},
 #line 237 "os.gperf"
-      {"1020:B405:FF:WS:0:0:0:0:A:2C", AIRONET1200 },
+      {"1020:B405:FF:WS:0:0:0:0:A:2C", "AIRONET1200 "},
 #line 996 "os.gperf"
-      {"4470:B405:FF:00:0:0:1:0:A:LT", Mac OS 8.6},
+      {"4470:B405:FF:00:0:0:1:0:A:LT", "Mac OS 8.6"},
 #line 256 "os.gperf"
-      {"111C:_MSS:80:WS:0:0:1:0:A:LT", Apple LaserWriter 16/600 PS, HP 6P, or HP 5 Printer},
+      {"111C:_MSS:80:WS:0:0:1:0:A:LT", "Apple LaserWriter 16/600 PS or HP 6P or HP 5 Printer"},
 #line 255 "os.gperf"
-      {"111C:_MSS:80:WS:0:0:0:0:A:LT", Ascend/Lucent Max (HP,4000-6000) version 6.1.3 - 7.0.2+},
+      {"111C:_MSS:80:WS:0:0:0:0:A:LT", "Ascend/Lucent Max (HP,4000-6000) version 6.1.3 - 7.0.2+"},
 #line 1727 "os.gperf"
-      {"FFFF:05B4:80:WS:1:1:1:0:S:LT", MacOS X},
+      {"FFFF:05B4:80:WS:1:1:1:0:S:LT", "MacOS X"},
 #line 882 "os.gperf"
-      {"402E:0218:80:00:0:1:1:1:A:3C", Windows Millenium},
+      {"402E:0218:80:00:0:1:1:1:A:3C", "Windows Millenium"},
 #line 1700 "os.gperf"
-      {"FFFF:05B4:40:02:1:1:1:1:S:40", Windows XP},
+      {"FFFF:05B4:40:02:1:1:1:1:S:40", "Windows XP"},
 #line 1726 "os.gperf"
-      {"FFFF:05B4:80:WS:1:1:1:0:S:30", Windows 2000 Professional SP4},
+      {"FFFF:05B4:80:WS:1:1:1:0:S:30", "Windows 2000 Professional SP4"},
 #line 1724 "os.gperf"
-      {"FFFF:05B4:80:WS:1:1:0:0:S:30", Windows 98 SE},
+      {"FFFF:05B4:80:WS:1:1:0:0:S:30", "Windows 98 SE"},
 #line 416 "os.gperf"
-      {"16D0:B405:40:00:1:1:1:1:S:3C", Linux 2.4.18},
+      {"16D0:B405:40:00:1:1:1:1:S:3C", "Linux 2.4.18"},
 #line 647 "os.gperf"
-      {"2238:B405:40:00:0:1:1:1:A:3C", Windows 2000 / XP},
+      {"2238:B405:40:00:0:1:1:1:A:3C", "Windows 2000 / XP"},
 #line 477 "os.gperf"
-      {"2000:0218:80:00:1:1:1:0:S:30", Windows 9x},
+      {"2000:0218:80:00:1:1:1:0:S:30", "Windows 9x"},
 #line 1685 "os.gperf"
-      {"FFFF:05B4:40:00:0:1:1:1:A:3C", Mac OS X (Panther) ver. 10.3.3 (7F44)},
+      {"FFFF:05B4:40:00:0:1:1:1:A:3C", "Mac OS X (Panther) ver. 10.3.3 (7F44)"},
 #line 82 "os.gperf"
-      {"0564:0564:80:WS:1:1:1:0:A:LT", Windows 2000},
+      {"0564:0564:80:WS:1:1:1:0:A:LT", "Windows 2000"},
 #line 337 "os.gperf"
-      {"16D0:0218:80:WS:1:1:1:0:A:30", Windows 2000},
+      {"16D0:0218:80:WS:1:1:1:0:A:30", "Windows 2000"},
 #line 1704 "os.gperf"
-      {"FFFF:05B4:40:WS:0:0:1:0:A:2C", FreeBSD 4.3 - 4.4},
+      {"FFFF:05B4:40:WS:0:0:1:0:A:2C", "FreeBSD 4.3 - 4.4"},
 #line 1702 "os.gperf"
-      {"FFFF:05B4:40:WS:0:0:0:0:A:2C", FreeBSD 4.5},
+      {"FFFF:05B4:40:WS:0:0:0:0:A:2C", "FreeBSD 4.5"},
 #line 1692 "os.gperf"
-      {"FFFF:05B4:40:01:0:1:1:1:A:3C", FreeBSD 4.3 - 4.4 - 5.1},
+      {"FFFF:05B4:40:01:0:1:1:1:A:3C", "FreeBSD 4.3 - 4.4 - 5.1"},
 #line 478 "os.gperf"
-      {"2000:0218:80:WS:1:1:1:0:S:30", Windows 9x or 2000},
+      {"2000:0218:80:WS:1:1:1:0:S:30", "Windows 9x or 2000"},
 #line 1690 "os.gperf"
-      {"FFFF:05B4:40:01:0:1:0:1:A:3C", FreeBSD 4.4 - 4.5},
+      {"FFFF:05B4:40:01:0:1:0:1:A:3C", "FreeBSD 4.4 - 4.5"},
 #line 922 "os.gperf"
-      {"4238:0518:40:WS:0:0:0:0:S:2C", Xbox},
+      {"4238:0518:40:WS:0:0:0:0:S:2C", "Xbox"},
 #line 1099 "os.gperf"
-      {"7BC0:_MSS:40:WS:0:0:1:0:A:LT", Linux 2.1.122 - 2.2.14},
+      {"7BC0:_MSS:40:WS:0:0:1:0:A:LT", "Linux 2.1.122 - 2.2.14"},
 #line 1465 "os.gperf"
-      {"ED90:_MSS:40:WS:0:0:1:0:A:LT", IRIX 6.2 - 6.5},
+      {"ED90:_MSS:40:WS:0:0:1:0:A:LT", "IRIX 6.2 - 6.5"},
 #line 910 "os.gperf"
-      {"40E8:B405:80:WS:0:0:1:0:A:2C", Windows 2000},
+      {"40E8:B405:80:WS:0:0:1:0:A:2C", "Windows 2000"},
 #line 648 "os.gperf"
-      {"2238:B405:80:00:0:1:1:1:A:3C", Windows 95},
+      {"2238:B405:80:00:0:1:1:1:A:3C", "Windows 95"},
 #line 1109 "os.gperf"
-      {"7C00:_MSS:80:00:0:0:0:0:A:LT", Linux 2.0.27 - 2.0.30},
+      {"7C00:_MSS:80:00:0:0:0:0:A:LT", "Linux 2.0.27 - 2.0.30"},
 #line 1698 "os.gperf"
-      {"FFFF:05B4:40:02:0:1:0:1:A:3C", AIX 4.3 },
+      {"FFFF:05B4:40:02:0:1:0:1:A:3C", "AIX 4.3 "},
 #line 1712 "os.gperf"
-      {"FFFF:05B4:80:00:0:1:1:1:A:3C", Windows 2000 SP4 },
+      {"FFFF:05B4:80:00:0:1:1:1:A:3C", "Windows 2000 SP4 "},
 #line 649 "os.gperf"
-      {"2238:B405:80:WS:0:0:1:0:A:2C", Windows 2000},
+      {"2238:B405:80:WS:0:0:1:0:A:2C", "Windows 2000"},
 #line 605 "os.gperf"
-      {"2238:0218:40:WS:1:1:1:0:A:30", Windows 98},
+      {"2238:0218:40:WS:1:1:1:0:A:30", "Windows 98"},
 #line 1110 "os.gperf"
-      {"7C00:_MSS:80:WS:0:0:0:0:A:LT", Convex OS Release 10.1},
+      {"7C00:_MSS:80:WS:0:0:0:0:A:LT", "Convex OS Release 10.1"},
 #line 1722 "os.gperf"
-      {"FFFF:05B4:80:WS:0:0:1:0:A:2C", BSD},
+      {"FFFF:05B4:80:WS:0:0:1:0:A:2C", "BSD"},
 #line 1721 "os.gperf"
-      {"FFFF:05B4:80:WS:0:0:0:0:A:2C", Windows XP},
+      {"FFFF:05B4:80:WS:0:0:0:0:A:2C", "Windows XP"},
 #line 336 "os.gperf"
-      {"16D0:0218:80:00:1:1:1:0:S:30", Windows 95},
+      {"16D0:0218:80:00:1:1:1:0:S:30", "Windows 95"},
 #line 459 "os.gperf"
-      {"1FE0:0550:80:WS:1:1:1:0:S:30", Windows},
+      {"1FE0:0550:80:WS:1:1:1:0:S:30", "Windows"},
 #line 779 "os.gperf"
-      {"4000:052A:80:WS:1:1:0:0:S:30", Windows 2000 Server },
+      {"4000:052A:80:WS:1:1:0:0:S:30", "Windows 2000 Server "},
 #line 1686 "os.gperf"
-      {"FFFF:05B4:40:00:0:1:1:1:S:3C", FreeBSD 4.4 / 4.5 / 4.7},
+      {"FFFF:05B4:40:00:0:1:1:1:S:3C", "FreeBSD 4.4 / 4.5 / 4.7"},
 #line 808 "os.gperf"
-      {"4000:0598:40:WS:1:1:0:0:A:30", Windows },
+      {"4000:0598:40:WS:1:1:0:0:A:30", "Windows "},
 #line 169 "os.gperf"
-      {"0B68:05B4:FF:WS:1:1:1:0:A:LT", Lexmark T520 Network Printer},
+      {"0B68:05B4:FF:WS:1:1:1:0:A:LT", "Lexmark T520 Network Printer"},
 #line 1684 "os.gperf"
-      {"FFFF:05B4:40:00:0:1:0:0:S:3C", CacheOS 3.1 on a CacheFlow 6000},
+      {"FFFF:05B4:40:00:0:1:0:0:S:3C", "CacheOS 3.1 on a CacheFlow 6000"},
 #line 903 "os.gperf"
-      {"40E8:0218:80:WS:1:1:1:0:A:LT", Windows ME},
+      {"40E8:0218:80:WS:1:1:1:0:A:LT", "Windows ME"},
 #line 1705 "os.gperf"
-      {"FFFF:05B4:40:WS:0:0:1:0:S:2C", FreeBSD 4.5-RELEASE},
+      {"FFFF:05B4:40:WS:0:0:1:0:S:2C", "FreeBSD 4.5-RELEASE"},
 #line 1694 "os.gperf"
-      {"FFFF:05B4:40:01:0:1:1:1:S:3C", FreeBSD 4.5-STABLE},
+      {"FFFF:05B4:40:01:0:1:1:1:S:3C", "FreeBSD 4.5-STABLE"},
 #line 1425 "os.gperf"
-      {"E000:05AA:40:WS:0:0:1:0:A:2C", Windows2000},
+      {"E000:05AA:40:WS:0:0:1:0:A:2C", "Windows2000"},
 #line 1445 "os.gperf"
-      {"E640:05B4:40:02:1:1:1:0:S:34", Windows 2000 Professional},
+      {"E640:05B4:40:02:1:1:1:0:S:34", "Windows 2000 Professional"},
 #line 80 "os.gperf"
-      {"0564:0564:40:WS:0:0:0:0:A:2C", Linux},
+      {"0564:0564:40:WS:0:0:0:0:A:2C", "Linux"},
 #line 79 "os.gperf"
-      {"0564:0564:40:00:1:1:1:1:A:3C", Linux kernel 2.4},
+      {"0564:0564:40:00:1:1:1:1:A:3C", "Linux kernel 2.4"},
 #line 1115 "os.gperf"
-      {"7C70:_MSS:80:00:0:1:1:1:A:LT", Linux 2.3.28-33},
+      {"7C70:_MSS:80:00:0:1:1:1:A:LT", "Linux 2.3.28-33"},
 #line 463 "os.gperf"
-      {"1FFE:0584:FF:WS:0:0:0:0:A:2C", Linux Debian },
+      {"1FFE:0584:FF:WS:0:0:0:0:A:2C", "Linux Debian "},
 #line 1114 "os.gperf"
-      {"7C70:_MSS:80:00:0:1:1:0:A:LT", Linux 2.3.28-33},
+      {"7C70:_MSS:80:00:0:1:1:0:A:LT", "Linux 2.3.28-33"},
 #line 1560 "os.gperf"
-      {"FC00:0518:40:WS:0:0:0:0:A:2C", Xbox - Avalaunch 0.48.64 },
+      {"FC00:0518:40:WS:0:0:0:0:A:2C", "Xbox - Avalaunch 0.48.64 "},
 #line 1716 "os.gperf"
-      {"FFFF:05B4:80:01:0:1:1:1:S:3C", FreeBSD 5.0 dp-1},
+      {"FFFF:05B4:80:01:0:1:1:1:S:3C", "FreeBSD 5.0 dp-1"},
 #line 1737 "os.gperf"
-      {"FFFF:AC05:80:WS:1:1:1:0:S:30", Windows XP},
+      {"FFFF:AC05:80:WS:1:1:1:0:S:30", "Windows XP"},
 #line 1058 "os.gperf"
-      {"6270:04EC:80:00:1:1:1:0:S:34", Windows 2000},
+      {"6270:04EC:80:00:1:1:1:0:S:34", "Windows 2000"},
 #line 1736 "os.gperf"
-      {"FFFF:AC05:80:00:1:1:1:1:S:40", Windows XP},
+      {"FFFF:AC05:80:00:1:1:1:1:S:40", "Windows XP"},
 #line 1112 "os.gperf"
-      {"7C38:_MSS:80:00:0:1:1:1:A:LT", Linux 2.1.19 - 2.2.17},
+      {"7C38:_MSS:80:00:0:1:1:1:A:LT", "Linux 2.1.19 - 2.2.17"},
 #line 1111 "os.gperf"
-      {"7C38:_MSS:80:00:0:1:1:0:A:LT", Linux 2.1.19 - 2.2.17},
+      {"7C38:_MSS:80:00:0:1:1:0:A:LT", "Linux 2.1.19 - 2.2.17"},
 #line 804 "os.gperf"
-      {"4000:058A:80:WS:1:1:1:0:S:30", Windows 2000},
+      {"4000:058A:80:WS:1:1:1:0:S:30", "Windows 2000"},
 #line 1558 "os.gperf"
-      {"FB40:05B4:40:00:1:1:1:0:S:34", Windows XP},
+      {"FB40:05B4:40:00:1:1:1:0:S:34", "Windows XP"},
 #line 191 "os.gperf"
-      {"0F87:_MSS:80:00:0:0:0:0:A:LT", Novell NetWare 3.12 or 386 TCP/IP},
+      {"0F87:_MSS:80:00:0:0:0:0:A:LT", "Novell NetWare 3.12 or 386 TCP/IP"},
 #line 78 "os.gperf"
-      {"0550:0550:40:WS:0:0:0:0:A:2C", Linux 2.4},
+      {"0550:0550:40:WS:0:0:0:0:A:2C", "Linux 2.4"},
 #line 465 "os.gperf"
-      {"1FFE:05AC:FF:WS:0:0:0:0:A:2C", Linux Debian},
+      {"1FFE:05AC:FF:WS:0:0:0:0:A:2C", "Linux Debian"},
 #line 1376 "os.gperf"
-      {"B580:05B4:80:03:1:1:1:1:A:40", Windows XP},
+      {"B580:05B4:80:03:1:1:1:1:A:40", "Windows XP"},
 #line 1378 "os.gperf"
-      {"B5A4:05B4:80:00:1:1:1:0:S:34", Windows 2000 Server},
+      {"B5A4:05B4:80:00:1:1:1:0:S:34", "Windows 2000 Server"},
 #line 91 "os.gperf"
-      {"0584:0584:FF:00:0:1:1:1:A:3C", OpenBSD},
+      {"0584:0584:FF:00:0:1:1:1:A:3C", "OpenBSD"},
 #line 606 "os.gperf"
-      {"2238:0218:80:WS:1:1:1:0:S:30", Windows 2000 Pro},
+      {"2238:0218:80:WS:1:1:1:0:S:30", "Windows 2000 Pro"},
 #line 229 "os.gperf"
-      {"1020:0218:FF:WS:0:0:0:0:A:2C", Cisco 2600 IOS 12.0},
+      {"1020:0218:FF:WS:0:0:0:0:A:2C", "Cisco 2600 IOS 12.0"},
 #line 676 "os.gperf"
-      {"2491:_MSS:80:00:0:1:1:1:A:LT", Solaris 2.6 - 2.7 with tcp_strong_iss=0},
+      {"2491:_MSS:80:00:0:1:1:1:A:LT", "Solaris 2.6 - 2.7 with tcp_strong_iss=0"},
 #line 193 "os.gperf"
-      {"0F87:_MSS:80:WS:0:0:1:0:A:LT", AIX 4.3},
+      {"0F87:_MSS:80:WS:0:0:1:0:A:LT", "AIX 4.3"},
 #line 192 "os.gperf"
-      {"0F87:_MSS:80:WS:0:0:0:0:A:LT", A/UX 3.1.1 SVR2 or OpenStep 4.2},
+      {"0F87:_MSS:80:WS:0:0:0:0:A:LT", "A/UX 3.1.1 SVR2 or OpenStep 4.2"},
 #line 675 "os.gperf"
-      {"2491:_MSS:80:00:0:1:1:0:A:LT", Solaris 2.6 - 2.7 with tcp_strong_iss=0},
+      {"2491:_MSS:80:00:0:1:1:0:A:LT", "Solaris 2.6 - 2.7 with tcp_strong_iss=0"},
 #line 270 "os.gperf"
-      {"1540:0550:40:WS:1:1:1:0:A:30", Linux 2.4.x},
+      {"1540:0550:40:WS:1:1:1:0:A:30", "Linux 2.4.x"},
 #line 680 "os.gperf"
-      {"2568:0564:FF:00:1:1:1:1:A:40", Solaris 8 },
+      {"2568:0564:FF:00:1:1:1:1:A:40", "Solaris 8 "},
 #line 810 "os.gperf"
-      {"4000:0598:80:WS:1:1:1:0:S:30", Windows 2000 },
+      {"4000:0598:80:WS:1:1:1:0:S:30", "Windows 2000 "},
 #line 809 "os.gperf"
-      {"4000:0598:80:00:1:1:1:1:S:40", Windows XP},
+      {"4000:0598:80:00:1:1:1:1:S:40", "Windows XP"},
 #line 1370 "os.gperf"
-      {"B400:05B4:40:03:1:1:1:0:S:34", Windows XP SP2 },
+      {"B400:05B4:40:03:1:1:1:0:S:34", "Windows XP SP2 "},
 #line 1365 "os.gperf"
-      {"AE60:05B4:80:WS:1:1:1:0:S:30", Windows XP},
+      {"AE60:05B4:80:WS:1:1:1:0:S:30", "Windows XP"},
 #line 923 "os.gperf"
-      {"4240:05B4:40:04:1:1:1:0:S:34", Windows XP},
+      {"4240:05B4:40:04:1:1:1:0:S:34", "Windows XP"},
 #line 1071 "os.gperf"
-      {"6C68:05B4:40:02:1:1:1:0:S:34", Windows XP},
+      {"6C68:05B4:40:02:1:1:1:0:S:34", "Windows XP"},
 #line 807 "os.gperf"
-      {"4000:0598:40:WS:0:0:0:0:A:2C", Linux Debian 3.0 },
+      {"4000:0598:40:WS:0:0:0:0:A:2C", "Linux Debian 3.0 "},
 #line 643 "os.gperf"
-      {"2238:1128:80:WS:0:0:1:0:A:2C", Novell Netware},
+      {"2238:1128:80:WS:0:0:1:0:A:2C", "Novell Netware"},
 #line 265 "os.gperf"
-      {"14F0:0218:80:WS:1:1:1:0:A:LT", Windows 2000 Professional},
+      {"14F0:0218:80:WS:1:1:1:0:A:LT", "Windows 2000 Professional"},
 #line 1161 "os.gperf"
-      {"7E18:_MSS:80:00:0:1:1:0:A:LT", Linux Kernel 2.4.0-test5},
+      {"7E18:_MSS:80:00:0:1:1:0:A:LT", "Linux Kernel 2.4.0-test5"},
 #line 547 "os.gperf"
-      {"2000:B405:FF:WS:1:1:1:0:S:30", Windows 98se},
+      {"2000:B405:FF:WS:1:1:1:0:S:30", "Windows 98se"},
 #line 929 "os.gperf"
-      {"4290:058C:40:WS:0:0:1:0:A:2C", Windows 2000},
+      {"4290:058C:40:WS:0:0:1:0:A:2C", "Windows 2000"},
 #line 279 "os.gperf"
-      {"165C:_MSS:80:WS:0:0:1:0:A:LT", SCO Release 5},
+      {"165C:_MSS:80:WS:0:0:1:0:A:LT", "SCO Release 5"},
 #line 243 "os.gperf"
-      {"10C0:0218:FF:WS:0:0:0:0:S:LT", Cisco 1600 IOS 11.2(15)P},
+      {"10C0:0218:FF:WS:0:0:0:0:S:LT", "Cisco 1600 IOS 11.2(15)P"},
 #line 230 "os.gperf"
-      {"1020:0218:FF:WS:0:0:0:0:S:2C", Cisco 3660 IOS 12.2(x)},
+      {"1020:0218:FF:WS:0:0:0:0:S:2C", "Cisco 3660 IOS 12.2(x)"},
 #line 576 "os.gperf"
-      {"2130:0588:80:WS:1:1:1:0:A:30", Windows 98 SE},
+      {"2130:0588:80:WS:1:1:1:0:A:30", "Windows 98 SE"},
 #line 924 "os.gperf"
-      {"4240:05B4:80:04:1:1:1:0:S:34", Windows 2000 Pro},
+      {"4240:05B4:80:04:1:1:1:0:S:34", "Windows 2000 Pro"},
 #line 1483 "os.gperf"
-      {"F990:05B4:40:WS:1:1:1:0:S:30", Windows 2000},
+      {"F990:05B4:40:WS:1:1:1:0:S:30", "Windows 2000"},
 #line 41 "os.gperf"
-      {"0218:0218:40:00:0:1:0:1:A:LT", NetBSD},
+      {"0218:0218:40:00:0:1:0:1:A:LT", "NetBSD"},
 #line 716 "os.gperf"
-      {"3908:05B4:40:WS:1:1:1:0:A:30", Linux Debian},
+      {"3908:05B4:40:WS:1:1:1:0:A:30", "Linux Debian"},
 #line 1482 "os.gperf"
-      {"F5E0:05B4:80:01:1:1:1:0:S:34", Windows 2000},
+      {"F5E0:05B4:80:01:1:1:1:0:S:34", "Windows 2000"},
 #line 930 "os.gperf"
-      {"4290:05B4:80:WS:1:1:1:0:A:30", Windows 2000 Pro SP3},
+      {"4290:05B4:80:WS:1:1:1:0:A:30", "Windows 2000 Pro SP3"},
 #line 1349 "os.gperf"
-      {"95C2:B405:80:WS:1:1:1:0:S:30", Windows ME },
+      {"95C2:B405:80:WS:1:1:1:0:S:30", "Windows ME "},
 #line 1350 "os.gperf"
-      {"9820:05B4:40:WS:1:1:1:0:S:30", Windows 2000},
+      {"9820:05B4:40:WS:1:1:1:0:S:30", "Windows 2000"},
 #line 488 "os.gperf"
-      {"2000:0588:80:WS:1:1:1:0:S:30", Windows 98SE},
+      {"2000:0588:80:WS:1:1:1:0:S:30", "Windows 98SE"},
 #line 139 "os.gperf"
-      {"0800:_MSS:80:00:0:0:0:1:A:LT", KA9Q},
+      {"0800:_MSS:80:00:0:0:0:1:A:LT", "KA9Q"},
 #line 138 "os.gperf"
-      {"0800:_MSS:80:00:0:0:0:0:A:LT", KA9Q},
+      {"0800:_MSS:80:00:0:0:0:0:A:LT", "KA9Q"},
 #line 650 "os.gperf"
-      {"2238:B405:FF:00:0:1:1:0:A:LT", Solaris},
+      {"2238:B405:FF:00:0:1:1:0:A:LT", "Solaris"},
 #line 433 "os.gperf"
-      {"1800:05B4:80:00:0:1:1:0:A:30", Novel Netware 5.1 },
+      {"1800:05B4:80:00:0:1:1:0:A:30", "Novel Netware 5.1 "},
 #line 141 "os.gperf"
-      {"0800:_MSS:80:WS:0:0:1:0:A:LT", HP Procurve Routing Switch 9304M},
+      {"0800:_MSS:80:WS:0:0:1:0:A:LT", "HP Procurve Routing Switch 9304M"},
 #line 140 "os.gperf"
-      {"0800:_MSS:80:WS:0:0:0:0:A:LT", 3Com Access Builder 4000 7.2},
+      {"0800:_MSS:80:WS:0:0:0:0:A:LT", "3Com Access Builder 4000 7.2"},
 #line 1102 "os.gperf"
-      {"7BF0:_MSS:40:WS:0:0:1:0:A:LT", Linux 2.1.122 - 2.2.14},
+      {"7BF0:_MSS:40:WS:0:0:1:0:A:LT", "Linux 2.1.122 - 2.2.14"},
 #line 652 "os.gperf"
-      {"2238:B405:FF:WS:0:0:1:0:A:LT", Solaris 2.5.1},
+      {"2238:B405:FF:WS:0:0:1:0:A:LT", "Solaris 2.5.1"},
 #line 1583 "os.gperf"
-      {"FE70:0588:80:WS:1:1:0:0:A:30", Windows 98 SE},
+      {"FE70:0588:80:WS:1:1:0:0:A:30", "Windows 98 SE"},
 #line 718 "os.gperf"
-      {"3908:05B4:80:WS:1:1:1:0:A:30", Linux 2.0.3 },
+      {"3908:05B4:80:WS:1:1:1:0:A:30", "Linux 2.0.3 "},
 #line 1728 "os.gperf"
-      {"FFFF:05B4:FF:01:0:1:1:0:A:30", Mac OS 9},
+      {"FFFF:05B4:FF:01:0:1:1:0:A:30", "Mac OS 9"},
 #line 1631 "os.gperf"
-      {"FFFF:0550:40:WS:1:1:1:0:A:30", Windows 2000 Server},
+      {"FFFF:0550:40:WS:1:1:1:0:A:30", "Windows 2000 Server"},
 #line 438 "os.gperf"
-      {"1800:05B4:80:WS:1:1:1:0:A:30", Netware 5.1 SP5},
+      {"1800:05B4:80:WS:1:1:1:0:A:30", "Netware 5.1 SP5"},
 #line 1086 "os.gperf"
-      {"77C4:_MSS:40:WS:0:0:1:0:A:LT", Linux 2.1.122 - 2.2.14},
+      {"77C4:_MSS:40:WS:0:0:1:0:A:LT", "Linux 2.1.122 - 2.2.14"},
 #line 263 "os.gperf"
-      {"1490:0524:40:00:1:1:1:1:S:3C", Linux Suse 8.1},
+      {"1490:0524:40:00:1:1:1:1:S:3C", "Linux Suse 8.1"},
 #line 242 "os.gperf"
-      {"10C0:0218:FF:WS:0:0:0:0:A:2C", Cisco IOS},
+      {"10C0:0218:FF:WS:0:0:0:0:A:2C", "Cisco IOS"},
 #line 269 "os.gperf"
-      {"1540:0550:40:WS:0:0:1:0:A:2C", Linux RedHat - 2.4.18},
+      {"1540:0550:40:WS:0:0:1:0:A:2C", "Linux RedHat - 2.4.18"},
 #line 1092 "os.gperf"
-      {"7958:0584:40:WS:1:1:1:0:A:30", Linux 2.2.16-3 (RH 6.2)},
+      {"7958:0584:40:WS:1:1:1:0:A:30", "Linux 2.2.16-3 (RH 6.2)"},
 #line 1609 "os.gperf"
-      {"FFF0:04EC:80:00:1:1:1:1:A:40", Windows 2000},
+      {"FFF0:04EC:80:00:1:1:1:1:A:40", "Windows 2000"},
 #line 717 "os.gperf"
-      {"3908:05B4:40:WS:1:1:1:0:S:30", windows 2000 Professional},
+      {"3908:05B4:40:WS:1:1:1:0:S:30", "windows 2000 Professional"},
 #line 715 "os.gperf"
-      {"3908:05B4:40:WS:1:1:0:0:S:30", Windows 98 SE},
+      {"3908:05B4:40:WS:1:1:0:0:S:30", "Windows 98 SE"},
 #line 713 "os.gperf"
-      {"3908:05B4:40:00:1:1:0:1:S:40", HPUX 11.11},
+      {"3908:05B4:40:00:1:1:0:1:S:40", "HPUX 11.11"},
 #line 1123 "os.gperf"
-      {"7D78:0109:80:10:0:1:0:1:S:LT", OpenBSD 2.9 generic},
+      {"7D78:0109:80:10:0:1:0:1:S:LT", "OpenBSD 2.9 generic"},
 #line 1487 "os.gperf"
-      {"FAF0:0200:80:WS:1:1:1:0:S:30", Windows 2000 },
+      {"FAF0:0200:80:WS:1:1:1:0:S:30", "Windows 2000 "},
 #line 682 "os.gperf"
-      {"2568:0564:FF:WS:1:1:1:1:A:3C", Solaris},
+      {"2568:0564:FF:WS:1:1:1:1:A:3C", "Solaris"},
 #line 911 "os.gperf"
-      {"40E8:B405:FF:00:0:0:1:0:S:LT", Mac OS 8.6},
+      {"40E8:B405:FF:00:0:0:1:0:S:LT", "Mac OS 8.6"},
 #line 464 "os.gperf"
-      {"1FFE:0596:FF:WS:0:0:0:0:A:2C", Windows},
+      {"1FFE:0596:FF:WS:0:0:0:0:A:2C", "Windows"},
 #line 1587 "os.gperf"
-      {"FE88:B405:40:00:0:1:1:1:A:3C", Mac OS X Server 10.x},
+      {"FE88:B405:40:00:0:1:1:1:A:3C", "Mac OS X Server 10.x"},
 #line 422 "os.gperf"
-      {"16D0:B405:FF:WS:0:0:0:0:A:2C", LinkSys Router},
+      {"16D0:B405:FF:WS:0:0:0:0:A:2C", "LinkSys Router"},
 #line 1016 "os.gperf"
-      {"4FD8:05B4:40:00:1:1:1:0:S:34", Windows XP Professional},
+      {"4FD8:05B4:40:00:1:1:1:0:S:34", "Windows XP Professional"},
 #line 901 "os.gperf"
-      {"40B0:0564:80:WS:1:1:1:0:A:30", Windows 2000 (firewalled)},
+      {"40B0:0564:80:WS:1:1:1:0:A:30", "Windows 2000 (firewalled)"},
 #line 142 "os.gperf"
-      {"0808:_MSS:80:WS:0:0:0:0:A:LT", Siemens HICOM 300 Phone switch (WAML LAN card)},
+      {"0808:_MSS:80:WS:0:0:0:0:A:LT", "Siemens HICOM 300 Phone switch (WAML LAN card)"},
 #line 653 "os.gperf"
-      {"2238:B405:FF:WS:0:0:1:0:S:LT", Solaris 7},
+      {"2238:B405:FF:WS:0:0:1:0:S:LT", "Solaris 7"},
 #line 1096 "os.gperf"
-      {"7B2F:_MSS:80:00:0:1:1:1:A:LT", Linux 2.1.19 - 2.2.17},
+      {"7B2F:_MSS:80:00:0:1:1:1:A:LT", "Linux 2.1.19 - 2.2.17"},
 #line 1584 "os.gperf"
-      {"FE70:0588:80:WS:1:1:0:0:S:30", Windows XP Home},
+      {"FE70:0588:80:WS:1:1:0:0:S:30", "Windows XP Home"},
 #line 133 "os.gperf"
-      {"0800:0109:40:10:0:1:0:1:S:3C", Linux},
+      {"0800:0109:40:10:0:1:0:1:S:3C", "Linux"},
 #line 466 "os.gperf"
-      {"1FFE:05B4:FF:WS:0:0:0:0:A:2C", Linux Debian},
+      {"1FFE:05B4:FF:WS:0:0:0:0:A:2C", "Linux Debian"},
 #line 1729 "os.gperf"
-      {"FFFF:05B4:FF:01:0:1:1:0:S:30", Mac OS 9},
+      {"FFFF:05B4:FF:01:0:1:1:0:S:30", "Mac OS 9"},
 #line 1095 "os.gperf"
-      {"7B2F:_MSS:80:00:0:1:1:0:A:LT", Linux 2.1.19 - 2.2.17},
+      {"7B2F:_MSS:80:00:0:1:1:0:A:LT", "Linux 2.1.19 - 2.2.17"},
 #line 579 "os.gperf"
-      {"2180:0218:80:WS:1:1:1:0:A:30", Windows 98},
+      {"2180:0218:80:WS:1:1:1:0:A:30", "Windows 98"},
 #line 331 "os.gperf"
-      {"16B0:0584:40:WS:1:1:1:0:A:30", Redhat 7.0 (linux 2.2.16)},
+      {"16B0:0584:40:WS:1:1:1:0:A:30", "Redhat 7.0 (linux 2.2.16)"},
 #line 81 "os.gperf"
-      {"0564:0564:40:WS:1:0:1:1:A:38", Linux 2.4 },
+      {"0564:0564:40:WS:1:0:1:1:A:38", "Linux 2.4 "},
 #line 1731 "os.gperf"
-      {"FFFF:05B4:FF:WS:1:1:1:0:S:30", Windows 2000 },
+      {"FFFF:05B4:FF:WS:1:1:1:0:S:30", "Windows 2000 "},
 #line 1610 "os.gperf"
-      {"FFF0:04EC:80:WS:1:1:1:0:S:30", Windows 2000},
+      {"FFF0:04EC:80:WS:1:1:1:0:S:30", "Windows 2000"},
 #line 384 "os.gperf"
-      {"16D0:05B4:40:03:1:1:1:0:A:34", Windows },
+      {"16D0:05B4:40:03:1:1:1:0:A:34", "Windows "},
 #line 268 "os.gperf"
-      {"1540:0550:40:00:1:1:1:1:S:3C", Linux},
+      {"1540:0550:40:00:1:1:1:1:S:3C", "Linux"},
 #line 1121 "os.gperf"
-      {"7D00:05A0:80:WS:1:1:1:0:S:30", OpenBSD},
+      {"7D00:05A0:80:WS:1:1:1:0:S:30", "OpenBSD"},
 #line 714 "os.gperf"
-      {"3908:05B4:40:00:1:1:1:1:A:3C", IPCop v1.2.0},
+      {"3908:05B4:40:00:1:1:1:1:A:3C", "IPCop v1.2.0"},
 #line 1648 "os.gperf"
-      {"FFFF:0580:80:00:1:1:1:0:A:34", Watchguard Firebox},
+      {"FFFF:0580:80:00:1:1:1:0:A:34", "Watchguard Firebox"},
 #line 280 "os.gperf"
-      {"1678:05AA:40:00:1:1:1:1:A:3C", Linux 2.6.1},
+      {"1678:05AA:40:00:1:1:1:1:A:3C", "Linux 2.6.1"},
 #line 793 "os.gperf"
-      {"4000:0578:40:00:1:1:1:1:S:40", OpenBSD 3.0},
+      {"4000:0578:40:00:1:1:1:1:S:40", "OpenBSD 3.0"},
 #line 42 "os.gperf"
-      {"0218:0218:40:WS:0:0:0:0:A:2C", Windows 98},
+      {"0218:0218:40:WS:0:0:0:0:A:2C", "Windows 98"},
 #line 1509 "os.gperf"
-      {"FAF0:05A0:80:00:1:1:1:1:A:40", Windows XP},
+      {"FAF0:05A0:80:00:1:1:1:1:A:40", "Windows XP"},
 #line 734 "os.gperf"
-      {"3E80:_MSS:80:WS:0:0:1:0:A:LT", VersaNet ISP-Accelerator(TM) Remote Access Server},
+      {"3E80:_MSS:80:WS:0:0:1:0:A:LT", "VersaNet ISP-Accelerator(TM) Remote Access Server"},
 #line 733 "os.gperf"
-      {"3E80:_MSS:80:WS:0:0:0:0:A:LT", Alcatel Advanced Reflexes IP Phone, Version: E/AT400/46.8},
+      {"3E80:_MSS:80:WS:0:0:0:0:A:LT", "Alcatel Advanced Reflexes IP Phone Version: E/AT400/46.8"},
 #line 436 "os.gperf"
-      {"1800:05B4:80:WS:0:0:1:0:A:2C", Novell Netware 4.0 / 5.0},
+      {"1800:05B4:80:WS:0:0:1:0:A:2C", "Novell Netware 4.0 / 5.0"},
 #line 651 "os.gperf"
-      {"2238:B405:FF:WS:0:0:0:0:A:2C", Solaris 2.5.1},
+      {"2238:B405:FF:WS:0:0:0:0:A:2C", "Solaris 2.5.1"},
 #line 578 "os.gperf"
-      {"2180:0218:80:00:1:1:1:1:S:40", Windows XP SP2 },
+      {"2180:0218:80:00:1:1:1:1:S:40", "Windows XP SP2 "},
 #line 1730 "os.gperf"
-      {"FFFF:05B4:FF:WS:0:0:1:0:A:2C", FreeBSD },
+      {"FFFF:05B4:FF:WS:0:0:1:0:A:2C", "FreeBSD "},
 #line 794 "os.gperf"
-      {"4000:0578:80:WS:1:1:1:0:S:30", Windows 2000},
+      {"4000:0578:80:WS:1:1:1:0:S:30", "Windows 2000"},
 #line 432 "os.gperf"
-      {"1800:05B4:40:00:0:1:1:1:S:3C", VMS},
+      {"1800:05B4:40:00:0:1:1:1:S:3C", "VMS"},
 #line 12 "os.gperf"
-      {"0096:_MSS:80:WS:0:0:0:0:A:LT", Cyclades PathRouter V 1.2.4},
+      {"0096:_MSS:80:WS:0:0:0:0:A:LT", "Cyclades PathRouter V 1.2.4"},
 #line 1484 "os.gperf"
-      {"F99F:0000:80:WS:0:0:0:0:S:28", Linux 2.2.x or 2.4.x},
+      {"F99F:0000:80:WS:0:0:0:0:S:28", "Linux 2.2.x or 2.4.x"},
 #line 1073 "os.gperf"
-      {"7000:05B4:40:WS:0:0:0:0:A:2C", IBM OS/2},
+      {"7000:05B4:40:WS:0:0:0:0:A:2C", "IBM OS/2"},
 #line 1091 "os.gperf"
-      {"7958:0584:40:00:1:1:1:1:A:3C", Windows NT 4},
+      {"7958:0584:40:00:1:1:1:1:A:3C", "Windows NT 4"},
 #line 1420 "os.gperf"
-      {"E000:0578:40:00:0:1:1:1:A:3C", FreeBSD 4.9-stable },
+      {"E000:0578:40:00:0:1:1:1:A:3C", "FreeBSD 4.9-stable "},
 #line 792 "os.gperf"
-      {"4000:0578:40:00:0:1:0:1:A:3C", NetBSD 1.6},
+      {"4000:0578:40:00:0:1:0:1:A:3C", "NetBSD 1.6"},
 #line 479 "os.gperf"
-      {"2000:052A:80:WS:1:1:1:0:S:30", Windows 98},
+      {"2000:052A:80:WS:1:1:1:0:S:30", "Windows 98"},
 #line 1421 "os.gperf"
-      {"E000:0578:40:WS:0:0:1:0:A:2C", FreeBSD },
+      {"E000:0578:40:WS:0:0:1:0:A:2C", "FreeBSD "},
 #line 1221 "os.gperf"
-      {"8000:0200:40:00:0:1:0:0:A:LT", Mac OS X Server},
+      {"8000:0200:40:00:0:1:0:0:A:LT", "Mac OS X Server"},
 #line 873 "os.gperf"
-      {"4000:D84A:80:WS:1:1:1:0:S:30", Windows 2000},
+      {"4000:D84A:80:WS:1:1:1:0:S:30", "Windows 2000"},
 #line 658 "os.gperf"
-      {"223F:7805:FF:WS:0:0:0:0:A:LT", Solaris},
+      {"223F:7805:FF:WS:0:0:0:0:A:LT", "Solaris"},
 #line 705 "os.gperf"
-      {"2DA0:B405:40:00:0:1:0:0:A:30", HPirect J6039A},
+      {"2DA0:B405:40:00:0:1:0:0:A:30", "HPirect J6039A"},
 #line 437 "os.gperf"
-      {"1800:05B4:80:WS:0:0:1:0:S:2C", Novell Netware 5.1},
+      {"1800:05B4:80:WS:0:0:1:0:S:2C", "Novell Netware 5.1"},
 #line 330 "os.gperf"
-      {"16B0:0584:40:WS:0:0:1:0:A:2C", Slackware 8.0 Linux 2.2.20},
+      {"16B0:0584:40:WS:0:0:1:0:A:2C", "Slackware 8.0 Linux 2.2.20"},
 #line 1734 "os.gperf"
-      {"FFFF:8C05:FF:01:0:1:0:1:A:LT", MacOS X},
+      {"FFFF:8C05:FF:01:0:1:0:1:A:LT", "MacOS X"},
 #line 327 "os.gperf"
-      {"16A8:05AA:40:WS:1:1:1:0:A:30", Debian GNU/Linux (unstable) - 2.4.xx Series Kernel},
+      {"16A8:05AA:40:WS:1:1:1:0:A:30", "Debian GNU/Linux (unstable) - 2.4.xx Series Kernel"},
 #line 1074 "os.gperf"
-      {"7000:05B4:40:WS:0:0:0:0:S:2C", IBM OS/2 V.3},
+      {"7000:05B4:40:WS:0:0:0:0:S:2C", "IBM OS/2 V.3"},
 #line 1078 "os.gperf"
-      {"7210:05B4:80:WS:0:0:1:0:A:2C", Windows NT server 4.0 sp6a},
+      {"7210:05B4:80:WS:0:0:1:0:A:2C", "Windows NT server 4.0 sp6a"},
 #line 993 "os.gperf"
-      {"4470:B405:80:00:1:1:1:0:A:34", Windows XP SP1},
+      {"4470:B405:80:00:1:1:1:0:A:34", "Windows XP SP1"},
 #line 357 "os.gperf"
-      {"16D0:0598:40:WS:1:1:1:0:A:30", WindowsXP Sp2},
+      {"16D0:0598:40:WS:1:1:1:0:A:30", "WindowsXP Sp2"},
 #line 328 "os.gperf"
-      {"16B0:051E:40:WS:1:1:1:0:A:30", Linux 2.4.19},
+      {"16B0:051E:40:WS:1:1:1:0:A:30", "Linux 2.4.19"},
 #line 356 "os.gperf"
-      {"16D0:0598:40:WS:1:1:0:0:A:30", Linux},
+      {"16D0:0598:40:WS:1:1:0:0:A:30", "Linux"},
 #line 254 "os.gperf"
-      {"111C:05B4:40:WS:0:0:1:0:A:LT", SCO Openserver 502},
+      {"111C:05B4:40:WS:0:0:1:0:A:LT", "SCO Openserver 502"},
 #line 1600 "os.gperf"
-      {"FF70:0218:80:WS:1:1:1:0:A:30", Windows 2000 Professional},
+      {"FF70:0218:80:WS:1:1:1:0:A:30", "Windows 2000 Professional"},
 #line 586 "os.gperf"
-      {"2190:05B4:20:WS:0:0:1:0:A:LT", Windows NT / Win9x},
+      {"2190:05B4:20:WS:0:0:1:0:A:LT", "Windows NT / Win9x"},
 #line 67 "os.gperf"
-      {"0400:0901:40:10:0:1:0:1:S:3C", Mac OS X 102.4},
+      {"0400:0901:40:10:0:1:0:1:S:3C", "Mac OS X 102.4"},
 #line 1402 "os.gperf"
-      {"C0B7:_MSS:80:00:0:1:1:1:A:LT", FreeBSD 2.2.1 - 4.1},
+      {"C0B7:_MSS:80:00:0:1:1:1:A:LT", "FreeBSD 2.2.1 - 4.1"},
 #line 1401 "os.gperf"
-      {"C0B7:_MSS:80:00:0:1:1:0:A:LT", FreeBSD 2.2.1 - 4.1},
+      {"C0B7:_MSS:80:00:0:1:1:0:A:LT", "FreeBSD 2.2.1 - 4.1"},
 #line 681 "os.gperf"
-      {"2568:0564:FF:WS:0:1:0:1:A:38", Solaris},
+      {"2568:0564:FF:WS:0:1:0:1:A:38", "Solaris"},
 #line 1451 "os.gperf"
-      {"EA60:_MSS:80:WS:0:0:1:0:A:LT", Cisco 675 DSL router -- cbos 2.1},
+      {"EA60:_MSS:80:WS:0:0:1:0:A:LT", "Cisco 675 DSL router -- cbos 2.1"},
 #line 1647 "os.gperf"
-      {"FFFF:057E:80:WS:1:1:0:0:S:30", Windows 2000 Professional},
+      {"FFFF:057E:80:WS:1:1:0:0:S:30", "Windows 2000 Professional"},
 #line 1646 "os.gperf"
-      {"FFFF:057E:80:00:1:1:1:1:S:40", Windows 2000},
+      {"FFFF:057E:80:00:1:1:1:1:S:40", "Windows 2000"},
 #line 329 "os.gperf"
-      {"16B0:0584:40:00:1:1:1:1:S:3C", Linux 2.2.x },
+      {"16B0:0584:40:00:1:1:1:1:S:3C", "Linux 2.2.x "},
 #line 1574 "os.gperf"
-      {"FC00:B405:80:00:1:1:1:0:A:34", Windows XP Professional v2002 SP1},
+      {"FC00:B405:80:00:1:1:1:0:A:34", "Windows XP Professional v2002 SP1"},
 #line 452 "os.gperf"
-      {"1C52:05AA:40:00:1:1:1:1:S:40", Windows XP Pro},
+      {"1C52:05AA:40:00:1:1:1:1:S:40", "Windows XP Pro"},
 #line 1452 "os.gperf"
-      {"EB28:0578:40:WS:1:1:1:0:A:30", IRIX 6.5.x},
+      {"EB28:0578:40:WS:1:1:1:0:A:30", "IRIX 6.5.x"},
 #line 188 "os.gperf"
-      {"0C90:_MSS:80:WS:0:0:0:0:A:LT", HP JetDirect Print Server},
+      {"0C90:_MSS:80:WS:0:0:0:0:A:LT", "HP JetDirect Print Server"},
 #line 489 "os.gperf"
-      {"2000:0598:80:WS:1:1:1:0:S:30", Windows 2000},
+      {"2000:0598:80:WS:1:1:1:0:S:30", "Windows 2000"},
 #line 1282 "os.gperf"
-      {"8000:_MSS:80:00:0:1:1:1:A:LT", Apple MacOS 9.04 (Powermac or G4)},
+      {"8000:_MSS:80:00:0:1:1:1:A:LT", "Apple MacOS 9.04 (Powermac or G4)"},
 #line 915 "os.gperf"
-      {"41B8:05B4:80:WS:1:1:1:0:A:30", Windows 2000 server},
+      {"41B8:05B4:80:WS:1:1:1:0:A:30", "Windows 2000 server"},
 #line 1280 "os.gperf"
-      {"8000:_MSS:80:00:0:1:0:1:A:LT", Cray UNICOS 9.0.1ai - 10.0.0.2},
+      {"8000:_MSS:80:00:0:1:0:1:A:LT", "Cray UNICOS 9.0.1ai - 10.0.0.2"},
 #line 1281 "os.gperf"
-      {"8000:_MSS:80:00:0:1:1:0:A:LT", Apple MacOS 9.04 (Powermac or G4)},
+      {"8000:_MSS:80:00:0:1:1:0:A:LT", "Apple MacOS 9.04 (Powermac or G4)"},
 #line 1279 "os.gperf"
-      {"8000:_MSS:80:00:0:1:0:0:A:LT", Cray UNICOS 9.0.1ai - 10.0.0.2},
+      {"8000:_MSS:80:00:0:1:0:0:A:LT", "Cray UNICOS 9.0.1ai - 10.0.0.2"},
 #line 1278 "os.gperf"
-      {"8000:_MSS:80:00:0:0:1:0:A:LT", Novell NetWare 3.12 - 5.00},
+      {"8000:_MSS:80:00:0:0:1:0:A:LT", "Novell NetWare 3.12 - 5.00"},
 #line 902 "os.gperf"
-      {"40B0:05B4:40:WS:0:0:1:0:A:2C", FreeBSD 4.3},
+      {"40B0:05B4:40:WS:0:0:1:0:A:2C", "FreeBSD 4.3"},
 #line 1485 "os.gperf"
-      {"FA00:05B4:40:01:0:1:1:1:A:3C", Windows },
+      {"FA00:05B4:40:01:0:1:1:1:A:3C", "Windows "},
 #line 1284 "os.gperf"
-      {"8000:_MSS:80:WS:0:0:1:0:A:LT", Cisco IOS 12.0(3.3)S  (perhaps a 7200)},
+      {"8000:_MSS:80:WS:0:0:1:0:A:LT", "Cisco IOS 12.0(3.3)S  (perhaps a 7200)"},
 #line 1283 "os.gperf"
-      {"8000:_MSS:80:WS:0:0:0:0:A:LT", DECNIS 600 V4.1.3B System},
+      {"8000:_MSS:80:WS:0:0:0:0:A:LT", "DECNIS 600 V4.1.3B System"},
 #line 587 "os.gperf"
-      {"2190:05B4:80:WS:0:0:1:0:A:LT", Windows NT / Win9x},
+      {"2190:05B4:80:WS:0:0:1:0:A:LT", "Windows NT / Win9x"},
 #line 333 "os.gperf"
-      {"16B0:05AC:40:00:1:1:1:1:S:3C", Linux 2.4.18-6mdk},
+      {"16B0:05AC:40:00:1:1:1:1:S:3C", "Linux 2.4.18-6mdk"},
 #line 338 "os.gperf"
-      {"16D0:052A:40:00:1:1:0:1:S:3C", Linux 2.4.23},
+      {"16D0:052A:40:00:1:1:0:1:S:3C", "Linux 2.4.23"},
 #line 332 "os.gperf"
-      {"16B0:05AC:40:00:1:1:1:0:S:3C", Linux 2.4.10},
+      {"16B0:05AC:40:00:1:1:1:0:S:3C", "Linux 2.4.10"},
 #line 136 "os.gperf"
-      {"0800:_MSS:40:WS:0:0:0:0:A:28", Connexa },
+      {"0800:_MSS:40:WS:0:0:0:0:A:28", "Connexa "},
 #line 1262 "os.gperf"
-      {"8000:1000:40:WS:0:0:1:0:A:2C", HP-UX},
+      {"8000:1000:40:WS:0:0:1:0:A:2C", "HP-UX"},
 #line 1502 "os.gperf"
-      {"FAF0:0584:40:WS:1:1:1:0:A:30", Unix },
+      {"FAF0:0584:40:WS:1:1:1:0:A:30", "Unix "},
 #line 1388 "os.gperf"
-      {"C000:057A:40:WS:1:1:1:0:A:30", Linux},
+      {"C000:057A:40:WS:1:1:1:0:A:30", "Linux"},
 #line 1506 "os.gperf"
-      {"FAF0:0586:80:WS:1:1:1:0:S:30", Windows XP pro},
+      {"FAF0:0586:80:WS:1:1:1:0:S:30", "Windows XP pro"},
 #line 1464 "os.gperf"
-      {"ED90:05B4:40:00:1:1:1:1:A:40", IRIX 6.5},
+      {"ED90:05B4:40:00:1:1:1:1:A:40", "IRIX 6.5"},
 #line 251 "os.gperf"
-      {"111C:05B4:20:WS:0:0:0:0:A:2C", Linksys PSUS4 Printserver},
+      {"111C:05B4:20:WS:0:0:0:0:A:2C", "Linksys PSUS4 Printserver"},
 #line 1671 "os.gperf"
-      {"FFFF:05AC:40:00:1:1:1:0:S:34", MS Windows XP SP1},
+      {"FFFF:05AC:40:00:1:1:1:0:S:34", "MS Windows XP SP1"},
 #line 161 "os.gperf"
-      {"0A28:_MSS:80:WS:0:0:0:0:A:LT", Apple Color LaserWrite 600 Printer},
+      {"0A28:_MSS:80:WS:0:0:0:0:A:LT", "Apple Color LaserWrite 600 Printer"},
 #line 334 "os.gperf"
-      {"16B0:05AC:40:02:1:1:1:1:S:3C", Linux Ubuntu 5.04 Hoary },
+      {"16B0:05AC:40:02:1:1:1:1:S:3C", "Linux Ubuntu 5.04 Hoary "},
 #line 1293 "os.gperf"
-      {"807A:_MSS:80:00:0:1:1:1:A:LT", AmigaOS 3.1 running Miami Deluxe 0.9m},
+      {"807A:_MSS:80:00:0:1:1:1:A:LT", "AmigaOS 3.1 running Miami Deluxe 0.9m"},
 #line 1291 "os.gperf"
-      {"807A:_MSS:80:00:0:1:0:1:A:LT", OpenBSD 2.6-2.8},
+      {"807A:_MSS:80:00:0:1:0:1:A:LT", "OpenBSD 2.6-2.8"},
 #line 1292 "os.gperf"
-      {"807A:_MSS:80:00:0:1:1:0:A:LT", AmigaOS 3.1 running Miami Deluxe 0.9m},
+      {"807A:_MSS:80:00:0:1:1:0:A:LT", "AmigaOS 3.1 running Miami Deluxe 0.9m"},
 #line 1489 "os.gperf"
-      {"FAF0:0514:80:WS:1:1:1:0:S:30", Windows XP},
+      {"FAF0:0514:80:WS:1:1:1:0:S:30", "Windows XP"},
 #line 1290 "os.gperf"
-      {"807A:_MSS:80:00:0:1:0:0:A:LT", OpenBSD 2.6-2.8},
+      {"807A:_MSS:80:00:0:1:0:0:A:LT", "OpenBSD 2.6-2.8"},
 #line 355 "os.gperf"
-      {"16D0:0598:40:WS:0:0:1:0:A:2C", Linux},
+      {"16D0:0598:40:WS:0:0:1:0:A:2C", "Linux"},
 #line 1228 "os.gperf"
-      {"8000:05A0:40:WS:1:1:1:0:A:30", Windows 2000},
+      {"8000:05A0:40:WS:1:1:1:0:A:30", "Windows 2000"},
 #line 267 "os.gperf"
-      {"1520:0548:40:00:1:1:1:1:S:3C", Linux Red Hat},
+      {"1520:0548:40:00:1:1:1:1:S:3C", "Linux Red Hat"},
 #line 1504 "os.gperf"
-      {"FAF0:0584:80:WS:1:1:1:0:A:30", Windows 2000 / XP},
+      {"FAF0:0584:80:WS:1:1:1:0:A:30", "Windows 2000 / XP"},
 #line 944 "os.gperf"
-      {"43E0:B405:40:00:0:1:0:1:A:LT", OpenBSD 2.9},
+      {"43E0:B405:40:00:0:1:0:1:A:LT", "OpenBSD 2.9"},
 #line 253 "os.gperf"
-      {"111C:05B4:40:WS:0:0:1:0:A:2C", Ascend MAX6000},
+      {"111C:05B4:40:WS:0:0:1:0:A:2C", "Ascend MAX6000"},
 #line 252 "os.gperf"
-      {"111C:05B4:40:WS:0:0:0:0:A:2C", OpenVMS},
+      {"111C:05B4:40:WS:0:0:0:0:A:2C", "OpenVMS"},
 #line 701 "os.gperf"
-      {"2800:05B4:80:WS:1:1:1:0:S:30", Windows XP Professional SP1},
+      {"2800:05B4:80:WS:1:1:1:0:S:30", "Windows XP Professional SP1"},
 #line 665 "os.gperf"
-      {"2297:_MSS:80:00:0:1:1:1:A:LT", Raptor Firewall 6 on Solaris 2.6},
+      {"2297:_MSS:80:00:0:1:1:1:A:LT", "Raptor Firewall 6 on Solaris 2.6"},
 #line 664 "os.gperf"
-      {"2297:_MSS:80:00:0:1:1:0:A:LT", Raptor Firewall 6 on Solaris 2.6},
+      {"2297:_MSS:80:00:0:1:1:0:A:LT", "Raptor Firewall 6 on Solaris 2.6"},
 #line 137 "os.gperf"
-      {"0800:_MSS:40:WS:0:0:0:0:S:28", Window 2000 SP3},
+      {"0800:_MSS:40:WS:0:0:0:0:S:28", "Window 2000 SP3"},
 #line 1166 "os.gperf"
-      {"7F53:0109:40:00:0:1:1:1:A:LT", Linux 2.2.14},
+      {"7F53:0109:40:00:0:1:1:1:A:LT", "Linux 2.2.14"},
 #line 1555 "os.gperf"
-      {"FAF0:_MSS:FF:WS:0:0:0:0:A:LT", Solaris 2.6 - 2.7},
+      {"FAF0:_MSS:FF:WS:0:0:0:0:A:LT", "Solaris 2.6 - 2.7"},
 #line 1633 "os.gperf"
-      {"FFFF:055C:80:WS:1:1:0:0:S:30", Windows XP},
+      {"FFFF:055C:80:WS:1:1:0:0:S:30", "Windows XP"},
 #line 1512 "os.gperf"
-      {"FAF0:05AC:80:WS:1:1:1:0:A:30", Windows 2000},
+      {"FAF0:05AC:80:WS:1:1:1:0:A:30", "Windows 2000"},
 #line 913 "os.gperf"
-      {"41A0:0578:80:00:1:1:1:1:A:40", Windows XP SP1},
+      {"41A0:0578:80:00:1:1:1:1:A:40", "Windows XP SP1"},
 #line 1511 "os.gperf"
-      {"FAF0:05AC:80:00:1:1:1:1:A:40", Windows XP },
+      {"FAF0:05AC:80:00:1:1:1:1:A:40", "Windows XP "},
 #line 1503 "os.gperf"
-      {"FAF0:0584:80:WS:0:1:1:0:S:30", Windows XP },
+      {"FAF0:0584:80:WS:0:1:1:0:S:30", "Windows XP "},
 #line 796 "os.gperf"
-      {"4000:057A:80:WS:1:1:1:0:S:30", Windows 2000},
+      {"4000:057A:80:WS:1:1:1:0:S:30", "Windows 2000"},
 #line 1505 "os.gperf"
-      {"FAF0:0584:80:WS:1:1:1:0:S:30", Windows XP},
+      {"FAF0:0584:80:WS:1:1:1:0:S:30", "Windows XP"},
 #line 707 "os.gperf"
-      {"3000:05B4:FF:WS:0:0:0:0:A:2C", BeOS },
+      {"3000:05B4:FF:WS:0:0:0:0:A:2C", "BeOS "},
 #line 1113 "os.gperf"
-      {"7C70:05B4:40:00:1:1:1:0:S:LT", Linux 2.3.99-ac - 2.4.0-test1},
+      {"7C70:05B4:40:00:1:1:1:0:S:LT", "Linux 2.3.99-ac - 2.4.0-test1"},
 #line 134 "os.gperf"
-      {"0800:0200:FF:WS:0:0:0:0:A:2C", Cisco},
+      {"0800:0200:FF:WS:0:0:0:0:A:2C", "Cisco"},
 #line 1514 "os.gperf"
-      {"FAF0:05B0:80:WS:1:1:1:0:A:30", Windows 2000},
+      {"FAF0:05B0:80:WS:1:1:1:0:A:30", "Windows 2000"},
 #line 731 "os.gperf"
-      {"3E80:05A6:80:WS:0:0:0:0:A:2C", Windows xp},
+      {"3E80:05A6:80:WS:0:0:0:0:A:2C", "Windows xp"},
 #line 13 "os.gperf"
-      {"0100:0218:FF:WS:0:0:0:0:A:2C", Allied Hub},
+      {"0100:0218:FF:WS:0:0:0:0:A:2C", "Allied Hub"},
 #line 1601 "os.gperf"
-      {"FF70:0218:80:WS:1:1:1:0:S:1C", Windows XP Professional Build 2600.xpsp2.030422},
+      {"FF70:0218:80:WS:1:1:1:0:S:1C", "Windows XP Professional Build 2600.xpsp2.030422"},
 #line 1158 "os.gperf"
-      {"7D78:_MSS:80:WS:0:0:0:0:A:28", Linux },
+      {"7D78:_MSS:80:WS:0:0:0:0:A:28", "Linux "},
 #line 1463 "os.gperf"
-      {"ED90:05B4:40:00:0:1:1:1:A:3C", Irix 6.5.8},
+      {"ED90:05B4:40:00:0:1:1:1:A:3C", "Irix 6.5.8"},
 #line 1624 "os.gperf"
-      {"FFFF:04EC:80:00:1:1:1:1:A:40", Windows 2000},
+      {"FFFF:04EC:80:00:1:1:1:1:A:40", "Windows 2000"},
 #line 795 "os.gperf"
-      {"4000:0578:FF:00:1:1:0:1:A:40", Windows 2000 / 2003},
+      {"4000:0578:FF:00:1:1:0:1:A:40", "Windows 2000 / 2003"},
 #line 277 "os.gperf"
-      {"1618:0578:40:00:1:1:1:1:S:3C", Linux 2.4.13},
+      {"1618:0578:40:00:1:1:1:1:S:3C", "Linux 2.4.13"},
 #line 1496 "os.gperf"
-      {"FAF0:0564:80:WS:1:1:1:0:A:30", Windows 2K},
+      {"FAF0:0564:80:WS:1:1:1:0:A:30", "Windows 2K"},
 #line 1494 "os.gperf"
-      {"FAF0:0564:80:00:1:1:1:1:A:40", Windows XP},
+      {"FAF0:0564:80:00:1:1:1:1:A:40", "Windows XP"},
 #line 175 "os.gperf"
-      {"0BB8:_MSS:80:00:0:1:0:0:A:LT", OpenVMS 7.1 Alpha running Digital's UCX v4.1ECO2},
+      {"0BB8:_MSS:80:00:0:1:0:0:A:LT", "OpenVMS 7.1 Alpha running Digital's UCX v4.1ECO2"},
 #line 1513 "os.gperf"
-      {"FAF0:05AC:80:WS:1:1:1:0:S:30", Windows 2000 Pro},
+      {"FAF0:05AC:80:WS:1:1:1:0:S:30", "Windows 2000 Pro"},
 #line 1413 "os.gperf"
-      {"D780:05B4:40:03:1:1:1:0:S:34", Winblows XP},
+      {"D780:05B4:40:03:1:1:1:0:S:34", "Winblows XP"},
 #line 1623 "os.gperf"
-      {"FFFF:04EC:40:00:1:1:1:1:S:40", Windows XP },
+      {"FFFF:04EC:40:00:1:1:1:1:S:40", "Windows XP "},
 #line 709 "os.gperf"
-      {"3000:05B4:FF:WS:0:1:0:0:S:2C", BeOS 5.0},
+      {"3000:05B4:FF:WS:0:1:0:0:S:2C", "BeOS 5.0"},
 #line 1118 "os.gperf"
-      {"7CC8:0584:40:00:1:1:1:0:S:3C", Linux 2.2},
+      {"7CC8:0584:40:00:1:1:1:0:S:3C", "Linux 2.2"},
 #line 708 "os.gperf"
-      {"3000:05B4:FF:WS:0:0:0:0:S:2C", BeOS 5.0},
+      {"3000:05B4:FF:WS:0:0:0:0:S:2C", "BeOS 5.0"},
 #line 1446 "os.gperf"
-      {"E8C0:05A0:40:01:1:1:1:0:S:34", Windows 98},
+      {"E8C0:05A0:40:01:1:1:1:0:S:34", "Windows 98"},
 #line 1169 "os.gperf"
-      {"7F53:_MSS:80:00:0:1:1:1:A:LT", Linux 2.1.19 - 2.2.17},
+      {"7F53:_MSS:80:00:0:1:1:1:A:LT", "Linux 2.1.19 - 2.2.17"},
 #line 1159 "os.gperf"
-      {"7D78:_MSS:80:WS:0:0:0:0:S:28", Linux 2.4.19 crypto gentoo},
+      {"7D78:_MSS:80:WS:0:0:0:0:S:28", "Linux 2.4.19 crypto gentoo"},
 #line 1168 "os.gperf"
-      {"7F53:_MSS:80:00:0:1:1:0:A:LT", Linux 2.1.19 - 2.2.17},
+      {"7F53:_MSS:80:00:0:1:1:0:A:LT", "Linux 2.1.19 - 2.2.17"},
 #line 700 "os.gperf"
-      {"2800:05B4:80:WS:0:0:0:0:S:2C", Tiptel Innovaphone IP200 V4.00 sr4},
+      {"2800:05B4:80:WS:0:0:0:0:S:2C", "Tiptel Innovaphone IP200 V4.00 sr4"},
 #line 1714 "os.gperf"
-      {"FFFF:05B4:80:00:1:1:1:0:A:34", Windows 2000 Server SP4 },
+      {"FFFF:05B4:80:00:1:1:1:0:A:34", "Windows 2000 Server SP4 "},
 #line 1167 "os.gperf"
-      {"7F53:_MSS:80:00:0:0:0:0:A:LT", AIX 4.0 - 4.2},
+      {"7F53:_MSS:80:00:0:0:0:0:A:LT", "AIX 4.0 - 4.2"},
 #line 1442 "os.gperf"
-      {"E000:C003:40:00:0:1:1:1:A:3C", Linux Debian },
+      {"E000:C003:40:00:0:1:1:1:A:3C", "Linux Debian "},
 #line 1626 "os.gperf"
-      {"FFFF:04EC:80:WS:1:1:1:0:S:30", Windows 2000 Professional},
+      {"FFFF:04EC:80:WS:1:1:1:0:S:30", "Windows 2000 Professional"},
 #line 945 "os.gperf"
-      {"43E0:B405:40:00:0:1:1:1:A:3C", FreeBSD 4.4 / OpenBSD 3.1},
+      {"43E0:B405:40:00:0:1:1:1:A:3C", "FreeBSD 4.4 / OpenBSD 3.1"},
 #line 1497 "os.gperf"
-      {"FAF0:0564:80:WS:1:1:1:0:S:30", Windows XP Professional},
+      {"FAF0:0564:80:WS:1:1:1:0:S:30", "Windows XP Professional"},
 #line 1171 "os.gperf"
-      {"7F53:_MSS:80:WS:0:0:1:0:A:LT", Linux Kernel 2.1.88},
+      {"7F53:_MSS:80:WS:0:0:1:0:A:LT", "Linux Kernel 2.1.88"},
 #line 46 "os.gperf"
-      {"03E0:05B4:20:05:1:1:1:1:S:40", Windows 2000 server},
+      {"03E0:05B4:20:05:1:1:1:1:S:40", "Windows 2000 server"},
 #line 1170 "os.gperf"
-      {"7F53:_MSS:80:WS:0:0:0:0:A:LT", AIX 3.2},
+      {"7F53:_MSS:80:WS:0:0:0:0:A:LT", "AIX 3.2"},
 #line 1563 "os.gperf"
-      {"FC00:0578:40:WS:0:0:0:0:S:2C", Microsoft XBox },
+      {"FC00:0578:40:WS:0:0:0:0:S:2C", "Microsoft XBox "},
 #line 1718 "os.gperf"
-      {"FFFF:05B4:80:02:1:1:1:0:A:34", Windows XP Sp 2},
+      {"FFFF:05B4:80:02:1:1:1:0:A:34", "Windows XP Sp 2"},
 #line 1012 "os.gperf"
-      {"4860:058E:10:WS:1:1:1:0:S:30", Linux },
+      {"4860:058E:10:WS:1:1:1:0:S:30", "Linux "},
 #line 1173 "os.gperf"
-      {"7F7D:_MSS:80:00:0:1:1:1:A:LT", Linux 2.1.91 - 2.1.103},
+      {"7F7D:_MSS:80:00:0:1:1:1:A:LT", "Linux 2.1.91 - 2.1.103"},
 #line 1695 "os.gperf"
-      {"FFFF:05B4:40:01:0:1:1:1:S:44", FreeBSD},
+      {"FFFF:05B4:40:01:0:1:1:1:S:44", "FreeBSD"},
 #line 699 "os.gperf"
-      {"2798:_MSS:FF:WS:0:0:1:0:A:LT", Solaris 2.6 - 2.7},
+      {"2798:_MSS:FF:WS:0:0:1:0:A:LT", "Solaris 2.6 - 2.7"},
 #line 1172 "os.gperf"
-      {"7F7D:_MSS:80:00:0:1:1:0:A:LT", Linux 2.1.91 - 2.1.103},
+      {"7F7D:_MSS:80:00:0:1:1:0:A:LT", "Linux 2.1.91 - 2.1.103"},
 #line 1079 "os.gperf"
-      {"77C4:05B4:40:00:0:1:1:0:A:30", Linux 2.2.19},
+      {"77C4:05B4:40:00:0:1:1:0:A:30", "Linux 2.2.19"},
 #line 1298 "os.gperf"
-      {"81D0:_MSS:40:WS:0:0:1:0:A:LT", Compaq Tru64 UNIX 5.0},
+      {"81D0:_MSS:40:WS:0:0:1:0:A:LT", "Compaq Tru64 UNIX 5.0"},
 #line 1524 "os.gperf"
-      {"FAF0:05B4:40:WS:1:1:1:0:A:30", Unix},
+      {"FAF0:05B4:40:WS:1:1:1:0:A:30", "Unix"},
 #line 730 "os.gperf"
-      {"3E80:0584:40:WS:0:0:0:0:A:2C", HM210di Configuration Manager GUI},
+      {"3E80:0584:40:WS:0:0:0:0:A:2C", "HM210di Configuration Manager GUI"},
 #line 1082 "os.gperf"
-      {"77C4:05B4:40:00:1:1:1:1:A:LT", Linux SuSE 7.x},
+      {"77C4:05B4:40:00:1:1:1:1:A:LT", "Linux SuSE 7.x"},
 #line 1122 "os.gperf"
-      {"7D00:05B4:80:WS:1:1:1:0:S:30", Windows XP Pro},
+      {"7D00:05B4:80:WS:1:1:1:0:S:30", "Windows XP Pro"},
 #line 1517 "os.gperf"
-      {"FAF0:05B4:40:00:1:1:1:1:A:40", Windows 2000},
+      {"FAF0:05B4:40:00:1:1:1:1:A:40", "Windows 2000"},
 #line 1699 "os.gperf"
-      {"FFFF:05B4:40:02:1:1:1:0:S:34", Windows 2003 },
+      {"FFFF:05B4:40:02:1:1:1:0:S:34", "Windows 2003 "},
 #line 195 "os.gperf"
-      {"0FFF:0400:20:WS:0:0:0:0:A:2C", ASMAX Broadband router},
+      {"0FFF:0400:20:WS:0:0:0:0:A:2C", "ASMAX Broadband router"},
 #line 711 "os.gperf"
-      {"37FF:_MSS:80:WS:0:0:0:0:A:LT", Linux 1.2.13},
+      {"37FF:_MSS:80:WS:0:0:0:0:A:LT", "Linux 1.2.13"},
 #line 1526 "os.gperf"
-      {"FAF0:05B4:80:00:0:1:1:0:A:LT", Windows 2000 Professional, Build 2183 (RC3)},
+      {"FAF0:05B4:80:00:0:1:1:0:A:LT", "Windows 2000 Professional Build 2183 (RC3)"},
 #line 1130 "os.gperf"
-      {"7D78:05B4:40:00:0:1:1:0:A:30", RedHat 6.2},
+      {"7D78:05B4:40:00:0:1:1:0:A:30", "RedHat 6.2"},
 #line 1519 "os.gperf"
-      {"FAF0:05B4:40:02:1:1:0:0:A:LT", Windows ME},
+      {"FAF0:05B4:40:02:1:1:0:0:A:LT", "Windows ME"},
 #line 1625 "os.gperf"
-      {"FFFF:04EC:80:WS:0:0:1:0:A:2C", Windows 2000},
+      {"FFFF:04EC:80:WS:0:0:1:0:A:2C", "Windows 2000"},
 #line 1084 "os.gperf"
-      {"77C4:05B4:40:WS:1:1:1:0:A:30", Linux Mandrake 7.1 / Debian 3.0},
+      {"77C4:05B4:40:WS:1:1:1:0:A:30", "Linux Mandrake 7.1 / Debian 3.0"},
 #line 1717 "os.gperf"
-      {"FFFF:05B4:80:01:1:1:1:0:S:34", Windows XP SP2},
+      {"FFFF:05B4:80:01:1:1:1:0:S:34", "Windows XP SP2"},
 #line 264 "os.gperf"
-      {"14B8:052E:40:00:1:1:1:1:S:3C", Linux RedHat 7},
+      {"14B8:052E:40:00:1:1:1:1:S:3C", "Linux RedHat 7"},
 #line 1536 "os.gperf"
-      {"FAF0:05B4:80:WS:0:1:1:0:A:LT", Windows XP Professional Release},
+      {"FAF0:05B4:80:WS:0:1:1:0:A:LT", "Windows XP Professional Release"},
 #line 1136 "os.gperf"
-      {"7D78:05B4:40:00:1:1:1:0:A:LT", Linux 2.2.19 - 2.2.20},
+      {"7D78:05B4:40:00:1:1:1:0:A:LT", "Linux 2.2.19 - 2.2.20"},
 #line 1495 "os.gperf"
-      {"FAF0:0564:80:WS:0:0:1:0:A:2C", Windows XP Professional},
+      {"FAF0:0564:80:WS:0:0:1:0:A:2C", "Windows XP Professional"},
 #line 1146 "os.gperf"
-      {"7D78:05B4:40:WS:0:0:1:0:A:LT", Linux 2.2.19 - 2.2.20},
+      {"7D78:05B4:40:WS:0:0:1:0:A:LT", "Linux 2.2.19 - 2.2.20"},
 #line 1720 "os.gperf"
-      {"FFFF:05B4:80:03:1:1:1:1:S:40", Windows 2000 SP 3},
+      {"FFFF:05B4:80:03:1:1:1:1:S:40", "Windows 2000 SP 3"},
 #line 53 "os.gperf"
-      {"0400:0218:FF:WS:0:0:0:0:A:2C", 3Com Superstack II},
+      {"0400:0218:FF:WS:0:0:0:0:A:2C", "3Com Superstack II"},
 #line 158 "os.gperf"
-      {"0860:_MSS:80:00:0:1:1:1:A:LT", Windows NT4 / Win95 / Win98},
+      {"0860:_MSS:80:00:0:1:1:1:A:LT", "Windows NT4 / Win95 / Win98"},
 #line 1540 "os.gperf"
-      {"FAF0:05B4:80:WS:1:1:1:0:A:30", Windows XP},
+      {"FAF0:05B4:80:WS:1:1:1:0:A:30", "Windows XP"},
 #line 1538 "os.gperf"
-      {"FAF0:05B4:80:WS:1:1:0:0:A:30", Linux},
+      {"FAF0:05B4:80:WS:1:1:0:0:A:30", "Linux"},
 #line 157 "os.gperf"
-      {"0860:_MSS:80:00:0:1:1:0:A:LT", Windows NT4 / Win95 / Win98},
+      {"0860:_MSS:80:00:0:1:1:0:A:LT", "Windows NT4 / Win95 / Win98"},
 #line 1149 "os.gperf"
-      {"7D78:05B4:40:WS:1:1:1:0:A:30", Linux 2.2.12 - 2.2.20},
+      {"7D78:05B4:40:WS:1:1:1:0:A:30", "Linux 2.2.12 - 2.2.20"},
 #line 758 "os.gperf"
-      {"3FF0:_MSS:80:00:0:0:0:0:A:LT", Linux 2.0.34-38},
+      {"3FF0:_MSS:80:00:0:0:0:0:A:LT", "Linux 2.0.34-38"},
 #line 1148 "os.gperf"
-      {"7D78:05B4:40:WS:1:1:0:0:A:30", Linux 2.2.(PLD) },
+      {"7D78:05B4:40:WS:1:1:0:0:A:30", "Linux 2.2.(PLD) "},
 #line 1701 "os.gperf"
-      {"FFFF:05B4:40:03:0:1:1:1:A:3C", FreeBSD 4.7-RELEASE },
+      {"FFFF:05B4:40:03:0:1:1:1:A:3C", "FreeBSD 4.7-RELEASE "},
 #line 1530 "os.gperf"
-      {"FAF0:05B4:80:00:1:1:1:1:A:40", Windows 2000 Version 5.0 (Build 2195)},
+      {"FAF0:05B4:80:00:1:1:1:1:A:40", "Windows 2000 Version 5.0 (Build 2195)"},
 #line 156 "os.gperf"
-      {"0860:_MSS:80:00:0:0:0:0:A:LT", HP JetDirect  Firmware Rev. H.06.00},
+      {"0860:_MSS:80:00:0:0:0:0:A:LT", "HP JetDirect  Firmware Rev. H.06.00"},
 #line 1516 "os.gperf"
-      {"FAF0:05B4:40:00:1:1:1:0:S:LT", Windows 98},
+      {"FAF0:05B4:40:00:1:1:1:0:S:LT", "Windows 98"},
 #line 724 "os.gperf"
-      {"3E43:_MSS:80:00:0:1:0:1:A:LT", AIX 4.1-4.1.5},
+      {"3E43:_MSS:80:00:0:1:0:1:A:LT", "AIX 4.1-4.1.5"},
 #line 759 "os.gperf"
-      {"3FF0:_MSS:80:WS:0:0:0:0:A:LT", AtheOS ( www.atheos.cx )},
+      {"3FF0:_MSS:80:WS:0:0:0:0:A:LT", "AtheOS ( www.atheos.cx )"},
 #line 723 "os.gperf"
-      {"3E43:_MSS:80:00:0:1:0:0:A:LT", AIX 4.1-4.1.5},
+      {"3E43:_MSS:80:00:0:1:0:0:A:LT", "AIX 4.1-4.1.5"},
 #line 1128 "os.gperf"
-      {"7D78:05B4:20:00:1:1:1:0:S:LT", Linux 2.2.13},
+      {"7D78:05B4:20:00:1:1:1:0:S:LT", "Linux 2.2.13"},
 #line 688 "os.gperf"
-      {"2648:8405:FF:00:0:1:1:1:A:LT", Solaris},
+      {"2648:8405:FF:00:0:1:1:1:A:LT", "Solaris"},
 #line 159 "os.gperf"
-      {"0860:_MSS:80:WS:0:0:0:0:A:LT", Chase IOLan Terminal Server},
+      {"0860:_MSS:80:WS:0:0:0:0:A:LT", "Chase IOLan Terminal Server"},
 #line 1525 "os.gperf"
-      {"FAF0:05B4:40:WS:1:1:1:0:S:30", Windows XP Professional, Build 2600},
+      {"FAF0:05B4:40:WS:1:1:1:0:S:30", "Windows XP Professional Build 2600"},
 #line 1076 "os.gperf"
-      {"70D5:_MSS:80:00:0:1:1:0:A:LT", Digital UNIX OSF1 V 4.0-4.0F},
+      {"70D5:_MSS:80:00:0:1:1:0:A:LT", "Digital UNIX OSF1 V 4.0-4.0F"},
 #line 1013 "os.gperf"
-      {"4860:05B4:80:WS:1:1:1:0:S:30", Windows 2000},
+      {"4860:05B4:80:WS:1:1:1:0:S:30", "Windows 2000"},
 #line 1518 "os.gperf"
-      {"FAF0:05B4:40:00:1:1:1:1:S:40", Windows 2000},
+      {"FAF0:05B4:40:00:1:1:1:1:S:40", "Windows 2000"},
 #line 1150 "os.gperf"
-      {"7D78:05B4:80:WS:0:0:1:0:A:LT", Windows XP},
+      {"7D78:05B4:80:WS:0:0:1:0:A:LT", "Windows XP"},
 #line 290 "os.gperf"
-      {"16A0:0578:40:00:1:1:1:1:A:3C", Linux 2.4.7},
+      {"16A0:0578:40:00:1:1:1:1:A:3C", "Linux 2.4.7"},
 #line 1129 "os.gperf"
-      {"7D78:05B4:3A:WS:0:0:0:0:S:LT", Linux 2.0.38},
+      {"7D78:05B4:3A:WS:0:0:0:0:S:LT", "Linux 2.0.38"},
 #line 447 "os.gperf"
-      {"1860:05B4:80:WS:1:1:1:0:A:30", Windows XP Pro},
+      {"1860:05B4:80:WS:1:1:1:0:A:30", "Windows XP Pro"},
 #line 1263 "os.gperf"
-      {"8000:114C:40:WS:0:0:0:0:A:2C", IBM MVS},
+      {"8000:114C:40:WS:0:0:0:0:A:2C", "IBM MVS"},
 #line 1131 "os.gperf"
-      {"7D78:05B4:40:00:0:1:1:0:S:LT", Linux 2.2.19},
+      {"7D78:05B4:40:00:0:1:1:0:S:LT", "Linux 2.2.19"},
 #line 1151 "os.gperf"
-      {"7D78:05B4:80:WS:1:1:1:0:A:30", Windows 2000 sp2},
+      {"7D78:05B4:80:WS:1:1:1:0:A:30", "Windows 2000 sp2"},
 #line 757 "os.gperf"
-      {"3FE0:_MSS:80:00:0:0:0:0:A:LT", Linux 2.0.32-34},
+      {"3FE0:_MSS:80:00:0:0:0:0:A:LT", "Linux 2.0.32-34"},
 #line 271 "os.gperf"
-      {"1590:0564:40:00:1:1:1:1:S:3C", Debian Woody (Kernelversion 2.4.18) },
+      {"1590:0564:40:00:1:1:1:1:S:3C", "Debian Woody (Kernelversion 2.4.18) "},
 #line 1139 "os.gperf"
-      {"7D78:05B4:40:00:1:1:1:0:S:LT", Linux 2.2.14 - 2.2.20},
+      {"7D78:05B4:40:00:1:1:1:0:S:LT", "Linux 2.2.14 - 2.2.20"},
 #line 1133 "os.gperf"
-      {"7D78:05B4:40:00:1:1:0:0:S:LT", Linux 2.2.19},
+      {"7D78:05B4:40:00:1:1:0:0:S:LT", "Linux 2.2.19"},
 #line 1537 "os.gperf"
-      {"FAF0:05B4:80:WS:0:1:1:0:S:30", Windows XP},
+      {"FAF0:05B4:80:WS:0:1:1:0:S:30", "Windows XP"},
 #line 1124 "os.gperf"
-      {"7D78:0564:40:00:1:1:1:1:S:3C", Linux},
+      {"7D78:0564:40:00:1:1:1:1:S:3C", "Linux"},
 #line 1543 "os.gperf"
-      {"FAF0:05B4:80:WS:1:1:1:0:S:LT", Windows 98 SE / 2000 / XP Professional},
+      {"FAF0:05B4:80:WS:1:1:1:0:S:LT", "Windows 98 SE / 2000 / XP Professional"},
 #line 1544 "os.gperf"
-      {"FAF0:05B4:80:WS:1:1:1:0:S:LT", Windows XP},
+      {"FAF0:05B4:80:WS:1:1:1:0:S:LT", "Windows XP"},
 #line 777 "os.gperf"
-      {"4000:04F8:80:WS:1:1:1:0:S:30", Windows NT SP3},
+      {"4000:04F8:80:WS:1:1:1:0:S:30", "Windows NT SP3"},
 #line 1165 "os.gperf"
-      {"7EF4:0514:40:00:1:1:1:1:A:3C", Linux 2.2.14},
+      {"7EF4:0514:40:00:1:1:1:1:A:3C", "Linux 2.2.14"},
 #line 1542 "os.gperf"
-      {"FAF0:05B4:80:WS:1:1:1:0:S:30", Windows XP Pro, Windows 2000 Pro},
+      {"FAF0:05B4:80:WS:1:1:1:0:S:30", "Windows XP Pro Windows 2000 Pro"},
 #line 1539 "os.gperf"
-      {"FAF0:05B4:80:WS:1:1:0:0:S:30", Windows 2000 Pro},
+      {"FAF0:05B4:80:WS:1:1:0:0:S:30", "Windows 2000 Pro"},
 #line 1125 "os.gperf"
-      {"7D78:0564:40:WS:1:1:1:1:S:3C", Slware Linux 7.1},
+      {"7D78:0564:40:WS:1:1:1:1:S:3C", "Slware Linux 7.1"},
 #line 1531 "os.gperf"
-      {"FAF0:05B4:80:00:1:1:1:1:S:40", Windows XP},
+      {"FAF0:05B4:80:00:1:1:1:1:S:40", "Windows XP"},
 #line 1230 "os.gperf"
-      {"8000:05AC:40:00:0:1:1:1:S:LT", Mac OS X 10.1.5},
+      {"8000:05AC:40:00:0:1:1:1:S:LT", "Mac OS X 10.1.5"},
 #line 1522 "os.gperf"
-      {"FAF0:05B4:40:WS:0:0:1:0:A:2C", SunOS 5.9},
+      {"FAF0:05B4:40:WS:0:0:1:0:A:2C", "SunOS 5.9"},
 #line 1521 "os.gperf"
-      {"FAF0:05B4:40:WS:0:0:0:0:A:2C", IBM AIX (JG)},
+      {"FAF0:05B4:40:WS:0:0:0:0:A:2C", "IBM AIX (JG)"},
 #line 931 "os.gperf"
-      {"4322:052A:40:WS:0:0:1:0:A:2C", Windows },
+      {"4322:052A:40:WS:0:0:1:0:A:2C", "Windows "},
 #line 1224 "os.gperf"
-      {"8000:0564:40:00:1:1:1:1:A:40", Solaris 8 },
+      {"8000:0564:40:00:1:1:1:1:A:40", "Solaris 8 "},
 #line 428 "os.gperf"
-      {"1770:0578:40:WS:0:0:1:0:A:2C", SMC Router SMC7004VBR },
+      {"1770:0578:40:WS:0:0:1:0:A:2C", "SMC Router SMC7004VBR "},
 #line 1072 "os.gperf"
-      {"6FCC:_MSS:80:WS:0:0:0:0:A:LT", IBM OS/2 V 2.1},
+      {"6FCC:_MSS:80:WS:0:0:0:0:A:LT", "IBM OS/2 V 2.1"},
 #line 1152 "os.gperf"
-      {"7D78:05B4:80:WS:1:1:1:0:S:30", Windows XP Professional},
+      {"7D78:05B4:80:WS:1:1:1:0:S:30", "Windows XP Professional"},
 #line 1083 "os.gperf"
-      {"77C4:05B4:40:WS:0:0:1:0:A:2C", SuSE Linux 7.1},
+      {"77C4:05B4:40:WS:0:0:1:0:A:2C", "SuSE Linux 7.1"},
 #line 1081 "os.gperf"
-      {"77C4:05B4:40:00:1:1:1:1:A:3C", Linux SuSE 7.3},
+      {"77C4:05B4:40:00:1:1:1:1:A:3C", "Linux SuSE 7.3"},
 #line 1080 "os.gperf"
-      {"77C4:05B4:40:00:1:1:0:1:A:3C", Linux 2.2.22 (PLD)},
+      {"77C4:05B4:40:00:1:1:0:1:A:3C", "Linux 2.2.22 (PLD)"},
 #line 572 "os.gperf"
-      {"20D0:0578:40:00:1:1:1:1:A:40", Windows},
+      {"20D0:0578:40:00:1:1:1:1:A:40", "Windows"},
 #line 1226 "os.gperf"
-      {"8000:0584:40:00:0:1:1:1:A:3C", HP-UX},
+      {"8000:0584:40:00:0:1:1:1:A:3C", "HP-UX"},
 #line 1527 "os.gperf"
-      {"FAF0:05B4:80:00:0:1:1:1:A:3C", Windows 2000 Professional / Windows XP Pro},
+      {"FAF0:05B4:80:00:0:1:1:1:A:3C", "Windows 2000 Professional / Windows XP Pro"},
 #line 1132 "os.gperf"
-      {"7D78:05B4:40:00:0:1:1:1:A:3C", Linux 2.2.17 - 2.2.20},
+      {"7D78:05B4:40:00:0:1:1:1:A:3C", "Linux 2.2.17 - 2.2.20"},
 #line 1227 "os.gperf"
-      {"8000:0584:40:WS:0:0:1:0:A:2C", HP-UX B.10.20},
+      {"8000:0584:40:WS:0:0:1:0:A:2C", "HP-UX B.10.20"},
 #line 1534 "os.gperf"
-      {"FAF0:05B4:80:WS:0:0:1:0:A:2C", Linux Slackware 8.0},
+      {"FAF0:05B4:80:WS:0:0:1:0:A:2C", "Linux Slackware 8.0"},
 #line 1532 "os.gperf"
-      {"FAF0:05B4:80:WS:0:0:0:0:A:2C", Windows NT 4.0},
+      {"FAF0:05B4:80:WS:0:0:0:0:A:2C", "Windows NT 4.0"},
 #line 1448 "os.gperf"
-      {"EA60:05AC:40:WS:0:0:1:0:A:2C", Router Cisco 677 },
+      {"EA60:05AC:40:WS:0:0:1:0:A:2C", "Router Cisco 677 "},
 #line 1145 "os.gperf"
-      {"7D78:05B4:40:WS:0:0:1:0:A:2C", Cobalt Linux RaQ 4 (2.2.19)},
+      {"7D78:05B4:40:WS:0:0:1:0:A:2C", "Cobalt Linux RaQ 4 (2.2.19)"},
 #line 177 "os.gperf"
-      {"0C00:052A:40:WS:0:0:0:0:A:2C", NetGear Router},
+      {"0C00:052A:40:WS:0:0:0:0:A:2C", "NetGear Router"},
 #line 1184 "os.gperf"
-      {"7FF0:_MSS:80:00:0:0:0:0:A:LT", Linux 2.0.34-38},
+      {"7FF0:_MSS:80:00:0:0:0:0:A:LT", "Linux 2.0.34-38"},
 #line 1140 "os.gperf"
-      {"7D78:05B4:40:00:1:1:1:1:A:3C", Linux 2.2.14 - 2.2.20},
+      {"7D78:05B4:40:00:1:1:1:1:A:3C", "Linux 2.2.14 - 2.2.20"},
 #line 1093 "os.gperf"
-      {"7960:0F2C:40:00:1:1:1:0:S:LT", Linux 2.2.12-20},
+      {"7960:0F2C:40:00:1:1:1:0:S:LT", "Linux 2.2.12-20"},
 #line 1134 "os.gperf"
-      {"7D78:05B4:40:00:1:1:0:1:A:3C", Linux pld 2.4.22},
+      {"7D78:05B4:40:00:1:1:0:1:A:3C", "Linux pld 2.4.22"},
 #line 1450 "os.gperf"
-      {"EA60:05DC:40:WS:0:0:1:0:A:LT", Cisco 667i-DIR DSL router -- cbos 2.4.2},
+      {"EA60:05DC:40:WS:0:0:1:0:A:LT", "Cisco 667i-DIR DSL router -- cbos 2.4.2"},
 #line 462 "os.gperf"
-      {"1FFE:055C:FF:WS:0:0:0:0:A:2C", Linux Debian woody},
+      {"1FFE:055C:FF:WS:0:0:0:0:A:2C", "Linux Debian woody"},
 #line 1181 "os.gperf"
-      {"7FE0:_MSS:40:WS:0:0:0:0:A:LT", Linux 2.0.34 - 2.0.38},
+      {"7FE0:_MSS:40:WS:0:0:0:0:A:LT", "Linux 2.0.34 - 2.0.38"},
 #line 729 "os.gperf"
-      {"3E64:05AC:40:WS:1:1:1:0:A:30", Debian GNU/Linux 3.0 R4 \"Woody\"},
+      {"3E64:05AC:40:WS:1:1:1:0:A:30", "Debian GNU/Linux 3.0 R4 \"Woody\""},
 #line 1523 "os.gperf"
-      {"FAF0:05B4:40:WS:0:0:1:0:S:2C", Windows NT Server 4.0 },
+      {"FAF0:05B4:40:WS:0:0:1:0:S:2C", "Windows NT Server 4.0 "},
 #line 1746 "os.gperf"
-      {"FFFF:B405:40:01:0:1:1:0:A:LT", Mac OS X },
+      {"FFFF:B405:40:01:0:1:1:0:A:LT", "Mac OS X "},
 #line 937 "os.gperf"
-      {"43B0:05A4:80:WS:1:1:1:0:A:30", OpenBSD 2.8 GENERIC },
+      {"43B0:05A4:80:WS:1:1:1:0:A:30", "OpenBSD 2.8 GENERIC "},
 #line 1229 "os.gperf"
-      {"8000:05AC:40:00:0:1:1:1:A:3C", FreeBSD 4.9 },
+      {"8000:05AC:40:00:0:1:1:1:A:3C", "FreeBSD 4.9 "},
 #line 1414 "os.gperf"
-      {"D780:B405:40:03:1:1:1:0:S:LT", Windows XP},
+      {"D780:B405:40:03:1:1:1:0:S:LT", "Windows XP"},
 #line 1751 "os.gperf"
-      {"FFFF:B405:40:WS:0:0:1:0:A:LT", Mac OS X },
+      {"FFFF:B405:40:WS:0:0:1:0:A:LT", "Mac OS X "},
 #line 1127 "os.gperf"
-      {"7D78:05B4:01:00:1:1:1:1:S:3C", Linux },
+      {"7D78:05B4:01:00:1:1:1:1:S:3C", "Linux "},
 #line 1733 "os.gperf"
-      {"FFFF:7E05:80:00:1:1:1:1:S:40", Windows 2000},
+      {"FFFF:7E05:80:00:1:1:1:1:S:40", "Windows 2000"},
 #line 1232 "os.gperf"
-      {"8000:05AC:40:WS:0:0:1:0:A:2C", OS400 V5R2},
+      {"8000:05AC:40:WS:0:0:1:0:A:2C", "OS400 V5R2"},
 #line 1231 "os.gperf"
-      {"8000:05AC:40:WS:0:0:0:0:A:2C", FreeBSD},
+      {"8000:05AC:40:WS:0:0:0:0:A:2C", "FreeBSD"},
 #line 1182 "os.gperf"
-      {"7FE0:_MSS:80:00:0:0:0:0:A:LT", Linux 2.0.32-34},
+      {"7FE0:_MSS:80:00:0:0:0:0:A:LT", "Linux 2.0.32-34"},
 #line 1364 "os.gperf"
-      {"AE60:05B4:80:03:1:1:1:1:S:40", Linux},
+      {"AE60:05B4:80:03:1:1:1:1:S:40", "Linux"},
 #line 1757 "os.gperf"
-      {"FFFF:B405:80:00:0:1:1:1:A:LT", Windows XP},
+      {"FFFF:B405:80:00:0:1:1:1:A:LT", "Windows XP"},
 #line 1183 "os.gperf"
-      {"7FE0:_MSS:80:WS:0:0:0:0:A:LT", Cobalt Linux 4.0 (Fargo) Kernel 2.0.34C52_SK on MIPS},
+      {"7FE0:_MSS:80:WS:0:0:0:0:A:LT", "Cobalt Linux 4.0 (Fargo) Kernel 2.0.34C52_SK on MIPS"},
 #line 1535 "os.gperf"
-      {"FAF0:05B4:80:WS:0:0:1:0:S:2C", Windows XP SP2},
+      {"FAF0:05B4:80:WS:0:0:1:0:S:2C", "Windows XP SP2"},
 #line 1533 "os.gperf"
-      {"FAF0:05B4:80:WS:0:0:0:0:S:2C", Windows XP Proffesional Release},
+      {"FAF0:05B4:80:WS:0:0:0:0:S:2C", "Windows XP Proffesional Release"},
 #line 1144 "os.gperf"
-      {"7D78:05B4:40:WS:0:0:0:0:S:2C", Linux 2.0.33},
+      {"7D78:05B4:40:WS:0:0:0:0:S:2C", "Linux 2.0.33"},
 #line 1141 "os.gperf"
-      {"7D78:05B4:40:00:1:1:1:1:S:3C", Linux 2.2.14 - 2.2.20},
+      {"7D78:05B4:40:00:1:1:1:1:S:3C", "Linux 2.2.14 - 2.2.20"},
 #line 1607 "os.gperf"
-      {"FFDC:0200:40:00:0:1:0:1:A:3C", Windows XP},
+      {"FFDC:0200:40:00:0:1:0:1:A:3C", "Windows XP"},
 #line 1138 "os.gperf"
-      {"7D78:05B4:40:00:1:1:1:0:S:3C", Linux 2.2.9 - 2.2.18},
+      {"7D78:05B4:40:00:1:1:1:0:S:3C", "Linux 2.2.9 - 2.2.18"},
 #line 1142 "os.gperf"
-      {"7D78:05B4:40:09:1:1:1:0:S:3C", Linux 2.2.x},
+      {"7D78:05B4:40:09:1:1:1:0:S:3C", "Linux 2.2.x"},
 #line 1732 "os.gperf"
-      {"FFFF:7805:40:01:0:1:0:1:S:3C", Mac OS X 10.3 },
+      {"FFFF:7805:40:01:0:1:0:1:S:3C", "Mac OS X 10.3 "},
 #line 429 "os.gperf"
-      {"1800:04EC:80:WS:1:1:0:0:A:30", NetWare 6 SP3 },
+      {"1800:04EC:80:WS:1:1:0:0:A:30", "NetWare 6 SP3 "},
 #line 1242 "os.gperf"
-      {"8000:05B4:40:00:0:1:1:0:A:LT", HP-UX},
+      {"8000:05B4:40:00:0:1:1:0:A:LT", "HP-UX"},
 #line 1238 "os.gperf"
-      {"8000:05B4:40:00:0:1:0:0:A:LT", NetBSD},
+      {"8000:05B4:40:00:0:1:0:0:A:LT", "NetBSD"},
 #line 1740 "os.gperf"
-      {"FFFF:B405:40:00:0:1:1:1:S:LT", Darwin},
+      {"FFFF:B405:40:00:0:1:1:1:S:LT", "Darwin"},
 #line 1744 "os.gperf"
-      {"FFFF:B405:40:00:0:1:1:1:S:LT", Mac Os X 10.3.4},
+      {"FFFF:B405:40:00:0:1:1:1:S:LT", "Mac Os X 10.3.4"},
 #line 1743 "os.gperf"
-      {"FFFF:B405:40:00:0:1:1:1:S:LT", Mac OS X 10.3.2 (ppc) },
+      {"FFFF:B405:40:00:0:1:1:1:S:LT", "Mac OS X 10.3.2 (ppc) "},
 #line 1742 "os.gperf"
-      {"FFFF:B405:40:00:0:1:1:1:S:LT", Mac OS X},
+      {"FFFF:B405:40:00:0:1:1:1:S:LT", "Mac OS X"},
 #line 1741 "os.gperf"
-      {"FFFF:B405:40:00:0:1:1:1:S:LT", Darwin 1.4},
+      {"FFFF:B405:40:00:0:1:1:1:S:LT", "Darwin 1.4"},
 #line 1223 "os.gperf"
-      {"8000:0564:40:00:0:1:0:1:A:3C", solaris 8},
+      {"8000:0564:40:00:0:1:0:1:A:3C", "solaris 8"},
 #line 663 "os.gperf"
-      {"2297:0109:FF:00:0:1:1:1:A:3C", Solaris 2.6 -7 (SPARC)},
+      {"2297:0109:FF:00:0:1:1:1:A:3C", "Solaris 2.6 -7 (SPARC)"},
 #line 1759 "os.gperf"
-      {"FFFF:B405:80:WS:1:1:1:0:A:30", Windows XP},
+      {"FFFF:B405:80:WS:1:1:1:0:A:30", "Windows XP"},
 #line 1753 "os.gperf"
-      {"FFFF:B405:40:WS:0:0:1:0:S:LT", Mac OS X (10.3)},
+      {"FFFF:B405:40:WS:0:0:1:0:S:LT", "Mac OS X (10.3)"},
 #line 1755 "os.gperf"
-      {"FFFF:B405:40:WS:0:0:1:0:S:LT", Mac OS X 10.3},
+      {"FFFF:B405:40:WS:0:0:1:0:S:LT", "Mac OS X 10.3"},
 #line 1754 "os.gperf"
-      {"FFFF:B405:40:WS:0:0:1:0:S:LT", Mac OS X (10.3) },
+      {"FFFF:B405:40:WS:0:0:1:0:S:LT", "Mac OS X (10.3) "},
 #line 1251 "os.gperf"
-      {"8000:05B4:40:WS:1:1:1:0:A:30", Windows 2000},
+      {"8000:05B4:40:WS:1:1:1:0:A:30", "Windows 2000"},
 #line 1498 "os.gperf"
-      {"FAF0:0572:80:WS:1:1:1:0:S:30", Windows XP},
+      {"FAF0:0572:80:WS:1:1:1:0:S:30", "Windows XP"},
 #line 1595 "os.gperf"
-      {"FF3C:0584:80:WS:1:1:1:0:A:30", Windows 2000 },
+      {"FF3C:0584:80:WS:1:1:1:0:A:30", "Windows 2000 "},
 #line 1101 "os.gperf"
-      {"7BF0:2A05:40:WS:1:1:1:0:A:30", Linux 2.2.19},
+      {"7BF0:2A05:40:WS:1:1:1:0:A:30", "Linux 2.2.19"},
 #line 1596 "os.gperf"
-      {"FF3C:05AC:40:WS:1:1:1:0:A:30", Windows XP},
+      {"FF3C:05AC:40:WS:1:1:1:0:A:30", "Windows XP"},
 #line 434 "os.gperf"
-      {"1800:05B4:80:00:1:1:1:0:A:34", Novell Netware 5.1},
+      {"1800:05B4:80:00:1:1:1:0:A:34", "Novell Netware 5.1"},
 #line 1346 "os.gperf"
-      {"91B4:05AC:40:00:1:1:1:0:A:34", Windows NT 5.1 (Windows XP)},
+      {"91B4:05AC:40:00:1:1:1:0:A:34", "Windows NT 5.1 (Windows XP)"},
 #line 187 "os.gperf"
-      {"0C90:05B4:40:WS:1:1:1:0:S:30", Windows XP},
+      {"0C90:05B4:40:WS:1:1:1:0:S:30", "Windows XP"},
 #line 1239 "os.gperf"
-      {"8000:05B4:40:00:0:1:0:0:S:LT", OpenVMS},
+      {"8000:05B4:40:00:0:1:0:0:S:LT", "OpenVMS"},
 #line 725 "os.gperf"
-      {"3E64:05AC:40:00:0:1:1:1:A:3C", Debian 3.0},
+      {"3E64:05AC:40:00:0:1:1:1:A:3C", "Debian 3.0"},
 #line 1243 "os.gperf"
-      {"8000:05B4:40:00:0:1:1:0:S:30", Digital UNIX V4.0E, Mac OS X},
+      {"8000:05B4:40:00:0:1:1:0:S:30", "Digital UNIX V4.0E Mac OS X"},
 #line 1608 "os.gperf"
-      {"FFF0:04EC:80:00:1:1:1:0:A:34", Windos XP },
+      {"FFF0:04EC:80:00:1:1:1:0:A:34", "Windos XP "},
 #line 1255 "os.gperf"
-      {"8000:05B4:80:WS:1:1:1:0:A:30", Windows CE .NET},
+      {"8000:05B4:80:WS:1:1:1:0:A:30", "Windows CE .NET"},
 #line 1090 "os.gperf"
-      {"7958:0584:40:00:1:1:1:0:A:34", Linux Mandrake 7.2},
+      {"7958:0584:40:00:1:1:1:0:A:34", "Linux Mandrake 7.2"},
 #line 573 "os.gperf"
-      {"20D0:0578:80:WS:0:0:1:0:A:2C", Windows NT 4.0 Server},
+      {"20D0:0578:80:WS:0:0:1:0:A:2C", "Windows NT 4.0 Server"},
 #line 1449 "os.gperf"
-      {"EA60:05DC:40:WS:0:0:1:0:A:2C", Windows XP},
+      {"EA60:05DC:40:WS:0:0:1:0:A:2C", "Windows XP"},
 #line 1760 "os.gperf"
-      {"FFFF:B405:80:WS:1:1:1:0:S:30", Windows},
+      {"FFFF:B405:80:WS:1:1:1:0:S:30", "Windows"},
 #line 1738 "os.gperf"
-      {"FFFF:B405:40:00:0:1:1:1:A:3C", Mac OS X (Panther) ver. 10.3.x },
+      {"FFFF:B405:40:00:0:1:1:1:A:3C", "Mac OS X (Panther) ver. 10.3.x "},
 #line 1409 "os.gperf"
-      {"C3C8:0598:40:WS:1:1:1:0:A:30", Unix},
+      {"C3C8:0598:40:WS:1:1:1:0:A:30", "Unix"},
 #line 113 "os.gperf"
-      {"05B4:_MSS:80:00:0:1:0:0:A:LT", HP JetDirect Card (J4169A) in an HP LaserJet 8150},
+      {"05B4:_MSS:80:00:0:1:0:0:A:LT", "HP JetDirect Card (J4169A) in an HP LaserJet 8150"},
 #line 1581 "os.gperf"
-      {"FDB8:0584:FF:WS:1:1:1:0:S:30", Windows XP},
+      {"FDB8:0584:FF:WS:1:1:1:0:S:30", "Windows XP"},
 #line 1246 "os.gperf"
-      {"8000:05B4:40:00:1:1:1:1:S:40", OpenBSD 3.1 },
+      {"8000:05B4:40:00:1:1:1:1:S:40", "OpenBSD 3.1 "},
 #line 291 "os.gperf"
-      {"16A0:057A:40:00:1:1:1:1:A:3C", Debian Linux},
+      {"16A0:057A:40:00:1:1:1:1:A:3C", "Debian Linux"},
 #line 727 "os.gperf"
-      {"3E64:05AC:40:00:1:1:1:1:A:4C", Linux 2.2.x 2.4.x},
+      {"3E64:05AC:40:00:1:1:1:1:A:4C", "Linux 2.2.x 2.4.x"},
 #line 1750 "os.gperf"
-      {"FFFF:B405:40:WS:0:0:1:0:A:2C", Mac OS X },
+      {"FFFF:B405:40:WS:0:0:1:0:A:2C", "Mac OS X "},
 #line 1309 "os.gperf"
-      {"8274:05AC:40:WS:0:0:1:0:A:2C", Digital Unix 4.0b },
+      {"8274:05AC:40:WS:0:0:1:0:A:2C", "Digital Unix 4.0b "},
 #line 116 "os.gperf"
-      {"05B4:_MSS:80:WS:0:1:1:1:A:LT", Network Appliance NetCache 5.1D4},
+      {"05B4:_MSS:80:WS:0:1:1:1:A:LT", "Network Appliance NetCache 5.1D4"},
 #line 1747 "os.gperf"
-      {"FFFF:B405:40:01:0:1:1:1:A:3C", Mac OS X 10.1.3 / 10.2.x},
+      {"FFFF:B405:40:01:0:1:1:1:A:3C", "Mac OS X 10.1.3 / 10.2.x"},
 #line 1745 "os.gperf"
-      {"FFFF:B405:40:01:0:1:0:1:A:3C", FreeBSD 4.4 / 4.5},
+      {"FFFF:B405:40:01:0:1:0:1:A:3C", "FreeBSD 4.4 / 4.5"},
 #line 115 "os.gperf"
-      {"05B4:_MSS:80:WS:0:1:1:0:A:LT", Network Appliance NetCache 5.1D4},
+      {"05B4:_MSS:80:WS:0:1:1:0:A:LT", "Network Appliance NetCache 5.1D4"},
 #line 1252 "os.gperf"
-      {"8000:05B4:80:00:0:1:1:0:S:30", Dec V4.0 OSF1},
+      {"8000:05B4:80:00:0:1:1:0:S:30", "Dec V4.0 OSF1"},
 #line 114 "os.gperf"
-      {"05B4:_MSS:80:WS:0:0:0:0:A:LT", TOPS-20 Monitor 7(102540)-1,TD-1},
+      {"05B4:_MSS:80:WS:0:0:0:0:A:LT", "TOPS-20 Monitor 7(102540)-1,TD-1"},
 #line 1077 "os.gperf"
-      {"7210:04EC:40:00:1:1:1:1:S:40", Windows 98},
+      {"7210:04EC:40:00:1:1:1:1:S:40", "Windows 98"},
 #line 45 "os.gperf"
-      {"03E0:0550:40:05:1:1:1:1:S:LT", Windows 2000},
+      {"03E0:0550:40:05:1:1:1:1:S:LT", "Windows 2000"},
 #line 435 "os.gperf"
-      {"1800:05B4:80:00:1:1:1:0:S:34", Novell Netware 6.0},
+      {"1800:05B4:80:00:1:1:1:0:S:34", "Novell Netware 6.0"},
 #line 1254 "os.gperf"
-      {"8000:05B4:80:WS:0:0:1:0:S:LT", Novell NetWare 4.11},
+      {"8000:05B4:80:WS:0:0:1:0:S:LT", "Novell NetWare 4.11"},
 #line 145 "os.gperf"
-      {"0848:_MSS:80:WS:0:0:0:0:A:LT", Intergraph Workstation (2000 Series) running CLiX R3.1},
+      {"0848:_MSS:80:WS:0:0:0:0:A:LT", "Intergraph Workstation (2000 Series) running CLiX R3.1"},
 #line 1301 "os.gperf"
-      {"8218:05B4:40:01:1:1:1:0:A:LT", Solaris 8},
+      {"8218:05B4:40:01:1:1:1:0:A:LT", "Solaris 8"},
 #line 1234 "os.gperf"
-      {"8000:05B4:01:WS:0:0:1:0:A:2C", HP-UX },
+      {"8000:05B4:01:WS:0:0:1:0:A:2C", "HP-UX "},
 #line 292 "os.gperf"
-      {"16A0:057A:40:02:1:1:1:1:A:3C", Debian GNU/Linux},
+      {"16A0:057A:40:02:1:1:1:1:A:3C", "Debian GNU/Linux"},
 #line 1756 "os.gperf"
-      {"FFFF:B405:80:00:0:1:1:1:A:3C", Windows 2000 },
+      {"FFFF:B405:80:00:0:1:1:1:A:3C", "Windows 2000 "},
 #line 1256 "os.gperf"
-      {"8000:05B4:80:WS:1:1:1:0:S:30", Windows XP},
+      {"8000:05B4:80:WS:1:1:1:0:S:30", "Windows XP"},
 #line 174 "os.gperf"
-      {"0BB8:05B0:20:WS:0:0:0:0:A:2C", VMS/VAX 5.5},
+      {"0BB8:05B0:20:WS:0:0:0:0:A:2C", "VMS/VAX 5.5"},
 #line 1300 "os.gperf"
-      {"8218:05B4:40:00:1:1:1:1:A:40", Solaris },
+      {"8218:05B4:40:00:1:1:1:1:A:40", "Solaris "},
 #line 1486 "os.gperf"
-      {"FAD8:0574:80:WS:1:1:1:0:S:30", Windows XP},
+      {"FAD8:0574:80:WS:1:1:1:0:S:30", "Windows XP"},
 #line 1120 "os.gperf"
-      {"7D00:05A0:80:00:1:1:1:0:S:34", Windows},
+      {"7D00:05A0:80:00:1:1:1:0:S:34", "Windows"},
 #line 728 "os.gperf"
-      {"3E64:05AC:40:00:1:1:1:1:S:3C", Linux Debian 3.0 (kernel 2.2)},
+      {"3E64:05AC:40:00:1:1:1:1:S:3C", "Linux Debian 3.0 (kernel 2.2)"},
 #line 1758 "os.gperf"
-      {"FFFF:B405:80:WS:0:0:0:0:A:2C", Windows 2000 Advanced Server},
+      {"FFFF:B405:80:WS:0:0:0:0:A:2C", "Windows 2000 Advanced Server"},
 #line 726 "os.gperf"
-      {"3E64:05AC:40:00:1:1:1:0:S:3C", Windows 98},
+      {"3E64:05AC:40:00:1:1:1:0:S:3C", "Windows 98"},
 #line 1302 "os.gperf"
-      {"8218:05B4:40:01:1:1:1:1:A:40", Gauntlet Firewall},
+      {"8218:05B4:40:01:1:1:1:1:A:40", "Gauntlet Firewall"},
 #line 1244 "os.gperf"
-      {"8000:05B4:40:00:0:1:1:1:A:3C", Windows },
+      {"8000:05B4:40:00:0:1:1:1:A:3C", "Windows "},
 #line 1240 "os.gperf"
-      {"8000:05B4:40:00:0:1:0:1:A:3C", HP-UX B.11.00},
+      {"8000:05B4:40:00:0:1:0:1:A:3C", "HP-UX B.11.00"},
 #line 1546 "os.gperf"
-      {"FAF0:05B4:FF:WS:1:1:1:0:A:LT", Windows 2000 Pro},
+      {"FAF0:05B4:FF:WS:1:1:1:0:A:LT", "Windows 2000 Pro"},
 #line 1739 "os.gperf"
-      {"FFFF:B405:40:00:0:1:1:1:S:3C", Mac OS X 10.3 Panther},
+      {"FFFF:B405:40:00:0:1:1:1:S:3C", "Mac OS X 10.3 Panther"},
 #line 1343 "os.gperf"
-      {"8EDA:_MSS:80:00:0:0:1:0:A:LT", Solaris 2.5, 2.5.1},
+      {"8EDA:_MSS:80:00:0:0:1:0:A:LT", "Solaris 2.5 2.5.1"},
 #line 1249 "os.gperf"
-      {"8000:05B4:40:WS:0:0:1:0:A:2C", Mac OS X Darwin 1.4 / HP-UX 10.20},
+      {"8000:05B4:40:WS:0:0:1:0:A:2C", "Mac OS X Darwin 1.4 / HP-UX 10.20"},
 #line 1247 "os.gperf"
-      {"8000:05B4:40:WS:0:0:0:0:A:2C", FreeBSD},
+      {"8000:05B4:40:WS:0:0:0:0:A:2C", "FreeBSD"},
 #line 1599 "os.gperf"
-      {"FF3C:05AC:80:WS:1:1:1:0:S:30", Windows 2000},
+      {"FF3C:05AC:80:WS:1:1:1:0:S:30", "Windows 2000"},
 #line 1598 "os.gperf"
-      {"FF3C:05AC:80:WS:1:1:0:0:S:30", Windows 2000 Pro SP3},
+      {"FF3C:05AC:80:WS:1:1:0:0:S:30", "Windows 2000 Pro SP3"},
 #line 1752 "os.gperf"
-      {"FFFF:B405:40:WS:0:0:1:0:S:2C", Mac OS X 10.3},
+      {"FFFF:B405:40:WS:0:0:1:0:S:2C", "Mac OS X 10.3"},
 #line 1748 "os.gperf"
-      {"FFFF:B405:40:01:0:1:1:1:S:3C", Mac OS X 10.1.x},
+      {"FFFF:B405:40:01:0:1:1:1:S:3C", "Mac OS X 10.1.x"},
 #line 1147 "os.gperf"
-      {"7D78:05B4:40:WS:1:0:1:1:A:38", Linux 2.2.16-22},
+      {"7D78:05B4:40:WS:1:0:1:1:A:38", "Linux 2.2.16-22"},
 #line 83 "os.gperf"
-      {"0564:6405:40:00:0:1:1:1:A:3C", Solaris},
+      {"0564:6405:40:00:0:1:1:1:A:3C", "Solaris"},
 #line 1236 "os.gperf"
-      {"8000:05B4:20:WS:0:1:1:0:S:2C", Windows CE 3.0 (Ipaq 3670)},
+      {"8000:05B4:20:WS:0:1:1:0:S:2C", "Windows CE 3.0 (Ipaq 3670)"},
 #line 190 "os.gperf"
-      {"0ED0:03C0:40:00:1:1:1:1:A:3C", linux },
+      {"0ED0:03C0:40:00:1:1:1:1:A:3C", "linux "},
 #line 1492 "os.gperf"
-      {"FAF0:0550:80:WS:1:1:1:0:A:30", Windows XP Pro },
+      {"FAF0:0550:80:WS:1:1:1:0:A:30", "Windows XP Pro "},
 #line 1235 "os.gperf"
-      {"8000:05B4:20:WS:0:0:1:0:S:2C", Windows CE 3.0 (Ipaq 3670)},
+      {"8000:05B4:20:WS:0:0:1:0:S:2C", "Windows CE 3.0 (Ipaq 3670)"},
 #line 1749 "os.gperf"
-      {"FFFF:B405:40:02:0:1:1:1:S:3C", Mac OS X 10.x.x},
+      {"FFFF:B405:40:02:0:1:1:1:S:3C", "Mac OS X 10.x.x"},
 #line 1385 "os.gperf"
-      {"B9F0:0578:FF:WS:0:0:0:0:A:2C", Windows 2000},
+      {"B9F0:0578:FF:WS:0:0:0:0:A:2C", "Windows 2000"},
 #line 1508 "os.gperf"
-      {"FAF0:05A0:40:00:1:1:1:0:S:34", Linux },
+      {"FAF0:05A0:40:00:1:1:1:0:S:34", "Linux "},
 #line 455 "os.gperf"
-      {"1D4C:_MSS:80:WS:0:0:0:0:A:LT", Sega Dreamcast},
+      {"1D4C:_MSS:80:WS:0:0:0:0:A:LT", "Sega Dreamcast"},
 #line 1237 "os.gperf"
-      {"8000:05B4:40:00:0:0:1:0:S:2C", HP-UX B.10.01 A 9000/712},
+      {"8000:05B4:40:00:0:0:1:0:S:2C", "HP-UX B.10.01 A 9000/712"},
 #line 1245 "os.gperf"
-      {"8000:05B4:40:00:0:1:1:1:S:3C", Mac OS X 10.1.[23]},
+      {"8000:05B4:40:00:0:1:1:1:S:3C", "Mac OS X 10.1.[23]"},
 #line 1241 "os.gperf"
-      {"8000:05B4:40:00:0:1:0:1:S:3C", NetBSD},
+      {"8000:05B4:40:00:0:1:0:1:S:3C", "NetBSD"},
 #line 1294 "os.gperf"
-      {"8084:0584:40:01:1:1:1:1:A:40", SunOS 5.8 / Solaris 8 },
+      {"8084:0584:40:01:1:1:1:1:A:40", "SunOS 5.8 / Solaris 8 "},
 #line 1547 "os.gperf"
-      {"FAF0:05B4:FF:WS:1:1:1:0:S:30", Windows 2000 Professional SP 3},
+      {"FAF0:05B4:FF:WS:1:1:1:0:S:30", "Windows 2000 Professional SP 3"},
 #line 1250 "os.gperf"
-      {"8000:05B4:40:WS:0:0:1:0:S:2C", Mac OS X},
+      {"8000:05B4:40:WS:0:0:1:0:S:2C", "Mac OS X"},
 #line 1248 "os.gperf"
-      {"8000:05B4:40:WS:0:0:0:0:S:2C", AIX },
+      {"8000:05B4:40:WS:0:0:0:0:S:2C", "AIX "},
 #line 258 "os.gperf"
-      {"1146:05C2:40:00:1:1:1:1:S:3C", Debian 3.0 woody (2.4.18)},
+      {"1146:05C2:40:00:1:1:1:1:S:3C", "Debian 3.0 woody (2.4.18)"},
 #line 124 "os.gperf"
-      {"0648:0218:40:WS:0:0:0:0:A:2C", HP Printer},
+      {"0648:0218:40:WS:0:0:0:0:A:2C", "HP Printer"},
 #line 1373 "os.gperf"
-      {"B400:B405:20:03:1:1:1:0:S:34", Windows 2000 SP3},
+      {"B400:B405:20:03:1:1:1:0:S:34", "Windows 2000 SP3"},
 #line 760 "os.gperf"
-      {"3FFF:_MSS:80:WS:0:0:0:0:A:LT", IBM MVS (unknown version)},
+      {"3FFF:_MSS:80:WS:0:0:0:0:A:LT", "IBM MVS (unknown version)"},
 #line 1299 "os.gperf"
-      {"8218:05B4:40:00:0:1:1:1:A:3C", Mac OS X 10.1.5},
+      {"8218:05B4:40:00:0:1:1:1:A:3C", "Mac OS X 10.1.5"},
 #line 257 "os.gperf"
-      {"1140:05CC:40:00:1:1:1:1:A:3C", Linux 2.4.8},
+      {"1140:05CC:40:00:1:1:1:1:A:3C", "Linux 2.4.8"},
 #line 1286 "os.gperf"
-      {"8052:05B4:40:01:1:1:1:1:S:40", Solaris 5.8},
+      {"8052:05B4:40:01:1:1:1:1:S:40", "Solaris 5.8"},
 #line 753 "os.gperf"
-      {"3F25:_MSS:80:00:0:1:1:1:A:LT", Linux 2.1.19 - 2.2.17},
+      {"3F25:_MSS:80:00:0:1:1:1:A:LT", "Linux 2.1.19 - 2.2.17"},
 #line 751 "os.gperf"
-      {"3F25:_MSS:80:00:0:1:0:1:A:LT", AIX 4.3.2.0-4.3.3.0 on an IBM RS/*},
+      {"3F25:_MSS:80:00:0:1:0:1:A:LT", "AIX 4.3.2.0-4.3.3.0 on an IBM RS/all"},
 #line 160 "os.gperf"
-      {"09C8:02F8:FF:WS:0:0:0:0:A:2C", Windows},
+      {"09C8:02F8:FF:WS:0:0:0:0:A:2C", "Windows"},
 #line 752 "os.gperf"
-      {"3F25:_MSS:80:00:0:1:1:0:A:LT", Linux 2.1.19 - 2.2.17},
+      {"3F25:_MSS:80:00:0:1:1:0:A:LT", "Linux 2.1.19 - 2.2.17"},
 #line 750 "os.gperf"
-      {"3F25:_MSS:80:00:0:1:0:0:A:LT", AIX 4.3.2.0-4.3.3.0 on an IBM RS/*},
+      {"3F25:_MSS:80:00:0:1:0:0:A:LT", "AIX 4.3.2.0-4.3.3.0 on an IBM RS/all"},
 #line 76 "os.gperf"
-      {"052A:052A:40:00:1:1:0:1:A:3C", Debian Potato (2.2), Linux 2.2.20},
+      {"052A:052A:40:00:1:1:0:1:A:3C", "Debian Potato (2.2) Linux 2.2.20"},
 #line 694 "os.gperf"
-      {"2798:05B4:FF:00:0:1:1:0:A:LT", Solaris},
+      {"2798:05B4:FF:00:0:1:1:0:A:LT", "Solaris"},
 #line 755 "os.gperf"
-      {"3F25:_MSS:80:WS:0:0:1:0:A:LT", Linux 2.2.19},
+      {"3F25:_MSS:80:WS:0:0:1:0:A:LT", "Linux 2.2.19"},
 #line 754 "os.gperf"
-      {"3F25:_MSS:80:WS:0:0:0:0:A:LT", AIX 3.2},
+      {"3F25:_MSS:80:WS:0:0:0:0:A:LT", "AIX 3.2"},
 #line 1310 "os.gperf"
-      {"8274:05B4:40:WS:0:0:0:0:A:2C", Digital Unix 4.0b },
+      {"8274:05B4:40:WS:0:0:0:0:A:2C", "Digital Unix 4.0b "},
 #line 749 "os.gperf"
-      {"3F25:0109:40:00:0:1:1:1:A:3C", Linux 2.2.17 - 2.2.19},
+      {"3F25:0109:40:00:0:1:1:1:A:3C", "Linux 2.2.17 - 2.2.19"},
 #line 925 "os.gperf"
-      {"4240:B405:80:04:1:1:1:0:S:34", Windows XP},
+      {"4240:B405:80:04:1:1:1:0:S:34", "Windows XP"},
 #line 1347 "os.gperf"
-      {"91B4:05B4:40:00:1:1:1:0:S:34", Windows XP},
+      {"91B4:05B4:40:00:1:1:1:0:S:34", "Windows XP"},
 #line 696 "os.gperf"
-      {"2798:05B4:FF:00:1:1:1:1:A:40", SunOS 5.7},
+      {"2798:05B4:FF:00:1:1:1:1:A:40", "SunOS 5.7"},
 #line 1153 "os.gperf"
-      {"7D78:05B4:FF:00:1:1:1:1:A:3C", Linux 2.2.18},
+      {"7D78:05B4:FF:00:1:1:1:1:A:3C", "Linux 2.2.18"},
 #line 1218 "os.gperf"
-      {"7FFF:_MSS:80:00:0:1:1:1:A:LT", Linux Kernel 2.4.xx (X86)},
+      {"7FFF:_MSS:80:00:0:1:1:1:A:LT", "Linux Kernel 2.4.xx (X86)"},
 #line 1545 "os.gperf"
-      {"FAF0:05B4:FF:WS:0:0:1:0:S:2C", Linux 2.1.xx},
+      {"FAF0:05B4:FF:WS:0:0:1:0:S:2C", "Linux 2.1.xx"},
 #line 1416 "os.gperf"
-      {"DA00:05B4:80:02:1:1:1:0:S:34", Windows XP},
+      {"DA00:05B4:80:02:1:1:1:0:S:34", "Windows XP"},
 #line 1415 "os.gperf"
-      {"DA00:05B4:80:02:1:1:0:0:S:34", Windows 2000},
+      {"DA00:05B4:80:02:1:1:0:0:S:34", "Windows 2000"},
 #line 1217 "os.gperf"
-      {"7FFF:_MSS:80:00:0:1:1:0:A:LT", Linux Kernel 2.4.xx (X86)},
+      {"7FFF:_MSS:80:00:0:1:1:0:A:LT", "Linux Kernel 2.4.xx (X86)"},
 #line 1216 "os.gperf"
-      {"7FFF:_MSS:80:00:0:1:0:0:A:LT", ReliantUNIX-Y 5.44 B0033 RM600 1/256 R10000},
+      {"7FFF:_MSS:80:00:0:1:0:0:A:LT", "ReliantUNIX-Y 5.44 B0033 RM600 1/256 R10000"},
 #line 1215 "os.gperf"
-      {"7FFF:_MSS:80:00:0:0:1:0:A:LT", Linux 2.4.7 (X86)},
+      {"7FFF:_MSS:80:00:0:0:1:0:A:LT", "Linux 2.4.7 (X86)"},
 #line 118 "os.gperf"
-      {"05DC:_MSS:80:WS:0:0:0:0:A:LT", Gandalf LanLine Router},
+      {"05DC:_MSS:80:WS:0:0:0:0:A:LT", "Gandalf LanLine Router"},
 #line 1576 "os.gperf"
-      {"FC6C:05B4:80:WS:1:1:1:0:S:LT", Windows XP },
+      {"FC6C:05B4:80:WS:1:1:1:0:S:LT", "Windows XP "},
 #line 1220 "os.gperf"
-      {"7FFF:_MSS:80:WS:0:0:1:0:A:LT", Linux 2.1.76},
+      {"7FFF:_MSS:80:WS:0:0:1:0:A:LT", "Linux 2.1.76"},
 #line 1233 "os.gperf"
-      {"8000:05AC:FF:WS:0:0:1:0:A:2C", Mac OS X},
+      {"8000:05AC:FF:WS:0:0:1:0:A:2C", "Mac OS X"},
 #line 1219 "os.gperf"
-      {"7FFF:_MSS:80:WS:0:0:0:0:A:LT", SINIX-Y 5.43B0045},
+      {"7FFF:_MSS:80:WS:0:0:0:0:A:LT", "SINIX-Y 5.43B0045"},
 #line 1761 "os.gperf"
-      {"FFFF:B405:FF:02:0:1:0:1:A:LT", AIX},
+      {"FFFF:B405:FF:02:0:1:0:1:A:LT", "AIX"},
 #line 1341 "os.gperf"
-      {"87C0:_MSS:FF:WS:0:0:1:0:A:LT", Solaris 2.6 - 2.7},
+      {"87C0:_MSS:FF:WS:0:0:1:0:A:LT", "Solaris 2.6 - 2.7"},
 #line 732 "os.gperf"
-      {"3E80:05B4:FF:WS:0:0:0:0:A:2C", CiscoATA-186},
+      {"3E80:05B4:FF:WS:0:0:0:0:A:2C", "CiscoATA-186"},
 #line 1557 "os.gperf"
-      {"FB40:0218:40:00:1:1:1:0:S:34", Windows 2000 Pro},
+      {"FB40:0218:40:00:1:1:1:0:S:34", "Windows 2000 Pro"},
 #line 674 "os.gperf"
-      {"246C:0534:80:WS:0:0:1:0:A:2C", Windows NT 4.0},
+      {"246C:0534:80:WS:0:0:1:0:A:2C", "Windows NT 4.0"},
 #line 153 "os.gperf"
-      {"0860:05B4:40:WS:1:1:1:0:S:30", Windows 98},
+      {"0860:05B4:40:WS:1:1:1:0:S:30", "Windows 98"},
 #line 272 "os.gperf"
-      {"159F:05B4:40:00:0:1:1:0:S:3C", FreeBSD 2.2.1 - 4.1},
+      {"159F:05B4:40:00:0:1:1:0:S:3C", "FreeBSD 2.2.1 - 4.1"},
 #line 1329 "os.gperf"
-      {"8371:_MSS:80:00:0:1:1:1:A:LT", Solaris 2.6 - 2.7},
+      {"8371:_MSS:80:00:0:1:1:1:A:LT", "Solaris 2.6 - 2.7"},
 #line 84 "os.gperf"
-      {"0564:6405:40:WS:0:1:1:1:A:38", Mac OS},
+      {"0564:6405:40:WS:0:1:1:1:A:38", "Mac OS"},
 #line 1328 "os.gperf"
-      {"8371:_MSS:80:00:0:1:1:0:A:LT", Solaris 2.6 - 2.7},
+      {"8371:_MSS:80:00:0:1:1:0:A:LT", "Solaris 2.6 - 2.7"},
 #line 1260 "os.gperf"
-      {"8000:05B4:FF:WS:0:0:1:0:A:LT", OpenBSD},
+      {"8000:05B4:FF:WS:0:0:1:0:A:LT", "OpenBSD"},
 #line 439 "os.gperf"
-      {"1800:5805:80:WS:0:0:1:0:A:LT", Novell Netware 5.1},
+      {"1800:5805:80:WS:0:0:1:0:A:LT", "Novell Netware 5.1"},
 #line 1261 "os.gperf"
-      {"8000:05B4:FF:WS:1:1:1:0:A:30", Wire Home Portal DSL Routerw/nat},
+      {"8000:05B4:FF:WS:1:1:1:0:A:30", "Wire Home Portal DSL Routerw/nat"},
 #line 1630 "os.gperf"
-      {"FFFF:0548:80:WS:1:1:0:0:S:30", Windows 2000 Server},
+      {"FFFF:0548:80:WS:1:1:0:0:S:30", "Windows 2000 Server"},
 #line 695 "os.gperf"
-      {"2798:05B4:FF:00:0:1:1:1:A:3C", Solaris 2.6 / SunOS 5.6},
+      {"2798:05B4:FF:00:0:1:1:1:A:3C", "Solaris 2.6 / SunOS 5.6"},
 #line 1762 "os.gperf"
-      {"FFFF:B405:FF:02:0:1:1:0:S:LT", Mac OS 9.2},
+      {"FFFF:B405:FF:02:0:1:1:0:S:LT", "Mac OS 9.2"},
 #line 1126 "os.gperf"
-      {"7D78:05AC:40:00:1:1:1:0:A:34", OpenBSD 2.9},
+      {"7D78:05AC:40:00:1:1:1:0:A:34", "OpenBSD 2.9"},
 #line 1195 "os.gperf"
-      {"7FFF:05A0:80:WS:1:1:1:0:A:30", Windows 98 SE},
+      {"7FFF:05A0:80:WS:1:1:1:0:A:30", "Windows 98 SE"},
 #line 1258 "os.gperf"
-      {"8000:05B4:FF:00:0:1:1:0:S:30", Mac OS 9},
+      {"8000:05B4:FF:00:0:1:1:0:S:30", "Mac OS 9"},
 #line 1257 "os.gperf"
-      {"8000:05B4:FF:00:0:1:0:0:S:30", MAC OS 8.6},
+      {"8000:05B4:FF:00:0:1:0:0:S:30", "MAC OS 8.6"},
 #line 152 "os.gperf"
-      {"0860:05B4:40:WS:0:0:1:0:A:2C", Windows 98},
+      {"0860:05B4:40:WS:0:0:1:0:A:2C", "Windows 98"},
 #line 97 "os.gperf"
-      {"05B4:0564:40:WS:1:1:0:0:A:30", Red Hat Linux 9.0 },
+      {"05B4:0564:40:WS:1:1:0:0:A:30", "Red Hat Linux 9.0 "},
 #line 154 "os.gperf"
-      {"0860:05B4:80:00:0:1:1:1:A:3C", Windows ME},
+      {"0860:05B4:80:00:0:1:1:1:A:3C", "Windows ME"},
 #line 756 "os.gperf"
-      {"3FE0:05B4:40:WS:0:0:0:0:A:2C", Caldera OpenLinux(TM) 1.3 / RedHat 7.2 / FreeSCO 0.2.7},
+      {"3FE0:05B4:40:WS:0:0:0:0:A:2C", "Caldera OpenLinux(TM) 1.3 / RedHat 7.2 / FreeSCO 0.2.7"},
 #line 1331 "os.gperf"
-      {"8400:8C05:40:00:0:1:1:1:A:3C", MacOS X 10.3},
+      {"8400:8C05:40:00:0:1:1:1:A:3C", "MacOS X 10.3"},
 #line 1196 "os.gperf"
-      {"7FFF:05A0:80:WS:1:1:1:0:S:30", Windows 2000 Server },
+      {"7FFF:05A0:80:WS:1:1:1:0:S:30", "Windows 2000 Server "},
 #line 335 "os.gperf"
-      {"16B0:05AC:40:6F:1:1:1:0:S:3C", Linux 2.4.10},
+      {"16B0:05AC:40:6F:1:1:1:0:S:3C", "Linux 2.4.10"},
 #line 1493 "os.gperf"
-      {"FAF0:055C:80:WS:1:1:1:0:S:30", Windows XP SP2},
+      {"FAF0:055C:80:WS:1:1:1:0:S:30", "Windows XP SP2"},
 #line 98 "os.gperf"
-      {"05B4:0564:80:WS:1:1:0:0:A:30", Windows 2000 },
+      {"05B4:0564:80:WS:1:1:0:0:A:30", "Windows 2000 "},
 #line 1259 "os.gperf"
-      {"8000:05B4:FF:00:0:1:1:1:A:3C", Mac OS},
+      {"8000:05B4:FF:00:0:1:1:1:A:3C", "Mac OS"},
 #line 1119 "os.gperf"
-      {"7D00:04EC:80:WS:1:1:1:0:S:30", Windows XP Home},
+      {"7D00:04EC:80:WS:1:1:1:0:S:30", "Windows XP Home"},
 #line 261 "os.gperf"
-      {"12CC:0650:40:00:1:1:1:1:A:3C", Debian Woody},
+      {"12CC:0650:40:00:1:1:1:1:A:3C", "Debian Woody"},
 #line 460 "os.gperf"
-      {"1FFE:0218:FF:WS:0:0:0:0:A:2C", Linux Debian },
+      {"1FFE:0218:FF:WS:0:0:0:0:A:2C", "Linux Debian "},
 #line 1628 "os.gperf"
-      {"FFFF:052A:80:00:1:1:0:1:A:40", Windows 2000 Server },
+      {"FFFF:052A:80:00:1:1:0:1:A:40", "Windows 2000 Server "},
 #line 1335 "os.gperf"
-      {"8700:05AC:FF:00:1:1:1:1:A:40", Solaris 2.6},
+      {"8700:05AC:FF:00:1:1:1:1:A:40", "Solaris 2.6"},
 #line 96 "os.gperf"
-      {"05B4:0564:40:01:0:1:1:1:A:3C", FreeBSD 5.1-RELEASE },
+      {"05B4:0564:40:01:0:1:1:1:A:3C", "FreeBSD 5.1-RELEASE "},
 #line 1192 "os.gperf"
-      {"7FFF:0586:40:WS:1:1:1:0:S:30", Windows 2000},
+      {"7FFF:0586:40:WS:1:1:1:0:S:30", "Windows 2000"},
 #line 1719 "os.gperf"
-      {"FFFF:05B4:80:03:1:1:1:0:S:34", Windows 2000},
+      {"FFFF:05B4:80:03:1:1:1:0:S:34", "Windows 2000"},
 #line 105 "os.gperf"
-      {"05B4:05B4:40:WS:1:1:1:0:A:30", Windows 2000 Server},
+      {"05B4:05B4:40:WS:1:1:1:0:A:30", "Windows 2000 Server"},
 #line 1520 "os.gperf"
-      {"FAF0:05B4:40:02:1:1:1:0:A:34", Windows 2000},
+      {"FAF0:05B4:40:02:1:1:1:0:A:34", "Windows 2000"},
 #line 1180 "os.gperf"
-      {"7FE0:05B4:40:WS:0:0:0:0:A:2C", Linux 2.0.38},
+      {"7FE0:05B4:40:WS:0:0:0:0:A:2C", "Linux 2.0.38"},
 #line 103 "os.gperf"
-      {"05B4:05B4:40:00:1:1:1:1:A:40", SunOS 5.8 },
+      {"05B4:05B4:40:00:1:1:1:1:A:40", "SunOS 5.8 "},
 #line 1528 "os.gperf"
-      {"FAF0:05B4:80:00:1:1:1:0:A:34", Windows XP},
+      {"FAF0:05B4:80:00:1:1:1:0:A:34", "Windows XP"},
 #line 1135 "os.gperf"
-      {"7D78:05B4:40:00:1:1:1:0:A:34", Linux 2.2.19 (Mandrake Secure)},
+      {"7D78:05B4:40:00:1:1:1:0:A:34", "Linux 2.2.19 (Mandrake Secure)"},
 #line 1488 "os.gperf"
-      {"FAF0:04EC:80:WS:1:1:1:0:S:30", Windows XP Professional },
+      {"FAF0:04EC:80:WS:1:1:1:0:S:30", "Windows XP Professional "},
 #line 104 "os.gperf"
-      {"05B4:05B4:40:01:1:1:1:1:A:40", Solaris 8 },
+      {"05B4:05B4:40:01:1:1:1:1:A:40", "Solaris 8 "},
 #line 1541 "os.gperf"
-      {"FAF0:05B4:80:WS:1:1:1:0:A:34", Windows XP Pro },
+      {"FAF0:05B4:80:WS:1:1:1:0:A:34", "Windows XP Pro "},
 #line 702 "os.gperf"
-      {"2A20:0550:FF:00:0:1:1:1:A:3C", SunOS 5.6 sum4m sparc SUNW,SPARCstation-20},
+      {"2A20:0550:FF:00:0:1:1:1:A:3C", "SunOS 5.6 sum4m sparc SUNW,SPARCstation-20"},
 #line 1515 "os.gperf"
-      {"FAF0:05B4:40:00:1:1:1:0:S:34", Windows XP},
+      {"FAF0:05B4:40:00:1:1:1:0:S:34", "Windows XP"},
 #line 108 "os.gperf"
-      {"05B4:05B4:80:WS:1:1:1:0:A:30", Windows 2000 Server },
+      {"05B4:05B4:80:WS:1:1:1:0:A:30", "Windows 2000 Server "},
 #line 1143 "os.gperf"
-      {"7D78:05B4:40:BE:1:1:1:0:S:3C", Linux 2.2.16},
+      {"7D78:05B4:40:BE:1:1:1:0:S:3C", "Linux 2.2.16"},
 #line 1627 "os.gperf"
-      {"FFFF:052A:40:WS:0:0:0:0:A:2C", Windows* [aol client]},
+      {"FFFF:052A:40:WS:0:0:0:0:A:2C", "Windows* [aol client]"},
 #line 1353 "os.gperf"
-      {"ABB0:059E:80:WS:1:1:1:0:A:30", Windows XP },
+      {"ABB0:059E:80:WS:1:1:1:0:A:30", "Windows XP "},
 #line 106 "os.gperf"
-      {"05B4:05B4:40:WS:1:1:1:0:S:30", Windows XP SP1},
+      {"05B4:05B4:40:WS:1:1:1:0:S:30", "Windows XP SP1"},
 #line 1529 "os.gperf"
-      {"FAF0:05B4:80:00:1:1:1:0:S:34", Windows 2000},
+      {"FAF0:05B4:80:00:1:1:1:0:S:34", "Windows 2000"},
 #line 1137 "os.gperf"
-      {"7D78:05B4:40:00:1:1:1:0:S:34", Linux 2.2.19 (Mandrake Secure)},
+      {"7D78:05B4:40:00:1:1:1:0:S:34", "Linux 2.2.19 (Mandrake Secure)"},
 #line 1665 "os.gperf"
-      {"FFFF:0598:80:00:1:1:1:1:A:40", Windows 2000 Server Service Pack 4},
+      {"FFFF:0598:80:00:1:1:1:1:A:40", "Windows 2000 Server Service Pack 4"},
 #line 1197 "os.gperf"
-      {"7FFF:05AC:80:00:0:1:1:0:A:30", Windows 2000 / XP / ME},
+      {"7FFF:05AC:80:00:0:1:1:0:A:30", "Windows 2000 / XP / ME"},
 #line 155 "os.gperf"
-      {"0860:05B4:FF:WS:0:0:0:0:A:LT", IOS Version 10.3(15) - 11.1(20)},
+      {"0860:05B4:FF:WS:0:0:0:0:A:LT", "IOS Version 10.3(15) - 11.1(20)"},
 #line 99 "os.gperf"
-      {"05B4:05B4:20:WS:0:0:0:0:A:2C", Windows XP},
+      {"05B4:05B4:20:WS:0:0:0:0:A:2C", "Windows XP"},
 #line 85 "os.gperf"
-      {"0578:0578:08:WS:0:0:0:0:A:2C", Minix 16-bit/Intel 2.0.3},
+      {"0578:0578:08:WS:0:0:0:0:A:2C", "Minix 16-bit/Intel 2.0.3"},
 #line 101 "os.gperf"
-      {"05B4:05B4:40:00:0:1:1:1:A:3C", FreeBSD},
+      {"05B4:05B4:40:00:0:1:1:1:A:3C", "FreeBSD"},
 #line 1214 "os.gperf"
-      {"7FFF:_MSS:40:WS:0:0:0:0:S:28", Linux 2.6.10},
+      {"7FFF:_MSS:40:WS:0:0:0:0:S:28", "Linux 2.6.10"},
 #line 86 "os.gperf"
-      {"0578:0578:40:WS:0:0:0:0:A:2C", CVP Telsey},
+      {"0578:0578:40:WS:0:0:0:0:A:2C", "CVP Telsey"},
 #line 102 "os.gperf"
-      {"05B4:05B4:40:00:1:1:1:1:A:3C", Red Hat Linux release 6.2 (Zoot) Kernel 2.2.14-5.0},
+      {"05B4:05B4:40:00:1:1:1:1:A:3C", "Red Hat Linux release 6.2 (Zoot) Kernel 2.2.14-5.0"},
 #line 1189 "os.gperf"
-      {"7FFF:0564:80:WS:1:1:1:0:A:30", Windows 98 SE },
+      {"7FFF:0564:80:WS:1:1:1:0:A:30", "Windows 98 SE "},
 #line 184 "os.gperf"
-      {"0C1C:05B4:FF:WS:0:0:0:0:A:2C", Nokia M1122 Adsl Router},
+      {"0C1C:05B4:FF:WS:0:0:0:0:A:2C", "Nokia M1122 Adsl Router"},
 #line 1296 "os.gperf"
-      {"8160:05B4:40:01:0:1:1:1:A:3C", Solaris 8 - X86},
+      {"8160:05B4:40:01:0:1:1:1:A:3C", "Solaris 8 - X86"},
 #line 1663 "os.gperf"
-      {"FFFF:0598:40:WS:0:0:0:0:A:2C", FreeBSD 4.5},
+      {"FFFF:0598:40:WS:0:0:0:0:A:2C", "FreeBSD 4.5"},
 #line 1611 "os.gperf"
-      {"FFF0:057A:80:00:1:1:1:1:A:40", Windows XP},
+      {"FFF0:057A:80:00:1:1:1:1:A:40", "Windows XP"},
 #line 107 "os.gperf"
-      {"05B4:05B4:80:WS:0:0:0:0:A:2C", Zebra ZPL },
+      {"05B4:05B4:80:WS:0:0:0:0:A:2C", "Zebra ZPL "},
 #line 1199 "os.gperf"
-      {"7FFF:05AC:80:WS:1:1:1:0:S:30", Microsoft Windows XP Professional },
+      {"7FFF:05AC:80:WS:1:1:1:0:S:30", "Microsoft Windows XP Professional "},
 #line 100 "os.gperf"
-      {"05B4:05B4:40:00:0:1:0:1:S:3C", HP LaserJet 4550 Printer },
+      {"05B4:05B4:40:00:0:1:0:1:S:3C", "HP LaserJet 4550 Printer "},
 #line 1174 "os.gperf"
-      {"7F80:0550:40:00:1:1:1:1:A:LT", Linux 2.2.19},
+      {"7F80:0550:40:00:1:1:1:1:A:LT", "Linux 2.2.19"},
 #line 87 "os.gperf"
-      {"0578:0578:40:WS:0:0:0:0:S:2C", Windows 2000},
+      {"0578:0578:40:WS:0:0:0:0:S:2C", "Windows 2000"},
 #line 1664 "os.gperf"
-      {"FFFF:0598:40:WS:0:0:0:0:S:2C", Cisco webcache},
+      {"FFFF:0598:40:WS:0:0:0:0:S:2C", "Cisco webcache"},
 #line 1201 "os.gperf"
-      {"7FFF:05B4:40:00:0:1:1:0:A:30", Windows XP},
+      {"7FFF:05B4:40:00:0:1:1:0:A:30", "Windows XP"},
 #line 1200 "os.gperf"
-      {"7FFF:05B4:40:00:0:1:0:0:A:30", Sinix 5.4x},
+      {"7FFF:05B4:40:00:0:1:0:0:A:30", "Sinix 5.4x"},
 #line 1548 "os.gperf"
-      {"FAF0:B405:40:00:0:1:1:0:A:LT", Mac OS X Server 10.1},
+      {"FAF0:B405:40:00:0:1:1:0:A:LT", "Mac OS X Server 10.1"},
 #line 250 "os.gperf"
-      {"111C:0218:40:WS:0:0:0:0:A:2C", Ascend MAX 1800},
+      {"111C:0218:40:WS:0:0:0:0:A:2C", "Ascend MAX 1800"},
 #line 186 "os.gperf"
-      {"0C90:05B4:40:00:1:1:1:0:S:34", Windows },
+      {"0C90:05B4:40:00:1:1:1:0:S:34", "Windows "},
 #line 1253 "os.gperf"
-      {"8000:05B4:80:00:1:1:1:0:A:34", Windows XP Pro},
+      {"8000:05B4:80:00:1:1:1:0:A:34", "Windows XP Pro"},
 #line 1550 "os.gperf"
-      {"FAF0:B405:80:00:0:1:1:1:A:LT", Windows XP},
+      {"FAF0:B405:80:00:0:1:1:1:A:LT", "Windows XP"},
 #line 1154 "os.gperf"
-      {"7D78:B405:40:00:0:1:1:0:A:30", Yellow Dog Linux 2.2},
+      {"7D78:B405:40:00:0:1:1:0:A:30", "Yellow Dog Linux 2.2"},
 #line 1551 "os.gperf"
-      {"FAF0:B405:80:00:1:1:1:1:A:LT", Pocket Pc 2002},
+      {"FAF0:B405:80:00:1:1:1:1:A:LT", "Pocket Pc 2002"},
 #line 672 "os.gperf"
-      {"23B4:23B4:FF:00:0:0:1:0:S:LT", Solaris 2.6},
+      {"23B4:23B4:FF:00:0:0:1:0:S:LT", "Solaris 2.6"},
 #line 1211 "os.gperf"
-      {"7FFF:05B4:80:WS:1:1:1:0:A:30", Windows 98 SE},
+      {"7FFF:05B4:80:WS:1:1:1:0:A:30", "Windows 98 SE"},
 #line 1097 "os.gperf"
-      {"7B44:055C:40:WS:1:1:1:0:A:30", Debian/GNU Linux},
+      {"7B44:055C:40:WS:1:1:1:0:A:30", "Debian/GNU Linux"},
 #line 1207 "os.gperf"
-      {"7FFF:05B4:80:00:1:1:1:1:A:40", Windows 2000},
+      {"7FFF:05B4:80:00:1:1:1:1:A:40", "Windows 2000"},
 #line 119 "os.gperf"
-      {"05EA:05EA:20:WS:0:0:0:0:A:2C", Pocket pc 2003 },
+      {"05EA:05EA:20:WS:0:0:0:0:A:2C", "Pocket pc 2003 "},
 #line 1597 "os.gperf"
-      {"FF3C:05AC:80:00:1:1:1:0:A:34", Windows XP Pro},
+      {"FF3C:05AC:80:00:1:1:1:0:A:34", "Windows XP Pro"},
 #line 1553 "os.gperf"
-      {"FAF0:B405:80:WS:1:1:1:0:A:30", Windows XP},
+      {"FAF0:B405:80:WS:1:1:1:0:A:30", "Windows XP"},
 #line 1162 "os.gperf"
-      {"7EA0:3F5C:40:00:1:1:1:1:A:3C", Linux Kernel 2.4.10},
+      {"7EA0:3F5C:40:00:1:1:1:1:A:3C", "Linux Kernel 2.4.10"},
 #line 1340 "os.gperf"
-      {"87C0:05B4:FF:00:1:1:1:1:A:40", Solaris 2.6 2.7},
+      {"87C0:05B4:FF:00:1:1:1:1:A:40", "Solaris 2.6 2.7"},
 #line 1339 "os.gperf"
-      {"87C0:05B4:FF:00:1:1:0:1:A:40", Windows },
+      {"87C0:05B4:FF:00:1:1:0:1:A:40", "Windows "},
 #line 1157 "os.gperf"
-      {"7D78:B405:40:00:1:1:1:1:S:LT", Linux 2.2.14},
+      {"7D78:B405:40:00:1:1:1:1:S:LT", "Linux 2.2.14"},
 #line 1212 "os.gperf"
-      {"7FFF:05B4:80:WS:1:1:1:0:S:30", Windows 2000 Server},
+      {"7FFF:05B4:80:WS:1:1:1:0:S:30", "Windows 2000 Server"},
 #line 748 "os.gperf"
-      {"3F20:0650:40:00:1:1:1:1:S:3C", Linux 2.2.19},
+      {"3F20:0650:40:00:1:1:1:1:S:3C", "Linux 2.2.19"},
 #line 1208 "os.gperf"
-      {"7FFF:05B4:80:00:1:1:1:1:S:40", Windows XP Service Pack 1 },
+      {"7FFF:05B4:80:00:1:1:1:1:S:40", "Windows XP Service Pack 1 "},
 #line 1554 "os.gperf"
-      {"FAF0:B405:80:WS:1:1:1:0:S:30", Windows XP Home},
+      {"FAF0:B405:80:WS:1:1:1:0:S:30", "Windows XP Home"},
 #line 1645 "os.gperf"
-      {"FFFF:0578:80:WS:1:1:1:0:S:30", Windows XP},
+      {"FFFF:0578:80:WS:1:1:1:0:S:30", "Windows XP"},
 #line 49 "os.gperf"
-      {"03F6:0218:FF:WS:0:0:0:0:A:2C", Lexmark Optra SC Printer},
+      {"03F6:0218:FF:WS:0:0:0:0:A:2C", "Lexmark Optra SC Printer"},
 #line 1330 "os.gperf"
-      {"8377:_MSS:80:00:0:0:1:0:A:LT", Solaris 2.5, 2.5.1},
+      {"8377:_MSS:80:00:0:0:1:0:A:LT", "Solaris 2.5 2.5.1"},
 #line 109 "os.gperf"
-      {"05B4:05B4:FF:00:1:1:1:1:A:40", Solaris 7 },
+      {"05B4:05B4:FF:00:1:1:1:1:A:40", "Solaris 7 "},
 #line 1085 "os.gperf"
-      {"77C4:B405:40:00:0:1:1:1:A:3C", Linux},
+      {"77C4:B405:40:00:0:1:1:1:A:3C", "Linux"},
 #line 1205 "os.gperf"
-      {"7FFF:05B4:80:00:0:1:1:1:A:3C", Windows XP},
+      {"7FFF:05B4:80:00:0:1:1:1:A:3C", "Windows XP"},
 #line 1209 "os.gperf"
-      {"7FFF:05B4:80:WS:0:0:1:0:A:2C", Windows NT},
+      {"7FFF:05B4:80:WS:0:0:1:0:A:2C", "Windows NT"},
 #line 1549 "os.gperf"
-      {"FAF0:B405:80:00:0:1:1:1:A:3C", Windows XP professional},
+      {"FAF0:B405:80:00:0:1:1:1:A:3C", "Windows XP professional"},
 #line 1155 "os.gperf"
-      {"7D78:B405:40:00:0:1:1:1:A:3C", Cobalt},
+      {"7D78:B405:40:00:0:1:1:1:A:3C", "Cobalt"},
 #line 1552 "os.gperf"
-      {"FAF0:B405:80:WS:0:0:1:0:A:2C", Windows XP Pro},
+      {"FAF0:B405:80:WS:0:0:1:0:A:2C", "Windows XP Pro"},
 #line 747 "os.gperf"
-      {"3ED0:0218:40:WS:0:0:1:0:A:LT", Linux Slackware 8.0},
+      {"3ED0:0218:40:WS:0:0:1:0:A:LT", "Linux Slackware 8.0"},
 #line 1156 "os.gperf"
-      {"7D78:B405:40:00:1:1:1:1:A:3C", Linux Redhat 6.2 Zoot (Kernel 2.2.14-5)},
+      {"7D78:B405:40:00:1:1:1:1:A:3C", "Linux Redhat 6.2 Zoot (Kernel 2.2.14-5)"},
 #line 1204 "os.gperf"
-      {"7FFF:05B4:40:WS:0:0:0:0:S:2C", Windows 98 SE},
+      {"7FFF:05B4:40:WS:0:0:0:0:S:2C", "Windows 98 SE"},
 #line 1202 "os.gperf"
-      {"7FFF:05B4:40:00:1:1:1:1:S:3C", SuSe Linux},
+      {"7FFF:05B4:40:00:1:1:1:1:S:3C", "SuSe Linux"},
 #line 1621 "os.gperf"
-      {"FFFF:0218:80:00:1:1:1:0:S:34", Windows XP},
+      {"FFFF:0218:80:00:1:1:1:0:S:34", "Windows XP"},
 #line 1644 "os.gperf"
-      {"FFFF:0578:40:WS:0:0:1:0:S:2C", FreeBSD 4.5 },
+      {"FFFF:0578:40:WS:0:0:1:0:S:2C", "FreeBSD 4.5 "},
 #line 1210 "os.gperf"
-      {"7FFF:05B4:80:WS:0:0:1:0:S:2C", Windows NT 4.0 SP6a},
+      {"7FFF:05B4:80:WS:0:0:1:0:S:2C", "Windows NT 4.0 SP6a"},
 #line 1011 "os.gperf"
-      {"4860:0218:80:WS:1:1:1:0:S:30", Windows XP},
+      {"4860:0218:80:WS:1:1:1:0:S:30", "Windows XP"},
 #line 110 "os.gperf"
-      {"05B4:05B4:FF:WS:0:0:0:0:A:2C", FreeBSD/i386},
+      {"05B4:05B4:FF:WS:0:0:0:0:A:2C", "FreeBSD/i386"},
 #line 1268 "os.gperf"
-      {"8000:B405:40:00:0:1:1:1:S:LT", Mac OS X 10.x.x -  Darwin 6.1},
+      {"8000:B405:40:00:0:1:1:1:S:LT", "Mac OS X 10.x.x -  Darwin 6.1"},
 #line 1269 "os.gperf"
-      {"8000:B405:40:00:0:1:1:1:S:LT", Mac Ox X 10.2.8 Jaguar},
+      {"8000:B405:40:00:0:1:1:1:S:LT", "Mac Ox X 10.2.8 Jaguar"},
 #line 1271 "os.gperf"
-      {"8000:B405:40:WS:0:0:1:0:S:LT", Mac Os X },
+      {"8000:B405:40:WS:0:0:1:0:S:LT", "Mac Os X "},
 #line 1632 "os.gperf"
-      {"FFFF:0558:80:WS:0:0:1:0:S:LT", BorderManager 3.5},
+      {"FFFF:0558:80:WS:0:0:1:0:S:LT", "BorderManager 3.5"},
 #line 1305 "os.gperf"
-      {"8218:B405:40:00:0:1:1:1:A:LT", Mac OS X},
+      {"8218:B405:40:00:0:1:1:1:A:LT", "Mac OS X"},
 #line 1306 "os.gperf"
-      {"8218:B405:40:00:0:1:1:1:A:LT", MacOS X Server Release},
+      {"8218:B405:40:00:0:1:1:1:A:LT", "MacOS X Server Release"},
 #line 1098 "os.gperf"
-      {"7B88:0218:40:WS:0:0:1:0:A:2C", Reliant Unix from Siemens-Nixdorf},
+      {"7B88:0218:40:WS:0:0:1:0:A:2C", "Reliant Unix from Siemens-Nixdorf"},
 #line 1510 "os.gperf"
-      {"FAF0:05AC:40:03:1:1:1:0:A:34", Windows 2000 },
+      {"FAF0:05AC:40:03:1:1:1:0:A:34", "Windows 2000 "},
 #line 1273 "os.gperf"
-      {"8000:B405:80:WS:1:1:1:0:S:LT", Pocket PC},
+      {"8000:B405:80:WS:1:1:1:0:S:LT", "Pocket PC"},
 #line 1272 "os.gperf"
-      {"8000:B405:80:00:1:1:1:1:S:40", Windows CE 3.0},
+      {"8000:B405:80:00:1:1:1:1:S:40", "Windows CE 3.0"},
 #line 144 "os.gperf"
-      {"0834:7805:FF:WS:0:0:0:0:A:2C", Vigor 2900G },
+      {"0834:7805:FF:WS:0:0:0:0:A:2C", "Vigor 2900G "},
 #line 1187 "os.gperf"
-      {"7FFF:0550:80:WS:1:1:1:0:A:30", Windows 2000},
+      {"7FFF:0550:80:WS:1:1:1:0:A:30", "Windows 2000"},
 #line 1491 "os.gperf"
-      {"FAF0:0528:80:WS:1:1:1:0:S:30", Windows},
+      {"FAF0:0528:80:WS:1:1:1:0:S:30", "Windows"},
 #line 1337 "os.gperf"
-      {"8765:_MSS:80:00:0:1:1:1:A:LT", Solaris 2.6 - 2.7 with tcp_strong_iss=0},
+      {"8765:_MSS:80:00:0:1:1:1:A:LT", "Solaris 2.6 - 2.7 with tcp_strong_iss=0"},
 #line 1490 "os.gperf"
-      {"FAF0:0518:80:WS:1:1:1:0:S:30", Windows 2000 server},
+      {"FAF0:0518:80:WS:1:1:1:0:S:30", "Windows 2000 server"},
 #line 1345 "os.gperf"
-      {"8F4D:_MSS:80:00:0:1:1:1:A:LT", Solaris 2.6 - 2.7},
+      {"8F4D:_MSS:80:00:0:1:1:1:A:LT", "Solaris 2.6 - 2.7"},
 #line 1336 "os.gperf"
-      {"8765:_MSS:80:00:0:1:1:0:A:LT", Solaris 2.6 - 2.7 with tcp_strong_iss=0},
+      {"8765:_MSS:80:00:0:1:1:0:A:LT", "Solaris 2.6 - 2.7 with tcp_strong_iss=0"},
 #line 1344 "os.gperf"
-      {"8F4D:_MSS:80:00:0:1:1:0:A:LT", Solaris 2.6 - 2.7},
+      {"8F4D:_MSS:80:00:0:1:1:0:A:LT", "Solaris 2.6 - 2.7"},
 #line 1094 "os.gperf"
-      {"7B10:0598:40:00:1:1:1:1:A:3C", Linux 2.2.18pre21},
+      {"7B10:0598:40:00:1:1:1:1:A:3C", "Linux 2.2.18pre21"},
 #line 1267 "os.gperf"
-      {"8000:B405:40:00:0:1:1:1:S:3C", Mac OS X 10.x (Darwin 1.3.x 1.4.x 5.x)},
+      {"8000:B405:40:00:0:1:1:1:S:3C", "Mac OS X 10.x (Darwin 1.3.x 1.4.x 5.x)"},
 #line 1194 "os.gperf"
-      {"7FFF:05A0:80:00:1:1:1:0:S:34", Windows XP},
+      {"7FFF:05A0:80:00:1:1:1:0:S:34", "Windows XP"},
 #line 1270 "os.gperf"
-      {"8000:B405:40:WS:0:0:1:0:S:2C", MacOS X},
+      {"8000:B405:40:WS:0:0:1:0:S:2C", "MacOS X"},
 #line 1295 "os.gperf"
-      {"8160:0564:40:01:1:1:1:0:A:34", Solaris 8},
+      {"8160:0564:40:01:1:1:1:0:A:34", "Solaris 8"},
 #line 1188 "os.gperf"
-      {"7FFF:0550:80:WS:1:1:1:0:S:30", Suse},
+      {"7FFF:0550:80:WS:1:1:1:0:S:30", "Suse"},
 #line 1304 "os.gperf"
-      {"8218:B405:40:00:0:1:1:1:A:3C", Mac OS X 10.1.4},
+      {"8218:B405:40:00:0:1:1:1:A:3C", "Mac OS X 10.1.4"},
 #line 1303 "os.gperf"
-      {"8218:B405:40:00:0:1:0:1:A:3C", MAC OS X 10.3.4},
+      {"8218:B405:40:00:0:1:0:1:A:3C", "MAC OS X 10.3.4"},
 #line 185 "os.gperf"
-      {"0C90:0218:40:WS:0:0:0:0:A:2C", HP Printer},
+      {"0C90:0218:40:WS:0:0:0:0:A:2C", "HP Printer"},
 #line 1222 "os.gperf"
-      {"8000:0218:40:WS:0:0:1:0:A:2C", HP-UX},
+      {"8000:0218:40:WS:0:0:1:0:A:2C", "HP-UX"},
 #line 1308 "os.gperf"
-      {"8246:AA05:40:00:0:1:0:1:A:3C", X server},
+      {"8246:AA05:40:00:0:1:0:1:A:3C", "X server"},
 #line 1100 "os.gperf"
-      {"7BF0:052A:40:WS:1:1:1:0:A:30", PLD Linux},
+      {"7BF0:052A:40:WS:1:1:1:0:A:30", "PLD Linux"},
 #line 1030 "os.gperf"
-      {"606C:00D8:40:00:1:1:1:1:A:40", Solaris 9},
+      {"606C:00D8:40:00:1:1:1:1:A:40", "Solaris 9"},
 #line 430 "os.gperf"
-      {"1800:0558:80:WS:0:0:1:0:A:LT", Novell Netware 5.1 SP3},
+      {"1800:0558:80:WS:0:0:1:0:A:LT", "Novell Netware 5.1 SP3"},
 #line 1275 "os.gperf"
-      {"8000:B405:FF:00:0:1:1:0:A:30", Mac OS 9.1},
+      {"8000:B405:FF:00:0:1:1:0:A:30", "Mac OS 9.1"},
 #line 1264 "os.gperf"
-      {"8000:6405:FF:00:0:1:1:1:A:3C", Mac OS 9.2.2},
+      {"8000:6405:FF:00:0:1:1:1:A:3C", "Mac OS 9.2.2"},
 #line 1265 "os.gperf"
-      {"8000:6405:FF:WS:0:0:1:0:A:2C", Mac OS 9.2.2},
+      {"8000:6405:FF:WS:0:0:1:0:A:2C", "Mac OS 9.2.2"},
 #line 451 "os.gperf"
-      {"1AB8:0564:40:WS:1:1:1:0:A:LT", IRIX},
+      {"1AB8:0564:40:WS:1:1:1:0:A:LT", "IRIX"},
 #line 698 "os.gperf"
-      {"2798:B405:FF:00:0:1:1:1:A:3C", Solaris 7},
+      {"2798:B405:FF:00:0:1:1:1:A:3C", "Solaris 7"},
 #line 697 "os.gperf"
-      {"2798:B405:FF:00:0:1:0:1:A:3C", Solaris 6},
+      {"2798:B405:FF:00:0:1:0:1:A:3C", "Solaris 6"},
 #line 1274 "os.gperf"
-      {"8000:B405:FF:00:0:1:0:0:S:LT", Mac OS 9.1},
+      {"8000:B405:FF:00:0:1:0:0:S:LT", "Mac OS 9.1"},
 #line 1297 "os.gperf"
-      {"81D0:0218:40:00:0:1:0:0:A:LT", OSF1 4.0},
+      {"81D0:0218:40:00:0:1:0:0:A:LT", "OSF1 4.0"},
 #line 1276 "os.gperf"
-      {"8000:B405:FF:00:0:1:1:0:S:30", Mac OS 9.2},
+      {"8000:B405:FF:00:0:1:1:0:S:30", "Mac OS 9.2"},
 #line 1359 "os.gperf"
-      {"AE4C:0594:80:WS:1:1:1:0:S:30", OpenBSD 3.5 },
+      {"AE4C:0594:80:WS:1:1:1:0:S:30", "OpenBSD 3.5 "},
 #line 1326 "os.gperf"
-      {"8340:0584:40:00:0:1:1:1:A:3C", Mac OS X/10},
+      {"8340:0584:40:00:0:1:1:1:A:3C", "Mac OS X/10"},
 #line 1507 "os.gperf"
-      {"FAF0:0598:80:WS:1:1:1:0:A:30", Windows XP},
+      {"FAF0:0598:80:WS:1:1:1:0:A:30", "Windows XP"},
 #line 1361 "os.gperf"
-      {"AE4C:05B4:40:WS:0:0:0:0:S:2C", Windows 95},
+      {"AE4C:05B4:40:WS:0:0:0:0:S:2C", "Windows 95"},
 #line 1198 "os.gperf"
-      {"7FFF:05AC:80:00:1:1:1:0:S:34", Windows 2000 },
+      {"7FFF:05AC:80:00:1:1:1:0:S:34", "Windows 2000 "},
 #line 1277 "os.gperf"
-      {"8000:B405:FF:00:0:1:1:1:A:3C", Mac OS 9.1},
+      {"8000:B405:FF:00:0:1:1:1:A:3C", "Mac OS 9.1"},
 #line 148 "os.gperf"
-      {"0860:0218:40:00:1:1:1:0:S:LT", Windows 9x},
+      {"0860:0218:40:00:1:1:1:0:S:LT", "Windows 9x"},
 #line 146 "os.gperf"
-      {"0860:0218:40:00:1:1:1:0:S:30", Windows 9x},
+      {"0860:0218:40:00:1:1:1:0:S:30", "Windows 9x"},
 #line 66 "os.gperf"
-      {"0400:05C8:20:WS:0:0:0:0:A:2C", Nortel BayStack Access Node},
+      {"0400:05C8:20:WS:0:0:0:0:A:2C", "Nortel BayStack Access Node"},
 #line 431 "os.gperf"
-      {"1800:0558:80:WS:0:0:1:0:S:2C", Novel Netware 4.0},
+      {"1800:0558:80:WS:0:0:1:0:S:2C", "Novel Netware 4.0"},
 #line 111 "os.gperf"
-      {"05B4:B405:40:00:0:1:1:1:A:LT", Red Hat 7.1  (kernel 2.4.3)},
+      {"05B4:B405:40:00:0:1:1:1:A:LT", "Red Hat 7.1  (kernel 2.4.3)"},
 #line 1266 "os.gperf"
-      {"8000:9405:FF:00:0:1:1:1:A:3C", Mac Os 9.1},
+      {"8000:9405:FF:00:0:1:1:1:A:3C", "Mac Os 9.1"},
 #line 1185 "os.gperf"
-      {"7FFF:04EC:80:WS:1:1:1:0:S:30", Windows 2000 },
+      {"7FFF:04EC:80:WS:1:1:1:0:S:30", "Windows 2000 "},
 #line 722 "os.gperf"
-      {"3CAC:0584:40:00:1:1:1:1:A:3C", Linux 2.2.16},
+      {"3CAC:0584:40:00:1:1:1:1:A:3C", "Linux 2.2.16"},
 #line 149 "os.gperf"
-      {"0860:0218:40:WS:0:0:0:0:A:2C", Windows 98},
+      {"0860:0218:40:WS:0:0:0:0:A:2C", "Windows 98"},
 #line 1193 "os.gperf"
-      {"7FFF:058E:40:00:1:1:1:0:S:34", OpenBSD 3.1},
+      {"7FFF:058E:40:00:1:1:1:0:S:34", "OpenBSD 3.1"},
 #line 112 "os.gperf"
-      {"05B4:B405:80:00:0:1:1:1:A:LT", Windows 2000 Server},
+      {"05B4:B405:80:00:0:1:1:1:A:LT", "Windows 2000 Server"},
 #line 1410 "os.gperf"
-      {"C79C:05B4:80:WS:1:1:1:0:S:30", Windows XP Home},
+      {"C79C:05B4:80:WS:1:1:1:0:S:30", "Windows XP Home"},
 #line 1332 "os.gperf"
-      {"8520:B405:40:WS:0:0:1:0:A:LT", MacOS X 10.2.1},
+      {"8520:B405:40:WS:0:0:1:0:A:LT", "MacOS X 10.2.1"},
 #line 1104 "os.gperf"
-      {"7BFC:0564:40:00:1:1:1:1:A:LT", CISCO PIX 6.1},
+      {"7BFC:0564:40:00:1:1:1:1:A:LT", "CISCO PIX 6.1"},
 #line 1107 "os.gperf"
-      {"7BFC:0564:40:WS:1:1:1:0:A:LT", Cisco PIX},
+      {"7BFC:0564:40:WS:1:1:1:0:A:LT", "Cisco PIX"},
 #line 150 "os.gperf"
-      {"0860:0218:80:WS:0:0:1:0:A:2C", Windows 98},
+      {"0860:0218:80:WS:0:0:1:0:A:2C", "Windows 98"},
 #line 1206 "os.gperf"
-      {"7FFF:05B4:80:00:1:1:1:0:S:34", Windows XP / 2000},
+      {"7FFF:05B4:80:00:1:1:1:0:S:34", "Windows XP / 2000"},
 #line 1288 "os.gperf"
-      {"805C:_MSS:80:00:0:1:0:1:A:LT", BSDI BSD/OS 2.0 - 2.1},
+      {"805C:_MSS:80:00:0:1:0:1:A:LT", "BSDI BSD/OS 2.0 - 2.1"},
 #line 1289 "os.gperf"
-      {"805C:_MSS:80:00:0:1:1:0:A:LT", Compaq Tru64 UNIX (formerly Digital UNIX) 4.0e},
+      {"805C:_MSS:80:00:0:1:1:0:A:LT", "Compaq Tru64 UNIX (formerly Digital UNIX) 4.0e"},
 #line 147 "os.gperf"
-      {"0860:0218:40:00:1:1:1:0:S:3C", Windows 9x},
+      {"0860:0218:40:00:1:1:1:0:S:3C", "Windows 9x"},
 #line 1287 "os.gperf"
-      {"805C:_MSS:80:00:0:1:0:0:A:LT", BSDI BSD/OS 2.0 - 2.1},
+      {"805C:_MSS:80:00:0:1:0:0:A:LT", "BSDI BSD/OS 2.0 - 2.1"},
 #line 1327 "os.gperf"
-      {"8340:05B4:40:00:0:1:1:1:A:3C", MacOS X},
+      {"8340:05B4:40:00:0:1:1:1:A:3C", "MacOS X"},
 #line 1164 "os.gperf"
-      {"7EDC:0584:40:WS:1:1:1:0:A:LT", Linux 2.2.18},
+      {"7EDC:0584:40:WS:1:1:1:0:A:LT", "Linux 2.2.18"},
 #line 1499 "os.gperf"
-      {"FAF0:0578:80:WS:1:1:1:0:A:30", Windows XP},
+      {"FAF0:0578:80:WS:1:1:1:0:A:30", "Windows XP"},
 #line 1334 "os.gperf"
-      {"869F:_MSS:80:00:0:1:1:1:A:LT", Windows NT4 / Win95 / Win98},
+      {"869F:_MSS:80:00:0:1:1:1:A:LT", "Windows NT4 / Win95 / Win98"},
 #line 1333 "os.gperf"
-      {"869F:_MSS:80:00:0:1:1:0:A:LT", Windows NT4 / Win95 / Win98},
+      {"869F:_MSS:80:00:0:1:1:0:A:LT", "Windows NT4 / Win95 / Win98"},
 #line 1203 "os.gperf"
-      {"7FFF:05B4:40:03:1:1:1:1:S:3C", Linux},
+      {"7FFF:05B4:40:03:1:1:1:1:S:3C", "Linux"},
 #line 1213 "os.gperf"
-      {"7FFF:7E05:80:00:0:1:1:0:A:30", BeOS},
+      {"7FFF:7E05:80:00:0:1:1:0:A:30", "BeOS"},
 #line 712 "os.gperf"
-      {"3840:0564:40:WS:0:0:0:0:S:2C", Windows 98 },
+      {"3840:0564:40:WS:0:0:0:0:S:2C", "Windows 98 "},
 #line 1500 "os.gperf"
-      {"FAF0:0578:80:WS:1:1:1:0:S:30", Windows 2000},
+      {"FAF0:0578:80:WS:1:1:1:0:S:30", "Windows 2000"},
 #line 1105 "os.gperf"
-      {"7BFC:0564:40:WS:0:0:1:0:A:2C", Linux},
+      {"7BFC:0564:40:WS:0:0:1:0:A:2C", "Linux"},
 #line 1103 "os.gperf"
-      {"7BFC:0564:40:00:1:1:1:1:A:3C", Slackware Linux 8.0},
+      {"7BFC:0564:40:00:1:1:1:1:A:3C", "Slackware Linux 8.0"},
 #line 1160 "os.gperf"
-      {"7DC8:0578:40:WS:1:1:1:0:A:30", Suse Linux},
+      {"7DC8:0578:40:WS:1:1:1:0:A:30", "Suse Linux"},
 #line 671 "os.gperf"
-      {"239C:_MSS:80:WS:0:0:0:0:A:LT", Apollo Domain/OS SR10.4},
+      {"239C:_MSS:80:WS:0:0:0:0:A:LT", "Apollo Domain/OS SR10.4"},
 #line 151 "os.gperf"
-      {"0860:0218:FF:WS:0:0:0:0:S:LT", Cisco IGS 3000 IOS 11.x(16), 2500 IOS 11.2(3)P},
+      {"0860:0218:FF:WS:0:0:0:0:S:LT", "Cisco IGS 3000 IOS 11.x(16) 2500 IOS 11.2(3)P"},
 #line 1338 "os.gperf"
-      {"879B:_MSS:80:WS:0:0:1:0:A:LT", Solaris 2.5, 2.5.1},
+      {"879B:_MSS:80:WS:0:0:1:0:A:LT", "Solaris 2.5 2.5.1"},
 #line 1106 "os.gperf"
-      {"7BFC:0564:40:WS:1:0:1:1:A:38", Linux},
+      {"7BFC:0564:40:WS:1:0:1:1:A:38", "Linux"},
 #line 1501 "os.gperf"
-      {"FAF0:057A:80:WS:1:1:1:0:S:30", Windows XP},
+      {"FAF0:057A:80:WS:1:1:1:0:S:30", "Windows XP"},
 #line 1186 "os.gperf"
-      {"7FFF:0550:80:00:1:1:1:0:S:34", Windows 2000},
+      {"7FFF:0550:80:00:1:1:1:0:S:34", "Windows 2000"},
 #line 670 "os.gperf"
-      {"2398:0218:FF:WS:0:0:1:0:A:2C", SunOS 5.6},
+      {"2398:0218:FF:WS:0:0:1:0:A:2C", "SunOS 5.6"},
 #line 457 "os.gperf"
-      {"1FB0:0FD8:40:WS:0:0:0:0:A:2C", Actiontec ADSL modem },
+      {"1FB0:0FD8:40:WS:0:0:0:0:A:2C", "Actiontec ADSL modem "},
 #line 458 "os.gperf"
-      {"1FB0:0FD8:40:WS:0:0:0:0:A:2C", Actiontec ADSL mom },
+      {"1FB0:0FD8:40:WS:0:0:0:0:A:2C", "Actiontec ADSL mom "},
 #line 1225 "os.gperf"
-      {"8000:0578:40:00:0:1:1:1:S:3C", Linux },
+      {"8000:0578:40:00:0:1:1:1:S:3C", "Linux "},
 #line 135 "os.gperf"
-      {"0800:0578:FF:WS:0:0:0:0:A:2C", NetGear Hardware Router},
+      {"0800:0578:FF:WS:0:0:0:0:A:2C", "NetGear Hardware Router"},
 #line 92 "os.gperf"
-      {"05AC:0218:40:WS:0:0:0:0:A:2C", AXIS Printer},
+      {"05AC:0218:40:WS:0:0:0:0:A:2C", "AXIS Printer"},
 #line 93 "os.gperf"
-      {"05B4:03E8:40:00:0:1:1:1:A:3C", Mac OS X 10.3.8},
+      {"05B4:03E8:40:00:0:1:1:1:A:3C", "Mac OS X 10.3.8"},
 #line 1360 "os.gperf"
-      {"AE4C:05B4:40:03:1:1:1:1:S:40", Windows XP},
+      {"AE4C:05B4:40:03:1:1:1:1:S:40", "Windows XP"},
 #line 143 "os.gperf"
-      {"0834:0578:FF:WS:0:0:0:0:A:2C", BeWan 2.3.6 },
+      {"0834:0578:FF:WS:0:0:0:0:A:2C", "BeWan 2.3.6 "},
 #line 94 "os.gperf"
-      {"05B4:052A:40:00:0:1:0:1:A:3C", NetBSD 1.6.1},
+      {"05B4:052A:40:00:0:1:0:1:A:3C", "NetBSD 1.6.1"},
 #line 1342 "os.gperf"
-      {"88E0:05B4:80:WS:1:1:1:0:S:30", Windows 2000},
+      {"88E0:05B4:80:WS:1:1:1:0:S:30", "Windows 2000"},
 #line 95 "os.gperf"
-      {"05B4:052A:40:00:1:1:0:1:A:3C", Debian Sarge, Linux 2.4.24-1},
+      {"05B4:052A:40:00:1:1:0:1:A:3C", "Debian Sarge Linux 2.4.24-1"},
 #line 162 "os.gperf"
-      {"0AF0:0578:80:WS:1:1:1:0:A:30", Windows 2000},
+      {"0AF0:0578:80:WS:1:1:1:0:A:30", "Windows 2000"},
 #line 1324 "os.gperf"
-      {"832C:_MSS:40:WS:0:0:1:0:A:LT", Linux 2.0.34 - 2.0.38},
+      {"832C:_MSS:40:WS:0:0:1:0:A:LT", "Linux 2.0.34 - 2.0.38"},
 #line 1352 "os.gperf"
-      {"AA3C:05B4:80:WS:1:1:1:0:S:30", Windows 2000 Pro},
+      {"AA3C:05B4:80:WS:1:1:1:0:S:30", "Windows 2000 Pro"},
 #line 273 "os.gperf"
-      {"15B8:057A:40:00:1:1:1:1:A:3C", Linux 2.4.10},
+      {"15B8:057A:40:00:1:1:1:1:A:3C", "Linux 2.4.10"},
 #line 685 "os.gperf"
-      {"25BC:0564:FF:WS:0:0:1:0:A:LT", Solaris},
+      {"25BC:0564:FF:WS:0:0:1:0:A:LT", "Solaris"},
 #line 686 "os.gperf"
-      {"25BC:0564:FF:WS:1:1:1:0:A:30", Solaris},
+      {"25BC:0564:FF:WS:1:1:1:0:A:30", "Solaris"},
 #line 117 "os.gperf"
-      {"05DC:0FD8:40:WS:0:0:0:0:A:2C", D-Link dsl604 wireless router },
+      {"05DC:0FD8:40:WS:0:0:0:0:A:2C", "D-Link dsl604 wireless router "},
 #line 684 "os.gperf"
-      {"25BC:0564:FF:WS:0:0:1:0:A:2C", Windows},
+      {"25BC:0564:FF:WS:0:0:1:0:A:2C", "Windows"},
 #line 1163 "os.gperf"
-      {"7EB8:3F5C:40:00:1:1:1:1:S:3C", Suse 7.3 (2.4.16)},
+      {"7EB8:3F5C:40:00:1:1:1:1:S:3C", "Suse 7.3 (2.4.16)"},
 #line 1311 "os.gperf"
-      {"832C:05B4:40:00:0:1:1:0:A:30", Compaq Tru64 UNIX 5.0 / Digital UNIX V5.60},
+      {"832C:05B4:40:00:0:1:1:0:A:30", "Compaq Tru64 UNIX 5.0 / Digital UNIX V5.60"},
 #line 1190 "os.gperf"
-      {"7FFF:0578:80:WS:1:1:1:0:S:30", Linux Suse},
+      {"7FFF:0578:80:WS:1:1:1:0:S:30", "Linux Suse"},
 #line 1108 "os.gperf"
-      {"7BFC:6405:40:00:0:1:1:1:A:3C", Linux},
+      {"7BFC:6405:40:00:0:1:1:1:A:3C", "Linux"},
 #line 1314 "os.gperf"
-      {"832C:05B4:40:WS:1:1:1:0:A:30", Windows 2000 pro},
+      {"832C:05B4:40:WS:1:1:1:0:A:30", "Windows 2000 pro"},
 #line 1315 "os.gperf"
-      {"832C:05B4:40:WS:1:1:1:0:S:30", Solaris 8},
+      {"832C:05B4:40:WS:1:1:1:0:S:30", "Solaris 8"},
 #line 1285 "os.gperf"
-      {"804C:A005:40:00:0:1:1:1:A:3C", Mac OS X},
+      {"804C:A005:40:00:0:1:1:1:A:3C", "Mac OS X"},
 #line 1313 "os.gperf"
-      {"832C:05B4:40:WS:0:0:1:0:A:2C", Freebsd 4.3},
+      {"832C:05B4:40:WS:0:0:1:0:A:2C", "Freebsd 4.3"},
 #line 1312 "os.gperf"
-      {"832C:05B4:40:WS:0:0:0:0:A:2C", Digital Unix},
+      {"832C:05B4:40:WS:0:0:0:0:A:2C", "Digital Unix"},
 #line 1362 "os.gperf"
-      {"AE4C:05B4:80:03:1:1:1:0:S:34", Windows 2000},
+      {"AE4C:05B4:80:03:1:1:1:0:S:34", "Windows 2000"},
 #line 1087 "os.gperf"
-      {"7850:0578:40:WS:1:1:1:0:A:30", Suse Linux 7.0},
+      {"7850:0578:40:WS:1:1:1:0:A:30", "Suse Linux 7.0"},
 #line 1318 "os.gperf"
-      {"832C:05B4:FF:WS:1:1:0:0:A:30", MAC OS X},
+      {"832C:05B4:FF:WS:1:1:0:0:A:30", "MAC OS X"},
 #line 1178 "os.gperf"
-      {"7FB8:0218:40:00:1:1:1:1:A:LT", Linux 2.2.19},
+      {"7FB8:0218:40:00:1:1:1:1:A:LT", "Linux 2.2.19"},
 #line 1317 "os.gperf"
-      {"832C:05B4:FF:WS:0:0:1:0:S:2C", Solaris 7},
+      {"832C:05B4:FF:WS:0:0:1:0:S:2C", "Solaris 7"},
 #line 1307 "os.gperf"
-      {"8235:0488:FF:WS:0:0:0:0:S:2C", Mac OS X },
+      {"8235:0488:FF:WS:0:0:0:0:S:2C", "Mac OS X "},
 #line 1179 "os.gperf"
-      {"7FB8:0218:40:WS:0:0:1:0:A:2C", Linux 2.2.16},
+      {"7FB8:0218:40:WS:0:0:1:0:A:2C", "Linux 2.2.16"},
 #line 1325 "os.gperf"
-      {"8340:0578:40:WS:1:1:1:0:A:30", Solaris 8 },
+      {"8340:0578:40:WS:1:1:1:0:A:30", "Solaris 8 "},
 #line 1177 "os.gperf"
-      {"7FB8:0218:40:00:1:1:0:1:S:3C", Linux},
+      {"7FB8:0218:40:00:1:1:0:1:S:3C", "Linux"},
 #line 1176 "os.gperf"
-      {"7FB8:0218:40:00:1:1:0:0:S:3C", SCO UnixWare 7.1.0 x86},
+      {"7FB8:0218:40:00:1:1:0:0:S:3C", "SCO UnixWare 7.1.0 x86"},
 #line 742 "os.gperf"
-      {"3EBC:05B4:40:WS:0:0:1:0:A:LT", Debian GNU/Linux},
+      {"3EBC:05B4:40:WS:0:0:1:0:A:LT", "Debian GNU/Linux"},
 #line 744 "os.gperf"
-      {"3EBC:05B4:40:WS:1:1:1:0:A:LT", Linux 2.2.19},
+      {"3EBC:05B4:40:WS:1:1:1:0:A:LT", "Linux 2.2.19"},
 #line 743 "os.gperf"
-      {"3EBC:05B4:40:WS:1:1:1:0:A:30", Linux 2.2.19},
+      {"3EBC:05B4:40:WS:1:1:1:0:A:30", "Linux 2.2.19"},
 #line 1117 "os.gperf"
-      {"7C9C:AA05:40:00:0:1:1:1:A:LT", Linux RedHat 7.1},
+      {"7C9C:AA05:40:00:0:1:1:1:A:LT", "Linux RedHat 7.1"},
 #line 741 "os.gperf"
-      {"3EBC:05B4:40:WS:0:0:1:0:A:2C", AIX 4.3},
+      {"3EBC:05B4:40:WS:0:0:1:0:A:2C", "AIX 4.3"},
 #line 740 "os.gperf"
-      {"3EBC:05B4:40:WS:0:0:0:0:A:2C", AIX 4.3.2},
+      {"3EBC:05B4:40:WS:0:0:0:0:A:2C", "AIX 4.3.2"},
 #line 738 "os.gperf"
-      {"3EBC:05B4:40:00:1:1:1:1:A:3C", Linux 2.2.19 or 2.4.17},
+      {"3EBC:05B4:40:00:1:1:1:1:A:3C", "Linux 2.2.19 or 2.4.17"},
 #line 735 "os.gperf"
-      {"3EBC:05B4:40:00:1:1:0:1:A:3C", Linux 2.2.17 GNU Debian/Potato},
+      {"3EBC:05B4:40:00:1:1:0:1:A:3C", "Linux 2.2.17 GNU Debian/Potato"},
 #line 745 "os.gperf"
-      {"3EBC:05B4:80:WS:0:0:0:0:A:2C", Novell Netware},
+      {"3EBC:05B4:80:WS:0:0:0:0:A:2C", "Novell Netware"},
 #line 739 "os.gperf"
-      {"3EBC:05B4:40:00:1:1:1:1:S:3C", Linux 2.2.16 - 2.2.19},
+      {"3EBC:05B4:40:00:1:1:1:1:S:3C", "Linux 2.2.16 - 2.2.19"},
 #line 737 "os.gperf"
-      {"3EBC:05B4:40:00:1:1:1:0:S:3C", Debian/Caldera Linux 2.2.x},
+      {"3EBC:05B4:40:00:1:1:1:0:S:3C", "Debian/Caldera Linux 2.2.x"},
 #line 1191 "os.gperf"
-      {"7FFF:057A:80:00:1:1:1:0:S:34", Linux },
+      {"7FFF:057A:80:00:1:1:1:0:S:34", "Linux "},
 #line 1175 "os.gperf"
-      {"7FB6:0218:FF:00:0:0:0:0:S:LT", 3Com HiPer ARC, System V4.2.32},
+      {"7FB6:0218:FF:00:0:0:0:0:S:LT", "3Com HiPer ARC System V4.2.32"},
 #line 1320 "os.gperf"
-      {"832C:B405:40:00:0:1:1:0:A:30", Digital UNIX V4.0F},
+      {"832C:B405:40:00:0:1:1:0:A:30", "Digital UNIX V4.0F"},
 #line 1322 "os.gperf"
-      {"832C:B405:40:WS:0:0:1:0:A:LT", Darwin},
+      {"832C:B405:40:WS:0:0:1:0:A:LT", "Darwin"},
 #line 1316 "os.gperf"
-      {"832C:05B4:FF:00:1:1:0:0:A:34", Windows 2000 Server },
+      {"832C:05B4:FF:00:1:1:0:0:A:34", "Windows 2000 Server "},
 #line 1321 "os.gperf"
-      {"832C:B405:40:WS:0:0:1:0:A:2C", Mac OS X 10.1},
+      {"832C:B405:40:WS:0:0:1:0:A:2C", "Mac OS X 10.1"},
 #line 1319 "os.gperf"
-      {"832C:10D8:40:00:0:1:0:0:A:30", Unix},
+      {"832C:10D8:40:00:0:1:0:0:A:30", "Unix"},
 #line 1323 "os.gperf"
-      {"832C:B405:FF:00:0:1:1:0:A:LT", Mac OS X},
+      {"832C:B405:FF:00:0:1:1:0:A:LT", "Mac OS X"},
 #line 736 "os.gperf"
-      {"3EBC:05B4:40:00:1:1:1:0:A:34", Linux Slackware 8.0},
+      {"3EBC:05B4:40:00:1:1:1:0:A:34", "Linux Slackware 8.0"},
 #line 746 "os.gperf"
-      {"3EBC:B405:40:00:1:1:1:1:S:LT", Slackware Linux v7.1 - Linux Kernel 2.2.16},
+      {"3EBC:B405:40:00:1:1:1:1:S:LT", "Slackware Linux v7.1 - Linux Kernel 2.2.16"},
 #line 1116 "os.gperf"
-      {"7C9C:05AA:40:WS:0:0:1:0:A:2C", SuSE Linux 7.0}
+      {"7C9C:05AA:40:WS:0:0:1:0:A:2C", "SuSE Linux 7.0"}
     };
 
   static short lookup[] =
