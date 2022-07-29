@@ -36,6 +36,7 @@ void sniffer(const struct pcap_pkthdr* pkthdr, const uint8_t* packet);
   struct ethernet *eth;
   struct ip *ip;
   struct tcphdr *tcp;
+  int size_ip, size_tcp;
 
   eth = (struct ethernet*) packet;
 
@@ -46,11 +47,12 @@ void sniffer(const struct pcap_pkthdr* pkthdr, const uint8_t* packet);
       ip = (struct ip*) (packet + SIZE_ETHERTYPE);
       
       /* Verifie si c'est un paquet ip */
-      if(ip->v != 4)
+      if(ip->ip_v != 4)
 	  return;
       
       /* Verifié la taille de l'entete ip */
-      if(ip->hl < 20)
+      size_ip = ip->ip_hl * 4;
+      if(size_ip < 20)
 	{
 	  fprintf(stderr, "Longueur d'entete ip invalide : %d\n", ip->hl);
 	  return; 
@@ -64,10 +66,11 @@ void sniffer(const struct pcap_pkthdr* pkthdr, const uint8_t* packet);
 	}
 
       /* Récupéré l'entête tcp */
-      tcp = (struct tcp*) (packet + SIZE_ETHERTYPE + ip->hl);
+      tcp = (struct tcp*) (packet + SIZE_ETHERTYPE + size_ip);
 
       /* Vérifié la taille de l'entete tcp */
-      if(tcp->th_off < 20)
+      size_tcp = tcp->th_off * 4;
+      if(size_tcp < 20)
 	{
 	  fprintf(stderr, "Longueur d'entete tcp invalide : %d\n", tcp->th_off);
 	  return; 
@@ -81,10 +84,30 @@ void sniffer(const struct pcap_pkthdr* pkthdr, const uint8_t* packet);
 
 void finger_ip(struct ip *ip)
 {
+  char tmp[10];
+  int old_lt = 0;
+
+  /* ajouter le ttl finger buf */
+  snprintf(tmp, sizeof(tmp), "%02X", ip->ttl);
+  memcpy(finger + FINGER_TTL, tmp, 2);
+
+  /* ajouter le lt a finger buf */
+  old_lt = strtoul(finger + FINGER_LT, NULL, 16); /* recuperer l'ancier lt qui etatit dans le buf au caus ou celui du tcp etait deja ajouté */
+  snprintf(tmp, sizeof(tmp), "%02X", (ip->ip_hl*4) + lt_old);
+  memcpy(finger + FINGER_LT, tmp, 2);
+
+  /* ajouter le df a finger buf */
+  if (ntohs(ip->frag_off) & IP_DF)
+    {
+      snprintf(tmp, sizeof(tmp), "%d", 1);
+      memcpy(finger + FINGER_DF, tmp, 1);
+    }
 }
 
 void finger_tcp(struct tcphdr *tcp)
 {
+  char tmp[10];
+  int old_lt = 0;
 }
 
 
