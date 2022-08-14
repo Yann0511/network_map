@@ -5,7 +5,7 @@ module.exports = {
         return [
             m("ul", {"class":"navbar-nav bg-gradient-primary sidebar sidebar-dark accordion","id":"accordionSidebar"},
             [
-                m("a", {"class":"sidebar-brand d-flex align-items-center justify-content-center","href":"statistiques.html"},
+                m("a", {"class":"sidebar-brand d-flex align-items-center justify-content-center","href":"/statistiques"},
                   [
                     m("div", {"class":"sidebar-brand-icon rotate-n-15"}, 
                       m("i", {"class":"fas fa-laugh-wink"})
