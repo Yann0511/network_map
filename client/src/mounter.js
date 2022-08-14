@@ -1,4 +1,5 @@
 var m = require("mithril");
+const statistique = require("./views/statistique");
 const table = require("./views/table");
 
 
@@ -8,6 +9,12 @@ function mountRoutes() {
             "/tables": {
                 render: function() {
                     return m(table);
+                }
+            },
+
+            "/statistiques": {
+                render: function() {
+                    return m(statistique);
                 }
             },
         });
