@@ -1,0 +1,7 @@
+dashboard: sidebar-main(2 subnav, main)
+confiuration: sidebar-  main(subnav; main)
+tarif: sidebar - main(sidebar-table)
+post: sidebar-main(sidebar- table)
+adminstration: sidebar- main(table)
+configuration(client): form
+rapport: sidebar- main(table)
