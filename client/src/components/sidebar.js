@@ -5,7 +5,7 @@ module.exports = {
         return [
             m("ul", {"class":"navbar-nav bg-gradient-primary sidebar sidebar-dark accordion","id":"accordionSidebar"},
             [
-                m("a", {"class":"sidebar-brand d-flex align-items-center justify-content-center","href":"/statistiques"},
+                m(m.route.Link, {"class":"sidebar-brand d-flex align-items-center justify-content-center","href":"/statistiques"},
                   [
                     m("div", {"class":"sidebar-brand-icon rotate-n-15"}, 
                       m("i", {"class":"fas fa-laugh-wink"})
@@ -17,7 +17,7 @@ module.exports = {
                 ),
                 m("hr", {"class":"sidebar-divider my-0"}),
                 m("li", {"class":"nav-item"}, 
-                m("a", {"class":"nav-link","href":"/statistiques"},
+                m(m.route.Link, {"class":"nav-link","href":"/statistiques"},
                 [
                   m("i", {"class":"fas fa-fw fa-tachometer-alt"}),
                     m("span", 
@@ -26,8 +26,8 @@ module.exports = {
         ]
       )
     ),
-    m("li", {"class":"nav-item active"}, 
-      m("a", {"class":"nav-link","href":"/tables"},
+    m("li", {"class":"nav-item"}, 
+      m(m.route.Link, {"class":"nav-link","href":"/tables"},
         [
           m("i", {"class":"fas fa-fw fa-table"}),
           m("span", 
