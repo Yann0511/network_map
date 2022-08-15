@@ -1,4 +1,5 @@
 #include "../include/os.h"
+#include "os_hash.h"
 
 /*void* initialize_sniffer(void*)*/
 int main(void)

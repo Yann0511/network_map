@@ -7,7 +7,6 @@
 #include <netinet/ip.h>
 #include <netinet/tcp.h>
 #include <arpa/inet.h>
-#include "os_hash.h"
 
 
 #define IPv4_ETHERTYPE 0x800
