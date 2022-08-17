@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/smil/Bureau/P3_IMSP/2nd_semestre/prepsout/cartonet/fonctions.c
+librairie.h
+/home/smil/Bureau/P3_IMSP/2nd_semestre/prepsout/cartonet/librairie.h
+
+/home/smil/Bureau/P3_IMSP/2nd_semestre/prepsout/cartonet/librairie.h
+pcap.h
+-
+stdio.h
+-
+arpa/inet.h
+-
+string.h
+-
+stdlib.h
+-
+net/ethernet.h
+-
+netinet/ip.h
+-
+netinet/tcp.h
+-
+netinet/udp.h
+-
+hiredis/hiredis.h
+-
+netinet/ether.h
+-
+

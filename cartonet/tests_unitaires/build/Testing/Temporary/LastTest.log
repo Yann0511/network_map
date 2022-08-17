@@ -1,0 +1,50 @@
+Start testing: Aug 05 10:09 WAT
+----------------------------------------------------------
+1/1 Testing: tests
+1/1 Test: tests
+Command: "/home/smil/Documents/P3_IMSP/2nd_semestre/prepsout/cartonet/tests_unitaires/build/cartonet"
+Directory: /home/smil/Documents/P3_IMSP/2nd_semestre/prepsout/cartonet/tests_unitaires/build
+"tests" start time: Aug 05 10:09 WAT
+Output:
+----------------------------------------------------------
+/home/smil/Bureau/P3_IMSP/2nd_semestre/prepsout/cartonet/tests_unitaires/tests.c:259:tester_la_connexion_a_la_base_de_donnee:PASS
+/home/smil/Bureau/P3_IMSP/2nd_semestre/prepsout/cartonet/tests_unitaires/tests.c:260:tester_le_nettoyage_de_la_base_de_donnee:PASS
+/home/smil/Bureau/P3_IMSP/2nd_semestre/prepsout/cartonet/tests_unitaires/tests.c:261:tester_la_creation_de_la_racine_de_larborescence:PASS
+/home/smil/Bureau/P3_IMSP/2nd_semestre/prepsout/cartonet/tests_unitaires/tests.c:262:tester_la_creation_dun_hote_a_la_racine:PASS
+/home/smil/Bureau/P3_IMSP/2nd_semestre/prepsout/cartonet/tests_unitaires/tests.c:263:tester_lexistence_dun_hote:PASS
+/home/smil/Bureau/P3_IMSP/2nd_semestre/prepsout/cartonet/tests_unitaires/tests.c:264:tester_lajout_dun_port_a_un_hote:PASS
+/home/smil/Bureau/P3_IMSP/2nd_semestre/prepsout/cartonet/tests_unitaires/tests.c:265:tester_la_completion_dun_port_a_un_hote:PASS
+/home/smil/Bureau/P3_IMSP/2nd_semestre/prepsout/cartonet/tests_unitaires/tests.c:266:tester_lajout_de_los_a_un_hote:PASS
+/home/smil/Bureau/P3_IMSP/2nd_semestre/prepsout/cartonet/tests_unitaires/tests.c:267:tester_lajout_du_nombre_de_paquets_a_un_hote:PASS
+/home/smil/Bureau/P3_IMSP/2nd_semestre/prepsout/cartonet/tests_unitaires/tests.c:268:tester_la_recuperation_du_nombre_de_paquets_dun_hote:PASS
+/home/smil/Bureau/P3_IMSP/2nd_semestre/prepsout/cartonet/tests_unitaires/tests.c:269:tester_lexistence_dun_port_chez_un_hote:PASS
+/home/smil/Bureau/P3_IMSP/2nd_semestre/prepsout/cartonet/tests_unitaires/tests.c:270:tester_lexistence_de_los_pour_un_hote:PASS
+/home/smil/Bureau/P3_IMSP/2nd_semestre/prepsout/cartonet/tests_unitaires/tests.c:271:tester_lidentification_dune_interface:PASS
+/home/smil/Bureau/P3_IMSP/2nd_semestre/prepsout/cartonet/tests_unitaires/tests.c:272:tester_lajout_dun_associe_a_un_hote:PASS
+/home/smil/Bureau/P3_IMSP/2nd_semestre/prepsout/cartonet/tests_unitaires/tests.c:273:tester_la_completion_dun_associe_a_un_hote:PASS
+/home/smil/Bureau/P3_IMSP/2nd_semestre/prepsout/cartonet/tests_unitaires/tests.c:274:tester_lexistence_dun_associe_pour_un_hote:PASS
+/home/smil/Bureau/P3_IMSP/2nd_semestre/prepsout/cartonet/tests_unitaires/tests.c:275:tester_louverture_dune_interface:PASS
+1
+/home/smil/Bureau/P3_IMSP/2nd_semestre/prepsout/cartonet/tests_unitaires/tests.c:276:tester_la_determination_dadresses_dune_interface:PASS
+/home/smil/Bureau/P3_IMSP/2nd_semestre/prepsout/cartonet/tests_unitaires/tests.c:277:tester_la_capture_dun_paquet:PASS
+/home/smil/Bureau/P3_IMSP/2nd_semestre/prepsout/cartonet/tests_unitaires/tests.c:278:tester_lidentification_de_lentete_ethernet:PASS
+/home/smil/Bureau/P3_IMSP/2nd_semestre/prepsout/cartonet/tests_unitaires/tests.c:279:tester_lidentification_de_lentete_ip:PASS
+/home/smil/Bureau/P3_IMSP/2nd_semestre/prepsout/cartonet/tests_unitaires/tests.c:280:tester_ladresse_source:PASS
+/home/smil/Bureau/P3_IMSP/2nd_semestre/prepsout/cartonet/tests_unitaires/tests.c:281:tester_ladresse_de_destination:PASS
+/home/smil/Bureau/P3_IMSP/2nd_semestre/prepsout/cartonet/tests_unitaires/tests.c:282:tester_lidentification_de_lentete_tcp:PASS
+/home/smil/Bureau/P3_IMSP/2nd_semestre/prepsout/cartonet/tests_unitaires/tests.c:283:tester_lidentification_de_lentete_udp:PASS
+1
+/home/smil/Bureau/P3_IMSP/2nd_semestre/prepsout/cartonet/tests_unitaires/tests.c:284:tester_lappartenance_dun_hote_a_un_reseau:PASS
+
+-----------------------
+26 Tests 0 Failures 0 Ignored 
+OK
+<end of output>
+Test time =  50.25 sec
+----------------------------------------------------------
+Test Passed.
+"tests" end time: Aug 05 10:10 WAT
+"tests" time elapsed: 00:00:50
+----------------------------------------------------------
+
+End testing: Aug 05 10:10 WAT

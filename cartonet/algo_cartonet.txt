@@ -1,0 +1,60 @@
+- Capturer un paquet
+  - Si c'est un paquet IP
+    - Obtenir l'adresse IP source
+    - Obtenir l'adresse IP de destination
+    - Si la source est dans le réseau
+      - Si cette source n'est pas enregistrée comme hôte dans redis
+        - En faire un hôte
+        - Si l'entete IP contient TCP
+          - Obtenir le port de la source
+          - Insérer le port dans redis
+        - Si l'entete IP contient UDP
+          - Obtenir le port de la source
+          - Inserer le port dans redis
+        - Obtenir l'OS
+        - Insérer l'OS dans redis
+        - Marquer dans redis l'emission d'un paquet pour cet hôte
+        - Si la destination est dans le réseau
+          - L'insérer comme associé de cet hôte
+      - Si la source est déjà enregistrée comme hôte dans redis
+        - Si l'entête contient TCP
+          - Obtenir le port de la source
+          - Si ce port n'est pas déjà enregistré
+            - L'ajouter à la liste des ports de cet hôte
+        - Si l'entête contient UDP
+          - Obtenir le port de la source
+          - Si ce port n'est pas déjà enregistré
+            - L'ajouter à la liste des ports de cet hôte
+        - Si l'OS n'est pas encore déterminé
+          - Obtenir l'OS
+          - Inserer l'OS pour cet hôte dans redis
+        - Incrémenter le nombre de paquets déjà émis
+        - Si la destination n'est pas encore enregistrée comme associé
+          - Si la destination est dans le réseau
+            - L'ajouter comme associé de cet hôte
+    - Si la destination est dans le réseau
+      - Si la destination n'est pas enregistrée comme hôte dans redis
+        - En faire un hôte
+        - Si l'entete IP contient TCP
+          - Obtenir le port de la destination
+          - Insérer le port dans redis
+        - Si l'entete IP contient UDP
+          - Obtenir le port de la destination
+          - Inserer le port dans redis
+        - Marquer dans redis la réception d'un paquet pour cet hôte
+        - Si la source est dans le réseau
+          - L'insérer comme associé de cet hôte
+      - Si la destination est déjà enregistrée comme hôte dans redis
+        - Si l'entête contient TCP
+          - Obtenir le port de la destination
+          - Si ce port n'est pas déjà enregistré
+            - L'ajouter à la liste des ports de cet hôte
+        - Si l'entête contient UDP
+          - Obtenir le port de la destination
+          - Si ce port n'est pas déjà enregistré
+            - L'ajouter à la liste des ports de cet hôte
+        - Incrémenter le nombre de paquets déjà reçu
+        - Si la source n'est pas encore enregistrée comme associé
+          - Si la source est dans le réseau
+            - L'ajouter comme associé de cet hôte
+        

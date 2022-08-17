@@ -1,0 +1,286 @@
+#include <unity.h>
+#include "../librairie.h"
+
+void setUp(void) {
+}
+
+void tearDown(void) {
+}
+
+void tester_la_connexion_a_la_base_de_donnee(void) {
+  redisContext *lien = connection("127.0.0.1", 6379);
+  TEST_ASSERT_EQUAL_INT (0, lien->err);
+}
+
+void tester_le_nettoyage_de_la_base_de_donnee(void) {
+  redisContext *lien = connection("127.0.0.1", 6379);
+  redisReply *reponse = redisCommand(lien, "FLUSHALL");
+  TEST_ASSERT_EQUAL_STRING ("OK", reponse->str);
+}
+
+void tester_la_creation_de_la_racine_de_larborescence(void) {
+  redisContext *lien = connection("127.0.0.1", 6379);
+  redisReply *reponse = redisCommand(lien, "JSON.SET %s . {}", RACINE);
+  TEST_ASSERT_EQUAL_STRING ("OK", reponse->str);
+}
+
+void tester_la_creation_dun_hote_a_la_racine(void) {
+  redisContext *lien = connection("127.0.0.1", 6379);
+  redisReply *reponse = redisCommand(lien, "JSON.SET %s [\"192.168.43.15\"] {}", RACINE);
+  TEST_ASSERT_EQUAL_STRING ("OK", reponse->str);
+}
+
+void tester_lajout_dun_port_a_un_hote(void) {
+  redisContext *lien = connection("127.0.0.1", 6379);
+  redisReply *reponse = redisCommand(lien, "JSON.SET %s [\"192.168.43.15\"].Port [80]", RACINE);
+  TEST_ASSERT_EQUAL_STRING ("OK", reponse->str);
+}
+
+void tester_lajout_dun_associe_a_un_hote(void) {
+  redisContext *lien = connection("127.0.0.1", 6379);
+  char *associe = "192.168.43.16";
+  redisReply *reponse = redisCommand(lien, "JSON.SET %s [\"192.168.43.15\"].Assoc [\"%s\"]", RACINE, associe);
+  TEST_ASSERT_EQUAL_STRING ("OK", reponse->str);
+}
+
+void tester_la_completion_dun_associe_a_un_hote(void) {
+  redisContext *lien = connection("127.0.0.1", 6379);
+  char *associe = "192.168.43.17";
+  redisReply *reponse = redisCommand(lien, "JSON.ARRAPPEND %s [\"192.168.43.15\"].Assoc \"%s\"", RACINE, associe);
+  TEST_ASSERT_EQUAL_STRING (NULL, reponse->str);
+}
+
+void tester_la_completion_dun_port_a_un_hote(void) {
+  redisContext *lien = connection("127.0.0.1", 6379);
+  redisReply *reponse = redisCommand(lien, "JSON.ARRAPPEND %s [\"192.168.43.15\"].Port 443", RACINE);
+  TEST_ASSERT_EQUAL_STRING (NULL, reponse->str);
+}
+
+void tester_lajout_de_los_a_un_hote(void) {
+  redisContext *lien = connection("127.0.0.1", 6379);
+  redisReply *reponse = redisCommand(lien, "JSON.SET %s [\"192.168.43.15\"].OS \"Linux\"", RACINE);
+  TEST_ASSERT_EQUAL_STRING ("OK", reponse->str);
+}
+
+void tester_lajout_du_nombre_de_paquets_a_un_hote(void) {
+  redisContext *lien = connection("127.0.0.1", 6379);
+  redisReply *reponse = redisCommand(lien, "JSON.SET %s [\"192.168.43.15\"].Paquets 2", RACINE);
+  TEST_ASSERT_EQUAL_STRING ("OK", reponse->str);
+}
+
+void tester_la_recuperation_du_nombre_de_paquets_dun_hote(void) {
+  redisContext *lien = connection("127.0.0.1", 6379);
+  redisReply *reponse = redisCommand(lien, "JSON.GET %s [\"192.168.43.15\"].Paquets", RACINE);
+  TEST_ASSERT_EQUAL_STRING ("2", reponse->str);
+}
+
+void tester_lexistence_dun_hote(void) {
+  redisContext *lien = connection("127.0.0.1", 6379);
+  int test = hote_existe_deja(lien, "192.168.43.15");
+  TEST_ASSERT_EQUAL_INT (0, test);
+}
+
+void tester_lexistence_dun_port_chez_un_hote(void) {
+  redisContext *lien = connection("127.0.0.1", 6379);
+  int test = port_existe_deja(lien, 80, "192.168.43.15");
+  TEST_ASSERT_EQUAL_INT (0, test);
+}
+
+void tester_lexistence_de_los_pour_un_hote(void) {
+  redisContext *lien = connection("127.0.0.1", 6379);
+  int test = os_existe(lien, "192.168.43.15");
+  TEST_ASSERT_EQUAL_INT (0, test);
+}
+
+void tester_lexistence_dun_associe_pour_un_hote(void) {
+  redisContext *lien = connection("127.0.0.1", 6379);
+  int test = associe_existe_deja(lien, "192.168.43.15", "192.168.43.16");
+  TEST_ASSERT_EQUAL_INT (0, test);
+}
+
+void tester_lidentification_dune_interface(void) {
+  char nom[10];
+  trouver_interface(nom); 
+  TEST_ASSERT_EQUAL_STRING ("wlo1", nom);
+}
+
+void tester_la_determination_dadresses_dune_interface(void) {
+  char nom[10];
+  bpf_u_int32 ip_brute, masque_brute;
+  trouver_interface(nom);
+  int test = adresses_interface(nom, &ip_brute, &masque_brute);
+  TEST_ASSERT_EQUAL_INT (0, test);
+}
+
+void tester_louverture_dune_interface(void) {
+  char nom[10], chaine_derreur[PCAP_ERRBUF_SIZE];
+  pcap_t *prise;
+  trouver_interface(nom);
+  prise = pcap_open_live(nom, BUFSIZ, 0, 10000, chaine_derreur);
+  TEST_ASSERT_NOT_NULL (prise);
+}
+
+void tester_la_capture_de_paquet_en_boucle(void) {
+  char nom[10], chaine_derreur[PCAP_ERRBUF_SIZE];
+  pcap_t *prise;
+  trouver_interface(nom);
+  prise = pcap_open_live(nom, BUFSIZ, 0, 10000, chaine_derreur);
+  int test = pcap_loop(prise, 1, (pcap_handler) gestionnaire_paquet, NULL);
+  TEST_ASSERT_EQUAL_INT (0, test);
+}
+
+void tester_la_capture_dun_paquet(void) {
+  char nom[10], chaine_derreur[PCAP_ERRBUF_SIZE];
+  pcap_t *prise;
+  const u_char *donnees_paquet;
+  entete_paquet entete;
+  trouver_interface(nom);
+  prise = pcap_open_live(nom, BUFSIZ, 0, 10000, chaine_derreur);
+  donnees_paquet = pcap_next(prise, &entete);
+  TEST_ASSERT_NOT_NULL (donnees_paquet);
+}
+
+void tester_lidentification_de_lentete_ethernet(void) {
+  char nom[10], chaine_derreur[PCAP_ERRBUF_SIZE];
+  pcap_t *prise;
+  u_char *donnees_paquet;
+  entete_paquet entete_p;
+  entete_ethernet *entete_e;
+  trouver_interface(nom);
+  prise = pcap_open_live(nom, BUFSIZ, 0, 10000, chaine_derreur);
+  donnees_paquet = pcap_next(prise, &entete_p);
+  entete_e = trouver_entete_ether(donnees_paquet);
+  TEST_ASSERT_NOT_NULL (entete_e);
+}
+
+void tester_lidentification_de_lentete_ip(void) {
+  char nom[10], chaine_derreur[PCAP_ERRBUF_SIZE];
+  pcap_t *prise;
+  u_char *donnees_paquet;
+  entete_paquet entete_p;
+  iphdr *entete_i;
+  trouver_interface(nom);
+  prise = pcap_open_live(nom, BUFSIZ, 0, 10000, chaine_derreur);
+  donnees_paquet = pcap_next(prise, &entete_p);
+  entete_i = trouver_entete_ip(donnees_paquet);
+  TEST_ASSERT_NOT_NULL (entete_i);
+}
+
+void tester_lidentification_de_lentete_tcp(void) {
+  char nom[10], chaine_derreur[PCAP_ERRBUF_SIZE];
+  pcap_t *prise;
+  u_char *donnees_paquet;
+  entete_paquet entete_p;
+  tcphdr *entete_t;
+  trouver_interface(nom);
+  prise = pcap_open_live(nom, BUFSIZ, 0, 10000, chaine_derreur);
+  donnees_paquet = pcap_next(prise, &entete_p);
+  entete_t = trouver_entete_tcp(donnees_paquet);
+  TEST_ASSERT_NOT_NULL (entete_t);
+}
+
+void tester_lidentification_de_lentete_udp(void) {
+  char nom[10], chaine_derreur[PCAP_ERRBUF_SIZE];
+  pcap_t *prise;
+  u_char *donnees_paquet;
+  entete_paquet entete_p;
+  udphdr *entete_u;
+  trouver_interface(nom);
+  prise = pcap_open_live(nom, BUFSIZ, 0, 10000, chaine_derreur);
+  donnees_paquet = pcap_next(prise, &entete_p);
+  entete_u = trouver_entete_udp(donnees_paquet);
+  TEST_ASSERT_NOT_NULL (entete_u);
+}
+
+void tester_ladresse_source(void) {
+  char nom[10], chaine_derreur[PCAP_ERRBUF_SIZE], adresseIP_source[INET_ADDRSTRLEN];
+  pcap_t *prise;
+  u_char *donnees_paquet;
+  entete_paquet entete_p;
+  entete_ethernet *entete_e;
+  iphdr *entete_i;
+  int test = 1;
+  trouver_interface(nom);
+  prise = pcap_open_live(nom, BUFSIZ, 0, 10000, chaine_derreur);
+  donnees_paquet = pcap_next(prise, &entete_p);
+  entete_e = trouver_entete_ether(donnees_paquet);
+  if (ntohs(entete_e->ether_type) == ETHERTYPE_IP) {
+    entete_i = trouver_entete_ip(donnees_paquet);
+    obtenir_adresseIP_source(entete_i, adresseIP_source);
+    test = adresse_valide(adresseIP_source);
+  }
+  TEST_ASSERT_EQUAL_INT (0, test);
+}
+
+void tester_ladresse_de_destination(void) {
+  char nom[10], chaine_derreur[PCAP_ERRBUF_SIZE], adresseIP_dest[INET_ADDRSTRLEN];
+  pcap_t *prise;
+  u_char *donnees_paquet;
+  entete_paquet entete_p;
+  entete_ethernet *entete_e;
+  iphdr *entete_i;
+  int test = 1;
+  trouver_interface(nom);
+  prise = pcap_open_live(nom, BUFSIZ, 0, 10000, chaine_derreur);
+  donnees_paquet = pcap_next(prise, &entete_p);
+  entete_e = trouver_entete_ether(donnees_paquet);
+  if (ntohs(entete_e->ether_type) == ETHERTYPE_IP) {
+    entete_i = trouver_entete_ip(donnees_paquet);
+    obtenir_adresseIP_dest(entete_i, adresseIP_dest);
+    test = adresse_valide(adresseIP_dest);
+  }
+  TEST_ASSERT_EQUAL_INT (0, test);
+}
+
+void tester_lappartenance_dun_hote_a_un_reseau(void) {
+  char nom[10];
+  bpf_u_int32 ip_brute, masque_brute;
+  int test;
+  trouver_interface(nom);
+  adresses_interface(nom, &ip_brute, &masque_brute);
+  test = adresse_dans_reseau(masque_brute, ip_brute, "172.16.160.240");
+  TEST_ASSERT_EQUAL_INT (0, test);
+}
+
+/*void tester_lidentification_de_lentete(void) {
+  TEST_ASSERT_NOT_NULL (entete);
+  }*/
+
+/*void tester_lidentification_de_lentete(void) {
+  TEST_ASSERT_NOT_NULL (entete);
+  }*/
+
+/*void tester_lidentification_de_lentete(void) {
+  TEST_ASSERT_NOT_NULL (entete);
+  }*/
+
+int main(void) {
+  UNITY_BEGIN();
+  RUN_TEST(tester_la_connexion_a_la_base_de_donnee);
+  RUN_TEST(tester_le_nettoyage_de_la_base_de_donnee);
+  RUN_TEST(tester_la_creation_de_la_racine_de_larborescence);
+  RUN_TEST(tester_la_creation_dun_hote_a_la_racine);
+  RUN_TEST(tester_lexistence_dun_hote);
+  RUN_TEST(tester_lajout_dun_port_a_un_hote);
+  RUN_TEST(tester_la_completion_dun_port_a_un_hote);
+  RUN_TEST(tester_lajout_de_los_a_un_hote);
+  RUN_TEST(tester_lajout_du_nombre_de_paquets_a_un_hote);
+  RUN_TEST(tester_la_recuperation_du_nombre_de_paquets_dun_hote);
+  RUN_TEST(tester_lexistence_dun_port_chez_un_hote);
+  RUN_TEST(tester_lexistence_de_los_pour_un_hote);
+  RUN_TEST(tester_lidentification_dune_interface);
+  RUN_TEST(tester_lajout_dun_associe_a_un_hote);
+  RUN_TEST(tester_la_completion_dun_associe_a_un_hote);
+  RUN_TEST(tester_lexistence_dun_associe_pour_un_hote);
+  RUN_TEST(tester_louverture_dune_interface);
+  RUN_TEST(tester_la_determination_dadresses_dune_interface);
+  RUN_TEST(tester_la_capture_dun_paquet);
+  RUN_TEST(tester_lidentification_de_lentete_ethernet);
+  RUN_TEST(tester_lidentification_de_lentete_ip);
+  RUN_TEST(tester_ladresse_source);
+  RUN_TEST(tester_ladresse_de_destination);
+  RUN_TEST(tester_lidentification_de_lentete_tcp);
+  RUN_TEST(tester_lidentification_de_lentete_udp);
+  RUN_TEST(tester_lappartenance_dun_hote_a_un_reseau);
+  return UNITY_END();
+}
