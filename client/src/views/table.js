@@ -1,10 +1,16 @@
 var m = require('mithril');
+const hote = require('../models/hote.model');
 const sidebar = require('../components/sidebar');
 const navbar = require('../components/navbar');
 const footer = require('../components/footer');
 
 
 module.exports = {
+    oninit() {
+      console.log("Fetching hote ....");
+      hote.getHotes()
+  
+    },
     view: function(vnode){
         return [
             m("div", {"id":"wrapper"},
@@ -24,7 +30,7 @@ module.exports = {
                         ),
                         m("div", {"class":"card-body"}, 
                           m("div", {"class":"table-responsive"}, 
-                            m("table", {"class":"table table-bordered","id":"dataTable","width":"100%","cellspacing":"0"},
+                            m("table", {"class":"table table-bordered","width":"100%","cellspacing":"0"},
                               [
                                 m("thead", 
                                   m("tr",
@@ -74,32 +80,31 @@ module.exports = {
                                     ]
                                   )
                                 ),
-                                m("tbody",
-                                  [
-                                    m("tr",
-                                      [
+                                m("tbody", hote.list.map(function (h) {
+                                  return m("tr",
+                                      
                                         m("td", 
-                                          "192.168.8.177"
+                                          h['ip']
                                         ),
                                         m("td", 
-                                          "Windows 12"
+                                          h['os']
                                         ),
                                         m("td", 
-                                          "21, 5000, 8000"
+                                          h['ports']
                                         ),
                                         m("td", 
-                                          "61"
+                                          h['pe']
                                         ),
                                         m("td", 
-                                          "60"
+                                          h['pr']
                                         ),
                                         m("td", 
-                                          "192.168.8.176, 192.168.8.178, 192.168.8.117"
+                                          h['assoc']
                                         )
-                                      ]
-                                    ),
-                                    
-                                  ]
+                                      
+                                    )
+                                })
+                                  
                                 )
                               ]
                             )

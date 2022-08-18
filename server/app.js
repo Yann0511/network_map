@@ -1,7 +1,21 @@
 const express=require("express"); 
 
-const app = express();      
+var bodyParser = require('body-parser')
 
+const app = express(); 
+
+var jsonParser = bodyParser.json()
+
+const cors = require('cors');
+
+/*app.use(cors({
+    origin: '*'
+}));*/
+
+app.use(cors({
+        methods: ['GET','POST','DELETE','UPDATE','PUT','PATCH']
+}));
+    
 const redis = require('redis');
 const client = redis.createClient(
         {
@@ -17,7 +31,7 @@ client.on('error', err => {
     console.log('Error ' + err);
 });
 
-app.get('/tables', async (req, res) => {
+app.get('/tables', cors(), async (req, res) => {
 
         await client.connect();
 
@@ -32,18 +46,79 @@ app.get('/tables', async (req, res) => {
                                 "os" :  await client.hGet(key,'os'),
                                 "pe" :  await client.hGet(key,'pe'),
                                 "pr" :  await client.hGet(key,'pr'),
-                                "ports" : await client.hGet(key,'ports'),
+                                "ports" : await client.hGet(key,'port'),
                                 "assoc" :  await client.hGet(key,'assoc'),
                                 
                         }
                 )
         }
 
+        client.quit();
+
         return res.status(200).send(hotes);
 
 });
 
-app.get('/statistiques', async (req, res) => {
+app.post('/filtre', cors(), jsonParser, async (req, res) => {
+
+        await client.connect();
+
+        var hotes = [];
+        const keys = await client.keys('*.*');
+
+        for(const key of keys)
+        {
+
+               if(
+                        key.toLocaleLowerCase().includes(req.body.filtre.toLocaleLowerCase()) ||
+                        (await client.hGet(key,'os')).toLocaleLowerCase().includes(req.body.filtre.toLocaleLowerCase()) ||
+                        (await client.hGet(key,'pe')) == req.body.filtre ||
+                        (await client.hGet(key,'pr')) == req.body.filtre
+                )
+                {
+                        hotes.push(
+                        {
+                                "ip" : key,
+                                "os" :  await client.hGet(key,'os'),
+                                "pe" :  await client.hGet(key,'pe'),
+                                "pr" :  await client.hGet(key,'pr'),
+                                "ports" : await client.hGet(key,'port'),
+                                "assoc" :  await client.hGet(key,'assoc'),
+                                
+                        })
+                }
+
+                else
+                {
+                        let ports = await client.hGet(key,'port');
+
+                        /*Je dois m'assurer que element.ports est un array */
+                
+                        for(const element of ports) {
+                                if(element == req.body.filtre)
+                                {
+                                        hotes.push(
+                                        {
+                                                "ip" : key,
+                                                "os" :  await client.hGet(key,'os'),
+                                                "pe" :  await client.hGet(key,'pe'),
+                                                "pr" :  await client.hGet(key,'pr'),
+                                                "ports" : await client.hGet(key,'port'),
+                                                "assoc" :  await client.hGet(key,'assoc'),
+                                                        
+                                        })
+                                }
+                                
+                        }
+                }
+        }
+
+        client.quit();
+
+        return res.status(200).send(hotes);
+})
+
+app.get('/statistiques', cors(), async (req, res) => {
 
         await client.connect();
 
@@ -105,6 +180,8 @@ app.get('/statistiques', async (req, res) => {
                 "ports": ports
         };
 
+        client.quit();
+        
         return res.status(200).send(statistiques);
 
 });
