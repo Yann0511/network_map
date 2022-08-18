@@ -20,10 +20,10 @@ const redis = require('redis');
 const client = redis.createClient(
         {
                 socket:{
-                        host: '127.0.0.1',
+                        host: '172.16.160.240',
                         port:6379
                 },
-                password: '05110yann'
+                password: ''
         }
 );
 
@@ -36,24 +36,33 @@ app.get('/tables', cors(), async (req, res) => {
         await client.connect();
 
         var hotes = [];
-        const keys = await client.keys('*.*');
+        const keys = await client.json.OBJKEYS('hotes');
 
         for(const key of keys)
         {
-                hotes.push(
-                        {
-                                "ip" : key,
-                                "os" :  await client.hGet(key,'os'),
-                                "pe" :  await client.hGet(key,'pe'),
-                                "pr" :  await client.hGet(key,'pr'),
-                                "ports" : await client.hGet(key,'port'),
-                                "assoc" :  await client.hGet(key,'assoc'),
-                                
-                        }
+                var chaine = '["'+key+ '"]';
+                var contenu = await client.json.get('hotes',{
+                        path: chaine
+                })
+
+                if(contenu.Port != undefined)
+                        contenu.Port = contenu.Port.toString().replace(/,/g, ", ");
+                
+                if(contenu.Assoc != undefined)
+                        contenu.Assoc = contenu.Assoc.toString().replace(/,/g, ", ");
+
+                hotes.push({
+                        "ip": key,
+                        "contenu": contenu
+                        
+                }
                 )
+        
         }
 
         client.quit();
+
+        console.log("get hotes");
 
         return res.status(200).send(hotes);
 
@@ -64,51 +73,59 @@ app.post('/filtre', cors(), jsonParser, async (req, res) => {
         await client.connect();
 
         var hotes = [];
-        const keys = await client.keys('*.*');
+        const keys = await client.json.OBJKEYS('hotes');
 
         for(const key of keys)
         {
+                var chaine = '["'+key+ '"]';
+                var contenu = await client.json.get('hotes',{
+                        path: chaine
+                })
 
                if(
                         key.toLocaleLowerCase().includes(req.body.filtre.toLocaleLowerCase()) ||
-                        (await client.hGet(key,'os')).toLocaleLowerCase().includes(req.body.filtre.toLocaleLowerCase()) ||
-                        (await client.hGet(key,'pe')) == req.body.filtre ||
-                        (await client.hGet(key,'pr')) == req.body.filtre
+                        (contenu.OS != undefined && contenu.OS.toLocaleLowerCase().includes(req.body.filtre.toLocaleLowerCase())) ||
+                        (contenu.PE != undefined && contenu.PE == req.body.filtre) ||
+                        (contenu.PR != undefined && contenu.PR == req.body.filtre)
                 )
                 {
-                        hotes.push(
-                        {
-                                "ip" : key,
-                                "os" :  await client.hGet(key,'os'),
-                                "pe" :  await client.hGet(key,'pe'),
-                                "pr" :  await client.hGet(key,'pr'),
-                                "ports" : await client.hGet(key,'port'),
-                                "assoc" :  await client.hGet(key,'assoc'),
+                        if(contenu.Port != undefined)
+                                contenu.Port = contenu.Port.toString().replace(/,/g, ", ");
+                
+                        if(contenu.Assoc != undefined)
+                                contenu.Assoc = contenu.Assoc.toString().replace(/,/g, ", ");
+
+                        hotes.push({
+                                "ip": key,
+                                "contenu": contenu
                                 
                         })
                 }
 
                 else
                 {
-                        let ports = await client.hGet(key,'port');
+                        //let ports = await client.hGet(key,'port');
 
                         /*Je dois m'assurer que element.ports est un array */
-                
-                        for(const element of ports) {
-                                if(element == req.body.filtre)
-                                {
-                                        hotes.push(
+                        if(contenu.Port != undefined)                
+                        {
+                                for(const element of contenu.Port) {
+                                       if(element == req.body.filtre)
                                         {
-                                                "ip" : key,
-                                                "os" :  await client.hGet(key,'os'),
-                                                "pe" :  await client.hGet(key,'pe'),
-                                                "pr" :  await client.hGet(key,'pr'),
-                                                "ports" : await client.hGet(key,'port'),
-                                                "assoc" :  await client.hGet(key,'assoc'),
-                                                        
-                                        })
+                                                if(contenu.Port != undefined)
+                                                        contenu.Port = contenu.Port.toString().replace(/,/g, ", ");
+                
+                                                if(contenu.Assoc != undefined)
+                                                        contenu.Assoc = contenu.Assoc.toString().replace(/,/g, ", ");
+
+                                                hotes.push({
+                                                        "ip": key,
+                                                        "contenu": contenu
+                                                
+                                                })
+                                        }
+                                  
                                 }
-                                
                         }
                 }
         }

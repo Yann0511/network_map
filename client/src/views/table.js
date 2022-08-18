@@ -9,6 +9,8 @@ module.exports = {
     oninit() {
       console.log("Fetching hote ....");
       hote.getHotes()
+
+      console.log(hote.list);
   
     },
     view: function(vnode){
@@ -84,24 +86,24 @@ module.exports = {
                                   return m("tr",
                                       
                                         m("td", 
-                                          h['ip']
+                                          h.ip
                                         ),
                                         m("td", 
-                                          h['os']
+                                          h.contenu.OS
                                         ),
                                         m("td", 
-                                          h['ports']
+                                          h.contenu.Port
                                         ),
                                         m("td", 
-                                          h['pe']
+                                          h.contenu.PE
                                         ),
                                         m("td", 
-                                          h['pr']
+                                          h.contenu.PR
                                         ),
                                         m("td", 
-                                          h['assoc']
+                                          h.contenu.Assoc
                                         )
-                                      
+                                
                                     )
                                 })
                                   
