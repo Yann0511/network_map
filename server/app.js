@@ -140,21 +140,28 @@ app.get('/statistiques', cors(), async (req, res) => {
         await client.connect();
 
         var hotes = [];
-        const keys = await client.keys('*.*');
+        const keys = await client.json.OBJKEYS('hotes');
 
         for(const key of keys)
         {
-                hotes.push(
-                        {
-                                "ip" : key,
-                                "os" :  await client.hGet(key,'os'),
-                                "pe" :  await client.hGet(key,'pe'),
-                                "pr" :  await client.hGet(key,'pr'),
-                                "ports" : await client.hGet(key,'port'),
-                                "assoc" :  await client.hGet(key,'assoc'),
-                                
-                        }
+                var chaine = '["'+key+ '"]';
+                var contenu = await client.json.get('hotes',{
+                        path: chaine
+                })
+
+                // if(contenu.Port != undefined)
+                //         contenu.Port = contenu.Port.toString().replace(/,/g, ", ");
+                
+                // if(contenu.Assoc != undefined)
+                //         contenu.Assoc = contenu.Assoc.toString().replace(/,/g, ", ");
+
+                hotes.push({
+                        "ip": key,
+                        "contenu": contenu
+                        
+                }
                 )
+        
         }
 
         var nombreHote = hotes.length;
@@ -165,27 +172,28 @@ app.get('/statistiques', cors(), async (req, res) => {
         var ports = [];
 
         hotes.forEach(element => {
-                paquet += element.pr;
+                if(element.contenu.PE != undefined)
+                        paquet += element.contenu.PE;
 
-                if(element.os.toLocaleLowerCase().includes('linux')) linux++;
+                if(element.contenu.OS!= undefined && element.contenu.OS.toLocaleLowerCase().includes('linux')) linux++;
 
-                else if(element.os.toLocaleLowerCase().includes('windows')) windows++;
+                else if(element.contenu.OS!= undefined && element.contenu.OS.toLocaleLowerCase().includes('windows')) windows++;
 
-                else if(element.os.toLocaleLowerCase().includes('mac')) mac++;
+                else if(element.contenu.OS!= undefined && element.contenu.OS.toLocaleLowerCase().includes('mac')) mac++;
 
-                /*Je dois m'assurer que element.ports est un array */
+                /*Je dois m'assurer que element.contenu.ports est un array */
                 
-                for(const port of element.ports)
+                /*for(const port of element.contenu.Port)
                 {
                         if(ports["Port "+port] == undefined) ports[port.toString()] = 1;
 
                         else ports[port.toString()]++;
-                }
+                }*/
         });
 
-        ports.forEach(element => {
+        /*ports.forEach(element => {
              element = (element/nombreHote) * 100;
-        });
+        });*/
 
         var statistiques = {
                 "nombreHote": nombreHote,

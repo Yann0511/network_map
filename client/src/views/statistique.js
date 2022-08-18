@@ -53,39 +53,28 @@ module.exports = {
                             )
                           ),
                           m("div", {"class":"col-xl-3 col-md-6 mb-4"}, 
-                            m("div", {"class":"card border-left-info shadow h-100 py-2"}, 
+                            m("div", {"class":"card border-left-primary shadow h-100 py-2"}, 
                               m("div", {"class":"card-body"}, 
                                 m("div", {"class":"row no-gutters align-items-center"},
                                   [
                                     m("div", {"class":"col mr-2"},
                                       [
-                                        m("div", {"class":"text-xs font-weight-bold text-info text-uppercase mb-1"}, 
-                                          "Paquets "
+                                        m("div", {"class":"text-xs font-weight-bold text-primary text-uppercase mb-1"}, 
+                                          " Paquets"
                                         ),
-                                        m("div", {"class":"row no-gutters align-items-center"},
-                                          [
-                                            m("div", {"class":"col-auto"}, 
-                                              m("div", {"class":"h5 mb-0 mr-3 font-weight-bold text-gray-800"}, 
-                                              statistique.objet['paquet']
-                                              )
-                                            ),
-                                            m("div", {"class":"col"}, 
-                                              m("div", {"class":"progress progress-sm mr-2"}, 
-                                                m("div", {"class":"progress-bar bg-info","role":"progressbar","aria-valuenow":"50","aria-valuemin":"0","aria-valuemax":"100","style":{"width":"50%"}})
-                                              )
-                                            )
-                                          ]
+                                        m("div", {"class":"h5 mb-0 font-weight-bold text-gray-800"}, 
+                                          statistique.objet['paquet']
                                         )
                                       ]
                                     ),
                                     m("div", {"class":"col-auto"}, 
-                                      m("i", {"class":"fas fa-clipboard-list fa-2x text-gray-300"})
+                                      m("i", {"class":"fas fa-calendar fa-2x text-gray-300"})
                                     )
                                   ]
                                 )
                               )
                             )
-                          )
+                          ),
                         ]
                       ),
                       m("div", {"class":"row"},
