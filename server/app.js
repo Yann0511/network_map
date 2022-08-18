@@ -160,7 +160,6 @@ app.get('/statistiques', cors(), async (req, res) => {
                 
                 for(const port of element.ports)
                 {
-                        console.log(element.ports[1]);
                         if(ports["Port "+port] == undefined) ports[port.toString()] = 1;
 
                         else ports[port.toString()]++;

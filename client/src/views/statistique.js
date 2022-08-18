@@ -1,10 +1,16 @@
 var m = require('mithril');
+const statistique = require('../models/statistique.model');
 const sidebar = require('../components/sidebar');
 const navbar = require('../components/navbar');
 const footer = require('../components/footer');
 
 
 module.exports = {
+  oninit() {
+    console.log("Fetching statistique ....");
+    statistique.getStatistiques()
+  
+  },
     view: function(vnode){
         return [
             m("div", {"id":"wrapper"},
@@ -34,7 +40,7 @@ module.exports = {
                                           " Nombre d'hotes"
                                         ),
                                         m("div", {"class":"h5 mb-0 font-weight-bold text-gray-800"}, 
-                                          "15"
+                                          statistique.objet['nombreHote']
                                         )
                                       ]
                                     ),
@@ -60,7 +66,7 @@ module.exports = {
                                           [
                                             m("div", {"class":"col-auto"}, 
                                               m("div", {"class":"h5 mb-0 mr-3 font-weight-bold text-gray-800"}, 
-                                                "10000"
+                                              statistique.objet['paquet']
                                               )
                                             ),
                                             m("div", {"class":"col"}, 
